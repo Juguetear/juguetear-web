@@ -8,19 +8,19 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 
 ### Indice de contenidos
 
-[Stack](#stack)
-[Requerimientos](#requerimientos)
-[Instalación del proyecto](#instalación-del-proyecto)
-[API y Endopints](#api-y-endpoints-wip)
-[Accesibilidad](#accesibilidad)
-[Licencias](#licencias)
-[Alcances](#alcances)
-[UI/UX](#uiux)
-[Código de Conducta](#código-de-conducta)
-[Comunidad](#comunidad)
-[Cómo contribuir](#cómo-contribuir)
-[Contribuidores](#contribuidores)
-[Staff](#staff)
+[Stack](#stack)  
+[Requerimientos](#requerimientos)  
+[Instalación del proyecto](#instalación-del-proyecto)  
+[API y Endopints](#api-y-endpoints-wip)  
+[Accesibilidad](#accesibilidad)  
+[Licencias](#licencias)  
+[Alcances](#alcances)  
+[UI/UX](#uiux)  
+[Código de Conducta](#código-de-conducta)  
+[Comunidad](#comunidad)  
+[Cómo contribuir](#cómo-contribuir)  
+[Contribuidores](#contribuidores)  
+[Staff](#staff)  
 [Links de interés](#links-de-interés)
 
 ---
@@ -168,19 +168,19 @@ Made with [contrib.rocks](https://contrib.rocks).
 
 ## Staff
 
-_Coordinador del taller de ayudas técnicas_
+_Coordinador del taller de ayudas técnicas_  
 **Sergio Ruau**
 
 **Antonio Sacco**
 
-_Diseño UX/UI_
+_Diseño UX/UI_  
 **Mariana Lessi**
 
-_Desarrollo y administración del repositorio_
+_Desarrollo y administración del repositorio_  
 **Verónica García (nykka)**
 
 ## Links de interés
 
-[Colegio Lincoln](https://colegiolincoln.edu.ar/juguetear/)
-[Antonio Sacco](http://antoniosacco.com.ar/)
+[Colegio Lincoln](https://colegiolincoln.edu.ar/juguetear/)  
+[Antonio Sacco](http://antoniosacco.com.ar/)  
 [FronendCafé](https://frontend.cafe/)

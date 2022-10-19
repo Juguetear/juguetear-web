@@ -1,7 +1,7 @@
 # Cómo contribuir
 
-[Reportar un bug](#reportar-un-bug)
-[Porponer _features_ o mejoras](#proponer-features-o-mejoras)
+[Reportar un bug](#reportar-un-bug)  
+[Porponer _features_ o mejoras](#proponer-features-o-mejoras)  
 [Contribuir con cambios](#contribuir-con-cambios)
 
 ### Reportar un _bug_
