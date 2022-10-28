@@ -171,6 +171,7 @@ Made with [contrib.rocks](https://contrib.rocks).
 _Coordinador del taller de ayudas técnicas_  
 **Sergio Ruau**
 
+_Consultor / Asesor_  
 **Antonio Sacco**
 
 _Diseño UX/UI_  
