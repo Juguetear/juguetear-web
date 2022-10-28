@@ -44,8 +44,8 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 ## Instalación del proyecto
 
 1. Lo primero es clonar el repositorio en tu disco local. Podés mirar la siguiente [documentación](https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository).
-2. Usando la consola de comandos, accedé a la carpeta del proyecto y ejecutá `npm install` (esto va a instalar todas las dependencias listadas en el archivo `package.json`). Si te aparece un error que dice `npm: command not found` quiere decir que no tenés instalado `npm` en tu computadora. Para hacerlo, tenés que instalar la última versión de [node](https://nodejs.org/es/). Si querés saber más sobre `npm`, podés leer el siguiente [artículo](https://www.freecodecamp.org/espanol/news/node-js-npm-tutorial/).
-3. Ejecutá `npm run dev` en la consola de comandos para iniciar el servidor de desarrollo
+2. Usando la consola de comandos, accedé a la carpeta del proyecto y ejecutá `yarn install` (esto va a instalar todas las dependencias listadas en el archivo `package.json`). Si te aparece un error que dice `yarn: command not found` quiere decir que no tenés instalado `yarn` en tu computadora. Para hacerlo, primero tenés que instalar la última versión de [node](https://nodejs.org/es/) y luego instalar `yarn` via `npm` (_node package manager_) ejecutando `npm install --global yarn`. Podés leer más en este [artículo](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
+3. Ejecutá `yarn run dev` en la consola de comandos para iniciar el servidor de desarrollo
 4. Visitá [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación
 
 > :warning: Si tenés algun error, podés preguntar en el canal #juguetear dentro del servidor de FrontendCafé en Discord
