@@ -48,7 +48,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 3. Ejecutá `yarn run dev` en la consola de comandos para iniciar el servidor de desarrollo
 4. Visitá [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación
 
-> :warning: Si tenés algun error, podés preguntar en el canal #juguetear dentro del servidor de FrontendCafé en Discord
+> ⚠️ Si tenés algun error, podés preguntar en el canal #juguetear dentro del servidor de FrontendCafé en Discord
 
 ---
 
