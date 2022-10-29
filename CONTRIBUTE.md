@@ -44,7 +44,7 @@ El _git flow_ que vamos a utilizar es el siguiente:
 
    (agregar imagen)
 
-2. Trabajá en tus cambios. Hacé commits por cada bloque de cambios y escribí un mensaje descriptivo en cada _commit_
+2. Trabajá en tus cambios. Hacé commits por cada bloque de cambios y escribí un mensaje descriptivo en cada _commit_. Recordá que es obligatorio que los cambios propuestos cumplan con los **requisitos WCAG 2.1 de nivel AA**
 
    > 💡 Tené en cuenta que el código que escribas tiene que estar en inglés
 
