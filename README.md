@@ -38,7 +38,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 - Tener instalada la última versión de [node](https://nodejs.org/es/) (incluye `npm`)
 - Tener un editor de código ([Visual Code](https://code.visualstudio.com/), [Vim](https://www.vim.org/), etc)
 - Tener una cuenta en [GitHub](https://docs.github.com/es/get-started/signing-up-for-github/signing-up-for-a-new-github-account)
-- Leer y seguir [Coódigo de Conducta](#código-de-conducta)
+- Leer y seguir [Código de Conducta](#código-de-conducta)
 - Unirte a [FrontendCafé](https://discord.com/invite/frontendcafe) en Discord
 
 ## Instalación del proyecto
@@ -48,7 +48,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 3. Ejecutá `yarn run dev` en la consola de comandos para iniciar el servidor de desarrollo
 4. Visitá [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación
 
-> :warning: Si tenés algun error, podés preguntar en el canal #juguetear dentro del servidor de FrontendCafé en Discord
+> ⚠️ Si tenés algun error, podés preguntar en el canal #juguetear dentro del servidor de FrontendCafé en Discord
 
 ---
 
