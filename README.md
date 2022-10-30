@@ -11,7 +11,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 [Stack](#stack)  
 [Requerimientos](#requerimientos)  
 [Instalación del proyecto](#instalación-del-proyecto)  
-[API y Endopints](#api-y-endpoints-wip)  
+[Sanity](#sanity)  
 [Accesibilidad](#accesibilidad)  
 [Licencias](#licencias)  
 [Alcances](#alcances)  
@@ -52,9 +52,22 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 
 ---
 
-## API y endpoints (WIP)
+## Sanity
 
-A medida que se vaya desarrollado el Back End, vamos a poder listar los diferentes _endpoints_ y agregar la documentación necesaria.
+Todo el contenido se va a administrar usando Sanity como [Headless CMS](https://www.sanity.io/headless-cms). Para poder autenticarte y acceder al contenido (juguetes, textos, fotos, etc.), tenés que seguir los siguientes pasos:
+
+1. En el archivo `.env` (si no lo tenés aún, hay que crearlo en el directorio raíz) tenés que agregar el _token_ de lectura de Sanity.
+2. Una vez guardado el archivo, si tenés el server ya iniciado, vas a tener que reiniciarlo. Para eso, tenés que ir a la consola de comandos, apretar ctrl + C, y luego ejecutar `npm run dev`.
+
+Ahora, para obtener la información de Sanity, vas a tener que hacer _fetch_ utilizando el método `client()` inicializado en `lib/client.ts`. Por ejemplo, para traer todos los miembros del proyecto, podés a hacer: `` const member = await client.fetch(`*[_type == "member"]`); ``
+
+En el ejemplo de arriba `*[_type == "member"]` es el _query_ con el cual filtramos que información queremos traer. Este _query_ esta escrito en [GROQ](https://www.sanity.io/docs/groq). Sanity nos facilita una [cheat sheet](https://www.sanity.io/docs/query-cheat-sheet) con algunos de los _queries_ más comunes.
+
+Si querés saber más sobre el cliente JavaScript de Sanity, podés leer más en la [documentación](https://www.sanity.io/docs/js-client) de Sanity. Para hacer las cosas más sencillas, utilizamos el [toolkit](https://github.com/sanity-io/next-sanity) de Sanity para NextJS en este proyecto.
+
+Dentro de la carpeta `studio/schemas` podes encontrar los _schemas_ disponibles. Los _schemas_ describen los tipos de documentos y sus campos (\_fields). En los archivos JSON en los que Sanity Studio escribe los datos el tipo de documento aparecen como la propiedad `_type`.
+
+Es muy común usar esta propiedad como _query_ para obtener su contenido (por ejemplo `*[_type == "animal"]`). Si querés saber más sobre los _schemas_, podés leer la [documentación](https://www.sanity.io/docs/schema-types) de Sanity al respecto.
 
 ---
 
