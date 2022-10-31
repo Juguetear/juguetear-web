@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run eslint
+yarn run lint --cache
+
+
+# Get current branch
+curr_branch="$(git rev-parse --abbrev-ref HEAD)"
+
+# Compare branch names.
+if [[ "$curr_branch" =~ development|main ]]; then
+  echo "You can't commit directly to "$curr_branch"."
+  echo ""
+  echo "Please commit to the corresponding branch related to your issue."
+  echo ""
+  exit 1
+fi
