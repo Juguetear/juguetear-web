@@ -1,0 +1,15 @@
+# !/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+commit_msg=$(cat $1)
+commit_format="^[A-Za-z0-9 _]*[A-Za-z0-9][:]?[A-Za-z0-9 _]{5,}"
+
+if ! [[ "$commit_msg" =~ $commit_format ]]; then
+  echo ""
+  echo "Commit message rejected."
+  echo ""
+  echo "The commit message has to contain at least six characters."
+  echo "Please add a relevant commit message."
+  echo ""
+  exit 1
+fi
