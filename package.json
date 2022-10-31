@@ -2,7 +2,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "yarn run build:sanity && yarn run build:web",
+    "build:web": "next build",
+    "build:sanity": "cd studio && npx sanity build ../public/studio -y && cd ..",
+    "start:sanity": "cd studio && sanity start",
     "start": "next start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
