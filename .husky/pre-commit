@@ -4,15 +4,19 @@
 # Run eslint
 yarn run lint --cache
 
+# Colors
+red='\033[0;31m'
+green='\033[0;32m'
+no_color='\033[0m'
 
 # Get current branch
 curr_branch="$(git rev-parse --abbrev-ref HEAD)"
 
 # Compare branch names.
 if [[ "$curr_branch" =~ development|main ]]; then
-  echo "You can't commit directly to "$curr_branch"."
+  echo -e "${red}You can't commit directly to "$curr_branch".${no_color}"
   echo ""
   echo "Please commit to the corresponding branch related to your issue."
   echo ""
-  exit 1
+  exit 2
 fi
