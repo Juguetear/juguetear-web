@@ -61,7 +61,7 @@ Todo el contenido se va a administrar usando Sanity como [Headless CMS](https://
 1. En el archivo `.env` (si no lo tenés aún, hay que crearlo en el directorio raíz) tenés que agregar el _token_ de lectura de Sanity.
 2. Una vez guardado el archivo, si tenés el server ya iniciado, vas a tener que reiniciarlo. Para eso, tenés que ir a la consola de comandos, apretar ctrl + C, y luego ejecutar `npm run dev`.
 
-Ahora, para obtener la información de Sanity, vas a tener que hacer _fetch_ utilizando el método `client()` inicializado en `lib/client.ts`. Por ejemplo, para traer todos los miembros del proyecto, podés a hacer: `` const member = await client.fetch(`*[_type == "member"]`); ``
+Ahora, para obtener la información de Sanity, vas a tener que hacer _fetch_ utilizando el método `client()` inicializado en `lib/config.ts`. Por ejemplo, para traer todos los miembros del proyecto, podés a hacer: `` const member = await client.fetch(`*[_type == "member"]`); ``
 
 En el ejemplo de arriba `*[_type == "member"]` es el _query_ con el cual filtramos que información queremos traer. Este _query_ esta escrito en [GROQ](https://www.sanity.io/docs/groq). Sanity nos facilita una [cheat sheet](https://www.sanity.io/docs/query-cheat-sheet) con algunos de los _queries_ más comunes.
 

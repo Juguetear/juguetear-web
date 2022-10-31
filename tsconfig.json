@@ -16,6 +16,12 @@
     "incremental": true,
     "sourceMap": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "utils/getImage.js",
+    "lib/sanity.js"
+  ],
   "exclude": ["node_modules"]
 }

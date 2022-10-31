@@ -2,11 +2,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "yarn run build:sanity && yarn run build:web",
-    "build:web": "next build",
-    "build:sanity": "cd studio && sanity install && sanity build ../public/studio -y && cd ..",
-    "start:sanity": "cd studio && sanity start",
+    "prebuild": "echo 'Building Sanity to public/studio' && cd studio && yarn && npx @sanity/cli build ../public/studio -y && echo 'Done'",
+    "build": "next build",
     "start": "next start",
+    "sanity": "cd studio && sanity start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "next lint"
@@ -15,6 +14,7 @@
     "@sanity/client": "^3.4.1",
     "next": "latest",
     "next-sanity": "^1.0.3",
+    "next-sanity-image": "^4.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

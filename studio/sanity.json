@@ -1,7 +1,8 @@
 {
   "root": true,
   "project": {
-    "name": "Juguetear"
+    "name": "Juguetear",
+    "basePath": "/studio"
   },
   "api": {
     "projectId": "isi1r0nm",
@@ -23,15 +24,5 @@
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
     }
-  ],
-  "deployment": {
-    "provider": "vercel",
-    "studio": { "basePath": "/studio" },
-    "corsOrigins": [
-      {
-        "origin": "http://localhost:3000",
-        "allowCredentials": true
-      }
-    ]
-  }
+  ]
 }
