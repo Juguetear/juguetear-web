@@ -1,3 +1,4 @@
+/// <reference types="@sanity/types/parts" />
 // First, we must import the schema creator
 import createSchema from "part:@sanity/base/schema-creator";
 
