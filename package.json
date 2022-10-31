@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
+    "@sanity/cli": "^2.35.0",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.13",
