@@ -58,7 +58,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 
 Todo el contenido se va a administrar usando Sanity como [Headless CMS](https://www.sanity.io/headless-cms). Para poder autenticarte y acceder al contenido (juguetes, textos, fotos, etc.), tenés que seguir los siguientes pasos:
 
-1. En el archivo `.env` (si no lo tenés aún, hay que crearlo en el directorio raíz) tenés que agregar el _token_ de lectura de Sanity.
+1. En el archivo `.env` (si no lo tenés aún, hay que crearlo en el directorio raíz) tenés que agregar los _token_ necesarios. Podes mirar el archivo `.env.example` para saber cuales son.
 2. Una vez guardado el archivo, si tenés el server ya iniciado, vas a tener que reiniciarlo. Para eso, tenés que ir a la consola de comandos, apretar ctrl + C, y luego ejecutar `npm run dev`.
 
 Ahora, para obtener la información de Sanity, vas a tener que hacer _fetch_ utilizando el método `client()` inicializado en `lib/config.ts`. Por ejemplo, para traer todos los miembros del proyecto, podés a hacer: `` const member = await client.fetch(`*[_type == "member"]`); ``
