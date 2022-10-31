@@ -2,7 +2,7 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "unused-imports"],
-  "extends": ["prettier"],
+  "extends": ["next", "prettier"],
   "rules": {
     "no-console": 2,
     "prefer-const": 2,

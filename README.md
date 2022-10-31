@@ -1,4 +1,6 @@
-# Juguetear
+<h1 align="center" width="100%">
+  <img width="33%" src="https://user-images.githubusercontent.com/78808163/198991646-4ec0f08d-b9f5-4e42-89d1-ceb786c1f215.svg" alt="Juguetear">
+</h1>
 
 ### Juguetear es un proyecto solidario, sin fines de lucro, que tiene como objetivo adaptar juguetes para niñes con discapacidades motrices complejas y ofrecerlos en calidad de préstamo, sin costo para las familias..
 
@@ -142,6 +144,8 @@ Otras acciones a evitar:
 Ante cualquier inconveniente, quienes administramos este repositorio estamos disponibles para intermediar y resolver conflictos.
 
 ## Comunidad
+
+[![logo-frontendcafe](https://user-images.githubusercontent.com/78808163/198993731-299e973d-8f3b-4a6c-a445-b2b77e0b3286.svg)](https://discord.com/invite/frontendcafe)
 
 Este proyecto se desarrolla con la participación y el apoyo de FrontendCafé. Es requerido unirte a nuestro [server](https://discord.com/invite/frontendcafe) y buscar el canal #juguetear. Ahí vas a poder compartir dudas e ideas del proyecto. El código de conducta de este proyecto es extensible también a tu participación en el server de FrontendCafé en Discord.
 
