@@ -1,52 +1,65 @@
-# Cómo contribuir
+# Contribuciones a Juguetear Web
 
-[Reportar un bug](#reportar-un-bug)  
-[Porponer _features_ o mejoras](#proponer-features-o-mejoras)  
-[Contribuir con cambios](#contribuir-con-cambios)
+En este archivo, encontrarás información sobre las diferentes maneras de realizar contribuciones a este proyecto. El código se encuentra almacenado en GitHub, utilizamos el mismo para llevar el seguimiento de reportes de errores (bugs) y proponer mejoras (features).
 
-### Reportar un _bug_
+Si en algún momento necesitas hacer una consulta respecto al proyecto o el código del mismo, podés ingresar a nuestro [servidor en Discord](https://discord.com/invite/frontendcafe) de FrontendCafé, buscar el canal **#juguetear** y realizar todas las consultas que sean necesarias.
 
-Primero usar el buscador de _issues_ para verificar que ninguna otra persona reportó el mismo _bug_. Si el _bug_ no fue previamente reportado, creá un _issue_ por _bug_ teniendo en cuenta lo siguiente:
+En esta página encontrarás las siguientes secciones:
 
-1. Especificar dónde y cómo te encontraste con el bug: en qué dispositivo, sistema operativo, browser y/o versión del browser
+1. [Cómo contribuir](#cómo-contribuir)
+   1.1 [Verificar que no se haya reportado el mismo bug/feature](#verificar-que-no-se-haya-reportado-el-mismo-bug-o-feature)
+   1.2 [Cómo reportar un bug](#cómo-reportar-un-bug)
+   1.3 [Cómo sugerir una feature](#cómo-sugerir-una-feature)
+   1.4 [Contribuir con cambios](#contribuir-con-cambios)
+2. [Licencia](#licencia)
 
-2. Detallá los pasos a seguir para reproducir el bug
+## Cómo contribuir
 
-3. incluí mensajes de error que puedan aparecer en la consola
+### Verificar que no se haya reportado el mismo bug o feature
 
-4. Incluí videos o imagenes del error
+Para evitar confusiones y/o trabajo extra, es necesario que antes de reportar un bug o proponer una feature revises que no exista actualmente.
 
-5. Asigná algunos de los _labels_ disponibles para que sea más fácil organizar y encontrar los _issues_
+Esto lo podés hacer dirigiéndote a la [página de issues](https://github.com/Juguetear/juguetear-web/issues), por defecto vas a ver los issues/features que se encuentren abiertos (esto significa que no han sido solucionados al momento). Podés revisar la lista aplicando palabras claves en el buscador o filtros. Para encontrar issues disponibles para trabajar, podes seleccionar "Asignado a" (Assignee) y filtrar por lo que no se encuentran asignados a nadie para tomarlos.
 
-### Proponer _features_ o mejoras
+Si te gustaría tomar algún issue para trabajar pero tenés dudas, recordá que siempre es posible realizar consultas en el [servidor en Discord](https://discord.com/invite/frontendcafe) de FrontendCafé!
 
-Primero usar el buscador de _issues_ para verificar que ninguna otra persona sugiere el mismo _feature_ o la misma mejora. Si el _feature_ o la mejora no fue previamente sugerida, creá un _issue_ por mejora teniendo en cuenta lo siguiente:
+### Cómo reportar un bug
 
-1. Describí de manera completa y técnica cuál es el alcance de la mejora, los requerimientos y cómo implementarla. Podés mirar otros _issues_ para tener un ejemplo de como hacerlo
+Para que sea más facil para otras personas entender el problema, es necesario que brindes la mayor cantidad de información de manera clara y detallada. Y sinceramente estaríamos encantados de que **trabajes en propio tu issue generado!**
 
-2. Asigná algunos de los _labels_ disponibles para que sea más fácil organizar y encontrar los _issues_
+Al momento de generar un nuevo issue (te recomendámos leer la sección anterior) es necesario que te dirijas a la [página de issues](https://github.com/Juguetear/juguetear-web/issues) y clickees el botón "New issue", o bien [acceder a este link](https://github.com/Juguetear/juguetear-web/issues/new).
 
-Si tenés una idea más bien general de la mejora, en vez de abrir un _issue_, te invitamos a compartirla en nuestro [server](https://discord.com/invite/frontendcafe).
+<!-- TODO Change hyperlink -->
+<!-- TODO Create Issue template and describe it here -->
 
-Te invitamos a que seas vos quien trabaje en esa mejora!
+### Cómo sugerir una feature
+
+Así mismo como al reportar un bug, necesitamos la mayor cantidad de información de manera clara y concisa. También tené en cuenta que la **feature propuesta por vos va a ser evaluada** por las personas que administran el repositorio y aprobada en caso de estar alineada con el proyecto, o declinada en caso contrario. Si necesitas realizar consultas podes hacerlas en el [servidor en Discord](https://discord.com/invite/frontendcafe) de FrontendCafé.
+
+Para proponer una feature, es necesario que te dirjas a la [página de issues](https://github.com/Juguetear/juguetear-web/issues) y clickees el botón "New issue", o bien [acceder a este link](https://github.com/Juguetear/juguetear-web/issues/new).
+
+<!-- TODO Create Feat template and describe it here -->
+<!-- TODO Change hyperlink -->
 
 ### Contribuir con cambios
 
-Para contribuir primero tenés que elegir un _issue_ en el que quieras trabajar. Lee muy bien la descripción y hacé todas las preguntas que necesites antes de ponerte a trabajar en la tarea. Podés hacer tus preguntas en nuestro canal en el [server](https://discord.com/invite/frontendcafe) de FrontendCafé.
+Para contribuir con cambios primero es necesario que elijas un issue/feature en la que quieras trabajar (previamente comprobando que nadie esté trabajando en ella), que leas muy bien la descripción y realices todas las preguntas necesarias para evacuar tus dudas. Recordá que podés hacerlo en los comentarios del issue/request o en el [servidor en Discord](https://discord.com/invite/frontendcafe).
 
-El _git flow_ que vamos a utilizar es el siguiente:
+> ⚠️ Es muy importante que las contribuciones de código que realices tanto de issues como de features cumplan mínimamente con los **estándares de WCAG 2.1 de nivel AA**.
+
+El git flow que utilizamos en este proyecto es el siguiente:
 
 1. En tu repositorio local, crea un _branch_ desde `development`
 
-   > :warning: Acordate de ejecutar `git pull` desde la consola de comandos antes, así tu rama `development` está actualizada con los últimos cambios.
+   > ⚠️ Recordá ejecutar `git pull` desde la consola de comandos antes, así tu rama `development` está actualizada con los últimos cambios.
 
-   El nombre del branch va a ser tomado del numero y titulo del _issue_ (ej. 1-crear-archivo-readme)
+   El nombre del branch va a ser tomado del número y título del _issue_ (ej. 1-crear-archivo-readme)
 
    (agregar imagen)
 
 2. Trabajá en tus cambios. Hacé commits por cada bloque de cambios y escribí un mensaje descriptivo en cada _commit_. Recordá que es obligatorio que los cambios propuestos cumplan con los **requisitos WCAG 2.1 de nivel AA**
 
-   > 💡 Tené en cuenta que el código que escribas tiene que estar en inglés
+   > 💡 Tené en cuenta que el código que escribas debe estar en inglés junto con sus comentarios, en caso de que sean necesarios.
 
 3. Hacé `push` de tu _branch_ al repositorio remoto ejecutando `git push -u origin <nombre-de-tu-rama>`
 
@@ -54,10 +67,15 @@ El _git flow_ que vamos a utilizar es el siguiente:
 
 5. Completá la información que se te pide para crear el _PR_. Y listo!
 
-Ahora es tiempo de esperar que les administradores y/o contribuidores hagan un _code review._ Esta es una oportunidad para aprender y compartir conocimiento. Podés mirar esta guía para saber más [https://docs.github.com/es/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews](https://docs.github.com/es/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
+Ahora es tiempo de esperar que les administradores y/o contribuidores hagan un _code review._ Esta es una excelente oportunidad para aprender y compartir conocimiento. Podés mirar esta guía para saber más [https://docs.github.com/es/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews](https://docs.github.com/es/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
 
 > 💡 Mientras esperás _feedback_ de tus cambios, aprovechá y hacé _code review_ de otros _Pull Request_
 
 Si tu _Pull Request_ es aprobado, felicitaciones! Ya está listo para ser mergeado a `development`. Luego las personas que administran el repositorio harán un _release_ con todos los cambios que hay en `development` para ponerlos online.
 
 Si recibiste _feedback_ solicitando cambios, tenés que seguir trabajando en tu _branch_ y haciendo `push` de esos cambios al repositorio online. Una vez que termines tu _PR_ va a estar de nuevo listo para revisión. Estos pasos lo tenés que repetir hasta que sea aprobado. Si tenés dudas o querés discutir los cambios que te solicitaron, lo podés hacer en el mismo _PR_ o en nuestro [canal de Discord](https://discord.com/invite/frontendcafe).
+
+## Licencia
+
+Todas las contribuciones que se realicen serán bajo la licencia [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://github.com/Juguetear/juguetear-web/blob/development/LICENSE-CC-BY-NC-SA).
+Si contribuyes a este repositorio, aceptas de que tus contribuciones sean licenciadas bajo Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
