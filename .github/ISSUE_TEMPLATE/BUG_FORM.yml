@@ -1,0 +1,98 @@
+name: 🐞 Bug report
+labels: [Bug, Triage]
+description: Describí el error/bug encontrado.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Desde ya gracias por tomarte el tiempo para completar esta solicitud, también nos gustaría mucho que trabajes en tu bug!
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Código de conducta.
+      description: Al completar esta solicitud, aceptas el [Código de Conducta](https://github.com/Juguetear/juguetear-web#c%C3%B3digo-de-conducta)
+      options:
+        - label: Estoy de acuerdo con seguir el Código de Conducta de este proyecto.
+          required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Licencia.
+      description: Al completar esta solicitud, aceptas la [licencia del repositorio](https://github.com/Juguetear/juguetear-web/blob/development/LICENSE)
+      options:
+        - label: Estoy de acuerdo con seguir la licencia de este proyecto.
+          required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: He comprobado que no se haya solicitado la feature.
+      description: Has comprobado que la feature solicitada por vos
+      options:
+        - label: Estoy de acuerdo con la licencia de este proyecto.
+          required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Detalles de contacto
+      description: ¿Cómo podemos contactarte en caso de ser necesario? No es mandatorio.
+      placeholder: ej. email@example.com
+    validations:
+      required: false
+
+  - type: textarea
+    id: bug
+    attributes:
+      label: ¿Cuál es el bug/error que has encontrado?
+      description: Describe el error que has encontrado.
+    validations:
+      required: true
+
+  - type: textarea
+    id: replicate-bug
+    attributes:
+      label: ¿Cómo se puede reproducir este error?
+      description: Indica los pasos necesarios para que el error sea reproducido por otras personas.
+      placeholder: '
+        1. Clickear en boton..
+        2.
+        3.
+        '
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: ¿Cuál es el comportamiento esperado?
+      description: ¿Qué debería suceder?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: ¿Cuál es el comportamiento actual?
+      description: Describe el comportamiento actual.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: ¿Cuál es el navegador en el que sucede el error?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+    validations:
+      required: true
+
+  - type: textarea
+    id: log
+    attributes:
+      label: Por favor completa con logs relevantes respecto al bug.
+      description: Si es posible, indica el mensaje de error arrojado por el navegador.
