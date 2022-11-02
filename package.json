@@ -6,8 +6,8 @@
     "build": "next build",
     "start": "next start",
     "sanity": "cd studio && sanity start",
-    "storybook": "start-storybook",
-    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -o .sb",
     "lint": "next lint"
   },
   "dependencies": {

@@ -5,11 +5,5 @@
       "source": "/studio/(.*)",
       "destination": "/studio/index.html"
     }
-  ],
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "yarn install",
-  "buildCommand": "yarn build-storybook",
-  "devCommand": "yarn storybook",
-  "framework": null,
-  "outputDirectory": "./storybook-static"
+  ]
 }
