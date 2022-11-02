@@ -6,8 +6,8 @@
     "build": "next build",
     "start": "next start",
     "sanity": "cd studio && sanity start",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
+    "storybook": "start-storybook -p 6006 -s storybook-static",
+    "build-storybook": "build-storybook -s storybook-static",
     "serve-storybook": "serve storybook-static",
     "lint": "next lint"
   },
