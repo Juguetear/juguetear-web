@@ -8,35 +8,35 @@ body:
         Desde ya gracias por tomarte el tiempo para completar esta solicitud, también nos gustaría mucho que trabajes en tu bug!
 
   - type: checkboxes
-    id: terms
+    id: code-of-conduct
     attributes:
       label: Código de conducta.
-      description: Al completar esta solicitud, aceptas el [Código de Conducta](https://github.com/Juguetear/juguetear-web#c%C3%B3digo-de-conducta)
+      description: Al completar esta solicitud, aceptás el [Código de Conducta](https://github.com/Juguetear/juguetear-web#c%C3%B3digo-de-conducta)
       options:
         - label: Estoy de acuerdo con seguir el Código de Conducta de este proyecto.
           required: true
   - type: checkboxes
-    id: terms
+    id: licence
     attributes:
       label: Licencia.
-      description: Al completar esta solicitud, aceptas la [licencia del repositorio](https://github.com/Juguetear/juguetear-web/blob/development/LICENSE)
+      description: Al completar esta solicitud, aceptás la [licencia del repositorio](https://github.com/Juguetear/juguetear-web/blob/development/LICENSE)
       options:
         - label: Estoy de acuerdo con seguir la licencia de este proyecto.
           required: true
   - type: checkboxes
-    id: terms
+    id: feat-check
     attributes:
-      label: He comprobado que no se haya solicitado la feature.
-      description: Has comprobado que la feature solicitada por vos
+      label: He comprobado que no se haya reportado el issue.
+      description: Has comprobado que el issue no haya sido reportado previamente.
       options:
-        - label: Estoy de acuerdo con la licencia de este proyecto.
+        - label: He verificado que el issue no haya sido reportado previamente.
           required: true
 
   - type: input
     id: contact
     attributes:
       label: Detalles de contacto
-      description: ¿Cómo podemos contactarte en caso de ser necesario? No es mandatorio.
+      description: ¿Cómo podemos contactarte en caso de ser necesario? Este campo es opcional.
       placeholder: ej. email@example.com
     validations:
       required: false
@@ -94,5 +94,5 @@ body:
   - type: textarea
     id: log
     attributes:
-      label: Por favor completa con logs relevantes respecto al bug.
+      label: Por favor completá con logs relevantes respecto al bug.
       description: Si es posible, indica el mensaje de error arrojado por el navegador.
