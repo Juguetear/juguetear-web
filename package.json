@@ -8,7 +8,6 @@
     "sanity": "cd studio && sanity start",
     "storybook": "start-storybook",
     "build-storybook": "build-storybook",
-    "serve-storybook": "serve storybook-static",
     "lint": "next lint"
   },
   "dependencies": {
