@@ -1,5 +1,6 @@
 name: 🐞 Bug report
 labels: [Bug, Triage]
+title: '[Bug]: '
 description: Describí el error/bug encontrado.
 body:
   - type: markdown
@@ -19,9 +20,9 @@ body:
     id: licence
     attributes:
       label: Licencia.
-      description: Al completar esta solicitud, aceptás la [licencia del repositorio](https://github.com/Juguetear/juguetear-web/blob/development/LICENSE)
+      description: Al completar esta solicitud, aceptás las [licencias del repositorio](https://github.com/Juguetear/juguetear-web/blob/development/CONTRIBUTE.md#licencias)
       options:
-        - label: Estoy de acuerdo con seguir la licencia de este proyecto.
+        - label: Estoy de acuerdo con seguir las licencias de este proyecto.
           required: true
   - type: checkboxes
     id: feat-check
@@ -88,8 +89,16 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
+        - Otro navegador.
     validations:
       required: true
+
+  - type: input
+    id: another-browser
+    attributes:
+      label: Otro navegador que estés utilizando.
+      description: En el caso de que hayas seleccionado "Otro navegador", te pedimos que coloques su nombre acá.
+      placeholder: Brave
 
   - type: textarea
     id: log

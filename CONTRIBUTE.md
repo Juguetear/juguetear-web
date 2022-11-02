@@ -4,14 +4,18 @@ En este archivo, encontrarás información sobre las diferentes maneras de reali
 
 Si en algún momento necesitas hacer una consulta respecto al proyecto o el código del mismo, podés ingresar a nuestro [servidor en Discord](https://discord.com/invite/frontendcafe) de FrontendCafé, buscar el canal **#juguetear** y realizar todas las consultas que sean necesarias.
 
+<!-- TODO Update link -->
+
 En esta página encontrarás las siguientes secciones:
 
 1. [Cómo contribuir](#cómo-contribuir)
    1.1 [Verificar que no se haya reportado el mismo bug/feature](#verificar-que-no-se-haya-reportado-el-mismo-bug-o-feature)
    1.2 [Cómo reportar un bug](#cómo-reportar-un-bug)
+   1.2.1 [Plantilla para reportar bugs](#plantilla-para-reportar-bugs)
    1.3 [Cómo sugerir una feature](#cómo-sugerir-una-feature)
+   1.3.1 [Plantilla para proponer features](#plantilla-para-proponer-features)
    1.4 [Contribuir con cambios](#contribuir-con-cambios)
-2. [Licencia](#licencia)
+2. [Licencias](#licencias)
 
 ## Cómo contribuir
 
@@ -29,17 +33,55 @@ Para que sea más facil para otras personas entender el problema, es necesario q
 
 Al momento de generar un nuevo issue (te recomendámos leer la sección anterior) es necesario que te dirijas a la [página de issues](https://github.com/Juguetear/juguetear-web/issues) y clickees el botón "New issue", o bien [acceder a este link](https://github.com/Juguetear/juguetear-web/issues/new).
 
-<!-- TODO Change hyperlink -->
-<!-- TODO Create Issue template and describe it here -->
+<!-- TODO Update direct link -->
+
+#### Plantilla para reportar bugs
+
+Una vez que hayas ingresado a la página de issues ya sea por el botón o el link directo, es necesario que completes la siguiente información para completar el reporte.
+
+Tené en cuenta que esto lo va a leer otra persona, y mientras más detallado sea, mejor.
+
+1. Checkboxs (requeridos):
+   1.1 Código de conducta.
+   1.2 Conformidad de licencias aplicadas al proyecto.
+   1.3 Comprobar que el issue no haya sido reportado previamente.
+2. Detalles de contacto (opcional).
+3. ¿Cuál es el bug/error que has encontrado?
+   Es necesario que describas el error o comportamiento inesperado al interactuar con el sitio.
+4. ¿Cómo se puede reproducir este error? (requerido).
+   Indicá de manera clara y concisa los pasos necesarios para que otras personas puedan experimentar el mismo error que vos.
+5. ¿Cuál es el comportamiento esperado? (requerido).
+   Según tu criterio, ¿qué debería suceder?
+6. ¿Cuál es el comportamiento actual? (requerido).
+   Describí el comportamiento que se puede experimentar actualmente.
+7. ¿Cuál es el navegador en el que sucede el error? (requerido).
+   Seleccioná el navegador en el cual sucedió el error.
+8. Otro navegador que estés utilizando (opcional).
+   Si no encontraste el navegador en el cuál identificaste el error, por favor colocá su nombre en este campo.
+9. Por favor completá con logs relevantes respecto al bug (opcional).
+   En caso de que el error genere un registro en el navegador, es importante que lo incluyas para facilitar la tarea de la persona que vaya a trabajar en este reporte.
 
 ### Cómo sugerir una feature
 
 Así mismo como al reportar un bug, necesitamos la mayor cantidad de información de manera clara y concisa. También tené en cuenta que la **feature propuesta por vos va a ser evaluada** por las personas que administran el repositorio y aprobada en caso de estar alineada con el proyecto, o declinada en caso contrario. Si necesitas realizar consultas podes hacerlas en el [servidor en Discord](https://discord.com/invite/frontendcafe) de FrontendCafé.
 
-Para proponer una feature, es necesario que te dirjas a la [página de issues](https://github.com/Juguetear/juguetear-web/issues) y clickees el botón "New issue", o bien [acceder a este link](https://github.com/Juguetear/juguetear-web/issues/new).
+Para proponer una feature, es necesario que te dirijas a la [página de issues](https://github.com/Juguetear/juguetear-web/issues) y clickees el botón "New issue", o bien [acceder a este link](https://github.com/Juguetear/juguetear-web/issues/new/choose).
 
-<!-- TODO Create Feat template and describe it here -->
-<!-- TODO Change hyperlink -->
+<!-- TODO Update direct link -->
+
+#### Plantilla para proponer features
+
+1. Checkboxs (requeridos):
+   1.1 Código de conducta.
+   1.2 Conformidad de licencias aplicadas al proyecto.
+   1.3 Comprobar que la feature no haya sido reportada previamente.
+2. Detalles de contacto (opcional).
+3. ¿Qué te gustaría agregar a este proyecto? (requerido).
+   Especificá qué es lo que considerás que falta en este proyecto.
+4. Requerimientos de la mejora (requerido).
+   Describí de manera completa y técnica los requerimientos de esta feature.
+5. Implementación de la mejora (requerido).
+   Detallá la manera en que considerás necesario implementar esta feature.
 
 ### Contribuir con cambios
 
@@ -75,7 +117,8 @@ Si tu _Pull Request_ es aprobado, felicitaciones! Ya está listo para ser mergea
 
 Si recibiste _feedback_ solicitando cambios, tenés que seguir trabajando en tu _branch_ y haciendo `push` de esos cambios al repositorio online. Una vez que termines tu _PR_ va a estar de nuevo listo para revisión. Estos pasos lo tenés que repetir hasta que sea aprobado. Si tenés dudas o querés discutir los cambios que te solicitaron, lo podés hacer en el mismo _PR_ o en nuestro [canal de Discord](https://discord.com/invite/frontendcafe).
 
-## Licencia
+## Licencias
 
-Todas las contribuciones que se realicen serán bajo la licencia [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://github.com/Juguetear/juguetear-web/blob/development/LICENSE-CC-BY-NC-SA).
-Si contribuyes a este repositorio, aceptas de que tus contribuciones sean licenciadas bajo Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+Todas las contribuciones que se realicen serán bajo las licencias [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://github.com/Juguetear/juguetear-web/blob/development/LICENSE-CC-BY-NC-SA) y [GNU General Public License v3.0](https://github.com/Juguetear/juguetear-web/blob/development/LICENSE).
+
+Si contribuyes a este repositorio, aceptas de que tus contribuciones sean licenciadas bajo las licencias utilizadas en este proyecto.

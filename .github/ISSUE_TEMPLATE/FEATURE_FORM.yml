@@ -20,9 +20,9 @@ body:
     id: licence
     attributes:
       label: Licencia.
-      description: Al completar esta solicitud, aceptás la [licencia del repositorio](https://github.com/Juguetear/juguetear-web/blob/development/LICENSE)
+      description: Al completar esta solicitud, aceptás las [licencias del repositorio](https://github.com/Juguetear/juguetear-web/blob/development/CONTRIBUTE.md#licencias)
       options:
-        - label: Estoy de acuerdo con seguir la licencia de este proyecto.
+        - label: Estoy de acuerdo con seguir las licencias de este proyecto.
           required: true
   - type: checkboxes
     id: feat-check
@@ -49,16 +49,6 @@ body:
       description: Por favor contanos qué es lo que consideras que falta?
       placeholder: Estamos ansiosos por saberlo :)
       value: 'Contanos lo que te gustaría!'
-    validations:
-      required: true
-
-  - type: textarea
-    id: feat-range
-    attributes:
-      label: ¿Cúal es el rango de la mejora propuesta?
-      description: Describí de manera completa y técnica el alcance de la mejora.
-      # TODO Fill placeholder.
-      placeholder: ''
     validations:
       required: true
 
