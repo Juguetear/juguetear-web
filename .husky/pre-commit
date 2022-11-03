@@ -1,6 +1,9 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+# Run code formatter
+yarn lint-staged
+
 # Run eslint
 yarn run lint --cache
 
