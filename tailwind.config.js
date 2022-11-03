@@ -22,6 +22,15 @@ module.exports = {
       none: "0",
       DEFAULT: "0.25rem",
     },
+    fontSize: {
+      sm: ["1rem", "1.4rem"],
+      base: ["1.188rem", "1.663rem"],
+      lg: ["1.25rem", "1.75rem"],
+      xl: ["1.5rem", "2.1rem"],
+      "2xl": ["1.75rem", "2.45rem"],
+      "3xl": ["2.125rem", "2.975rem"],
+      "4xl": ["2.25rem", "3.15rem"],
+    },
     extend: {
       fontFamily: {
         inter: ["Inter", ...fontFamily.sans],
