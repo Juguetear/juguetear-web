@@ -1,0 +1,79 @@
+name: 💡 Feature Request
+description: Sugerí una mejora.
+title: '[Feat]: '
+labels: ['enhancement', 'triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Desde ya gracias por tomarte el tiempo para completar esta solicitud, también nos gustaría mucho que trabajes en tu feature!
+
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: Código de conducta.
+      description: Al completar esta solicitud, aceptás el [Código de Conducta](https://github.com/Juguetear/juguetear-web#c%C3%B3digo-de-conducta)
+      options:
+        - label: Estoy de acuerdo con seguir el Código de Conducta de este proyecto.
+          required: true
+  - type: checkboxes
+    id: licence
+    attributes:
+      label: Licencia.
+      description: Al completar esta solicitud, aceptás las [licencias del repositorio](https://github.com/Juguetear/juguetear-web/blob/development/CONTRIBUTE.md#licencias)
+      options:
+        - label: Estoy de acuerdo con seguir las licencias de este proyecto.
+          required: true
+  - type: checkboxes
+    id: feat-check
+    attributes:
+      label: He comprobado que no se haya solicitado la feature.
+      description: Has comprobado que la feature solicitada por vos no haya sido solicitada previamente.
+      options:
+        - label: He verificado que la feature no haya sido solicitada previamente.
+          required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Detalles de contacto
+      description: ¿Cómo podemos contactarte en caso de ser necesario? Este campo es opcional.
+      placeholder: ej. email@example.com
+    validations:
+      required: false
+
+  - type: textarea
+    id: feat-description
+    attributes:
+      label: ¿Qué te gustaría agregar a este proyecto?
+      description: Por favor contanos qué es lo que consideras que falta?
+      placeholder: Estamos ansiosos por saberlo :)
+      value: 'Contanos lo que te gustaría!'
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requerimientos de la mejora.
+      description: Describí de manera completa y técnica los requerimientos.
+      placeholder: '
+        1.
+        2.
+        3.
+        '
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementación de la mejora.
+      description: Describí de manera completa y técnica la implementación sugerida.
+      placeholder: '
+        1.
+        2.
+        3.
+        '
+    validations:
+      required: true
