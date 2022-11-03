@@ -48,3 +48,6 @@ next-env.d.ts
 #storybook
 /storybook-static
 .sb
+
+# Sanity 
+/studio/dist
