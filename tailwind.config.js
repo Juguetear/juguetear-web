@@ -23,13 +23,13 @@ module.exports = {
       DEFAULT: "0.25rem",
     },
     fontSize: {
-      sm: ["1rem", "1.4rem"],
-      base: ["1.188rem", "1.663rem"],
-      lg: ["1.25rem", "1.75rem"],
-      xl: ["1.5rem", "2.1rem"],
-      "2xl": ["1.75rem", "2.45rem"],
-      "3xl": ["2.125rem", "2.975rem"],
-      "4xl": ["2.25rem", "3.15rem"],
+      sm: ["1rem", "1.4"],
+      base: ["1.188rem", "1.4"],
+      lg: ["1.25rem", "1.4"],
+      xl: ["1.5rem", "1.4"],
+      "2xl": ["1.75rem", "1.4"],
+      "3xl": ["2.125rem", "1.4"],
+      "4xl": ["2.25rem", "1.4"],
     },
     extend: {
       fontFamily: {

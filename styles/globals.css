@@ -19,7 +19,7 @@
     @apply text-lg font-extrabold font-outfit;
   }
   p {
-    @apply text-sm font-normal;
+    @apply text-sm font-normal leading-normal;
   }
 
   @media screen(md) {
@@ -34,7 +34,7 @@
       @apply text-3xl;
     }
     p {
-      @apply text-base;
+      @apply text-base leading-normal;
     }
   }
 }
