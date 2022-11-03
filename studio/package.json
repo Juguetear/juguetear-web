@@ -9,6 +9,7 @@
   "scripts": {
     "start": "sanity start",
     "test": "sanity check",
+    "prebuild": "yarn global add @sanity/cli",
     "build": "sanity build public -y"
   },
   "keywords": [
