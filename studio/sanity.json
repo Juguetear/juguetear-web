@@ -1,8 +1,7 @@
 {
   "root": true,
   "project": {
-    "name": "Juguetear",
-    "basePath": "/studio"
+    "name": "Juguetear"
   },
   "api": {
     "projectId": "isi1r0nm",
