@@ -14,6 +14,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 [Requerimientos](#requerimientos)  
 [Instalación del proyecto](#instalación-del-proyecto)  
 [Sanity](#sanity)  
+[Storybook](#storybook)
 [Accesibilidad](#accesibilidad)  
 [Licencias](#licencias)  
 [Alcances](#alcances)  
@@ -70,6 +71,13 @@ Si querés saber más sobre el cliente JavaScript de Sanity, podés leer más en
 Dentro de la carpeta `studio/schemas` podes encontrar los _schemas_ disponibles. Los _schemas_ describen los tipos de documentos y sus campos (\_fields). En los archivos JSON en los que Sanity Studio escribe los datos el tipo de documento aparecen como la propiedad `_type`.
 
 Es muy común usar esta propiedad como _query_ para obtener su contenido (por ejemplo `*[_type == "animal"]`). Si querés saber más sobre los _schemas_, podés leer la [documentación](https://www.sanity.io/docs/schema-types) de Sanity al respecto.
+
+---
+
+## Storybook
+
+[Storybook](https://storybook.js.org/) es una librería de código abierto que permite desarrollar y documentar tus componentes en un entorno aislado. Vamos a usarla para crear y testear todos los componentes del proyecto Juguetear.
+Para poder ver los componentes listos para usar, podes entrar a esta [URL](https://storybook-juguetear-web.vercel.app) (_provisoria_).
 
 ---
 
