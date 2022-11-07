@@ -14,7 +14,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 [Requerimientos](#requerimientos)  
 [Instalación del proyecto](#instalación-del-proyecto)  
 [Sanity](#sanity)  
-[Storybook](#storybook)
+[Storybook](#storybook)  
 [Accesibilidad](#accesibilidad)  
 [Licencias](#licencias)  
 [Alcances](#alcances)  
