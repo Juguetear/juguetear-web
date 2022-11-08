@@ -36,7 +36,12 @@ yarn-error.log*
 .vercel
 
 # VSCode
-.vscode
+.vscode/*
+.vscode/*.code-snippets
+!.vscode/extensions.json
+.vscode/launch.json
+!.vscode/settings.json
+.vscode/tasks.json
 
 # typescript
 *.tsbuildinfo
