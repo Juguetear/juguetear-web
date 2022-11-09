@@ -1,6 +1,6 @@
 name: 🐞 Bug report
 labels: [Bug, Triage]
-title: '[Bug]: '
+title: "[Bug]: "
 description: Describí el error/bug encontrado.
 body:
   - type: markdown
@@ -55,11 +55,11 @@ body:
     attributes:
       label: ¿Cómo se puede reproducir este error?
       description: Indica los pasos necesarios para que el error sea reproducido por otras personas.
-      placeholder: '
+      placeholder: "
         1. Clickear en boton..
         2.
         3.
-        '
+        "
     validations:
       required: true
 
@@ -78,6 +78,12 @@ body:
       description: Describe el comportamiento actual.
     validations:
       required: true
+
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: Si tienes una solución, ¿cuáles son los pasos necesarios para implementarla?
+      description: Describe la solución propuesta.
 
   - type: dropdown
     id: browsers
