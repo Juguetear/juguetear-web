@@ -1,7 +1,7 @@
 name: 💡 Feature Request
 description: Sugerí una mejora.
-title: '[Feat]: '
-labels: ['enhancement', 'triage']
+title: "[Feat]: "
+labels: ["enhancement", "triage"]
 body:
   - type: markdown
     attributes:
@@ -33,22 +33,13 @@ body:
         - label: He verificado que la feature no haya sido solicitada previamente.
           required: true
 
-  - type: input
-    id: contact
-    attributes:
-      label: Detalles de contacto
-      description: ¿Cómo podemos contactarte en caso de ser necesario? Este campo es opcional.
-      placeholder: ej. email@example.com
-    validations:
-      required: false
-
   - type: textarea
     id: feat-description
     attributes:
       label: ¿Qué te gustaría agregar a este proyecto?
       description: Por favor contanos qué es lo que consideras que falta?
       placeholder: Estamos ansiosos por saberlo :)
-      value: 'Contanos lo que te gustaría!'
+      value: "Contanos lo que te gustaría!"
     validations:
       required: true
 
@@ -57,11 +48,11 @@ body:
     attributes:
       label: Requerimientos de la mejora.
       description: Describí de manera completa y técnica los requerimientos.
-      placeholder: '
+      placeholder: "
         1.
         2.
         3.
-        '
+        "
     validations:
       required: true
 
@@ -70,10 +61,10 @@ body:
     attributes:
       label: Implementación de la mejora.
       description: Describí de manera completa y técnica la implementación sugerida.
-      placeholder: '
+      placeholder: "
         1.
         2.
         3.
-        '
+        "
     validations:
       required: true

@@ -33,15 +33,6 @@ body:
         - label: He verificado que el issue no haya sido reportado previamente.
           required: true
 
-  - type: input
-    id: contact
-    attributes:
-      label: Detalles de contacto
-      description: ¿Cómo podemos contactarte en caso de ser necesario? Este campo es opcional.
-      placeholder: ej. email@example.com
-    validations:
-      required: false
-
   - type: textarea
     id: bug
     attributes:
