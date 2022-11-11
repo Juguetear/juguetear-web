@@ -6,6 +6,7 @@ import createSchema from "part:@sanity/base/schema-creator";
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
 import document from "./document";
+import documents from "./documents";
 import link from "./link";
 import member from "./member";
 
@@ -18,6 +19,7 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     document,
+    documents,
     link,
     member,
   ]),
