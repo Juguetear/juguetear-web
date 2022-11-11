@@ -4,7 +4,7 @@ En este archivo, encontrarás información sobre las diferentes maneras de reali
 
 Si en algún momento necesitas hacer una consulta respecto al proyecto o el código del mismo, podés ingresar a nuestro [servidor en Discord](https://discord.com/invite/frontendcafe) de FrontendCafé, buscar el canal **#juguetear** y realizar todas las consultas que sean necesarias.
 
-<!-- TODO Update link -->
+<!-- TODO Update link to discord -->
 
 En esta página encontrarás las siguientes secciones:
 
@@ -27,13 +27,13 @@ Esto lo podés hacer dirigiéndote a la [página de issues](https://github.com/J
 
 Si te gustaría tomar algún issue para trabajar pero tenés dudas, recordá que siempre es posible realizar consultas en el [servidor en Discord](https://discord.com/invite/frontendcafe) de FrontendCafé!
 
+<!-- TODO Update link to discord -->
+
 ### Cómo reportar un bug
 
 Para que sea más facil para otras personas entender el problema, es necesario que brindes la mayor cantidad de información de manera clara y detallada. Y sinceramente estaríamos encantados de que **trabajes en propio tu issue generado!**
 
-Al momento de generar un nuevo issue (te recomendámos leer la sección anterior) es necesario que te dirijas a la [página de issues](https://github.com/Juguetear/juguetear-web/issues) y clickees el botón "New issue", o bien [acceder a este link](https://github.com/Juguetear/juguetear-web/issues/new).
-
-<!-- TODO Update direct link -->
+Al momento de generar un nuevo issue (te recomendámos leer la sección anterior) es necesario que te dirijas a la [página de issues](https://github.com/Juguetear/juguetear-web/issues) y clickees el botón "New issue", o bien [acceder a este link](https://github.com/Juguetear/juguetear-web/issues/new?assignees=&labels=Bug%2CTriage&template=BUG_FORM.yml&title=%5BBug%5D%3A+).
 
 #### Plantilla para reportar bugs
 
@@ -65,9 +65,9 @@ Tené en cuenta que esto lo va a leer otra persona, y mientras más detallado se
 
 Así mismo como al reportar un bug, necesitamos la mayor cantidad de información de manera clara y concisa. También tené en cuenta que la **feature propuesta por vos va a ser evaluada** por las personas que administran el repositorio y aprobada en caso de estar alineada con el proyecto, o declinada en caso contrario. Si necesitas realizar consultas podes hacerlas en el [servidor en Discord](https://discord.com/invite/frontendcafe) de FrontendCafé.
 
-Para proponer una feature, es necesario que te dirijas a la [página de issues](https://github.com/Juguetear/juguetear-web/issues) y clickees el botón "New issue", o bien [acceder a este link](https://github.com/Juguetear/juguetear-web/issues/new/choose).
+<!-- TODO Update link to discord -->
 
-<!-- TODO Update direct link -->
+Para proponer una feature, es necesario que te dirijas a la [página de issues](https://github.com/Juguetear/juguetear-web/issues) y clickees el botón "New issue", o bien [acceder a este link](https://github.com/Juguetear/juguetear-web/issues/new?assignees=&labels=enhancement%2Ctriage&template=FEATURE_FORM.yml&title=%5BFeat%5D%3A+).
 
 #### Plantilla para proponer features
 
