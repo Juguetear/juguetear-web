@@ -22,6 +22,11 @@ export default {
       type: "string",
     },
     {
+      name: "pronouns",
+      title: "Pronombres",
+      type: "string",
+    },
+    {
       name: "links",
       title: "Links",
       type: "array",
