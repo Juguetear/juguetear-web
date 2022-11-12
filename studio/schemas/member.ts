@@ -27,10 +27,20 @@ export default {
       type: "string",
     },
     {
-      name: "links",
-      title: "Links",
+      name: "contactLinks",
       type: "array",
-      of: [{ type: "reference", to: [{ type: "link" }] }],
+      of: [
+        {
+          title: "Link de contacto",
+          name: "contactLink",
+          type: "object",
+          fields: [
+            { name: "name", type: "string", title: "Nombre" },
+            { name: "url", type: "string", title: "Link" },
+          ],
+        },
+      ],
+      title: "Links de contacto",
     },
     {
       name: "image",
