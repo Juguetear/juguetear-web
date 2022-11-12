@@ -7,6 +7,8 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 import document from "./document";
 import documents from "./documents";
+import faq from "./faq";
+import link from "./link";
 import member from "./member";
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -19,6 +21,8 @@ export default createSchema({
     /* Your types here! */
     document,
     documents,
+    faq,
+    link,
     member,
   ]),
 });
