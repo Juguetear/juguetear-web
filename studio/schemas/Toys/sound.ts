@@ -4,6 +4,13 @@ export default {
   type: "document",
   fields: [
     {
+      name: "toyName",
+      title: "Nombre del juguete.",
+      type: "string",
+      description: "Indicar el nombre del juguete.",
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: "noSound",
       type: "boolean",
       title: "El juguete no tiene sonido.",
@@ -27,9 +34,12 @@ export default {
     },
   ],
   preview: {
-    prepare() {
+    select: {
+      title: "toyName",
+    },
+    prepare({ title }) {
       return {
-        title: `Sonido del juguete.`,
+        title: `Sonido del juguete ${title}`,
       };
     },
   },
