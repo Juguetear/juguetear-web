@@ -14,7 +14,8 @@ export default {
     {
       title: "Respuesta",
       name: "answer",
-      type: "string",
+      type: "array",
+      of: [{ type: "block" }],
     },
   ],
 };
