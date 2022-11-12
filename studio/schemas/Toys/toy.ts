@@ -23,6 +23,9 @@ export default {
       type: "image",
       title: "Imágenes del juguete.",
       description: "Incluir imágenes del juguete.",
+      options: {
+        hotspot: true,
+      },
       validation: (Rule) => Rule.required(),
     },
     {
