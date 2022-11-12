@@ -5,6 +5,8 @@ import createSchema from "part:@sanity/base/schema-creator";
 // Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
+import document from "./document";
+import documents from "./documents";
 import link from "./link";
 import member from "./member";
 
@@ -16,7 +18,9 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
-    member,
+    document,
+    documents,
     link,
+    member,
   ]),
 });
