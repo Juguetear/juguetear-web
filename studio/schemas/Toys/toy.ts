@@ -29,6 +29,14 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: "toySlug",
+      type: "slug",
+      title: "Slug",
+      description:
+        "Slug a traves del cual se accederá al juguete desde la web.",
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: "available",
       type: "boolean",
       title: "¿El juguete se encuentra disponible?",
