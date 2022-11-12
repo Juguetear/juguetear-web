@@ -4,11 +4,18 @@ export default {
   type: "document",
   fields: [
     {
+      name: "toyName",
+      title: "Nombre del juguete.",
+      type: "string",
+      description: "Indicar el nombre del juguete.",
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: "noLights",
       type: "boolean",
       title: "El juguete no tiene luces.",
       description: "Seleccionar en caso de que el juguete no tenga luces.",
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any }) => Rule.required(),
     },
     {
       name: "switchLights",
@@ -28,9 +35,12 @@ export default {
     },
   ],
   preview: {
-    prepare() {
+    select: {
+      title: "toyName",
+    },
+    prepare({ title }) {
       return {
-        title: `Luces del juguete.`,
+        title: `Luces del juguete ${title}.`,
       };
     },
   },
