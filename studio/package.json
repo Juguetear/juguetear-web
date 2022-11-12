@@ -7,7 +7,7 @@
   "author": "Verónica García <veronicaines.garcia@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "preinstall": "yarn global add @sanity/cli",
+    "preinstall": "npm i -g @sanity/cli",
     "start": "sanity start",
     "test": "sanity check",
     "build": "sanity build public -y"
@@ -29,6 +29,5 @@
     "react": "^17.0",
     "react-dom": "^17.0",
     "styled-components": "^5.2.0"
-  },
-  "devDependencies": {}
+  }
 }

@@ -1,13 +1,8 @@
 {
   "private": true,
-  "workspaces": {
-    "packages": [
-      "studio/"
-    ],
-    "nohoist": [
-      "**/@sanity/**"
-    ]
-  },
+  "workspaces": [
+    "studio"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -55,5 +50,6 @@
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
-  }
+  },
+  "packageManager": "yarn@3.2.4"
 }
