@@ -4,6 +4,13 @@ export default {
   type: "document",
   fields: [
     {
+      name: "toyName",
+      title: "Nombre del juguete.",
+      type: "string",
+      description: "Indicar el nombre del juguete.",
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: "inputQty",
       type: "number",
       title: "Cantidad de inputs que contiene el juguete.",
@@ -12,9 +19,12 @@ export default {
     },
   ],
   preview: {
-    prepare() {
+    select: {
+      title: "toyName",
+    },
+    prepare({ title }) {
       return {
-        title: `Cantidad de inputs.`,
+        title: `Cantidad de inputs del juguete ${title}`,
       };
     },
   },
