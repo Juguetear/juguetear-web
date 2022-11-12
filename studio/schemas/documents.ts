@@ -10,7 +10,6 @@ export default {
       title: "Categoría",
       name: "category",
       type: "string",
-      validation: (Rule) => Rule.required(),
     },
     {
       title: "Lista de documentos",
