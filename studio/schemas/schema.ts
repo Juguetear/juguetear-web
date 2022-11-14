@@ -27,12 +27,7 @@ export default createSchema({
     /* Your types here! */
     document,
     documents,
+    faq,
     member,
-    link,
-    toy,
-    movement,
-    switchInput,
-    lights,
-    sound,
   ]),
 });
