@@ -28,10 +28,14 @@ export default () =>
             ])
         ),
       S.divider(),
-      ...S.documentTypeListItems().filter(
-        (listItem) =>
-          !["toy", "movement", "sound", "inputQuantity", "lights"].includes(
-            listItem.getId()
-          )
-      ),
+      ...S.documentTypeListItems().filter((listItem) => {
+        const listItems = listItem.getId()!;
+        return ![
+          "toy",
+          "movement",
+          "sound",
+          "inputQuantity",
+          "lights",
+        ].includes(listItems);
+      }),
     ]);
