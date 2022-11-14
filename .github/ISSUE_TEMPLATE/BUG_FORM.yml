@@ -82,11 +82,12 @@ body:
       label: ¿Cuál es el navegador en el que sucede el error?
       multiple: true
       options:
+        - No aplica
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
-        - Otro navegador.
+        - Otro navegador
     validations:
       required: true
 
