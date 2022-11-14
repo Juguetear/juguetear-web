@@ -2419,6 +2419,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sanity/cli@npm:^2.35.0":
+  version: 2.35.0
+  resolution: "@sanity/cli@npm:2.35.0"
+  bin:
+    sanity: bin/sanity
+  checksum: 4632624c5a49da2000b49463a0f9958fa1721b6ad7c974842de3f125b3f69a7879693b52b656b52be322807a036ece6fddd2311e1c0a2d9a0358d51fcffcd13f
+  languageName: node
+  linkType: hard
+
 "@sanity/client@npm:^3.3.3, @sanity/client@npm:^3.4.1":
   version: 3.4.1
   resolution: "@sanity/client@npm:3.4.1"
@@ -13581,6 +13590,7 @@ __metadata:
   resolution: "juguetear@workspace:studio"
   dependencies:
     "@sanity/base": ^2.35.0
+    "@sanity/cli": ^2.35.0
     "@sanity/core": ^2.35.0
     "@sanity/default-layout": ^2.35.0
     "@sanity/default-login": ^2.35.0

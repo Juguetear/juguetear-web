@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "sanity": "cd studio && sanity start",
+    "sanity": "cd studio && yarn sanity start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o .sb",
     "lint": "next lint"
