@@ -8,7 +8,6 @@ export default {
       type: "string",
       title: "Nombre del juguete.",
       description: "Completar con el nombre del juguete.",
-      validation: (Rule) => Rule.required(),
     },
     {
       name: "toyDescription",
@@ -16,7 +15,6 @@ export default {
       of: [{ type: "block" }],
       title: "Descripción del juguete.",
       description: "Completar con la descripción del juguete.",
-      validation: (Rule) => Rule.required(),
     },
     {
       name: "toyPics",
@@ -26,7 +24,6 @@ export default {
       options: {
         hotspot: true,
       },
-      validation: (Rule) => Rule.required(),
     },
     {
       name: "toySlug",
@@ -34,14 +31,12 @@ export default {
       title: "Slug",
       description:
         "Slug a traves del cual se accederá al juguete desde la web.",
-      validation: (Rule) => Rule.required(),
     },
     {
       name: "available",
       type: "boolean",
       title: "¿El juguete se encuentra disponible?",
       description: "Indicar si el juguete se encuentra disponible o no.",
-      validation: (Rule) => Rule.required(),
     },
     {
       name: "movementRef",
@@ -49,7 +44,6 @@ export default {
       to: [{ type: "movement" }],
       title: "Movimiento.",
       description: 'Referencia hacia el documento "Movimiento del juguete"',
-      validation: (Rule) => Rule.required(),
     },
     {
       name: "inputRef",
@@ -57,7 +51,6 @@ export default {
       to: [{ type: "inputQuantity" }],
       title: "Inputs.",
       description: 'Referencia hacia el documento "Cantidad de inputs"',
-      validation: (Rule) => Rule.required(),
     },
     {
       name: "lightsRef",

@@ -8,14 +8,12 @@ export default {
       title: "Nombre del juguete.",
       type: "string",
       description: "Indicar el nombre del juguete.",
-      validation: (Rule) => Rule.required(),
     },
     {
       name: "inputQty",
       type: "number",
       title: "Cantidad de inputs que contiene el juguete.",
       description: "Ingresar la cantidad de inputs que contiene el juguete.",
-      validation: (Rule) => Rule.integer(),
     },
   ],
   preview: {
