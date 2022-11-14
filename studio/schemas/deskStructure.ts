@@ -8,23 +8,15 @@ export default () =>
         .title("Juguetes")
         .child(
           S.list()
-            .title("Juguete")
+            .title("Juguetes creados")
             .items([
-              S.listItem()
-                .title("Crear juguete.")
-                .child(S.document().schemaType("toy").documentId("toy")),
-              S.listItem()
-                .title("Movimiento")
-                .child(S.document().schemaType("movement")),
-              S.listItem()
-                .title("Sonido")
-                .child(S.document().schemaType("sound")),
-              S.listItem()
-                .title("Cantidad de inputs")
-                .child(S.document().schemaType("inputQuantity")),
-              S.listItem()
-                .title("Luces")
-                .child(S.document().schemaType("lights")),
+              S.documentTypeListItem("toy").title("Crear/listar juguetes"),
+              S.documentTypeListItem("movement").title(
+                "Movimientos del juguete"
+              ),
+              S.documentTypeListItem("sound").title("Sonidos del juguete"),
+              S.documentTypeListItem("inputQuantity"),
+              S.documentTypeListItem("lights"),
             ])
         ),
       S.divider(),
