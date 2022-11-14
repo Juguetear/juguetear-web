@@ -58,7 +58,6 @@ export default {
       to: [{ type: "lights" }],
       title: "Luces.",
       description: 'Referencia hacia el documento "Luces del juguete"',
-      validation: (Rule) => Rule.required(),
     },
     {
       name: "soundRef",
@@ -66,7 +65,6 @@ export default {
       to: [{ type: "sound" }],
       title: "Movimiento.",
       description: 'Referencia hacia el documento "Sonido del juguete"',
-      validation: (Rule) => Rule.required(),
     },
     // {
     // TODO Complete type with the name of the DocumentList schema and check the rest of the field.
@@ -75,7 +73,6 @@ export default {
     //   to: [{ type: '' }],
     //   title: 'Lista de documentos.',
     //   description: 'Referencia hacia "Lista de documentos"',
-    //   validation: (Rule) => Rule.required(),
     // },
   ],
   preview: {

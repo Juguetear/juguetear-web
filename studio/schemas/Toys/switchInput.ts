@@ -20,7 +20,7 @@ export default {
     select: {
       title: "toyName",
     },
-    prepare({ title }) {
+    prepare({ title }: { title: string }) {
       return {
         title: `Cantidad de inputs del juguete ${title}`,
       };

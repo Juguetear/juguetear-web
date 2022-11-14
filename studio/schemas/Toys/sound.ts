@@ -33,7 +33,7 @@ export default {
     select: {
       title: "toyName",
     },
-    prepare({ title }) {
+    prepare({ title }: { title: string }) {
       return {
         title: `Sonido del juguete ${title}`,
       };

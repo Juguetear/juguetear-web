@@ -34,7 +34,7 @@ export default {
     select: {
       title: "toyName",
     },
-    prepare({ title }) {
+    prepare({ title }: { title: string }) {
       return {
         title: `Luces del juguete ${title}.`,
       };

@@ -50,7 +50,7 @@ export default {
     select: {
       title: "toyName",
     },
-    prepare({ title }) {
+    prepare({ title }: { title: string }) {
       return {
         title: `Movimiento del juguete "${title}"`,
         subtitle: `Movimientos posibles por el juguete.`,
