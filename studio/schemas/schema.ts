@@ -7,7 +7,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 import document from "./document";
 import documents from "./documents";
-import link from "./link";
+import faq from "./faq";
 import member from "./member";
 
 // Toy related.
@@ -29,5 +29,10 @@ export default createSchema({
     documents,
     faq,
     member,
+    toy,
+    movement,
+    switchInput,
+    lights,
+    sound,
   ]),
 });
