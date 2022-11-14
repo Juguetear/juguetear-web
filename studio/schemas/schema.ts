@@ -9,6 +9,8 @@ import document from "./document";
 import documents from "./documents";
 import link from "./link";
 import member from "./member";
+
+// Toy related.
 import lights from "./Toys/lights";
 import movement from "./Toys/movement";
 import sound from "./Toys/sound";
@@ -25,13 +27,12 @@ export default createSchema({
     /* Your types here! */
     document,
     documents,
-    link,
     member,
     link,
+    toy,
     movement,
     switchInput,
     lights,
     sound,
-    toy,
   ]),
 });
