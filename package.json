@@ -1,4 +1,5 @@
 {
+  "name": "juguetear-web",
   "private": true,
   "workspaces": [
     "studio"
@@ -7,7 +8,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "sanity": "cd studio && yarn sanity start",
+    "sanity": "yarn workspace sanity-studio start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o .sb",
     "lint": "next lint"
