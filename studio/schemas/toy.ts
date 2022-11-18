@@ -38,13 +38,18 @@ export default {
       description: "Completar con la descripción del juguete.",
     },
     {
-      name: "toyPics",
-      type: "image",
+      name: "imagesGallery",
+      type: "array",
       title: "Imágenes del juguete.",
       description: "Incluir imágenes del juguete.",
-      options: {
-        hotspot: true,
-      },
+      of: [
+        {
+          type: "image",
+          options: {
+            hotspot: true,
+          },
+        },
+      ],
     },
     {
       name: "available",
@@ -144,7 +149,7 @@ export default {
     {
       name: "documentList",
       type: "reference",
-      to: [{ type: "documents" }],
+      to: [{ type: "doc" }],
       title: "Lista de documentos.",
       description: 'Referencia hacia "Lista de documentos"',
     },
