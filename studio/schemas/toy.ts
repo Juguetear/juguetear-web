@@ -148,17 +148,9 @@ export default {
     },
     {
       title: "Lista de documentos",
-      name: "documentList",
-      type: "document",
-      description: "Referencia a documentos",
-      fields: [
-        {
-          title: "Lista de documentos",
-          name: "documents_list",
-          type: "array",
-          of: [{ type: "reference", to: [{ type: "doc" }] }],
-        },
-      ],
+      name: "documents_list",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "doc" }] }],
     },
   ],
   preview: {
