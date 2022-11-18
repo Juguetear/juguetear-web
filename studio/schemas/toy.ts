@@ -23,6 +23,12 @@ export default {
       title: "Slug",
       description:
         "Slug a traves del cual se accederá al juguete desde la web.",
+      options: {
+        source: "toyName",
+        maxLength: 200,
+        slugify: (input) =>
+          input.toLowerCase().replace(/\s+/g, "-").slice(0, 200),
+      },
     },
     {
       name: "toyDescription",
