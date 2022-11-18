@@ -1,4 +1,10 @@
-const baseObject = { name: "", type: "boolean", title: "" };
+const baseObject = {
+  title: "",
+  name: "",
+  type: "boolean",
+  initialValue: false,
+  options: { layout: "checkbox" },
+};
 
 export default {
   name: "toy",
@@ -129,14 +135,13 @@ export default {
         },
       ],
     },
-    // {
-    // TODO Complete type with the name of the DocumentList schema and check the rest of the field.
-    //   name: 'documentList',
-    //   type: 'reference',
-    //   to: [{ type: '' }],
-    //   title: 'Lista de documentos.',
-    //   description: 'Referencia hacia "Lista de documentos"',
-    // },
+    {
+      name: "documentList",
+      type: "reference",
+      to: [{ type: "documents" }],
+      title: "Lista de documentos.",
+      description: 'Referencia hacia "Lista de documentos"',
+    },
   ],
   preview: {
     select: {
