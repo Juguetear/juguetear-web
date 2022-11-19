@@ -82,7 +82,7 @@ export default {
         {
           ...baseObject,
           name: "rightMvt",
-          title: "Movimiento hacia la izquierda",
+          title: "Movimiento hacia la derecha",
         },
         {
           ...baseObject,
