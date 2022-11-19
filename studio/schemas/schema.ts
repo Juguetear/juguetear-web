@@ -9,6 +9,7 @@ import document from "./document";
 import documents from "./documents";
 import faq from "./faq";
 import member from "./member";
+import toy from "./toy";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -22,5 +23,6 @@ export default createSchema({
     documents,
     faq,
     member,
+    toy,
   ]),
 });
