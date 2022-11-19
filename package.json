@@ -1,4 +1,5 @@
 {
+  "name": "juguetear-web",
   "private": true,
   "workspaces": [
     "studio"
@@ -7,21 +8,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "sanity": "cd studio && yarn sanity start",
+    "sanity": "yarn workspace sanity-studio start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o .sb",
     "lint": "next lint"
   },
   "dependencies": {
     "@sanity/client": "^3.4.1",
-    "next": "13.0.1",
-    "next-sanity": "^1.0.3",
-    "next-sanity-image": "^4.1.0",
+    "next": "13.0.3",
+    "next-sanity": "^2.0.1",
+    "next-sanity-image": "^5.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.6",
+    "@babel/core": "^7.20.2",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.13",
@@ -31,22 +32,22 @@
     "@storybook/react": "^6.5.13",
     "@storybook/testing-library": "^0.0.13",
     "@types/node": "18.11.9",
-    "@types/react": "18.0.24",
-    "@types/react-dom": "18.0.8",
-    "@typescript-eslint/eslint-plugin": "^5.41.0",
-    "@typescript-eslint/parser": "^5.41.0",
-    "autoprefixer": "^10.4.12",
-    "babel-loader": "^8.2.5",
-    "eslint": "^8.26.0",
-    "eslint-config-next": "13.0.0",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.1.0",
+    "eslint": "^8.27.0",
+    "eslint-config-next": "13.0.3",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "husky": "^8.0.1",
+    "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
-    "postcss": "^8.4.18",
+    "postcss": "^8.4.19",
     "prettier": "2.7.1",
-    "tailwindcss": "^3.2.1",
-    "typescript": "4.8.4"
+    "tailwindcss": "^3.2.4",
+    "typescript": "4.9.3"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
