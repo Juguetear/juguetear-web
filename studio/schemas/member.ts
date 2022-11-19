@@ -45,10 +45,7 @@ export default {
     {
       name: "image",
       title: "Avatar",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
+      type: "img",
     },
   ],
   preview: {
