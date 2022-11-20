@@ -1,11 +1,3 @@
-const baseObject = {
-  title: "",
-  name: "",
-  type: "boolean",
-  initialValue: false,
-  options: { layout: "checkbox" },
-};
-
 export default {
   name: "toy",
   title: "Juguete",
@@ -58,91 +50,13 @@ export default {
       description: "Indicar si el juguete se encuentra disponible o no.",
     },
     {
-      title: "Movimiento del juguete",
-      name: "movement",
-      type: "object",
-      fieldsets: [{ name: "movimiento", title: "Movimiento del juguete" }],
-      fields: [
-        { ...baseObject, name: "sinMov", title: "Sin movimiento" },
+      title: "Lista de características",
+      name: "characteristics_list_array",
+      type: "array",
+      of: [
         {
-          ...baseObject,
-          name: "forwardMvt",
-          title: "Movimiento hacia delante",
-        },
-        {
-          ...baseObject,
-          name: "backwardsMvt",
-          title: "Movimiento hacia atrás",
-        },
-        {
-          ...baseObject,
-          name: "leftMvt",
-          title: "Movimiento hacia la izquierda",
-        },
-        {
-          ...baseObject,
-          name: "rightMvt",
-          title: "Movimiento hacia la izquierda",
-        },
-        {
-          ...baseObject,
-          name: "randomMvt",
-          title: "Movimiento aleatorio",
-        },
-      ],
-    },
-    {
-      title: "Inputs del juguete",
-      name: "input",
-      type: "object",
-      fieldsets: [{ name: "input", title: "Inputs del juguete" }],
-      fields: [
-        {
-          name: "inputQty",
-          title: "Cantidad de inputs",
-          type: "number",
-        },
-      ],
-    },
-    {
-      title: "Luces del juguete",
-      name: "light",
-      type: "object",
-      fieldsets: [{ name: "luces", title: "Luces del juguete" }],
-      fields: [
-        { ...baseObject, name: "noLights", title: "Sin luces" },
-        {
-          ...baseObject,
-          name: "switchLights",
-          title: "Luces accionadas por un interruptor",
-        },
-        {
-          ...baseObject,
-          name: "randomLights",
-          title: "Luces aleatorias",
-        },
-      ],
-    },
-    {
-      title: "Sonidos del juguete",
-      name: "sound",
-      type: "object",
-      fieldsets: [{ name: "sonidos", title: "Sonidos del juguete" }],
-      fields: [
-        {
-          ...baseObject,
-          name: "noSound",
-          title: "Sin sonido",
-        },
-        {
-          ...baseObject,
-          name: "switchSound",
-          title: "Sonido accionado por un interruptor",
-        },
-        {
-          ...baseObject,
-          name: "randomSound",
-          title: "Sonido aleatorio",
+          type: "reference",
+          to: [{ type: "characteristics" }],
         },
       ],
     },
