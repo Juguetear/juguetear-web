@@ -10,6 +10,7 @@ import characteristics_list from "./characteristics_list";
 import document from "./document";
 import documents from "./documents";
 import faq from "./faq";
+import image from "./image";
 import member from "./member";
 import toy from "./toy";
 
@@ -24,6 +25,7 @@ export default createSchema({
     document,
     documents,
     faq,
+    image,
     member,
     toy,
     characteristics,
