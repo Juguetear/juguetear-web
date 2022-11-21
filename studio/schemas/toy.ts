@@ -38,18 +38,11 @@ export default {
       description: "Completar con la descripción del juguete.",
     },
     {
-      name: "imagesGallery",
+      name: "images",
       type: "array",
       title: "Imágenes del juguete.",
       description: "Incluir imágenes del juguete.",
-      of: [
-        {
-          type: "image",
-          options: {
-            hotspot: true,
-          },
-        },
-      ],
+      of: [{ title: "Imagen", type: "img" }],
     },
     {
       name: "available",
@@ -82,7 +75,7 @@ export default {
         {
           ...baseObject,
           name: "rightMvt",
-          title: "Movimiento hacia la izquierda",
+          title: "Movimiento hacia la derecha",
         },
         {
           ...baseObject,
