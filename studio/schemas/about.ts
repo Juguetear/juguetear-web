@@ -7,6 +7,11 @@ export default {
   icon: UserIcon,
   fields: [
     {
+      name: "title",
+      title: "Titulo",
+      type: "string",
+    },
+    {
       name: "content",
       type: "content",
       title: "Contenido",
@@ -19,6 +24,6 @@ export default {
     },
   ],
   preview: {
-    select: { title: "name", media: "image" },
+    select: { title: "title", media: "image" },
   },
 };
