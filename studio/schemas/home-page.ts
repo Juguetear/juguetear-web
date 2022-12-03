@@ -79,3 +79,21 @@ const cooperateModule = {
     },
   ],
 };
+
+export default {
+  title: "Home",
+  name: "homePage",
+  type: "document",
+  fields: [
+    {
+      ...textFields[0],
+      initialValue: "Página de inicio",
+      hidden: true,
+    },
+    heroModule,
+    featuredToysModule,
+    twoImagesModule,
+    cooperateModule,
+  ],
+  preview: { select: { title: "title" } },
+};
