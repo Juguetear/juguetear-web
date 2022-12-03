@@ -23,7 +23,7 @@ export default () => {
         S.divider(),
         // Rest of documents
         ...S.documentTypeListItems().filter(
-          (item) => !pages.includes(item.getId())
+          (item) => !pages.includes(item.getId()!)
         ),
       ])
   );
