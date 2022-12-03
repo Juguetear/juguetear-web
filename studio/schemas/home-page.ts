@@ -55,3 +55,27 @@ const twoImagesModule = {
     },
   ],
 };
+
+const cooperateModule = {
+  name: "cooperateModule",
+  type: "object",
+  fields: [
+    ...textFields,
+    {
+      name: "blocks",
+      type: "array",
+      of: [
+        {
+          name: "blockModule",
+          type: "object",
+          fields: [...textFields, { name: "image", type: "img" }],
+        },
+      ],
+    },
+    {
+      name: "callOut",
+      type: "array",
+      of: [{ type: "block" }],
+    },
+  ],
+};
