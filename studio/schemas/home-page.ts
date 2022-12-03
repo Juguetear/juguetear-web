@@ -1,10 +1,12 @@
 // TODO: Extract to a new schema?, it seen's that it can be reused.
 const textFields = [
   {
+    title: "Titulo",
     name: "title",
     type: "string",
   },
   {
+    title: "Descripción",
     name: "description",
     type: "string",
   },
@@ -20,6 +22,7 @@ const heroModule = {
       type: "link",
     },
     {
+      title: "Fotos",
       name: "photo",
       type: "img",
     },
@@ -36,6 +39,7 @@ const featuredToysModule = {
       type: "link",
     },
     {
+      title: "Juguetes",
       name: "toys",
       type: "array",
       of: [{ type: "reference", to: [{ type: "toy" }] }],
@@ -49,6 +53,7 @@ const twoImagesModule = {
   fields: [
     ...textFields,
     {
+      title: "Fotos",
       name: "photos",
       type: "array",
       of: [{ type: "img" }],
