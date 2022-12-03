@@ -25,3 +25,20 @@ const heroModule = {
     },
   ],
 };
+
+const featuredToysModule = {
+  name: "featuredToysModule",
+  type: "object",
+  fields: [
+    ...textFields,
+    {
+      name: "cta",
+      type: "link",
+    },
+    {
+      name: "toys",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "toy" }] }],
+    },
+  ],
+};
