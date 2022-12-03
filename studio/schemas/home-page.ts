@@ -42,3 +42,16 @@ const featuredToysModule = {
     },
   ],
 };
+
+const twoImagesModule = {
+  name: "twoImagesModule",
+  type: "object",
+  fields: [
+    ...textFields,
+    {
+      name: "photos",
+      type: "array",
+      of: [{ type: "img" }],
+    },
+  ],
+};
