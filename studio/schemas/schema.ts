@@ -15,6 +15,7 @@ import faq from "./faq";
 import image from "./image";
 import member from "./member";
 import toy from "./toy";
+import video from "./video";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -24,15 +25,16 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
+    about,
+    block,
+    characteristics_list,
+    characteristics,
     document,
     documents,
     faq,
     image,
     member,
     toy,
-    characteristics,
-    characteristics_list,
-    about,
-    block,
+    video,
   ]),
 });
