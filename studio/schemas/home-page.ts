@@ -1,7 +1,7 @@
-// TODO: Extract to a new schema?, it seen's that it can be reused.
+// TODO: Extract to a new schema?, it seems that it can be reused.
 const textFields = [
   {
-    title: "Titulo",
+    title: "Título",
     name: "title",
     type: "string",
   },
