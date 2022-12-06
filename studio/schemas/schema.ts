@@ -12,7 +12,9 @@ import characteristics_list from "./characteristics_list";
 import document from "./document";
 import documents from "./documents";
 import faq from "./faq";
+import homePage from "./home-page";
 import image from "./image";
+import link from "./link";
 import member from "./member";
 import toy from "./toy";
 
@@ -24,15 +26,17 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
+    about,
+    block,
+    characteristics_list,
+    characteristics,
     document,
     documents,
     faq,
+    homePage,
     image,
+    link,
     member,
     toy,
-    characteristics,
-    characteristics_list,
-    about,
-    block,
   ]),
 });
