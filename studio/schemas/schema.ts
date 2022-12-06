@@ -12,7 +12,9 @@ import characteristics_list from "./characteristics_list";
 import document from "./document";
 import documents from "./documents";
 import faq from "./faq";
+import homePage from "./home-page";
 import image from "./image";
+import link from "./link";
 import member from "./member";
 import toy from "./toy";
 import video from "./video";
@@ -32,7 +34,9 @@ export default createSchema({
     document,
     documents,
     faq,
+    homePage,
     image,
+    link,
     member,
     toy,
     video,

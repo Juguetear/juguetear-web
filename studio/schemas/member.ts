@@ -33,11 +33,7 @@ export default {
         {
           title: "Link de contacto",
           name: "contactLink",
-          type: "object",
-          fields: [
-            { name: "name", type: "string", title: "Nombre" },
-            { name: "url", type: "string", title: "Link" },
-          ],
+          type: "link",
         },
       ],
       title: "Links de contacto",
