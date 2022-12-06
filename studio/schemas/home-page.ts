@@ -13,16 +13,18 @@ const textFields = [
 ];
 
 const heroModule = {
+  title: "Sección principal",
   name: "heroModule",
   type: "object",
   fields: [
     ...textFields,
     {
+      title: "Llamada a la acción",
       name: "cta",
       type: "link",
     },
     {
-      title: "Fotos",
+      title: "Foto",
       name: "photo",
       type: "img",
     },
@@ -30,11 +32,13 @@ const heroModule = {
 };
 
 const featuredToysModule = {
+  title: "Sección juguetes destacados",
   name: "featuredToysModule",
   type: "object",
   fields: [
     ...textFields,
     {
+      title: "Llamada a la acción",
       name: "cta",
       type: "link",
     },
@@ -48,6 +52,7 @@ const featuredToysModule = {
 };
 
 const twoImagesModule = {
+  title: "Sección destacado de dos fotos",
   name: "twoImagesModule",
   type: "object",
   fields: [
@@ -62,15 +67,18 @@ const twoImagesModule = {
 };
 
 const cooperateModule = {
+  title: "Sección cooperar",
   name: "cooperateModule",
   type: "object",
   fields: [
     ...textFields,
     {
+      title: "Secciones",
       name: "blocks",
       type: "array",
       of: [
         {
+          title: "modulo",
           name: "blockModule",
           type: "object",
           fields: [...textFields, { name: "image", type: "img" }],
@@ -78,6 +86,7 @@ const cooperateModule = {
       ],
     },
     {
+      title: "Mensaje destacado",
       name: "callOut",
       type: "array",
       of: [{ type: "block" }],
