@@ -18,6 +18,7 @@ import image from "./image";
 import link from "./link";
 import member from "./member";
 import toy from "./toy";
+import video from "./video";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -40,5 +41,6 @@ export default createSchema({
     member,
     toy,
     accessibilityDeclaration,
+    video,
   ]),
 });
