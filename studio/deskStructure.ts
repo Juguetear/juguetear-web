@@ -1,9 +1,10 @@
 import S from "@sanity/desk-tool/structure-builder";
 import { HomeIcon } from "@sanity/icons";
+import accessibilityDeclaration from "./schemas/accessibility-declaration";
 import homePage from "./schemas/home-page";
 
 // List of 'documents/schemas' to ignore from Sanity's Desk list.
-const pages = [homePage.name];
+const pages = [homePage.name, accessibilityDeclaration.name];
 
 export default () => {
   return (
@@ -18,6 +19,15 @@ export default () => {
           .icon(HomeIcon)
           .child(
             S.document().schemaType(homePage.name).documentId(homePage.name)
+          ),
+
+        // accessibility-declaration schema
+        S.listItem()
+          .title(accessibilityDeclaration.title)
+          .child(
+            S.document()
+              .schemaType(accessibilityDeclaration.name)
+              .documentId(accessibilityDeclaration.name)
           ),
 
         S.divider(),
