@@ -5,6 +5,14 @@ export default {
   type: "document",
   title: "Declaración de accesibilidad",
   description: "Declaración que se mostrara en la pagina web.",
-  fields: [block],
-  preview: { select: { title: "title" } },
+  fields: [
+    {
+      name: "pageName",
+      type: "string",
+      initialValue: "Página de declaración de accesibilidad",
+      hidden: true,
+    },
+    block,
+  ],
+  preview: { select: { title: "pageName" } },
 };
