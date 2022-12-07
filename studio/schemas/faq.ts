@@ -1,4 +1,4 @@
-import { HelpCircleIcon } from "@sanity/icons";
+import { DocumentIcon } from "@sanity/icons";
 
 const question = {
   title: "Pregunta",
@@ -21,7 +21,7 @@ const faqList = {
   type: "array",
   of: [
     {
-      icon: HelpCircleIcon,
+      icon: DocumentIcon,
       name: "questionAndAnswer",
       type: "object",
       fields: [question, answer],
@@ -33,9 +33,17 @@ export default {
   title: "Preguntas y respuestas frequentes",
   name: "faq",
   type: "document",
-  icon: HelpCircleIcon,
-  fields: [faqList],
+  icon: DocumentIcon,
+  fields: [
+    {
+      name: "pageTitle",
+      type: "string",
+      initialValue: "Página de preguntas y respuestas frequentes",
+      hidden: true,
+    },
+    faqList,
+  ],
   preview: {
-    select: { title: "title" },
+    select: { title: "pageTitle" },
   },
 };
