@@ -7,7 +7,7 @@ export default {
     {
       title: "Enlace del video en Youtube",
       name: "url",
-      type: "url", // TODO: Add 'link' type
+      type: "link",
     },
   ],
   preview: {
