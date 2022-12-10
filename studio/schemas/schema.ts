@@ -6,6 +6,7 @@ import createSchema from "part:@sanity/base/schema-creator";
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
 import about from "./about";
+import accessibilityDeclaration from "./accessibility-declaration";
 import block from "./block";
 import characteristics from "./characteristics";
 import characteristics_list from "./characteristics_list";
@@ -39,6 +40,7 @@ export default createSchema({
     link,
     member,
     toy,
+    accessibilityDeclaration,
     video,
   ]),
 });
