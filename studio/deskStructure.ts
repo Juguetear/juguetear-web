@@ -2,6 +2,7 @@ import S from "@sanity/desk-tool/structure-builder";
 
 import { HelpCircleIcon, HomeIcon } from "@sanity/icons";
 
+import about from "./schemas/about";
 import accessibilityDeclaration from "./schemas/accessibility-declaration";
 import faq from "./schemas/faq";
 import homePage from "./schemas/home-page";
@@ -39,6 +40,15 @@ export default () => {
           .title(faq.title)
           .icon(HelpCircleIcon)
           .child(S.document().schemaType(faq.name).documentId(faq.name)),
+
+        // about schema
+        S.listItem()
+          .title(about.title)
+          .child(
+            S.document()
+              .schemaType(about.name)
+              .documentId(about.name)
+          ),
 
         S.divider(),
         // Rest of documents
