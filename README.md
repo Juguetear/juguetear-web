@@ -51,7 +51,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 3. Ejecutá `yarn run dev` en la consola de comandos para iniciar el servidor de desarrollo
 4. Visitá [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación
 
-> ⚠️ Si tenés algun error, podés preguntar en el canal #juguetear dentro del servidor de FrontendCafé en Discord
+> ⚠️ Si tenés algun error, podés preguntar en el canal [#juguetear](https://discord.com/channels/594363964499165194/1035685740409012244) dentro del servidor de FrontendCafé en Discord
 
 ---
 
@@ -109,7 +109,7 @@ El alcance de este proyecto será desarrollar el Front End de la web de juguetea
 
 ## UI/UX
 
-La [interfaz](https://www.figma.com/file/FS9WsAYrmkESsmUAGzYdNo/Juguetear?node-id=0%3A1) del proyecto fue completamente desarrollada por [Mariana Lessi](https://www.behance.net/marualessi). Cualquier duda, feedback o sugerencia podés compartirla en el canal #juguetear del server de [FrontendCafé](https://discord.com/invite/frontendcafe) en Discord.
+La [interfaz](https://www.figma.com/file/FS9WsAYrmkESsmUAGzYdNo/Juguetear?node-id=0%3A1) del proyecto fue completamente desarrollada por [Mariana Lessi](https://www.behance.net/marualessi). Cualquier duda, feedback o sugerencia podés compartirla en el canal [#juguetear](https://discord.com/channels/594363964499165194/1035685740409012244) del server de [FrontendCafé](https://discord.com/invite/frontendcafe) en Discord.
 
 ---
 
@@ -155,7 +155,7 @@ Ante cualquier inconveniente, quienes administramos este repositorio estamos dis
 
 [![logo-frontendcafe](https://user-images.githubusercontent.com/78808163/198993731-299e973d-8f3b-4a6c-a445-b2b77e0b3286.svg)](https://discord.com/invite/frontendcafe)
 
-Este proyecto se desarrolla con la participación y el apoyo de FrontendCafé. Es requerido unirte a nuestro [server](https://discord.com/invite/frontendcafe) y buscar el canal #juguetear. Ahí vas a poder compartir dudas e ideas del proyecto. El código de conducta de este proyecto es extensible también a tu participación en el server de FrontendCafé en Discord.
+Este proyecto se desarrolla con la participación y el apoyo de FrontendCafé. Es requerido unirte a nuestro [server](https://discord.com/invite/frontendcafe) y buscar el canal [#juguetear](https://discord.com/channels/594363964499165194/1035685740409012244). Ahí vas a poder compartir dudas e ideas del proyecto. El código de conducta de este proyecto es extensible también a tu participación en el server de FrontendCafé en Discord.
 
 ---
 
