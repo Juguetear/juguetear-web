@@ -2,7 +2,7 @@
 
 En este archivo, encontrarás información sobre las diferentes maneras de realizar contribuciones a este proyecto. El código se encuentra almacenado en GitHub, utilizamos el mismo para llevar el seguimiento de reportes de errores (bugs) y proponer mejoras (features).
 
-Si en algún momento necesitas hacer una consulta respecto al proyecto o el código del mismo, podés ingresar a nuestro [servidor en Discord](https://discord.com/invite/frontendcafe) de FrontendCafé, buscar el canal **#juguetear** y realizar todas las consultas que sean necesarias.
+Si en algún momento necesitas hacer una consulta respecto al proyecto o el código del mismo, podés ingresar a nuestro [servidor en Discord](https://discord.com/invite/frontendcafe) de FrontendCafé, buscar el canal [**#juguetear**](https://discord.com/channels/594363964499165194/1035685740409012244) y realizar todas las consultas que sean necesarias.
 
 <!-- TODO Update link to discord -->
 
@@ -85,7 +85,7 @@ Para proponer una feature, es necesario que te dirijas a la [página de issues](
 
 ### Contribuir con cambios
 
-Para contribuir con cambios primero es necesario que elijas un issue/feature en la que quieras trabajar (previamente comprobando que nadie esté trabajando en ella), que leas muy bien la descripción y realices todas las preguntas necesarias para evacuar tus dudas. Recordá que podés hacerlo en los comentarios del issue/request o en el [servidor en Discord](https://discord.com/invite/frontendcafe).
+Para contribuir con cambios primero es necesario que elijas un issue/feature en la que quieras trabajar (previamente comprobando que nadie esté trabajando en ella), que leas muy bien la descripción y realices todas las preguntas necesarias para evacuar tus dudas. Recordá que podés hacerlo en los comentarios del issue/request o en el canal [#juguetear](https://discord.com/channels/594363964499165194/1035685740409012244) en el [servidor en Discord](https://discord.com/invite/frontendcafe).
 
 > ⚠️ Es muy importante que las contribuciones de código que realices tanto de issues como de features cumplan mínimamente con los **estándares de WCAG 2.1 de nivel AA**.
 
