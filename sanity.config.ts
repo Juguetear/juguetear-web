@@ -1,6 +1,7 @@
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
+import schemas from "schemas";
 import deskStructure from "./deskStructure";
 
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "";
@@ -12,11 +13,11 @@ export default defineConfig({
   dataset,
   projectId,
   title,
-  schema: { types: [] },
+  schema: { types: schemas },
   plugins: [
     deskTool({ structure: deskStructure }),
 
     // Vision lets you query your content with GROQ in the studio. https://www.sanity.io/docs/the-vision-plugin
-    visionTool(/* { defaultApiVersion: apiVersion } */),
+    visionTool(),
   ],
 });
