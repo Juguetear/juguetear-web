@@ -19,7 +19,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 [Licencias](#licencias)  
 [Alcances](#alcances)  
 [UI/UX](#uiux)  
-[Código de Conducta](#código-de-conducta)  
+[Código de Conducta](./CODE_OF_CONDUCT.md)  
 [Comunidad](#comunidad)  
 [Cómo contribuir](#cómo-contribuir)  
 [Contribuidores](#contribuidores)  
@@ -41,7 +41,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 - Tener instalada la última versión de [node](https://nodejs.org/es/) (incluye `npm`)
 - Tener un editor de código ([Visual Code](https://code.visualstudio.com/), [Vim](https://www.vim.org/), etc)
 - Tener una cuenta en [GitHub](https://docs.github.com/es/get-started/signing-up-for-github/signing-up-for-a-new-github-account)
-- Leer y seguir [Código de Conducta](#código-de-conducta)
+- Leer y seguir [Código de Conducta](./CODE_OF_CONDUCT.md)
 - Unirte a [FrontendCafé](https://discord.com/invite/frontendcafe) en Discord
 
 ## Instalación del proyecto
