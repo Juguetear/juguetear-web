@@ -1,6 +1,6 @@
 <!--
 Antes de realizar el Pull Request, por favor asegúrate de haber realizado lo siguiente:
-  - 📖 Haber leído el Código de Conduta https://github.com/Juguetear/juguetear-web#c%C3%B3digo-de-conducta
+  - 📖 Haber leído el Código de Conduta https://github.com/Juguetear/juguetear-web/CODE_OF_CONDUCT.md
   - 📖 Haber leído Cómo contribuir https://github.com/Juguetear/juguetear-web/blob/development/CONTRIBUTE.md
 
  ⛑️ En caso de que necesites ayuda o tengas alguna duda recordá que también podés hacerlo a través de nuestro servidor de Discord https://discord.com/invite/frontendcafe y luego busques el canal #juguetear. El código de conducta de este proyecto es extensible también a tu participación en el server de FrontendCafé en Discord.
