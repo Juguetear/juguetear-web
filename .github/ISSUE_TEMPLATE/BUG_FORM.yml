@@ -20,7 +20,7 @@ body:
     id: licence
     attributes:
       label: Licencia.
-      description: Al completar esta solicitud, aceptás las [licencias del repositorio](https://github.com/Juguetear/juguetear-web/blob/development/CONTRIBUTE.md#licencias)
+      description: Al completar esta solicitud, aceptás las [licencias del repositorio](https://github.com/Juguetear/juguetear-web/blob/development/CONTRIBUTING.md#licencias)
       options:
         - label: Estoy de acuerdo con seguir las licencias de este proyecto.
           required: true
