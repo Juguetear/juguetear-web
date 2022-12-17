@@ -97,7 +97,8 @@ El git flow que utilizamos en este proyecto es el siguiente:
 
    El nombre del branch va a ser tomado del número y título del _issue_ (ej. 1-crear-archivo-readme)
 
-   (agregar imagen)
+   Pueden ver la secuencia completa en el siguiente:
+   [Video](https://user-images.githubusercontent.com/78808163/198988746-3a7a20c4-be96-4cfd-a958-b2834ceac234.webm)
 
 2. Trabajá en tus cambios. Hacé commits por cada bloque de cambios y escribí un mensaje descriptivo en cada _commit_. Recordá que es obligatorio que los cambios propuestos cumplan con los **requisitos WCAG 2.1 de nivel AA**
 
