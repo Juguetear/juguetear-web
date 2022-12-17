@@ -97,7 +97,12 @@ El git flow que utilizamos en este proyecto es el siguiente:
 
    El nombre del branch va a ser tomado del número y título del _issue_ (ej. 1-crear-archivo-readme)
 
-   (agregar imagen)
+   ![alt text](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgh6AupvHRtFhlU2QpOY1vu5UXk_ktTkKQmdEqE8786msHnWiM3ov5GqpoOkS0-peaVAPULvlpFmj8-bhAsQ31nAIjBUJl4ptD-wnPO3dDVgFkOR-OuJaO_8wUTKYX-66KsaBQEEMWRHBUMKSwaqOUgq2WBC7s0JRKqqmbpoaZciKZrVH45GjSVrJxzQ/s16000/issue1.png)
+
+   ![alt text](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj13TFVKzPNH9ZacndkHlw4_19aMt6E0RuFUVy6r-osxthMomDli3zJl2WM3W2ykMfAwVfklq1Atdbz8PUQORBJV1uPk-udlfQkEDJXm44qIvKYS5MWyXdEzWm4MVGwNaHgmwGykpaMuEfSwCf90rnQUSfbV_yZUTRXSAfcFFuqH2i8rLgsPEr1zYmRMw/s16000/issue3.png)
+
+   Pueden ver la secuencia completa en el siguiente:
+   [Video](https://user-images.githubusercontent.com/78808163/198988746-3a7a20c4-be96-4cfd-a958-b2834ceac234.webm)
 
 2. Trabajá en tus cambios. Hacé commits por cada bloque de cambios y escribí un mensaje descriptivo en cada _commit_. Recordá que es obligatorio que los cambios propuestos cumplan con los **requisitos WCAG 2.1 de nivel AA**
 
