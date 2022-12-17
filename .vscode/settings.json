@@ -7,5 +7,7 @@
     "source.fixAll.eslint": true
   },
   "githubIssues.issueBranchTitle": "${issueNumber}${sanitizedIssueTitle}",
-  "git.branchProtection": ["master", "main", "development"]
+  "git.branchProtection": ["master", "main", "development"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
