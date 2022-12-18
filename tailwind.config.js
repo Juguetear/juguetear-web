@@ -34,8 +34,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        inter: ["Inter", ...fontFamily.sans],
-        outfit: ["Outfit", ...fontFamily.sans],
+        inter: ["var(--font-inter)", ...fontFamily.sans],
+        outfit: ["var(--font-outfit)", ...fontFamily.sans],
       },
     },
   },
