@@ -1987,6 +1987,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/font@npm:^13.0.7":
+  version: 13.0.7
+  resolution: "@next/font@npm:13.0.7"
+  checksum: 88324e483561ed1372b97d434b98cff3c3adfeafc4217b45ff96f429c42ea4c6eebb089b34d8ef353aaf6413aa5f6d918a2ea83701ad129d2cc6f6751184d82a
+  languageName: node
+  linkType: hard
+
 "@next/swc-android-arm-eabi@npm:13.0.3":
   version: 13.0.3
   resolution: "@next/swc-android-arm-eabi@npm:13.0.3"
@@ -13709,6 +13716,7 @@ __metadata:
   resolution: "juguetear-web@workspace:."
   dependencies:
     "@babel/core": ^7.20.2
+    "@next/font": ^13.0.7
     "@sanity/client": ^3.4.1
     "@storybook/addon-actions": ^6.5.13
     "@storybook/addon-essentials": ^6.5.13
