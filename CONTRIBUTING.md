@@ -9,12 +9,12 @@ Si en algún momento necesitas hacer una consulta respecto al proyecto o el cód
 En esta página encontrarás las siguientes secciones:
 
 1. [Cómo contribuir](#cómo-contribuir)
-   1.1 [Verificar que no se haya reportado el mismo bug/feature](#verificar-que-no-se-haya-reportado-el-mismo-bug-o-feature)
-   1.2 [Cómo reportar un bug](#cómo-reportar-un-bug)
-   1.2.1 [Plantilla para reportar bugs](#plantilla-para-reportar-bugs)
-   1.3 [Cómo sugerir una feature](#cómo-sugerir-una-feature)
-   1.3.1 [Plantilla para proponer features](#plantilla-para-proponer-features)
-   1.4 [Contribuir con cambios](#contribuir-con-cambios)
+   1. [Verificar que no se haya reportado el mismo bug/feature](#verificar-que-no-se-haya-reportado-el-mismo-bug-o-feature)
+   2. [Cómo reportar un bug](#cómo-reportar-un-bug)
+      - [Plantilla para reportar bugs](#plantilla-para-reportar-bugs)
+   3. [Cómo sugerir una feature](#cómo-sugerir-una-feature)
+      - [Plantilla para proponer features](#plantilla-para-proponer-features)
+   4. [Contribuir con cambios](#contribuir-con-cambios)
 2. [Licencias](#licencias)
 
 ## Cómo contribuir
@@ -42,9 +42,9 @@ Una vez que hayas ingresado a la página de issues ya sea por el botón o el lin
 Tené en cuenta que esto lo va a leer otra persona, y mientras más detallado sea, mejor.
 
 1. Checkboxs (requeridos):
-   1.1 Código de conducta.
-   1.2 Conformidad de licencias aplicadas al proyecto.
-   1.3 Comprobar que el issue no haya sido reportado previamente.
+   1. Código de conducta.
+   2. Conformidad de licencias aplicadas al proyecto.
+   3. Comprobar que el issue no haya sido reportado previamente.
 2. Detalles de contacto (opcional).
 3. ¿Cuál es el bug/error que has encontrado?
    Es necesario que describas el error o comportamiento inesperado al interactuar con el sitio.
@@ -72,9 +72,9 @@ Para proponer una feature, es necesario que te dirijas a la [página de issues](
 #### Plantilla para proponer features
 
 1. Checkboxs (requeridos):
-   1.1 Código de conducta.
-   1.2 Conformidad de licencias aplicadas al proyecto.
-   1.3 Comprobar que la feature no haya sido reportada previamente.
+   1. Código de conducta.
+   2. Conformidad de licencias aplicadas al proyecto.
+   3. Comprobar que la feature no haya sido reportada previamente.
 2. Detalles de contacto (opcional).
 3. ¿Qué te gustaría agregar a este proyecto? (requerido).
    Especificá qué es lo que considerás que falta en este proyecto.
