@@ -4,8 +4,8 @@ import { deskTool } from "sanity/desk";
 import schemas from "schemas";
 import deskStructure from "./deskStructure";
 
-const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "";
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "";
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "production";
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "isi1r0nm";
 const title = process.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE || "Juguetear";
 
 export default defineConfig({
