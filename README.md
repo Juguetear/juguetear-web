@@ -19,7 +19,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 [Licencias](#licencias)  
 [Alcances](#alcances)  
 [UI/UX](#uiux)  
-[Código de Conducta](#código-de-conducta)  
+[Código de Conducta](./CODE_OF_CONDUCT.md)  
 [Comunidad](#comunidad)  
 [Cómo contribuir](#cómo-contribuir)  
 [Contribuidores](#contribuidores)  
@@ -41,7 +41,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 - Tener instalada la última versión de [node](https://nodejs.org/es/) (incluye `npm`)
 - Tener un editor de código ([Visual Code](https://code.visualstudio.com/), [Vim](https://www.vim.org/), etc)
 - Tener una cuenta en [GitHub](https://docs.github.com/es/get-started/signing-up-for-github/signing-up-for-a-new-github-account)
-- Leer y seguir [Código de Conducta](#código-de-conducta)
+- Leer y seguir [Código de Conducta](./CODE_OF_CONDUCT.md)
 - Unirte a [FrontendCafé](https://discord.com/invite/frontendcafe) en Discord
 
 ## Instalación del proyecto
@@ -89,7 +89,7 @@ Las Pautas de Accesibilidad para el Contenido Web (WCAG) definen los requisitos 
 
 ### Parte importante de los requerimientos a la hora de contribuir con este proyecto es cumplir al menos con los requisitos WCAG 2.1 nivel AA.
 
-Por favor, hacenos saber si encontrás barreras de accesibilidad en la web de Juguetear enviando un mail a [juguetear2021@gmail.com](mailto:juguetear2021@gmail.com) o abriendo un issue. Para hacerlo, necesitás leer la documentación sobre [cómo contribuir](./CONTRIBUTE.md).
+Por favor, hacenos saber si encontrás barreras de accesibilidad en la web de Juguetear enviando un mail a [juguetear2021@gmail.com](mailto:juguetear2021@gmail.com) o abriendo un issue. Para hacerlo, necesitás leer la documentación sobre [cómo contribuir](./CONTRIBUTING.md).
 
 ---
 
@@ -112,44 +112,6 @@ El alcance de este proyecto será desarrollar el Front End de la web de juguetea
 La [interfaz](https://www.figma.com/file/FS9WsAYrmkESsmUAGzYdNo/Juguetear?node-id=0%3A1) del proyecto fue completamente desarrollada por [Mariana Lessi](https://www.behance.net/marualessi). Cualquier duda, feedback o sugerencia podés compartirla en el canal [#juguetear](https://discord.com/channels/594363964499165194/1035685740409012244) del server de [FrontendCafé](https://discord.com/invite/frontendcafe) en Discord.
 
 ---
-
-## Código de Conducta
-
-### **Creemos que una comunidad es sana cuando quienes participan y contribuyen respetan a las demás personas y sus derechos.**
-
-Quienes administramos este repositorio nos comprometemos a mantener un ambiente confortable y seguro para todas las personas, independientemente de su identidad y expresión de género, orientación sexual, etnia, nacionalidad, religión, posición socioeconómica o cualquier otra característica personal.
-
-Ayudanos a crear ambientes positivos, respetando distintos puntos de vista y experiencias, aceptando las críticas constructivas y mostrando empatía hacia quienes participan.
-
-Para poder contribuir a este proyecto se espera que se respeten los pronombres de las personas que participan y a quienes utilizan lenguaje inclusivo.
-
-### Está terminantemente prohibido el acoso.
-
-Por acoso entendemos la comunicación ofensiva, las imágenes sexuales, el uso de lenguaje sexualizado, la intimidación deliberada, acecho, acoso fotográfico, interrupción sostenida de conversaciones, insultos, comentarios degradantes, ataques personales, chistes discriminatorios y atención sexual no deseada.
-
-### No toleramos bajo ningun concepto el comportamiento abusivo.
-
-Otras acciones a evitar:
-
-**DISCRIMINACIÓN E INTOLERANCIA**
-
-- Promocionar el odio, insultos o símbolos nacionalistas o contenido que represente dicho odio.
-- Xenofobia, racismo, sexismo o discriminación por género, intolerancia religiosa.
-
-**AMENAZAS**
-
-- Participar, diseñar o enviar amenazas de violencia para otro usuario. TROLEO
-- Publicar spam, ridiculizar o crear incomodidad. Usar frases, imágenes o frases sin sentido de forma excesiva para causar confusión.
-
-**VIOLENCIA Y SEXUALIDAD**
-
-- Hacer referencia a actos sexuales extremos o violentos.
-- Hacer referencia a eventos o acciones violentas.
-- Divulgar o hacer referencia a pornografía.
-
-**DUPLICACIÓN DE CUENTA, SUPLANTACIÓN DE IDENTIDAD Y/O DISTRIBUCIÓN DE INFORMACIÓN PERSONAL, ATAQUES INFORMÁTICOS, CONTENIDO MALICIOSO O VIRUS.**
-
-Ante cualquier inconveniente, quienes administramos este repositorio estamos disponibles para intermediar y resolver conflictos.
 
 ## Comunidad
 
@@ -179,7 +141,7 @@ La naturaleza libre y solidaria de esta idea no se refiere solo a la posibilidad
 
 Usamos [github Issues](https://github.com/Juguetear/juguetear-web/issues) para trackear _requests_, _bugs_ y _features_. Para aportar a este repositorio, podés trabajar en algún _issue_ que esté abierto, crear uno con un _request_ o _bug_ o dar _code review_ a otres contribuidores.
 
-Si querés contribuir, tené en cuenta que tenemos ciertos lineamientos. Para conocerlos en detalle, leé la documentación sobre [cómo contribuir](CONTRIBUTE.md).
+Si querés contribuir, tené en cuenta que tenemos ciertos lineamientos. Para conocerlos en detalle, leé la documentación sobre [cómo contribuir](CONTRIBUTING.md).
 
 ---
 

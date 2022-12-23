@@ -12,7 +12,7 @@ body:
     id: code-of-conduct
     attributes:
       label: Código de conducta.
-      description: Al completar esta solicitud, aceptás el [Código de Conducta](https://github.com/Juguetear/juguetear-web#c%C3%B3digo-de-conducta)
+      description: Al completar esta solicitud, aceptás el [Código de Conducta](https://github.com/Juguetear/juguetear-web/CODE_OF_CONDUCT.md)
       options:
         - label: Estoy de acuerdo con seguir el Código de Conducta de este proyecto.
           required: true
@@ -20,7 +20,7 @@ body:
     id: licence
     attributes:
       label: Licencia.
-      description: Al completar esta solicitud, aceptás las [licencias del repositorio](https://github.com/Juguetear/juguetear-web/blob/development/CONTRIBUTE.md#licencias)
+      description: Al completar esta solicitud, aceptás las [licencias del repositorio](https://github.com/Juguetear/juguetear-web/blob/development/CONTRIBUTING.md#licencias)
       options:
         - label: Estoy de acuerdo con seguir las licencias de este proyecto.
           required: true

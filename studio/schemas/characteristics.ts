@@ -18,4 +18,10 @@ export default {
       to: [{ type: "characteristics_list" }],
     },
   ],
+  preview: {
+    select: {
+      title: "characteristic_name",
+      subtitle: "characteristics_category.characteristics_list_name",
+    },
+  },
 };
