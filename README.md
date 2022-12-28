@@ -89,7 +89,7 @@ Las Pautas de Accesibilidad para el Contenido Web (WCAG) definen los requisitos 
 
 ### Parte importante de los requerimientos a la hora de contribuir con este proyecto es cumplir al menos con los requisitos WCAG 2.1 nivel AA.
 
-Por favor, hacenos saber si encontrás barreras de accesibilidad en la web de Juguetear enviando un mail a [juguetear2021@gmail.com](mailto:juguetear2021@gmail.com) o abriendo un issue. Para hacerlo, necesitás leer la documentación sobre [cómo contribuir](./CONTRIBUTE.md).
+Por favor, hacenos saber si encontrás barreras de accesibilidad en la web de Juguetear enviando un mail a [juguetear2021@gmail.com](mailto:juguetear2021@gmail.com) o abriendo un issue. Para hacerlo, necesitás leer la documentación sobre [cómo contribuir](./CONTRIBUTING.md).
 
 ---
 
@@ -141,7 +141,7 @@ La naturaleza libre y solidaria de esta idea no se refiere solo a la posibilidad
 
 Usamos [github Issues](https://github.com/Juguetear/juguetear-web/issues) para trackear _requests_, _bugs_ y _features_. Para aportar a este repositorio, podés trabajar en algún _issue_ que esté abierto, crear uno con un _request_ o _bug_ o dar _code review_ a otres contribuidores.
 
-Si querés contribuir, tené en cuenta que tenemos ciertos lineamientos. Para conocerlos en detalle, leé la documentación sobre [cómo contribuir](CONTRIBUTE.md).
+Si querés contribuir, tené en cuenta que tenemos ciertos lineamientos. Para conocerlos en detalle, leé la documentación sobre [cómo contribuir](CONTRIBUTING.md).
 
 ---
 

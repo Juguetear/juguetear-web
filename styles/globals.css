@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  html {
+  main {
     @apply font-inter;
   }
   h1 {
@@ -19,7 +19,7 @@
     @apply text-lg font-extrabold font-outfit;
   }
   p {
-    @apply text-sm font-normal leading-normal;
+    @apply text-sm font-normal leading-normal font-inter;
   }
 
   @media screen(md) {

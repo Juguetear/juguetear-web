@@ -9,12 +9,12 @@ Si en algún momento necesitas hacer una consulta respecto al proyecto o el cód
 En esta página encontrarás las siguientes secciones:
 
 1. [Cómo contribuir](#cómo-contribuir)
-   1.1 [Verificar que no se haya reportado el mismo bug/feature](#verificar-que-no-se-haya-reportado-el-mismo-bug-o-feature)
-   1.2 [Cómo reportar un bug](#cómo-reportar-un-bug)
-   1.2.1 [Plantilla para reportar bugs](#plantilla-para-reportar-bugs)
-   1.3 [Cómo sugerir una feature](#cómo-sugerir-una-feature)
-   1.3.1 [Plantilla para proponer features](#plantilla-para-proponer-features)
-   1.4 [Contribuir con cambios](#contribuir-con-cambios)
+   1. [Verificar que no se haya reportado el mismo bug/feature](#verificar-que-no-se-haya-reportado-el-mismo-bug-o-feature)
+   2. [Cómo reportar un bug](#cómo-reportar-un-bug)
+      - [Plantilla para reportar bugs](#plantilla-para-reportar-bugs)
+   3. [Cómo sugerir una feature](#cómo-sugerir-una-feature)
+      - [Plantilla para proponer features](#plantilla-para-proponer-features)
+   4. [Contribuir con cambios](#contribuir-con-cambios)
 2. [Licencias](#licencias)
 
 ## Cómo contribuir
@@ -42,9 +42,9 @@ Una vez que hayas ingresado a la página de issues ya sea por el botón o el lin
 Tené en cuenta que esto lo va a leer otra persona, y mientras más detallado sea, mejor.
 
 1. Checkboxs (requeridos):
-   1.1 Código de conducta.
-   1.2 Conformidad de licencias aplicadas al proyecto.
-   1.3 Comprobar que el issue no haya sido reportado previamente.
+   1. Código de conducta.
+   2. Conformidad de licencias aplicadas al proyecto.
+   3. Comprobar que el issue no haya sido reportado previamente.
 2. Detalles de contacto (opcional).
 3. ¿Cuál es el bug/error que has encontrado?
    Es necesario que describas el error o comportamiento inesperado al interactuar con el sitio.
@@ -72,9 +72,9 @@ Para proponer una feature, es necesario que te dirijas a la [página de issues](
 #### Plantilla para proponer features
 
 1. Checkboxs (requeridos):
-   1.1 Código de conducta.
-   1.2 Conformidad de licencias aplicadas al proyecto.
-   1.3 Comprobar que la feature no haya sido reportada previamente.
+   1. Código de conducta.
+   2. Conformidad de licencias aplicadas al proyecto.
+   3. Comprobar que la feature no haya sido reportada previamente.
 2. Detalles de contacto (opcional).
 3. ¿Qué te gustaría agregar a este proyecto? (requerido).
    Especificá qué es lo que considerás que falta en este proyecto.
@@ -97,7 +97,12 @@ El git flow que utilizamos en este proyecto es el siguiente:
 
    El nombre del branch va a ser tomado del número y título del _issue_ (ej. 1-crear-archivo-readme)
 
-   (agregar imagen)
+   ![alt text](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgh6AupvHRtFhlU2QpOY1vu5UXk_ktTkKQmdEqE8786msHnWiM3ov5GqpoOkS0-peaVAPULvlpFmj8-bhAsQ31nAIjBUJl4ptD-wnPO3dDVgFkOR-OuJaO_8wUTKYX-66KsaBQEEMWRHBUMKSwaqOUgq2WBC7s0JRKqqmbpoaZciKZrVH45GjSVrJxzQ/s16000/issue1.png)
+
+   ![alt text](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj13TFVKzPNH9ZacndkHlw4_19aMt6E0RuFUVy6r-osxthMomDli3zJl2WM3W2ykMfAwVfklq1Atdbz8PUQORBJV1uPk-udlfQkEDJXm44qIvKYS5MWyXdEzWm4MVGwNaHgmwGykpaMuEfSwCf90rnQUSfbV_yZUTRXSAfcFFuqH2i8rLgsPEr1zYmRMw/s16000/issue3.png)
+
+   Pueden ver la secuencia completa en el siguiente:
+   [Video](https://user-images.githubusercontent.com/78808163/198988746-3a7a20c4-be96-4cfd-a958-b2834ceac234.webm)
 
 2. Trabajá en tus cambios. Hacé commits por cada bloque de cambios y escribí un mensaje descriptivo en cada _commit_. Recordá que es obligatorio que los cambios propuestos cumplan con los **requisitos WCAG 2.1 de nivel AA**
 
