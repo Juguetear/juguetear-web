@@ -11,7 +11,11 @@
     "sanity": "yarn workspace sanity-studio start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o .sb",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "husky install"
+  },
+  "engines": {
+    "node": ">=16.8.0"
   },
   "dependencies": {
     "@next/font": "^13.1.0",
