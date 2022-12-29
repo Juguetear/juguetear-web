@@ -5,6 +5,7 @@ import { StructureBuilder } from "sanity/desk";
 // TODO: Migrate schemas from './studio/schemas' to './schemas'
 import about from "studio/schemas/about";
 import accessibilityDeclaration from "studio/schemas/accessibility-declaration";
+import collaborate from "studio/schemas/collaborate";
 import faq from "studio/schemas/faq";
 import homePage from "studio/schemas/home-page";
 
@@ -51,6 +52,15 @@ const deskStructure = (S: StructureBuilder) => {
         S.listItem()
           .title(about.title)
           .child(S.document().schemaType(about.name).documentId(about.name)),
+
+        // collaborate schema
+        S.listItem()
+          .title(collaborate.title)
+          .child(
+            S.document()
+              .schemaType(collaborate.name)
+              .documentId(collaborate.name)
+          ),
 
         S.divider(),
         // Rest of documents
