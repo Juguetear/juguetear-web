@@ -12,6 +12,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o .sb",
     "lint": "next lint",
+    "test": "jest --watch",
     "postinstall": "husky install"
   },
   "engines": {
