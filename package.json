@@ -14,6 +14,9 @@
     "lint": "next lint",
     "postinstall": "husky install"
   },
+  "engines": {
+    "node": ">=16.8.0"
+  },
   "dependencies": {
     "@next/font": "^13.1.0",
     "@sanity/client": "^3.4.1",
