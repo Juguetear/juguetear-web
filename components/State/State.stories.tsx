@@ -11,12 +11,6 @@ export default {
 
 const Template: ComponentStory<typeof State> = (args) => <State {...args} />;
 
-export const StateDefault = Template.bind({});
-
-StateDefault.args = {
-  available: true,
-};
-
 export const StateTrue = Template.bind({});
 
 StateTrue.args = {
@@ -35,10 +29,4 @@ StateFalse.args = {
 
 StateFalse.play = () => {
   expect(screen.getByText(/prestado/i)).toBeInTheDocument();
-};
-
-export const StatePrueba = Template.bind({});
-
-StatePrueba.args = {
-  available: false,
 };

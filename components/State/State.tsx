@@ -1,4 +1,5 @@
-import { Icon } from "../Icon/Icon";
+import { IconCorrect } from "../IconCorrect/IconCorrect";
+import { IconError } from "../IconError/IconError";
 
 interface StateProps {
   available: boolean;
@@ -13,7 +14,7 @@ export const State = ({ available }: StateProps) => {
         {available ? "Disponible" : "Prestado"}
       </p>
 
-      <Icon available={available} />
+      {available ? <IconCorrect className="fill-green" /> : <IconError className="fill-red" />}
     </div>
   );
 };
