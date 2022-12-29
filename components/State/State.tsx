@@ -6,14 +6,14 @@ interface StateProps {
 
 export const State = ({ available }: StateProps) => {
   return (
-    <>
+    <div className="flex items-center gap-3">
       <p
-        className={`text-sm font-bold flex align-center ${
-          available ? "text-green" : "text-red"
-        }`}
+        className={`text-sm font-bold ${available ? "text-green" : "text-red"}`}
       >
-        {available ? "Disponible" : "Prestado"} <Icon available={available} />
+        {available ? "Disponible" : "Prestado"}
       </p>
-    </>
+
+      <Icon available={available} />
+    </div>
   );
 };
