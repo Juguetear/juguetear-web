@@ -13,6 +13,7 @@ import link from "studio/schemas/link";
 import member from "studio/schemas/member";
 import toy from "studio/schemas/toy";
 import video from "studio/schemas/video";
+import collaborate from "studio/schemas/collaborate";
 
 const schemas = [
   /* Your types here! */
@@ -30,6 +31,7 @@ const schemas = [
   member,
   toy,
   video,
+  collaborate,
 ];
 
 export default schemas;
