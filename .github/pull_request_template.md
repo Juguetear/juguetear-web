@@ -1,3 +1,8 @@
+## Issues relacionados.
+
+- Resuelve issue # <!-- Agrega el numero del issue para vincularlo a este PR -->
+<!--  De ser necesario es necesario listar otros. -->
+
 ## Que implementa o corrige este Pull Request.
 
 <!-- Explicar detalladamente lo que hiciste, o lo que hace este Pull Request. -->
