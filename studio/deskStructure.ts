@@ -6,9 +6,15 @@ import about from "./schemas/about";
 import accessibilityDeclaration from "./schemas/accessibility-declaration";
 import faq from "./schemas/faq";
 import homePage from "./schemas/home-page";
+import collaborate from "./schemas/collaborate";
 
 // List of 'documents/schemas' to ignore from Sanity's Desk list.
-const pages = [homePage.name, accessibilityDeclaration.name, faq.name];
+const pages = [
+  homePage.name,
+  accessibilityDeclaration.name,
+  faq.name,
+  collaborate.name,
+];
 
 export default () => {
   return (
@@ -44,10 +50,14 @@ export default () => {
         // about schema
         S.listItem()
           .title(about.title)
+          .child(S.document().schemaType(about.name).documentId(about.name)),
+
+        S.listItem()
+          .title(collaborate.title)
           .child(
             S.document()
-              .schemaType(about.name)
-              .documentId(about.name)
+              .schemaType(collaborate.name)
+              .documentId(collaborate.name)
           ),
 
         S.divider(),
