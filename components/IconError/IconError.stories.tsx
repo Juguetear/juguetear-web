@@ -3,7 +3,7 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { IconError } from "./IconError";
 
 export default {
-  title: "Icon Error",
+  title: "Iconos/Error",
   component: IconError,
 } as ComponentMeta<typeof IconError>;
 
@@ -11,8 +11,8 @@ const Template: ComponentStory<typeof IconError> = (args) => (
   <IconError {...args} />
 );
 
-export const IconErrorDefault = Template.bind({});
+export const Default = Template.bind({});
 
-IconErrorDefault.args = {
+Default.args = {
   className: "fill-red",
 };

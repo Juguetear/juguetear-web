@@ -1,6 +1,4 @@
-import { expect } from "@storybook/jest";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { screen } from "@storybook/testing-library";
 
 import { State } from "./State";
 
@@ -11,22 +9,14 @@ export default {
 
 const Template: ComponentStory<typeof State> = (args) => <State {...args} />;
 
-export const StateTrue = Template.bind({});
+export const Disponible = Template.bind({});
 
-StateTrue.args = {
+Disponible.args = {
   available: true,
 };
 
-StateTrue.play = () => {
-  expect(screen.getByText(/disponible/i)).toBeInTheDocument();
-};
+export const Prestado = Template.bind({});
 
-export const StateFalse = Template.bind({});
-
-StateFalse.args = {
+Prestado.args = {
   available: false,
-};
-
-StateFalse.play = () => {
-  expect(screen.getByText(/prestado/i)).toBeInTheDocument();
 };
