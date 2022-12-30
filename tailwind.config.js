@@ -36,6 +36,9 @@ module.exports = {
         inter: ["var(--font-inter)", ...fontFamily.sans],
         outfit: ["var(--font-outfit)", ...fontFamily.sans],
       },
+      boxShadow: {
+        '2md': '0px 0px 5px 5px #066CFF',
+      }
     },
   },
   plugins: [],
