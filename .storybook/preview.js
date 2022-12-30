@@ -1,3 +1,4 @@
+import { Inter, Outfit } from "@next/font/google";
 import "../app/globals.css";
 
 export const parameters = {
@@ -9,3 +10,21 @@ export const parameters = {
     },
   },
 };
+
+const inter = Inter({
+  variable: "--font-inter",
+  weight: "400",
+});
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  weight: "800",
+});
+
+export const decorators = [
+  (Story) => (
+    <div className={`${inter.variable} ${outfit.variable}`}>
+      <Story />
+    </div>
+  ),
+];
