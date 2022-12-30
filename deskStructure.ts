@@ -15,6 +15,7 @@ const pages = [
   accessibilityDeclaration.name,
   faq.name,
   homePage.name,
+  collaborate.name,
 ];
 
 const deskStructure = (S: StructureBuilder) => {
