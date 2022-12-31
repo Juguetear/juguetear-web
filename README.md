@@ -57,6 +57,8 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 
 ## Sanity
 
+Todo el contenido se va a administrar usando Sanity como [Headless CMS](https://www.sanity.io/headless-cms).
+
 Ahora, para obtener la información de Sanity, vas a tener que hacer _fetch_ utilizando el método `client()` inicializado en `lib/client.ts`. Por ejemplo, para traer todos los miembros del proyecto, podés a hacer: `` const member = await client.fetch(`*[_type == "member"]`); ``
 
 En el ejemplo de arriba `*[_type == "member"]` es el _query_ con el cual filtramos que información queremos traer. Este _query_ esta escrito en [GROQ](https://www.sanity.io/docs/groq). Sanity nos facilita una [cheat sheet](https://www.sanity.io/docs/query-cheat-sheet) con algunos de los _queries_ más comunes.
