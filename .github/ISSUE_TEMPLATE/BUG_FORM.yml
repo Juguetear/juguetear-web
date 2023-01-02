@@ -5,7 +5,7 @@ description: Describí el error/bug encontrado.
 body:
   - type: markdown
     attributes:
-      value: Desde ya gracias por tomarte el tiempo para completar esta solicitud, también nos gustaría mucho que trabajes en tu bug!
+      value: Desde ya, gracias por tomarte el tiempo para completar esta solicitud. Nos gustaría mucho que vos trabajes en tu bug!
 
   - type: textarea
     id: bug-report

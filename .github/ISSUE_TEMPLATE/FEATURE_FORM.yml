@@ -5,14 +5,14 @@ labels: ["enhancement", "triage"]
 body:
   - type: markdown
     attributes:
-      value: Desde ya gracias por tomarte el tiempo para completar esta solicitud, también nos gustaría mucho que trabajes en tu feature!
+      value: Desde ya, gracias por tomarte el tiempo para completar esta solicitud. Nos gustaría mucho que trabajes en tu feature!
 
   - type: textarea
     id: feat-proposition
     attributes:
       label: ¿Qué te gustaría agregar a este proyecto?
       description: Por favor contanos brevemente qué es lo que consideras que falta o se podría mejorar?
-      placeholder: Estamos ansiosos por saberlo :)
+      placeholder: No vemos la hora de saber de que se trata :)
     validations:
       required: true
 
