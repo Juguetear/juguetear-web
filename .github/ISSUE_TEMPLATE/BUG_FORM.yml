@@ -5,36 +5,10 @@ description: Describí el error/bug encontrado.
 body:
   - type: markdown
     attributes:
-      value: |
-        Desde ya gracias por tomarte el tiempo para completar esta solicitud, también nos gustaría mucho que trabajes en tu bug!
-
-  - type: checkboxes
-    id: code-of-conduct
-    attributes:
-      label: Código de conducta.
-      description: Al completar esta solicitud, aceptás el [Código de Conducta](https://github.com/Juguetear/juguetear-web/CODE_OF_CONDUCT.md)
-      options:
-        - label: Estoy de acuerdo con seguir el Código de Conducta de este proyecto.
-          required: true
-  - type: checkboxes
-    id: licence
-    attributes:
-      label: Licencia.
-      description: Al completar esta solicitud, aceptás las [licencias del repositorio](https://github.com/Juguetear/juguetear-web/blob/development/CONTRIBUTING.md#licencias)
-      options:
-        - label: Estoy de acuerdo con seguir las licencias de este proyecto.
-          required: true
-  - type: checkboxes
-    id: feat-check
-    attributes:
-      label: He comprobado que no se haya reportado el issue.
-      description: Has comprobado que el issue no haya sido reportado previamente.
-      options:
-        - label: He verificado que el issue no haya sido reportado previamente.
-          required: true
+      value: Desde ya, gracias por tomarte el tiempo para completar esta solicitud. Nos gustaría mucho que vos trabajes en tu bug!
 
   - type: textarea
-    id: bug
+    id: bug-report
     attributes:
       label: ¿Cuál es el bug/error que has encontrado?
       description: Describe el error que has encontrado.
@@ -42,20 +16,7 @@ body:
       required: true
 
   - type: textarea
-    id: replicate-bug
-    attributes:
-      label: ¿Cómo se puede reproducir este error?
-      description: Indica los pasos necesarios para que el error sea reproducido por otras personas.
-      placeholder: "
-        1. Clickear en boton..
-        2.
-        3.
-        "
-    validations:
-      required: true
-
-  - type: textarea
-    id: expected-behavior
+    id: bug-expected-behavior
     attributes:
       label: ¿Cuál es el comportamiento esperado?
       description: ¿Qué debería suceder?
@@ -63,21 +24,26 @@ body:
       required: true
 
   - type: textarea
-    id: actual-behavior
-    attributes:
-      label: ¿Cuál es el comportamiento actual?
-      description: Describe el comportamiento actual.
-    validations:
-      required: true
-
-  - type: textarea
-    id: suggested-fix
+    id: bug-fix-suggested
     attributes:
       label: Si tienes una solución, ¿cuáles son los pasos necesarios para implementarla?
       description: Describe la solución propuesta.
 
+  - type: textarea
+    id: bug-replicate
+    attributes:
+      label: ¿Cómo se puede reproducir este error?
+      description: Indica los pasos necesarios para que el error sea reproducido por otras personas.
+      placeholder: |
+        1. Ejecutar 'yarn dev'...
+        2. Ir al la dirección...
+        3. Hacer click en botón...
+        4. Ver el error en consola...
+    validations:
+      required: true
+
   - type: dropdown
-    id: browsers
+    id: bug-browsers
     attributes:
       label: ¿Cuál es el navegador en el que sucede el error?
       multiple: true
@@ -88,18 +54,31 @@ body:
         - Safari
         - Microsoft Edge
         - Otro navegador
+        - Todos los anteriores
     validations:
       required: true
 
   - type: input
-    id: another-browser
+    id: bug-another-browser
     attributes:
       label: Otro navegador que estés utilizando.
       description: En el caso de que hayas seleccionado "Otro navegador", te pedimos que coloques su nombre acá.
       placeholder: Brave
 
   - type: textarea
-    id: log
+    id: bug-logs
     attributes:
       label: Por favor completá con logs relevantes respecto al bug.
       description: Si es posible, indica el mensaje de error arrojado por el navegador.
+
+  - type: checkboxes
+    id: bug-agreement
+    attributes:
+      label: Código de conducta y licencia.
+      options:
+        - label: He comprobado que no se haya reportado el issue.
+          required: true
+        - label: Estoy de acuerdo con seguir el [código de conducta](https://github.com/Juguetear/juguetear-web/blob/development/CODE_OF_CONDUCT.md) de este proyecto.
+          required: true
+        - label: Estoy de acuerdo con seguir las [licencias](https://github.com/Juguetear/juguetear-web/blob/development/CONTRIBUTING.md#licencias) de este proyecto.
+          required: true

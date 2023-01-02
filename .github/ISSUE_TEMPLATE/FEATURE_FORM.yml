@@ -5,66 +5,37 @@ labels: ["enhancement", "triage"]
 body:
   - type: markdown
     attributes:
-      value: |
-        Desde ya gracias por tomarte el tiempo para completar esta solicitud, también nos gustaría mucho que trabajes en tu feature!
+      value: Desde ya, gracias por tomarte el tiempo para completar esta solicitud. Nos gustaría mucho que trabajes en tu feature!
 
-  - type: checkboxes
-    id: code-of-conduct
+  - type: textarea
+    id: feat-proposition
     attributes:
-      label: Código de conducta.
-      description: Al completar esta solicitud, aceptás el [Código de Conducta](https://github.com/Juguetear/juguetear-web/CODE_OF_CONDUCT.md)
-      options:
-        - label: Estoy de acuerdo con seguir el Código de Conducta de este proyecto.
-          required: true
-  - type: checkboxes
-    id: licence
-    attributes:
-      label: Licencia.
-      description: Al completar esta solicitud, aceptás las [licencias del repositorio](https://github.com/Juguetear/juguetear-web/blob/development/CONTRIBUTING.md#licencias)
-      options:
-        - label: Estoy de acuerdo con seguir las licencias de este proyecto.
-          required: true
-  - type: checkboxes
-    id: feat-check
-    attributes:
-      label: He comprobado que no se haya solicitado la feature.
-      description: Has comprobado que la feature solicitada por vos no haya sido solicitada previamente.
-      options:
-        - label: He verificado que la feature no haya sido solicitada previamente.
-          required: true
+      label: ¿Qué te gustaría agregar a este proyecto?
+      description: Por favor contanos brevemente qué es lo que consideras que falta o se podría mejorar?
+      placeholder: No vemos la hora de saber de que se trata :)
+    validations:
+      required: true
 
   - type: textarea
     id: feat-description
     attributes:
-      label: ¿Qué te gustaría agregar a este proyecto?
-      description: Por favor contanos qué es lo que consideras que falta?
-      placeholder: Estamos ansiosos por saberlo :)
-      value: "Contanos lo que te gustaría!"
+      label: Descripción detallada.
+      description: Describí de manera completa y técnica los requerimientos de la mejora y, si sabés, cómo implementarla.
+      placeholder: |
+        1. El texto en...
+        2. Podría ser que...
+        3. De color '#F3F3F3'.
     validations:
       required: true
 
-  - type: textarea
-    id: requirements
+  - type: checkboxes
+    id: feat-agreement
     attributes:
-      label: Requerimientos de la mejora.
-      description: Describí de manera completa y técnica los requerimientos.
-      placeholder: "
-        1.
-        2.
-        3.
-        "
-    validations:
-      required: true
-
-  - type: textarea
-    id: implementation
-    attributes:
-      label: Implementación de la mejora.
-      description: Describí de manera completa y técnica la implementación sugerida.
-      placeholder: "
-        1.
-        2.
-        3.
-        "
-    validations:
-      required: true
+      label: Código de conducta y licencia.
+      options:
+        - label: He comprobado que la feature solicitada no fue solicitada previamente.
+          required: true
+        - label: Estoy de acuerdo con seguir el [código de conducta](https://github.com/Juguetear/juguetear-web/blob/development/CODE_OF_CONDUCT.md) de este proyecto.
+          required: true
+        - label: Estoy de acuerdo con seguir las [licencias](https://github.com/Juguetear/juguetear-web/blob/development/CONTRIBUTING.md#licencias) de este proyecto.
+          required: true
