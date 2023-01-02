@@ -1,4 +1,4 @@
-import Cross from "../cross/Cross";
+import XMark from "../xmark/XMark";
 
 type Props = {
   label: string;
@@ -14,7 +14,7 @@ const Tag = ({ label, onClick }: Props) => {
         aria-label={`Quitar ${label} de la lista`}
         className="border-r-[0.5px] h-7 border-gray pl-2 pr-1 focus:outline-none"
       >
-        <Cross className="" />
+        <XMark className="" />
       </button>
       <span className="ml-1 mr-6 font-outfit text-sm">{label}</span>
     </li>

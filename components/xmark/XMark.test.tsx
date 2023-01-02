@@ -1,5 +1,5 @@
 import "@testing-library/jest-dom/extend-expect";
 
-describe("Cross", () => {
+describe("XMark", () => {
   test.todo("please pass");
 });
