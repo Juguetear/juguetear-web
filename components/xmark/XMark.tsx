@@ -1,8 +1,8 @@
-type Props = {
+type XMarkProps = {
   className: string;
 };
 
-const Cross = ({ className }: Props) => {
+const XMark = ({ className }: XMarkProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +17,4 @@ const Cross = ({ className }: Props) => {
   );
 };
 
-export default Cross;
+export default XMark;

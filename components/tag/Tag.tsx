@@ -1,11 +1,11 @@
 import XMark from "../xmark/XMark";
 
-type Props = {
+type TagProps = {
   label: string;
   onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
-const Tag = ({ label, onClick }: Props) => {
+const Tag = ({ label, onClick }: TagProps) => {
   return (
     <li className="bg-gray-light max-w-fit text-blue hover:text-orange fill-blue hover:fill-orange rounded-t-[14px] rounded-b-[14px] border-2 border-white focus-within:shadow-2md">
       <button
