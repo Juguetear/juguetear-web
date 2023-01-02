@@ -1,13 +1,13 @@
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Meta, StoryFn } from "@storybook/react";
 import Tag from "./Tag";
 
 export default {
   title: "Tag",
   component: Tag,
   argTypes: { onClick: { action: "onClick" } },
-} as ComponentMeta<typeof Tag>;
+} as Meta<typeof Tag>;
 
-const Template: ComponentStory<typeof Tag> = (args) => (
+const Template: StoryFn<typeof Tag> = (args) => (
   <ul>
     <Tag {...args} />
   </ul>
