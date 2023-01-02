@@ -3,12 +3,12 @@ import "../app/globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
-  weight: "400",
+  weight: "400", // Regular
 });
 
 const outfit = Outfit({
   variable: "--font-outfit",
-  weight: "800",
+  weight: ["500", "800"], // Medium, Extra bold
 });
 
 export const parameters = {

@@ -1,3 +1,3 @@
 export const Test = () => {
-  return <div className="font-outfit text-xl">Test</div>;
+  return <div className="font-inter font-extrabold text-xl">Test</div>;
 };
