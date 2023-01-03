@@ -1,15 +1,13 @@
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Meta, StoryFn } from "@storybook/react";
 
 import { IconError } from "./IconError";
 
 export default {
   title: "Iconos/Error",
   component: IconError,
-} as ComponentMeta<typeof IconError>;
+} as Meta<typeof IconError>;
 
-const Template: ComponentStory<typeof IconError> = (args) => (
-  <IconError {...args} />
-);
+const Template: StoryFn<typeof IconError> = (args) => <IconError {...args} />;
 
 export const Default = Template.bind({});
 

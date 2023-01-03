@@ -5,5 +5,5 @@ import { IconError } from "./IconError";
 
 test("IconError className prop render", () => {
   const { container } = render(<IconError className="fill-red" />);
-  expect(container.getElementsByClassName("fill-red").length).toBe(1);
+  expect(container.getElementsByClassName("fill-red")).toHaveLength(1);
 });

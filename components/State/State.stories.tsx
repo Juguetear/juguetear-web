@@ -1,13 +1,13 @@
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Meta, StoryFn } from "@storybook/react";
 
 import { State } from "./State";
 
 export default {
   title: "State",
   component: State,
-} as ComponentMeta<typeof State>;
+} as Meta<typeof State>;
 
-const Template: ComponentStory<typeof State> = (args) => <State {...args} />;
+const Template: StoryFn<typeof State> = (args) => <State {...args} />;
 
 export const Disponible = Template.bind({});
 

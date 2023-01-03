@@ -1,13 +1,13 @@
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Meta, StoryFn } from "@storybook/react";
 
 import { IconCheckmark } from "./IconCheckmark";
 
 export default {
   title: "Iconos/Checkmark",
   component: IconCheckmark,
-} as ComponentMeta<typeof IconCheckmark>;
+} as Meta<typeof IconCheckmark>;
 
-const Template: ComponentStory<typeof IconCheckmark> = (args) => (
+const Template: StoryFn<typeof IconCheckmark> = (args) => (
   <IconCheckmark {...args} />
 );
 
