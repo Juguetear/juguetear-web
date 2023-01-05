@@ -20,6 +20,7 @@ export const ArrowButton = ({
         direction === "left" && "rotate-180"
       }`}
       disabled={disabled}
+      name={`Go to ${direction}`}
       onClick={handleClick}
     >
       <svg
