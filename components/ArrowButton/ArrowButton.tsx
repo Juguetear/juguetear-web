@@ -15,9 +15,9 @@ export const ArrowButton = ({
   return (
     <div className="rounded-full p-1 lg:p-2 m-2 w-fit focus-within:shadow-2md shadow-turquoise">
       <button
-        aria-label={`Pasar al ${
-          direction === "right" ? "siguiente" : "left"
-        } slide`}
+        aria-label={`Pasar al slide ${
+          direction === "right" ? "siguiente" : "anterior"
+        }`}
         className="group font-inter font-extrabold text-xl h-6 w-6 rounded-full border-2 border-orange flex 
       justify-center items-center lg:h-12 lg:w-12 hover:border-blue disabled:border-gray focus-within:outline-none"
         disabled={disabled}
