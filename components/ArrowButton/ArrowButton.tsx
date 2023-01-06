@@ -9,7 +9,7 @@ interface ArrowButtonProps {
 
 export const ArrowButton = ({
   disabled = false,
-  direction = "right",
+  direction = "left",
   handleClick,
 }: ArrowButtonProps) => {
   return (
@@ -18,15 +18,15 @@ export const ArrowButton = ({
         aria-label={`Pasar al ${
           direction === "right" ? "siguiente" : "left"
         } slide`}
-        className={`group font-inter font-extrabold text-xl h-6 w-6 rounded-full border-2 border-orange flex 
-      justify-center items-center lg:h-12 lg:w-12 hover:border-blue disabled:border-gray focus-within:outline-none ${
-        direction === "left" && "rotate-180"
-      }`}
+        className="group font-inter font-extrabold text-xl h-6 w-6 rounded-full border-2 border-orange flex 
+      justify-center items-center lg:h-12 lg:w-12 hover:border-blue disabled:border-gray focus-within:outline-none"
         disabled={disabled}
         onClick={handleClick}
       >
         <svg
-          className="h-2 w-2 lg:h-4 lg:w-4 fill-none"
+          className={`h-2 w-2 lg:h-4 lg:w-4 fill-none ${
+            direction === "left" && "rotate-180"
+          }`}
           viewBox="0 0 5 8"
           xmlns="http://www.w3.org/2000/svg"
         >

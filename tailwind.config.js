@@ -5,7 +5,7 @@ module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}"
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     colors: {
@@ -17,7 +17,7 @@ module.exports = {
       white: "#FFFFFF",
       gray: "#BDBDBD",
       "gray-light": "#F2F2F2",
-      "gray-dark": "#4A4A4A"
+      "gray-dark": "#4A4A4A",
     },
     borderRadius: {
       none: "0",
@@ -31,17 +31,17 @@ module.exports = {
       xl: ["1.5rem", "1.4"],
       "2xl": ["1.75rem", "1.4"],
       "3xl": ["2.125rem", "1.4"],
-      "4xl": ["2.25rem", "1.4"]
+      "4xl": ["2.25rem", "1.4"],
     },
     extend: {
       fontFamily: {
         inter: ["var(--font-inter)", ...fontFamily.sans],
-        outfit: ["var(--font-outfit)", ...fontFamily.sans]
+        outfit: ["var(--font-outfit)", ...fontFamily.sans],
       },
       boxShadow: {
-        "2md": "0px 0px 5px 5px #066CFF"
-      }
-    }
+        "2md": "0px 0px 5px 5px #066CFF",
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 };
