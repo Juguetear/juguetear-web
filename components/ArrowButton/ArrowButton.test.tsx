@@ -1,16 +1,10 @@
 import "@testing-library/jest-dom/extend-expect";
-import { fireEvent, render } from "@testing-library/react";
-import { act } from "react-dom/test-utils";
+import { act, fireEvent, render } from "@testing-library/react";
 import { ArrowButton } from "./ArrowButton";
 
 describe("Arrow button", () => {
   it("Component renders without crashing", () => {
     render(<ArrowButton handleClick={jest.fn()} />);
-  });
-
-  it("Button is correctly aria labeled", () => {
-    const { getByLabelText } = render(<ArrowButton handleClick={jest.fn()} />);
-    expect(getByLabelText("Pasar al slide anterior")).toBeInTheDocument();
   });
 
   it("Button is correctly aria labeled", () => {
