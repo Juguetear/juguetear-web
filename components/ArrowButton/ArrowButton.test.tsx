@@ -8,8 +8,10 @@ describe("Arrow button", () => {
   });
 
   it("Button is correctly aria labeled", () => {
-    const { getByLabelText } = render(<ArrowButton handleClick={jest.fn()} />);
-    expect(getByLabelText("Pasar al slide anterior")).toBeInTheDocument();
+    const { getByRole } = render(<ArrowButton handleClick={jest.fn()} />);
+    expect(
+      getByRole("button", { name: "Pasar al slide anterior" })
+    ).toBeInTheDocument();
   });
 
   it("HandleClick is run on button click", () => {
