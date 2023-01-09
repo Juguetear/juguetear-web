@@ -22,6 +22,7 @@ module.exports = {
     borderRadius: {
       none: "0",
       DEFAULT: "0.25rem",
+      full: "9999px",
     },
     fontSize: {
       sm: ["1rem", "1.4"],
@@ -36,6 +37,9 @@ module.exports = {
       fontFamily: {
         inter: ["var(--font-inter)", ...fontFamily.sans],
         outfit: ["var(--font-outfit)", ...fontFamily.sans],
+      },
+      boxShadow: {
+        "2md": "0px 0px 5px 5px #066CFF",
       },
     },
   },
