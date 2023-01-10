@@ -18,6 +18,7 @@ module.exports = {
       gray: "#BDBDBD",
       "gray-light": "#F2F2F2",
       "gray-dark": "#4A4A4A",
+      transparent: "transparent",
     },
     borderRadius: {
       none: "0",
@@ -37,6 +38,9 @@ module.exports = {
         inter: ["var(--font-inter)", ...fontFamily.sans],
         outfit: ["var(--font-outfit)", ...fontFamily.sans],
       },
+      boxShadow: {
+        '2md': '0px 0px 5px 5px #066CFF',
+      }
     },
   },
   plugins: [],
