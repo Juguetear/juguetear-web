@@ -1,7 +1,7 @@
 <h1 align="center" width="100%">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/78808163/209231596-ec2fb100-2564-4694-94aa-1ce2e1a1199a.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/78808163/209231686-bd13914d-3d50-4d2f-a7fd-64c45531ac05.svg"> 
+    <img width="33%" alt="Juguetear" src="https://user-images.githubusercontent.com/78808163/198991646-4ec0f08d-b9f5-4e42-89d1-ceb786c1f215.svg"> 
   </picture>
 </h1>
 
