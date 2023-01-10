@@ -13,10 +13,10 @@ const Template: StoryFn<typeof Tag> = (args) => (
   </ul>
 );
 
-export const EmptyTag = Template.bind({});
-EmptyTag.storyName = "Empty Tag";
-EmptyTag.args = { label: "" };
+export const SampleTag = Template.bind({});
+SampleTag.storyName = "Sample Tag";
+SampleTag.args = { label: "Movimiento" };
 
 export const LongTag = Template.bind({});
 LongTag.storyName = "Long Tag";
-LongTag.args = { label: "Long woooooooooooord" };
+LongTag.args = { label: "Really long tagname" };

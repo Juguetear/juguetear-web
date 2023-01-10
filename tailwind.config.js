@@ -18,6 +18,7 @@ module.exports = {
       gray: "#BDBDBD",
       "gray-light": "#F2F2F2",
       "gray-dark": "#4A4A4A",
+      transparent: "transparent",
     },
     borderRadius: {
       none: "0",
