@@ -7,8 +7,12 @@ interface StateProps {
 
 export const State = ({ available }: StateProps) => {
   return (
-    <div className="flex items-center gap-3">
-      <p className={`font-bold ${available ? "text-green" : "text-red"}`}>
+    <div className="flex items-center gap-2">
+      <p
+        className={`font-extrabold font-inter text-base ${
+          available ? "text-green" : "text-red"
+        }`}
+      >
         {available ? "Disponible" : "Prestado"}
       </p>
 
