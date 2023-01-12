@@ -9,7 +9,7 @@ export const State = ({ available }: StateProps) => {
   return (
     <div className="flex items-center gap-2">
       <p
-        className={`font-extrabold font-inter text-base ${
+        className={`font-extrabold font-inter text-sm ${
           available ? "text-green" : "text-red"
         }`}
       >
