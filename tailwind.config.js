@@ -9,6 +9,7 @@ module.exports = {
   ],
   theme: {
     colors: {
+      red: "#E53559",
       "blue-light": "#E9F7F9",
       turquoise: "#23B1BF",
       orange: "#D2451A",
@@ -22,6 +23,9 @@ module.exports = {
     borderRadius: {
       none: "0",
       DEFAULT: "0.25rem",
+    },
+    boxShadow: {
+      input: "0px 0px 4px 4px #066CFF",
     },
     fontSize: {
       sm: ["1rem", "1.4"],
