@@ -1,5 +1,8 @@
 <h1 align="center" width="100%">
-  <img width="33%" src="https://user-images.githubusercontent.com/78808163/198991646-4ec0f08d-b9f5-4e42-89d1-ceb786c1f215.svg" alt="Juguetear">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/78808163/209231596-ec2fb100-2564-4694-94aa-1ce2e1a1199a.svg">
+    <img width="33%" alt="Juguetear" src="https://user-images.githubusercontent.com/78808163/198991646-4ec0f08d-b9f5-4e42-89d1-ceb786c1f215.svg"> 
+  </picture>
 </h1>
 
 ### Juguetear es un proyecto solidario, sin fines de lucro, que tiene como objetivo adaptar juguetes para niñes con discapacidades motrices complejas y ofrecerlos en calidad de préstamo, sin costo para las familias..
