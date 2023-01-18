@@ -19,10 +19,13 @@ module.exports = {
       gray: "#BDBDBD",
       "gray-light": "#F2F2F2",
       "gray-dark": "#4A4A4A",
+      green: "#005C62",
+      red: "#A91E1E",
     },
     borderRadius: {
       none: "0",
       DEFAULT: "0.25rem",
+      full: "9999px",
     },
     boxShadow: {
       input: "0px 0px 4px 4px #066CFF",
@@ -40,6 +43,9 @@ module.exports = {
       fontFamily: {
         inter: ["var(--font-inter)", ...fontFamily.sans],
         outfit: ["var(--font-outfit)", ...fontFamily.sans],
+      },
+      boxShadow: {
+        "2md": "0px 0px 5px 5px #066CFF",
       },
     },
   },
