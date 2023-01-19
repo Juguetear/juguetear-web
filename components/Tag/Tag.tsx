@@ -1,4 +1,4 @@
-import XMark from "../xmark/XMark";
+import XMark from "../XMark/XMark";
 
 type TagProps = {
   label: string;
@@ -6,8 +6,10 @@ type TagProps = {
 };
 
 const Tag = ({ label, onClick }: TagProps) => {
+  const liStyle =
+    "flex w-fit max-w-[8.5rem] bg-gray-light text-blue hover:text-orange fill-blue hover:fill-orange rounded-[14px] border-2 border-transparent focus-within:border-white focus-within:shadow-2md";
   return (
-    <li className="flex w-fit max-w-[8.5rem] bg-gray-light text-blue hover:text-orange fill-blue hover:fill-orange rounded-[14px] border-2 border-transparent focus-within:border-white focus-within:shadow-2md">
+    <li className={liStyle}>
       <button
         type="button"
         onClick={onClick}
