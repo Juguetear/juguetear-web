@@ -14,7 +14,7 @@ const Tag = ({ label, onClick }: TagProps) => {
         aria-label={`Quitar ${label} de la lista`}
         className="px-2 focus:outline-none"
       >
-        <XMark className="" />
+        <XMark />
       </button>
       <span className="border-l-[0.5px] border-gray pl-2 mr-4 font-outfit whitespace-normal">
         {label}

@@ -1,5 +1,5 @@
 type XMarkProps = {
-  className: string;
+  className?: string;
 };
 
 const XMark = ({ className }: XMarkProps) => {

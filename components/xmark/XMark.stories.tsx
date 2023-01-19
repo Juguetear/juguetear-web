@@ -9,7 +9,7 @@ export default {
 const Template: StoryFn<typeof XMark> = (args) => <XMark {...args} />;
 
 export const DefaultXMark = Template.bind({});
-DefaultXMark.args = { className: "" };
+DefaultXMark.args = {};
 
 export const WhiteXMark = Template.bind({});
 WhiteXMark.args = { className: "fill-white" };
