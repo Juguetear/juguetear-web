@@ -19,10 +19,13 @@ module.exports = {
       "gray-light": "#F2F2F2",
       "gray-dark": "#4A4A4A",
       transparent: "transparent",
+      green: "#005C62",
+      red: "#A91E1E",
     },
     borderRadius: {
       none: "0",
       DEFAULT: "0.25rem",
+      full: "9999px",
     },
     fontSize: {
       sm: ["1rem", "1.4"],
@@ -39,8 +42,8 @@ module.exports = {
         outfit: ["var(--font-outfit)", ...fontFamily.sans],
       },
       boxShadow: {
-        '2md': '0px 0px 5px 5px #066CFF',
-      }
+        "2md": "0px 0px 5px 5px #066CFF",
+      },
     },
   },
   plugins: [],
