@@ -1,0 +1,19 @@
+import { Meta, StoryFn } from "@storybook/react";
+import { Logo } from "./Logo";
+
+export default {
+  title: "Logo",
+  component: Logo,
+} as Meta<typeof Logo>;
+
+const Template: StoryFn<typeof Logo> = (args) => <Logo {...args} />;
+
+export const LightBackground = Template.bind({});
+LightBackground.args = {
+  darkBackground: false,
+};
+
+export const DarkBackground = Template.bind({});
+LightBackground.args = {
+  darkBackground: true,
+};
