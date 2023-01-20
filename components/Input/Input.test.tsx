@@ -1,25 +1,67 @@
 import "@testing-library/jest-dom/extend-expect";
 import { render } from "@testing-library/react";
+import { ChangeEvent } from "react";
 import Input from "./Input";
 
 describe("Input", () => {
   it("Component renders without crashing", () => {
-    render(<Input label="texto" helperText="helper" name="" />);
+    let value = "";
+
+    const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
+      value = target.value;
+    };
+
+    render(
+      <Input
+        label="texto"
+        value={value}
+        onChange={handleChange}
+        helperText="helper"
+        name=""
+      />
+    );
   });
 
-  it("Check input error state", () => {
-    const { container } = render(
-      <Input label="error" helperText="helper" name="" error />
+  it("Check input with error prop", () => {
+    let value = "";
+
+    const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
+      value = target.value;
+    };
+
+    const { container, getByText } = render(
+      <Input
+        label="error"
+        value={value}
+        onChange={handleChange}
+        helperText="helper"
+        name="input"
+        error
+      />
     );
 
     expect(container.getElementsByClassName("text-red").length).toBe(2);
+    expect(getByText(/helper/i)).toBeInTheDocument();
   });
 
-  it("Check input focus state", () => {
-    const { container } = render(
-      <Input label="error" helperText="helper" name="" touched />
+  it("Check input with required prop", () => {
+    let value = "";
+
+    const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
+      value = target.value;
+    };
+
+    const { getByText } = render(
+      <Input
+        label="required"
+        value={value}
+        onChange={handleChange}
+        helperText="helper"
+        name="input"
+        required
+      />
     );
 
-    expect(container.getElementsByClassName("shadow-input").length).toBe(1);
+    expect(getByText(/ * /i)).toBeInTheDocument();
   });
 });

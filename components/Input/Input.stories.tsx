@@ -7,18 +7,27 @@ export default {
 } as Meta<typeof Input>;
 
 export const Default: StoryFn<typeof Input> = () => (
-  <Input label="*Texto" helperText="Mensaje error" name="input" />
+  <Input label="Texto" helperText="Mensaje error" name="input" />
 );
 
 export const Error: StoryFn<typeof Input> = () => (
-  <Input label="*Texto" helperText="Mensaje error" name="input-error" error />
+  <Input label="Texto" helperText="Mensaje error" name="input-error" error />
 );
 
-export const Touch: StoryFn<typeof Input> = () => (
+export const Touched: StoryFn<typeof Input> = () => (
   <Input
-    label="*Texto"
+    label="Texto"
     helperText="Mensaje error"
     name="input-touched"
-    touched
+    className="ring-[3px] shadow-2md bg-blue-light"
+  />
+);
+
+export const Required: StoryFn<typeof Input> = () => (
+  <Input
+    label="Texto"
+    helperText="Mensaje error"
+    name="input-touched"
+    required
   />
 );
