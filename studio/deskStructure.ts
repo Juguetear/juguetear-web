@@ -26,7 +26,7 @@ export default () => {
       .items([
         // home-page schema
         S.listItem()
-          .title(homePage.title)
+          .title(homePage.title || "Home")
           .icon(HomeIcon)
           .child(
             S.document().schemaType(homePage.name).documentId(homePage.name)
