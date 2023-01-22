@@ -1,8 +1,8 @@
-import BlueLogo from "./assets/logo-blue.svg";
-import WhiteLogo from "./assets/logo-white.svg";
+import BlueLogo from "./svg/BlueLogo";
+import WhiteLogo from "./svg/WhiteLogo";
 
 interface LogoProps {
-  darkBackground: boolean;
+  darkBackground?: boolean;
 }
 
 export const Logo = ({ darkBackground = false }: LogoProps) => {

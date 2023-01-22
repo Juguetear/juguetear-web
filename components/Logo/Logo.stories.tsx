@@ -14,6 +14,6 @@ LightBackground.args = {
 };
 
 export const DarkBackground = Template.bind({});
-LightBackground.args = {
+DarkBackground.args = {
   darkBackground: true,
 };
