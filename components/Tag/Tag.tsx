@@ -8,13 +8,15 @@ type TagProps = {
 const Tag = ({ label, onClick }: TagProps) => {
   const liStyle =
     "flex w-fit max-w-[8.5rem] bg-gray-light text-blue hover:text-orange fill-blue hover:fill-orange rounded-[14px] border-2 border-transparent focus-within:border-white focus-within:shadow-2md";
+  const buttonStyle =
+    "relative after:absolute after:content-[''] after:top-[-50%] after:left-[-50%] after:h-[200%] after:w-[200%] px-2 focus:outline-none";
   return (
     <li className={liStyle}>
       <button
         type="button"
         onClick={onClick}
         aria-label={`Quitar ${label} de la lista`}
-        className="px-2 focus:outline-none"
+        className={buttonStyle}
       >
         <XMark />
       </button>
