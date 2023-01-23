@@ -31,4 +31,9 @@ describe("Tag", () => {
     const button = getByRole("button");
     expect(button).toHaveAttribute("aria-label", `Quitar ${label} de la lista`);
   });
+
+  test("should not be rendered if the label prop is empty", () => {
+    const { container } = render(<Tag label="" onClick={() => {}} />);
+    expect(container.firstChild).toBeNull();
+  });
 });

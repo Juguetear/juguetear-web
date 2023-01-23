@@ -20,3 +20,10 @@ SampleTag.args = { label: "Movimiento" };
 export const LongTag = Template.bind({});
 LongTag.storyName = "Long Tag";
 LongTag.args = { label: "Really long tagname" };
+
+export const TestOnClick = Template.bind({});
+TestOnClick.storyName = "Test On Click";
+TestOnClick.args = {
+  label: "On Click",
+  onClick: () => alert("Button clicked"),
+};

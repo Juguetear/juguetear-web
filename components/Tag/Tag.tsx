@@ -6,6 +6,10 @@ type TagProps = {
 };
 
 const Tag = ({ label, onClick }: TagProps) => {
+  if (!label) {
+    return null;
+  }
+
   const liStyle =
     "flex w-fit max-w-[8.5rem] bg-gray-light text-blue hover:text-orange fill-blue hover:fill-orange rounded-[14px] border-2 border-transparent focus-within:border-white focus-within:shadow-2md";
   const buttonStyle =
