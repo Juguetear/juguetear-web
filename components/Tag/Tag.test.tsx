@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom/extend-expect";
 import { fireEvent, render } from "@testing-library/react";
-import Tag from "./Tag";
+import { Tag } from "./Tag";
 
 describe("Tag", () => {
   test("renders the label and XMark button", () => {

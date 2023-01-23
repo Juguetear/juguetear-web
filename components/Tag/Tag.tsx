@@ -1,11 +1,11 @@
 import XMark from "../XMark/XMark";
 
-type TagProps = {
+export type TagProps = {
   label: string;
   onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
-const Tag = ({ label, onClick }: TagProps) => {
+export const Tag = ({ label, onClick }: TagProps) => {
   if (!label) {
     return null;
   }
@@ -30,5 +30,3 @@ const Tag = ({ label, onClick }: TagProps) => {
     </li>
   );
 };
-
-export default Tag;
