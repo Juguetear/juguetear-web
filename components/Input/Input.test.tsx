@@ -51,7 +51,7 @@ describe("Input", () => {
       value = target.value;
     };
 
-    const { getByText } = render(
+    const { getByLabelText } = render(
       <Input
         label="required"
         value={value}
@@ -62,6 +62,6 @@ describe("Input", () => {
       />
     );
 
-    expect(getByText(/ * /i)).toBeInTheDocument();
+    expect(getByLabelText(/ * /i)).toBeInTheDocument();
   });
 });
