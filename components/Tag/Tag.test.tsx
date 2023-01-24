@@ -31,15 +31,12 @@ describe("Tag", () => {
     expect(button).toHaveAttribute("aria-label", `Quitar ${label} de la lista`);
   });
 
-  test("throws an error when label is an empty string", () => {
-    expect(() => {
-      render(<Tag label="" onClick={onClick} />);
-    }).toThrowError("Label cannot be an empty string");
-  });
-
-  test("throws an error when label is a string with just spaces", () => {
-    expect(() => {
-      render(<Tag label="   " onClick={onClick} />);
-    }).toThrowError("Label cannot be an empty string");
-  });
+  test.each(["", "   "])(
+    "throws an error when label is an empty string",
+    (expected) => {
+      expect(() => {
+        render(<Tag label={expected} onClick={onClick} />);
+      }).toThrowError("Label cannot be an empty string");
+    }
+  );
 });
