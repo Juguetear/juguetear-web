@@ -6,8 +6,8 @@ export type TagProps = {
 };
 
 export const Tag = ({ label, onClick }: TagProps) => {
-  if (!label) {
-    return null;
+  if (!label || label.trim().length === 0) {
+    throw new Error("Label cannot be an empty string");
   }
 
   const liStyle =
@@ -24,7 +24,7 @@ export const Tag = ({ label, onClick }: TagProps) => {
       >
         <XMark />
       </button>
-      <span className="peer-hover:text-orange border-l-[0.5px] border-gray pl-2 mr-4 font-outfit whitespace-normal">
+      <span className="peer-hover:text-orange border-l border-gray pl-2 mr-4 font-outfit whitespace-normal">
         {label}
       </span>
     </li>

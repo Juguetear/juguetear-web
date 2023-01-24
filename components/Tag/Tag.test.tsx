@@ -4,9 +4,11 @@ import { Tag } from "./Tag";
 
 describe("Tag", () => {
   const label = "Example label";
+  const onClick = jest.fn();
+
   test("renders the label and XMark button", () => {
     const { getByText, getByRole } = render(
-      <Tag label={label} onClick={() => {}} />
+      <Tag label={label} onClick={onClick} />
     );
     const span = getByText(label);
     const button = getByRole("button");
@@ -16,7 +18,6 @@ describe("Tag", () => {
   });
 
   test("calls the onClick function when the button is clicked", () => {
-    const onClick = jest.fn();
     const { getByRole } = render(<Tag label={label} onClick={onClick} />);
     const button = getByRole("button");
 
@@ -25,13 +26,20 @@ describe("Tag", () => {
   });
 
   test("sets the correct aria-label on the button", () => {
-    const { getByRole } = render(<Tag label={label} onClick={() => {}} />);
+    const { getByRole } = render(<Tag label={label} onClick={onClick} />);
     const button = getByRole("button");
     expect(button).toHaveAttribute("aria-label", `Quitar ${label} de la lista`);
   });
 
-  test("should not be rendered if the label prop is empty", () => {
-    const { container } = render(<Tag label="" onClick={() => {}} />);
-    expect(container.firstChild).toBeNull();
+  test("throws an error when label is an empty string", () => {
+    expect(() => {
+      render(<Tag label="" onClick={onClick} />);
+    }).toThrowError("Label cannot be an empty string");
+  });
+
+  test("throws an error when label is a string with just spaces", () => {
+    expect(() => {
+      render(<Tag label="   " onClick={onClick} />);
+    }).toThrowError("Label cannot be an empty string");
   });
 });
