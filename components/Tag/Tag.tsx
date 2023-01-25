@@ -7,7 +7,7 @@ export type TagProps = {
 
 export const Tag = ({ label, onClick }: TagProps) => {
   if (!label || label.trim().length === 0) {
-    throw new Error("Label cannot be an empty string");
+    return null;
   }
 
   const liStyle =

@@ -32,11 +32,10 @@ describe("Tag", () => {
   });
 
   test.each(["", "   "])(
-    "throws an error when label is an empty string",
-    (expected) => {
-      expect(() => {
-        render(<Tag label={expected} onClick={onClick} />);
-      }).toThrowError("Label cannot be an empty string");
+    "should return null if label is empty or full of spaces",
+    (label) => {
+      const { container } = render(<Tag label={label} onClick={onClick} />);
+      expect(container.firstChild).toBeNull();
     }
   );
 });
