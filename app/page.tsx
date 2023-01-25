@@ -1,10 +1,12 @@
 import Image from "next/image";
+import { Accordion } from "../components/Accordion/Accordion";
 
 function Home() {
   return (
     <div>
       <main>
         <h1>Hola!</h1>
+        <Accordion text="Prueba" content="Contenido de prueba" />
       </main>
 
       <footer>

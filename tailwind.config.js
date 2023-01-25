@@ -26,6 +26,9 @@ module.exports = {
       DEFAULT: "0.25rem",
       full: "9999px",
     },
+    borderWidth: {
+      DEFAULT: "0.5px",
+    },
     fontSize: {
       sm: ["1rem", "1.4"],
       base: ["1.188rem", "1.4"],
@@ -41,6 +44,7 @@ module.exports = {
         outfit: ["var(--font-outfit)", ...fontFamily.sans],
       },
       boxShadow: {
+        "1md": "0px 0px 4px 4px #066CFF",
         "2md": "0px 0px 5px 5px #066CFF",
       },
     },

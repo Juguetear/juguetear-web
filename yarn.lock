@@ -2040,6 +2040,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@headlessui/react@npm:^1.7.7":
+  version: 1.7.7
+  resolution: "@headlessui/react@npm:1.7.7"
+  dependencies:
+    client-only: ^0.0.1
+  peerDependencies:
+    react: ^16 || ^17 || ^18
+    react-dom: ^16 || ^17 || ^18
+  checksum: 049d7ee46056fe96067f7b2f4f962672dfc824e68044ae38561a457278c8e38c0fd17592ab648ba5648e7e82bef9890eddbf329c9a00d11acf85700c7072a0bf
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.11.8":
   version: 0.11.8
   resolution: "@humanwhocodes/config-array@npm:0.11.8"
@@ -8792,7 +8804,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"client-only@npm:0.0.1":
+"client-only@npm:0.0.1, client-only@npm:^0.0.1":
   version: 0.0.1
   resolution: "client-only@npm:0.0.1"
   checksum: 0c16bf660dadb90610553c1d8946a7fdfb81d624adea073b8440b7d795d5b5b08beb3c950c6a2cf16279365a3265158a236876d92bce16423c485c322d7dfaf8
@@ -12779,6 +12791,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"framer-motion@npm:^8.5.2":
+  version: 8.5.2
+  resolution: "framer-motion@npm:8.5.2"
+  dependencies:
+    "@emotion/is-prop-valid": ^0.8.2
+    "@motionone/dom": ^10.15.3
+    hey-listen: ^1.0.8
+    tslib: ^2.4.0
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  dependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+  checksum: d58eabc825cf534aefdbf99e8806d483867f643d9081f8d7a6d3dac2c3a7157ccec67b78439898569e64bf9f3530aacb099429180169428cf7b1d639a59831f3
+  languageName: node
+  linkType: hard
+
 "framesync@npm:6.0.1":
   version: 6.0.1
   resolution: "framesync@npm:6.0.1"
@@ -15712,6 +15742,7 @@ __metadata:
   resolution: "juguetear-web@workspace:."
   dependencies:
     "@babel/core": ^7.20.7
+    "@headlessui/react": ^1.7.7
     "@next/font": ^13.1.0
     "@sanity/client": ^3.4.1
     "@sanity/vision": ^3.1.2
@@ -15739,6 +15770,7 @@ __metadata:
     eslint-config-prettier: ^8.5.0
     eslint-plugin-storybook: ^0.6.8
     eslint-plugin-unused-imports: ^2.0.0
+    framer-motion: ^8.5.2
     get-youtube-id: ^1.0.1
     husky: ^8.0.2
     jest: ^29.3.1
