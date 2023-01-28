@@ -15,15 +15,21 @@ describe("Logo component", () => {
     expect(logo).toBeInTheDocument();
   });
 
-  it("Blue logo has aria-label attribute with the correct value", () => {
-    const { getByTestId } = render(<Logo darkBackground={false} />);
-    const logo = getByTestId("blue-logo");
-    expect(logo).toHaveAttribute("aria-label", "Juguetear");
+  it("Should have a title", () => {
+    const { container } = render(<Logo />);
+    const title = container?.querySelector("svg")?.querySelector("title");
+    expect(title?.textContent).toEqual("Juguetear logo");
   });
 
-  it("White logo has aria-label attribute with the correct value", () => {
-    const { getByTestId } = render(<Logo darkBackground={true} />);
-    const logo = getByTestId("white-logo");
-    expect(logo).toHaveAttribute("aria-label", "Juguetear");
+  it("Should have a role of img", () => {
+    const { container } = render(<Logo />);
+    const logo = container.querySelector("svg");
+    expect(logo).toHaveAttribute("role", "img");
+  });
+
+  it("Should have aria-labelledby", () => {
+    const { container } = render(<Logo />);
+    const logo = container.querySelector("svg");
+    expect(logo).toHaveAttribute("aria-labelledby");
   });
 });
