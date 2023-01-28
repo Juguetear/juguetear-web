@@ -7,13 +7,11 @@ export default {
   component: Accordion,
 } as Meta<typeof Accordion>;
 
-const Template: StoryFn<typeof Accordion> = (args) => <Accordion {...args} />;
-
-export const Normal = Template.bind({});
-
-Normal.args = {
-  text: "¿Hay que pagar para usar los juguetes?",
-  content: "No, el prestamo es sin costo alguno.",
+export const Normal = {
+  args: {
+    text: "¿Hay que pagar para usar los juguetes?",
+    content: "No, el prestamo es sin costo alguno.",
+  },
 };
 
 const TemplateSet: StoryFn = (args) => {

@@ -7,7 +7,11 @@ test("IconChevron className prop render", () => {
   const { container } = render(
     <IconChevron className="fill-orange" open={false} />
   );
-  expect(container.getElementsByClassName("fill-orange")).toHaveLength(1);
+  expect(
+    container.getElementsByClassName(
+      "fill-orange motion-reduce:transition-none motion-safe:transition-transform"
+    )
+  ).toHaveLength(1);
 });
 
 test("IconChevron open prop render", () => {
@@ -15,6 +19,8 @@ test("IconChevron open prop render", () => {
     <IconChevron className="fill-orange" open={true} />
   );
   expect(
-    container.getElementsByClassName("fill-orange rotate-180 transform")
+    container.getElementsByClassName(
+      "fill-orange motion-reduce:transition-none motion-safe:transition-transform rotate-180"
+    )
   ).toHaveLength(1);
 });
