@@ -1,7 +1,6 @@
 "use client";
 
-import { Disclosure } from "@headlessui/react";
-import { motion, useReducedMotion } from "framer-motion";
+import { Disclosure, Transition } from "@headlessui/react";
 
 import { IconChevron } from "../IconChevron/IconChevron";
 
@@ -11,8 +10,6 @@ interface AccordionProps {
 }
 
 export const Accordion = ({ text, content }: AccordionProps) => {
-  const shouldReduceMotion = useReducedMotion();
-
   return (
     <Disclosure>
       {({ open }) => (
@@ -22,17 +19,18 @@ export const Accordion = ({ text, content }: AccordionProps) => {
             <IconChevron className="fill-orange" open={open} />
           </Disclosure.Button>
 
-          {open && (
-            <motion.div
-              className="px-3 py-5 text-blue font-outfit font-normal text-base"
-              initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              exit={shouldReduceMotion ? { opacity: 1 } : { opacity: 0 }}
-            >
+          <Transition
+            enter="motion-reduce:transition-none motion-safe:transition-opacity"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="motion-reduce:transition-none motion-safe:transition-opacity"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <Disclosure.Panel className="px-3 py-5 text-blue font-outfit font-normal text-base">
               {content}
-            </motion.div>
-          )}
+            </Disclosure.Panel>
+          </Transition>
         </>
       )}
     </Disclosure>
