@@ -16,15 +16,17 @@ describe("Logo component", () => {
   });
 
   it("Should have a title", () => {
-    const { container } = render(<Logo />);
-    const title = container?.querySelector("svg")?.querySelector("title");
-    expect(title?.textContent).toEqual("Juguetear logo");
+    const { getByRole } = render(<Logo />);
+    const title = getByRole("img", {
+      name: /juguetear logo/i,
+    });
+    expect(title).toHaveAccessibleName("Juguetear logo");
   });
 
   it("Should have a role of img", () => {
-    const { container } = render(<Logo />);
-    const logo = container.querySelector("svg");
-    expect(logo).toHaveAttribute("role", "img");
+    const { getByRole } = render(<Logo />);
+    const title = getByRole("img");
+    expect(title).toBeInTheDocument();
   });
 
   it("Should have aria-labelledby", () => {
