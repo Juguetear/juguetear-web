@@ -25,13 +25,20 @@ describe("Logo component", () => {
 
   it("Should have a role of img", () => {
     const { getByRole } = render(<Logo />);
-    const title = getByRole("img");
-    expect(title).toBeInTheDocument();
+    const logo = getByRole("img");
+    expect(logo).toBeInTheDocument();
   });
 
   it("Should have aria-labelledby", () => {
     const { container } = render(<Logo />);
     const logo = container.querySelector("svg");
     expect(logo).toHaveAttribute("aria-labelledby");
+  });
+
+  it("Should render with prop className extended from SVGProps<SVGSVGElement>", () => {
+    const className = "test-class";
+    const { getByTestId } = render(<Logo className={className} />);
+    const logo = getByTestId("blue-logo");
+    expect(logo).toHaveClass(className);
   });
 });

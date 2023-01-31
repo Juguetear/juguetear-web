@@ -1,8 +1,10 @@
-interface LogoProps {
+import { SVGProps } from "react";
+
+interface LogoProps extends SVGProps<SVGSVGElement> {
   darkBackground?: boolean;
 }
 
-export const Logo = ({ darkBackground = false }: LogoProps) => {
+export const Logo = ({ darkBackground = false, ...props }: LogoProps) => {
   return (
     <svg
       role="img"
@@ -13,6 +15,7 @@ export const Logo = ({ darkBackground = false }: LogoProps) => {
       viewBox="0 0 315 201"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <title id="juguetear-logo">Juguetear logo</title>
       <path
