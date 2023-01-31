@@ -6,8 +6,8 @@ import { Accordion } from "./Accordion";
 test("Accordion click text render", () => {
   render(
     <Accordion
-      text="¿Hay que pagar para usar los juguetes?"
-      content="No, el prestamo es sin costo alguno."
+      text=<p>¿Hay que pagar para usar los juguetes?</p>
+      content=<p>No, el prestamo es sin costo alguno.</p>
     />
   );
 
