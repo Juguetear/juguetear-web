@@ -1,21 +1,34 @@
+import { useState } from "react";
+
 export type CheckboxProps = {
   checked: boolean;
-  disabled: boolean;
+  disabled?: boolean;
   label: string;
 };
 
-const Checkbox = ({ checked, disabled, label }: CheckboxProps) => {
+const Checkbox = ({ checked, label }: CheckboxProps) => {
+  const [isChecked, setChecked] = useState(checked);
+
+  const handleCheck = () => {
+    setChecked(!isChecked);
+  };
+
   return (
     <div className="flex items-center max-w-[13rem]">
-      <input
-        id={label}
-        type="checkbox"
-        className="appearance-none w-5 h-5 border-[1.5px] rounded-[2px] border-blue"
-        checked={checked}
-        aria-checked={checked}
-        disabled={disabled}
-      />
-      <span className="text-blue text-base font-outfit ml-2">{label}</span>
+      <div
+        role="checkbox"
+        aria-checked={isChecked}
+        aria-labelledby={`${label}-label`}
+        className="w-5 h-5 border-[2px] rounded-[2px] border-blue place-items-center cursor-pointer"
+        onClick={handleCheck}
+        tabIndex={0}
+      ></div>
+      <label
+        id={`${label}-label`}
+        className="text-blue text-base font-outfit ml-2"
+      >
+        {label}
+      </label>
     </div>
   );
 };
