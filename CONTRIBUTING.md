@@ -15,8 +15,8 @@ Para aportar a este repositorio, podés contribuir en algún _issue_ que esté a
 - [Clonar el repositorio](#clonar-en-repositorio)
 - [Git Flow utilizado](#git-flow-utilizado)
 - [Issues](#issues)
-  - [Crear un nuevo issue](#crear-un-nuevo-issue)
   - [Contribuir en un Issue](#contribuir-en-un-issue)
+  - [Crear un nuevo issue](#crear-un-nuevo-issue)
 - [Pull Requests](#pull-requests)
   - [Contribuir con un Pull Request](#contribuir-con-un-pull-request)
   - [Como contribuir con un Pull Request](#como-contribuir-con-un-pull-request)
@@ -42,7 +42,7 @@ Si es primera vez y aun no tienes permisos de escritura al repositorio puedes:
    El nombre del branch debe tener un nombre descriptivo o va a ser tomado del número y título del _issue_ (ej. `1-crear-archivo-readme`).
 
    <details>
-      <summary>Si ya tienes permisos de escritura a la repo, puedes seguir estos pasos</summary><br>
+      <summary>Si ya tienes permisos de escritura a la repo, puedes seguir estos pasos (click para ver más)</summary><br>
 
    > Pueden ver la secuencia completa en el siguiente [video](https://user-images.githubusercontent.com/78808163/198988746-3a7a20c4-be96-4cfd-a958-b2834ceac234.webm)
 
@@ -71,6 +71,16 @@ Si es primera vez y aun no tienes permisos de escritura al repositorio puedes:
 ---
 
 ## Issues
+
+### Contribuir en un Issue
+
+Puedes encontrar issues de poca complejidad etiquetados como "Good first issue" o visitando la pagina [contribuir][gh-contribute], recomendados para quienes contribuyen por primera vez.
+
+Si deseas contribuir en alguno de los issues abiertos, primero es necesario que elijas un issue en el que quieras trabajar (previamente comprobando que nadie esté trabajando en el issue), que leas muy bien la descripción y realices todas las preguntas necesarias en los comentarios del issue o en el canal [#juguetear][dc-channel] para evacuar tus dudas.
+
+> ⚠️ Es muy importante que las contribuciones que realices cumplan mínimamente con los **estándares de WCAG 2.1 de nivel AA**.
+
+Si estas seguro que deseas trabajar en el issue, puedes dejar un comentario en el issue que desees y te lo asignaremos lo mas pronto posible, también es bueno que nos avises en [#juguetear][dc-channel].
 
 ### Crear un nuevo issue
 
@@ -101,16 +111,6 @@ Necesitamos la mayor cantidad de información de manera clara y concisa. Tambié
 Puedes reportar un bug mediante el siguiente [este enlace][gh-feat-form].
 
 </details>
-
-### Contribuir en un Issue
-
-Puedes encontrar issues de poca complejidad etiquetados como "Good first issue" o visitando la pagina [contribuir][gh-contribute], recomendados para quienes contribuyen por primera vez.
-
-Si deseas contribuir en alguno de los issues abiertos, primero es necesario que elijas un issue en el que quieras trabajar (previamente comprobando que nadie esté trabajando en el issue), que leas muy bien la descripción y realices todas las preguntas necesarias en los comentarios del issue o en el canal [#juguetear][dc-channel] para evacuar tus dudas.
-
-> ⚠️ Es muy importante que las contribuciones que realices cumplan mínimamente con los **estándares de WCAG 2.1 de nivel AA**.
-
-Si estas seguro que deseas trabajar en el issue, puedes dejar un comentario en el issue que desees y te lo asignaremos lo mas pronto posible, también es bueno que nos avises en [#juguetear][dc-channel].
 
 ---
 
