@@ -32,6 +32,16 @@ Para empezar a contribuir, tenemos dos opciones de contribuir con el repositorio
 1. Puedes hacer [fork][url-gb-fork] del repositorio y luego [clonarlo][url-gb-clone] para trabajar en tus cambios.
 2. Puedes [clonarlo][url-gb-clone] directamente y trabajar en tus cambios, pero **necesitaras** permisos para hacer `push`, los puedes solicitar a @nykka en el canal [#juguetear][dc-channel] en Discord.
 
+Una vez elijas, desde tu terminal ejecuta uno de estos comandos:
+
+```bash
+# SSH
+git clone git@github.com:Juguetear/juguetear-web.git
+
+# HTTPS
+git clone https://github.com/Juguetear/juguetear-web.git
+```
+
 ---
 
 ## Git Flow utilizado
