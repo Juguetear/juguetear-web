@@ -5,7 +5,7 @@
   </picture>
 </h1>
 
-### Juguetear es un proyecto solidario, sin fines de lucro, que tiene como objetivo adaptar juguetes para niñes con discapacidades motrices complejas y ofrecerlos en calidad de préstamo, sin costo para las familias..
+### Juguetear es un proyecto solidario, sin fines de lucro, que tiene como objetivo adaptar juguetes para niñes con discapacidades motrices complejas y ofrecerlos en calidad de préstamo, sin costo para las familias
 
 En el Taller de ayudas técnicas de APRILP se adaptan juguetes a pilas que se consiguen a través de donaciones, para luego prestarlos a las familias de niñes con discapacidades motrices complejas para que puedan jugar con pulsadores o switches de distintos tipos.
 
@@ -22,7 +22,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 [Licencias](#licencias)  
 [Alcances](#alcances)  
 [UI/UX](#uiux)  
-[Código de Conducta](./CODE_OF_CONDUCT.md)  
+[Código de Conducta][doc-code_of_conduct]  
 [Comunidad](#comunidad)  
 [Cómo contribuir](#cómo-contribuir)  
 [Contribuidores](#contribuidores)  
@@ -44,8 +44,8 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 - Tener instalada la última versión de [node](https://nodejs.org/es/) (incluye `npm`)
 - Tener un editor de código ([Visual Code](https://code.visualstudio.com/), [Vim](https://www.vim.org/), etc)
 - Tener una cuenta en [GitHub](https://docs.github.com/es/get-started/signing-up-for-github/signing-up-for-a-new-github-account)
-- Leer y seguir [Código de Conducta](./CODE_OF_CONDUCT.md)
-- Unirte a [FrontendCafé](https://discord.com/invite/frontendcafe) en Discord
+- Leer y seguir [Código de Conducta][doc-code_of_conduct]
+- Unirte a [FrontendCafé][dc-fec] en Discord
 
 ## Instalación del proyecto
 
@@ -54,7 +54,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 3. Ejecutá `yarn run dev` en la consola de comandos para iniciar el servidor de desarrollo
 4. Visitá [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación
 
-> ⚠️ Si tenés algun error, podés preguntar en el canal [#juguetear](https://discord.com/channels/594363964499165194/1035685740409012244) dentro del servidor de FrontendCafé en Discord
+> ⚠️ Si tenés algun error, podés preguntar en el canal [#juguetear][dc-channel] dentro del servidor de FrontendCafé en Discord
 
 ---
 
@@ -77,7 +77,7 @@ Es muy común usar esta propiedad como _query_ para obtener su contenido (por ej
 ## Storybook
 
 [Storybook](https://storybook.js.org/) es una librería de código abierto que permite desarrollar y documentar tus componentes en un entorno aislado. Vamos a usarla para crear y testear todos los componentes del proyecto Juguetear.
-Para poder ver los componentes listos para usar, podes entrar a esta [URL](https://storybook-juguetear-web.vercel.app) (_provisoria_).
+Para poder ver los componentes listos para usar, podes entrar a esta [URL][web-storybook] (_provisoria_).
 
 ---
 
@@ -89,15 +89,15 @@ Las Pautas de Accesibilidad para el Contenido Web (WCAG) definen los requisitos 
 
 ### Parte importante de los requerimientos a la hora de contribuir con este proyecto es cumplir al menos con los requisitos WCAG 2.1 nivel AA.
 
-Por favor, hacenos saber si encontrás barreras de accesibilidad en la web de Juguetear enviando un mail a [juguetear2021@gmail.com](mailto:juguetear2021@gmail.com) o abriendo un issue. Para hacerlo, necesitás leer la documentación sobre [cómo contribuir](./CONTRIBUTING.md).
+Por favor, hacenos saber si encontrás barreras de accesibilidad en la web de Juguetear enviando un mail a [juguetear2021@gmail.com][email] o abriendo un issue. Para hacerlo, necesitás leer la documentación sobre [cómo contribuir][doc-contributing].
 
 ---
 
 ## Licencias
 
-Este repositorio se publica con licencia [GNU General Public License v3.0](./LICENSE).
+Este repositorio se publica con licencia [GNU General Public License v3.0][doc-lic-1].
 
-El contenido de la web de Juguetear se publica con licencia [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](./LICENSE-CC-BY-NC-SA).
+El contenido de la web de Juguetear se publica con licencia [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International][doc-lic-2].
 
 ---
 
@@ -109,15 +109,15 @@ El alcance de este proyecto será desarrollar el Front End de la web de juguetea
 
 ## UI/UX
 
-La [interfaz](https://www.figma.com/file/FS9WsAYrmkESsmUAGzYdNo/Juguetear?node-id=0%3A1) del proyecto fue completamente desarrollada por [Mariana Lessi](https://www.behance.net/marualessi). Cualquier duda, feedback o sugerencia podés compartirla en el canal [#juguetear](https://discord.com/channels/594363964499165194/1035685740409012244) del server de [FrontendCafé](https://discord.com/invite/frontendcafe) en Discord.
+La [interfaz][figma] del proyecto fue completamente desarrollada por [Mariana Lessi](https://www.behance.net/marualessi). Cualquier duda, feedback o sugerencia podés compartirla en el canal [#juguetear][dc-channel] del server de [FrontendCafé][dc-fec] en Discord.
 
 ---
 
 ## Comunidad
 
-[![logo-frontendcafe](https://user-images.githubusercontent.com/78808163/198993731-299e973d-8f3b-4a6c-a445-b2b77e0b3286.svg)](https://discord.com/invite/frontendcafe)
+[![logo-frontendcafe](https://user-images.githubusercontent.com/78808163/198993731-299e973d-8f3b-4a6c-a445-b2b77e0b3286.svg)][dc-fec]
 
-Este proyecto se desarrolla con la participación y el apoyo de FrontendCafé. Es requerido unirte a nuestro [server](https://discord.com/invite/frontendcafe) y buscar el canal [#juguetear](https://discord.com/channels/594363964499165194/1035685740409012244). Ahí vas a poder compartir dudas e ideas del proyecto. El código de conducta de este proyecto es extensible también a tu participación en el server de FrontendCafé en Discord.
+Este proyecto se desarrolla con la participación y el apoyo de FrontendCafé. Es requerido unirte a nuestro [server][dc-fec] y buscar el canal [#juguetear][dc-channel]. Ahí vas a poder compartir dudas e ideas del proyecto. El código de conducta de este proyecto es extensible también a tu participación en el server de FrontendCafé en Discord.
 
 ---
 
@@ -131,17 +131,17 @@ Actualmente hay varias formas de contribuir al proyecto Juguetear:
 
 ### Con materiales:
 
-Si querés donar juguetes a pilas y/o diversos materiales contactarse a través del mail [juguetear2021@gmail.com](mailto:juguetear2021@gmail.com)
+Si querés donar juguetes a pilas y/o diversos materiales contactarse a través del mail [juguetear2021@gmail.com][email]
 
 ### Replicando el proyecto en tu ciudad:
 
-La naturaleza libre y solidaria de esta idea no se refiere solo a la posibilidad de que las familias de niñes con discapacidades motrices complejas puedan acceder a los juguetes sin ningún costo sino que, además, queremos que se pueda replicar en todos los lugares donde haya instituciones y personas con voluntad para llevarlo adelante. Para saber como replicar el proyecto, por favor lee nuestra [documentación](./REPLICATE.md).
+La naturaleza libre y solidaria de esta idea no se refiere solo a la posibilidad de que las familias de niñes con discapacidades motrices complejas puedan acceder a los juguetes sin ningún costo sino que, además, queremos que se pueda replicar en todos los lugares donde haya instituciones y personas con voluntad para llevarlo adelante. Para saber como replicar el proyecto, por favor lee nuestra [documentación][doc-replicate].
 
 ### Aportando a este repositorio:
 
-Usamos [github Issues](https://github.com/Juguetear/juguetear-web/issues) para trackear _requests_, _bugs_ y _features_. Para aportar a este repositorio, podés trabajar en algún _issue_ que esté abierto, crear uno con un _request_ o _bug_ o dar _code review_ a otres contribuidores.
+Usamos [github Issues][gh-issues] para trackear _requests_, _bugs_ y _features_. Para aportar a este repositorio, podés trabajar en algún _issue_ que esté abierto, crear uno con un _request_ o _bug_ o dar _code review_ a otres contribuidores.
 
-Si querés contribuir, tené en cuenta que tenemos ciertos lineamientos. Para conocerlos en detalle, leé la documentación sobre [cómo contribuir](CONTRIBUTING.md).
+Si querés contribuir, tené en cuenta que tenemos ciertos lineamientos. Para conocerlos en detalle, leé la documentación sobre [cómo contribuir][doc-contributing].
 
 ---
 
@@ -172,3 +172,30 @@ _Desarrollo y administración del repositorio_
 [Colegio Lincoln](https://colegiolincoln.edu.ar/juguetear/)  
 [Antonio Sacco](http://antoniosacco.com.ar/)  
 [FronendCafé](https://frontend.cafe/)
+
+<!-- Listado de enlaces de referencia, mantenerlos actualizados en cada archivo -->
+<!-- Enlaces a las paginas web del proyecto -->
+
+[web-storybook]: https://storybook-juguetear-web.vercel.app
+
+<!-- Enlaces a archivos de documentación (propios al repositorio)  -->
+
+[doc-code_of_conduct]: CODE_OF_CONDUCT.md
+[doc-contributing]: CONTRIBUTING.md
+[doc-lic-1]: LICENSE
+[doc-lic-2]: LICENSE-CC-BY-NC-SA
+[doc-replicate]: REPLICATE.md
+
+<!-- Enlaces a Discord -->
+
+[dc-channel]: https://discord.com/channels/594363964499165194/1035685740409012244
+[dc-fec]: https://discord.com/invite/frontendcafe
+
+<!-- Enlaces al repositorio en Github -->
+
+[gh-issues]: https://github.com/Juguetear/juguetear-web/issues
+
+<!-- Misc? -->
+
+[email]: mailto:juguetear2021@gmail.com
+[figma]: https://www.figma.com/file/FS9WsAYrmkESsmUAGzYdNo/Juguetear?node-id=0%3A1
