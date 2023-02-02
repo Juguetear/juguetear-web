@@ -9,8 +9,8 @@ export default {
 
 export const Normal = {
   args: {
-    text: "¿Hay que pagar para usar los juguetes?",
-    content: "No, el prestamo es sin costo alguno.",
+    title: "¿Hay que pagar para usar los juguetes?",
+    children: <p>No, el prestamo es sin costo alguno.</p>,
   },
 };
 
@@ -27,11 +27,11 @@ export const Conjunto = TemplateSet.bind({});
 
 Conjunto.args = {
   "Accordion 1": {
-    text: "¿Hay que pagar para usar los juguetes?",
-    content: "No, el prestamo es sin costo alguno.",
+    title: "¿Hay que pagar para usar los juguetes?",
+    children: <p>No, el prestamo es sin costo alguno.</p>,
   },
   "Accordion 2": {
-    text: "¿Envían a otros lugares fuera de La Plata?",
-    content: "No, el prestamo es solo en La Plata.",
+    title: "¿Envían a otros lugares fuera de La Plata?",
+    children: <p>No, el prestamo es solo en La Plata.</p>,
   },
 };

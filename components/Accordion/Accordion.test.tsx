@@ -5,10 +5,9 @@ import { Accordion } from "./Accordion";
 
 test("Accordion click text render", () => {
   render(
-    <Accordion
-      text=<p>¿Hay que pagar para usar los juguetes?</p>
-      content=<p>No, el prestamo es sin costo alguno.</p>
-    />
+    <Accordion title="¿Hay que pagar para usar los juguetes?">
+      <p>No, el prestamo es sin costo alguno.</p>
+    </Accordion>
   );
 
   const accordeonElement = screen.getByText(
