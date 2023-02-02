@@ -1,4 +1,4 @@
-import block from "./block";
+import { block } from "../../schemas/block";
 
 const contentBlock = [
   {
