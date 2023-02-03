@@ -33,9 +33,20 @@
 
 ## Código de conducta y contribuir.
 
-:warning: Antes de realizar el Pull Request, por favor asegúrate de haber leído el [código de conducta](https://github.com/Juguetear/juguetear-web/blob/development/CODE_OF_CONDUCT.md) y [cómo contribuir](https://github.com/Juguetear/juguetear-web/blob/development/CONTRIBUTING.md).
+:warning: Antes de realizar el Pull Request, por favor asegúrate de haber leído el [código de conducta][doc-code_of_conduct] y [cómo contribuir][doc-contributing].
 
-- [ ] He leído seguir el [código de conducta](https://github.com/Juguetear/juguetear-web/blob/development/CODE_OF_CONDUCT.md) de este proyecto.
-- [ ] He leído seguir las normas de [cómo contribuir](https://github.com/Juguetear/juguetear-web/blob/development/CONTRIBUTING.md) a este proyecto.
+- [ ] He leído seguir el [código de conducta][doc-code_of_conduct] de este proyecto.
+- [ ] He leído seguir las normas de [cómo contribuir][doc-contributing] a este proyecto.
 
-> ⛑️ En caso de que necesites ayuda o tengas alguna duda recordá que también podés preguntar en el canal [#juguetear](https://discord.com/channels/594363964499165194/1035685740409012244) dentro de la comunidad [FrontendCafé](https://discord.com/invite/frontendcafe) en Discord. El código de conducta de este proyecto es extensible también a tu participación en el server de [FrontendCafé](https://discord.com/invite/frontendcafe).
+> ⛑️ En caso de que necesites ayuda o tengas alguna duda recordá que también podés preguntar en el canal [#juguetear][dc-channel] dentro de la comunidad [FrontendCafé][dc-fec] en Discord. El código de conducta de este proyecto es extensible también a tu participación en el server de [FrontendCafé][dc-fec].
+
+<!-- Listado de enlaces de referencia, mantenerlos actualizados en cada archivo -->
+<!-- Enlaces a archivos de documentación (propios al repositorio)  -->
+
+[doc-code_of_conduct]: CODE_OF_CONDUCT.md
+[doc-contributing]: CONTRIBUTING.md
+
+<!-- Enlaces a Discord -->
+
+[dc-channel]: https://discord.com/channels/594363964499165194/1035685740409012244
+[dc-fec]: https://discord.com/invite/frontendcafe
