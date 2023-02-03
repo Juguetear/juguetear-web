@@ -5,7 +5,7 @@
   </picture>
 </h1>
 
-Juguetear es un proyecto solidario, sin fines de lucro, que tiene como objetivo adaptar juguetes para niñes con discapacidades motrices complejas y ofrecerlos en calidad de préstamo, sin costo para las familias
+Juguetear es un proyecto solidario, sin fines de lucro, que tiene como objetivo adaptar juguetes para niñes con discapacidades motrices complejas y ofrecerlos en calidad de préstamo, sin costo para las familias.
 
 En el Taller de ayudas técnicas de APRILP se adaptan juguetes a pilas que se consiguen a través de donaciones, para luego prestarlos a las familias de niñes con discapacidades motrices complejas para que puedan jugar con pulsadores o switches de distintos tipos.
 
@@ -48,9 +48,9 @@ Si querés donar juguetes a pilas y/o diversos materiales contactarse a través 
 
 Aca puedes ver el [Tech Stack](#tech-stack) usado en este repositorio.
 
-Si tienes interés en colaborar con el repositorio, consulte [`contributing.md`][doc-contributing] para conocer las formas de comenzar a contribuir, tené en cuenta que tenemos ciertos lineamientos.
+Si tenés interés en colaborar con el repositorio, consultá [`contributing.md`][doc-contributing] para conocer las formas de comenzar a contribuir, tené en cuenta que tenemos ciertos lineamientos.
 
-> ⚠️ Por favor, leer y adhiérase al [**código de conducta**][doc-code_of_conduct] de este proyecto.
+> ⚠️ Por favor, leer y adherir al [**código de conducta**][doc-code_of_conduct] de este proyecto.
 
 ### Replicando el proyecto en tu ciudad
 
@@ -95,7 +95,7 @@ Las Pautas de Accesibilidad para el Contenido Web (WCAG) definen los requisitos 
 
 **Parte importante de los requerimientos a la hora de contribuir con este proyecto es cumplir al menos con los requisitos WCAG 2.1 nivel AA.**
 
-Por favor, hacenos saber si encontrás barreras de accesibilidad en la web de Juguetear enviando un mail a [juguetear2021@gmail.com][email] o abriendo un issue. Para hacerlo, necesitás leer la documentación sobre [cómo contribuir][doc-contributing].
+Por favor, si encontrás barreras de accesibilidad en la web de Juguetear enviando un email a [juguetear2021@gmail.com][email] o abrí un issue. Para hacerlo, necesitás leer la documentación sobre [cómo contribuir][doc-contributing].
 
 ---
 
@@ -156,13 +156,13 @@ Es muy común usar esta propiedad como _query_ para obtener su contenido (por ej
 
 Storybook es una librería de código abierto que permite desarrollar y documentar tus componentes en un entorno aislado. Vamos a usarla para crear y testear todos los componentes del proyecto Juguetear.
 
-Para poder ver los componentes listos para usar, podes entrar a [este enlace][web-storybook] (_provisoria_).
+Para poder ver los componentes listos para usar, podes entrar a [este enlace][web-storybook] (_provisorio_).
 
 ---
 
 ## Instalación del proyecto
 
-> ⚠️ Asegúrate de haber leido [**como contribuir**][doc-contributing], y recuerda que si tienes dudas puedes preguntarnos en el canal [#juguetear][dc-channel] en Discord.
+> ⚠️ Asegúrate de haber leido [**como contribuir**][doc-contributing], y recuerda que si tenés dudas puedes preguntarnos en el canal [#juguetear][dc-channel] en Discord.
 
 Luego haber leido [**como contribuir**][doc-contributing] y haber clonado el repositorio, debes accedé al directorio del proyecto
 
@@ -175,7 +175,7 @@ yarn install
 Esto va a instalar todas las dependencias listadas en el archivo [`package.json`](package.json).
 
   <details>
-  <summary> 💡 Has click aquí, si te aparece un error que dice <code>yarn: command not found</code></summary><br>
+  <summary> 💡 Hacé click aquí si te aparece un error que dice <code>yarn: command not found</code></summary><br>
 
 Quiere decir que no tenés instalado `yarn`. Para instalarlo, primero asegurate de tener instalada una versión [Node](https://nodejs.org/es/) superior a `v16.16.0` y luego instalar `yarn` via `npm` (_node package manager_) ejecutando:
 

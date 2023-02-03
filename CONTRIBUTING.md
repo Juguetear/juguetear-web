@@ -1,10 +1,10 @@
 # Contribuciones a Juguetear Web
 
-En este documento, encontrarás información sobre las diferentes maneras de realizar contribuciones a este proyecto.
+En este documento encontrarás información sobre las diferentes maneras de realizar contribuciones a este proyecto.
 
 Utilizamos [GitHub Issues](gh-issues) para llevar el seguimiento de reportes de bugs (_bug reports_) y mejoras propuestas (_features requests_).
 
-> ⚠️ Recuerda antes de contribuir, es **requerido** que seas parte del [servidor de FrontendCafé][dc-fec] en Discord.
+> ⚠️ Recordá antes de contribuir, es **requerido** que seas parte del [servidor de FrontendCafé][dc-fec] en Discord.
 
 Para aportar a este repositorio, podés contribuir en algún _issue_ que esté abierto, crear nuevos issues, sugiriendo _feature request_ o _bug report_, o dar _code review_ a otres contribuidores. Los _Pull Requests_ de **minima** complejidad son bienvenidos.
 
@@ -27,10 +27,10 @@ Para aportar a este repositorio, podés contribuir en algún _issue_ que esté a
 
 ## Clonar en repositorio
 
-Para empezar a contribuir, tenemos dos opciones de contribuir con el repositorio.
+Para empezar a contribuir tenés dos opciones:
 
-1. Puedes hacer [fork][url-gb-fork] del repositorio y luego [clonarlo][url-gb-clone] para trabajar en tus cambios.
-2. Puedes [clonarlo][url-gb-clone] directamente y trabajar en tus cambios, pero **necesitaras** permisos para hacer `push`, los puedes solicitar a @nykka en el canal [#juguetear][dc-channel] en Discord.
+1. Podés hacer [fork][url-gb-fork] del repositorio y luego [clonarlo][url-gb-clone] para trabajar en tus cambios.
+2. Podés [clonarlo][url-gb-clone] directamente y trabajar en tus cambios, pero **necesitaras** permisos para hacer `push`, los puedes solicitar a @nykka en el canal [#juguetear][dc-channel] en Discord.
 
 Una vez elijas, desde tu terminal ejecuta uno de estos comandos:
 
@@ -52,7 +52,7 @@ Si es primera vez y aun no tienes permisos de escritura al repositorio puedes:
    El nombre del branch debe tener un nombre descriptivo o va a ser tomado del número y título del _issue_ (ej. `1-crear-archivo-readme`).
 
    <details>
-      <summary>Si ya tienes permisos de escritura a la repo, puedes seguir estos pasos (click para ver más)</summary><br>
+      <summary>Si ya tenés permisos de escritura a la repo, Podés seguir estos pasos (click para ver más)</summary><br>
 
    > Pueden ver la secuencia completa en el siguiente [video](https://user-images.githubusercontent.com/78808163/198988746-3a7a20c4-be96-4cfd-a958-b2834ceac234.webm)
 
@@ -84,7 +84,7 @@ Si es primera vez y aun no tienes permisos de escritura al repositorio puedes:
 
 ### Contribuir en un Issue
 
-Puedes encontrar issues de poca complejidad etiquetados como "Good first issue" o visitando la pagina [contribuir][gh-contribute], recomendados para quienes contribuyen por primera vez.
+Podés encontrar issues de poca complejidad etiquetados como "Good first issue" o visitando la pagina [contribuir][gh-contribute], recomendados para quienes contribuyen por primera vez.
 
 Si deseas contribuir en alguno de los issues abiertos, primero es necesario que elijas un issue en el que quieras trabajar (previamente comprobando que nadie esté trabajando en el issue), que leas muy bien la descripción y realices todas las preguntas necesarias en los comentarios del issue o en el canal [#juguetear][dc-channel] para evacuar tus dudas.
 
@@ -128,7 +128,7 @@ Puedes reportar un bug mediante el siguiente [este enlace][gh-feat-form].
 
 ### Contribuir con un Pull Request
 
-Puedes contribuir con Pull Requests directamente, siempre que este no sea muy complejo.
+Podés contribuir con Pull Requests directamente, siempre que este no sea muy complejo.
 
 > ⚠️ Para evitar conflictos, asegúrate que tus cambios no tengan un issue abierto y escribe un mensaje por el canal [#juguetear][dc-channel] para que los demás sepan en que cambios estas por trabajar.
 
@@ -142,12 +142,12 @@ Puedes contribuir con Pull Requests directamente, siempre que este no sea muy co
 
 ### Como contribuir con un Pull Request
 
-Si acabas de hacer `push` de cambios locales a una rama (_branch_) remota, puedes visitar el repositorio en GitHub y seguramente te aparecerá un mensaje para crear una solicitud de incorporación de cambios (_Pull Request_), luego, al iniciar el PR debes completar el formulario describiendo en detalle los cambios que hiciste. Si estabas trabajando en un issue, asegúrate de asociarlo al numero del issue, ej: #01.
+Si acabas de hacer `push` de cambios locales a una rama (_branch_) remota, podés visitar el repositorio en GitHub y seguramente te aparecerá un mensaje para crear una solicitud de incorporación de cambios (_Pull Request_), luego, al iniciar el PR debes completar el formulario describiendo en detalle los cambios que hiciste. Si estabas trabajando en un issue, asegurate de asociarlo al numero del issue, ej: #01.
 
-> 💡 **Si no puedes ver el mensaje, están estas alternativas:**
+> 💡 **Si no podés ver el mensaje, están estas alternativas:**
 >
-> - Si hiciste fork y luego clone, tienes [esta guía][url-gb-fork_pr]
-> - Si hiciste clone directo, tienes [esta guía][url-gb-pr]
+> - Si hiciste fork y luego clone, tenés [esta guía][url-gb-fork_pr]
+> - Si hiciste clone directo, tenés [esta guía][url-gb-pr]
 >
 > Si en algún momento necesitas hacer una consulta, podés hacerla en nuestro canal [#juguetear][dc-channel] en Discord.
 
