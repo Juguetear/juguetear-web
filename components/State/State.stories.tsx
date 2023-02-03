@@ -1,4 +1,4 @@
-import { Meta, StoryFn } from "@storybook/react";
+import { Meta } from "@storybook/react";
 
 import { State } from "./State";
 
@@ -7,16 +7,14 @@ export default {
   component: State,
 } as Meta<typeof State>;
 
-const Template: StoryFn<typeof State> = (args) => <State {...args} />;
-
-export const Disponible = Template.bind({});
-
-Disponible.args = {
-  available: true,
+export const Disponible = {
+  args: {
+    available: true,
+  },
 };
 
-export const Prestado = Template.bind({});
-
-Prestado.args = {
-  available: false,
+export const Prestado = {
+  args: {
+    available: false,
+  },
 };
