@@ -20,7 +20,7 @@ const Checkbox = ({ checked, label, disabled }: CheckboxProps) => {
         type="checkbox"
         checked={isChecked}
         aria-checked={isChecked}
-        className="peer appearance-none w-5 h-5 border-[1px] rounded-[2px] border-blue place-items-center cursor-pointer checked:border-orange checked:bg-orange hover:border-[2px]"
+        className="peer appearance-none w-5 h-5 border rounded-[2px] border-blue cursor-pointer  checked:border-orange checked:bg-orange hover:enabled:border-2 disabled:cursor-not-allowed"
         onChange={handleCheck}
         disabled={disabled}
       />
