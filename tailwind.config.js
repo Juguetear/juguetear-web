@@ -9,7 +9,6 @@ module.exports = {
   ],
   theme: {
     colors: {
-      red: "#E53559",
       "blue-light": "#E9F7F9",
       turquoise: "#23B1BF",
       orange: "#D2451A",
