@@ -7,5 +7,7 @@ export default {
 } as Meta<typeof Checkbox>;
 
 export const SampleCheckbox: StoryObj<typeof Checkbox> = {
-  args: {},
+  args: {
+    label: "Checkbox",
+  },
 };
