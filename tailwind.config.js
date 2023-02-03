@@ -22,7 +22,7 @@ module.exports = {
       "gray-dark": "#4A4A4A",
       transparent: "transparent",
       green: "#005C62",
-      red: "#A91E1E",
+      red: "#E53559",
     },
     borderRadius: {
       none: "0",
