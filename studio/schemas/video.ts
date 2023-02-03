@@ -2,6 +2,7 @@ import VideoEmbedPreview from "../../components/VideoEmbedPreview";
 
 export default {
   name: "video",
+  title: "Video en YouTube",
   type: "object",
   fields: [
     {
@@ -10,10 +11,12 @@ export default {
       type: "link",
     },
   ],
+  components: {
+    preview: VideoEmbedPreview,
+  },
   preview: {
     select: {
       url: "url",
     },
-    component: VideoEmbedPreview,
   },
 };

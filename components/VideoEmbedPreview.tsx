@@ -1,9 +1,9 @@
 import React from "react";
 import getYouTubeID from "get-youtube-id";
 
-function VideoEmbedPreview({ value }: { value: { url: string } }) {
-  const videoId = getYouTubeID(value.url);
-  const url = `https://www.youtube.com/embed/${videoId}`;
+function VideoEmbedPreview(value: { url: { url: string } }) {
+  const videoId = getYouTubeID(value.url?.url);
+  const YTUrl = `https://www.youtube.com/embed/${videoId}`;
 
   if (!videoId) {
     return <p>Se necesita un enlace valido de Youtube.</p>;
@@ -13,10 +13,9 @@ function VideoEmbedPreview({ value }: { value: { url: string } }) {
     <iframe
       width="520"
       height="292.50"
-      src={url}
+      src={YTUrl}
       title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      // allowFullScreen
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     ></iframe>
   );
 }
