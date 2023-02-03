@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom/extend-expect";
 
-import { render } from "@testing-library/react";
+import { fireEvent, render } from "@testing-library/react";
 import { Checkbox } from "./Checkbox";
 
 describe("Checkbox", () => {
@@ -18,6 +18,17 @@ describe("Checkbox", () => {
 
     expect(checkbox).toBeInTheDocument();
     expect(label).toBeInTheDocument();
+  });
+
+  it("handles changes in checkbox state", () => {
+    const { getByRole } = render(<Checkbox {...defaultProps} />);
+    const checkbox = getByRole("checkbox");
+
+    expect(checkbox).not.toBeChecked();
+
+    fireEvent.click(checkbox);
+
+    expect(checkbox).toBeChecked();
   });
 
   it("renders with a default checked state", () => {
