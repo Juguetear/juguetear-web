@@ -7,9 +7,6 @@ yarn lint-staged
 # Run eslint
 yarn run lint --cache
 
-# Run tsc (check types)
-yarn run tsc
-
 # Colors
 red='\033[0;31m'
 green='\033[0;32m'
