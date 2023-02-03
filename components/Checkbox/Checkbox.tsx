@@ -1,13 +1,17 @@
 import { useState } from "react";
 
 export type CheckboxProps = {
-  checked: boolean;
+  checked?: boolean;
   disabled?: boolean;
   label: string;
 };
 
-const Checkbox = ({ checked, label, disabled }: CheckboxProps) => {
+export const Checkbox = ({ checked, label, disabled }: CheckboxProps) => {
   const [isChecked, setChecked] = useState(checked);
+
+  if (!label || label.trim().length === 0) {
+    return null;
+  }
 
   const handleCheck = () => {
     setChecked(!isChecked);
@@ -33,5 +37,3 @@ const Checkbox = ({ checked, label, disabled }: CheckboxProps) => {
     </div>
   );
 };
-
-export default Checkbox;
