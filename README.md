@@ -105,12 +105,17 @@ Nuestro tech stack consiste en las siguientes tecnologías:
 
 > 💡 No hace falta tener mucho conocimiento en el tech stack para poder contribuir.
 
-**<a href="https://nextjs.org/docs">NextJS</a>**_o ReactJS_
-**<a href="typescriptlang.org/docs/">TypeScript</a>**_o JavaScript_
-**<a href="https://tailwindcss.com/docs/installation">Tailwind CSS</a>**
-**<a href="https://storybook.js.org/docs/react/writing-docs/introduction">Storybook</a>**
-**<a href="https://www.sanity.io/docs">Sanity</a>**
-**<a href="https://jestjs.io/docs/getting-started">Jest</a>**
+- **<a href="https://nextjs.org/docs">NextJS</a>**. o ReactJS
+
+- **<a href="typescriptlang.org/docs/">TypeScript</a>** o JavaScript
+
+- **<a href="https://tailwindcss.com/docs/installation">Tailwind CSS</a>**
+
+- **<a href="https://storybook.js.org/docs/react/writing-docs/introduction">Storybook</a>**
+
+- **<a href="https://www.sanity.io/docs">Sanity</a>**
+
+- **<a href="https://jestjs.io/docs/getting-started">Jest</a>**
 
 
 <details>
