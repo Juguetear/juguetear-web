@@ -27,7 +27,7 @@ function Home() {
         <Logo className="mx-auto" />
         <h1 className="text-center">¡Sitio web en construcción!</h1>
         <p>
-          Si deseas saber mas sobre la iniciativa, visita nuestro{" "}
+          Si deseas saber más sobre la iniciativa, visita nuestro{" "}
           <StyledLink href="https://github.com/Juguetear/juguetear-web#readme">
             README.
           </StyledLink>{" "}
@@ -39,7 +39,7 @@ function Home() {
           para poder hacerlo.
         </p>
         <p>
-          Si en necesitas hacer consultas, podés hacerlas en nuestro canal{" "}
+          Si necesitas hacer consultas, podés hacerlas en nuestro canal{" "}
           <StyledLink href="https://discord.com/channels/594363964499165194/1035685740409012244">
             #juguetear
           </StyledLink>{" "}
