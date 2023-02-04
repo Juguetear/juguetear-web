@@ -105,12 +105,13 @@ Nuestro tech stack consiste en las siguientes tecnologías:
 
 > 💡 No hace falta tener mucho conocimiento en el tech stack para poder contribuir.
 
-- **NextJS** _o ReactJS_
-- **TypeScript** _o JavaScript_
-- **Tailwind CSS**
-- **Storybook**
-- **Sanity**
-- **Jest**
+**<a href="https://nextjs.org/docs">NextJS</a>**_o ReactJS_
+**<a href="typescriptlang.org/docs/">TypeScript</a>**_o JavaScript_
+**<a href="https://tailwindcss.com/docs/installation">Tailwind CSS</a>**
+**<a href="https://storybook.js.org/docs/react/writing-docs/introduction">Storybook</a>**
+**<a href="https://www.sanity.io/docs">Sanity</a>**
+**<a href="https://jestjs.io/docs/getting-started">Jest</a>**
+
 
 <details>
 <summary>Has click aquí, para ver extensiones recomendadas para VSCode</summary><br>
