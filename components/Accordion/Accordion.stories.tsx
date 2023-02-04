@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 
 import { Accordion } from "./Accordion";
 
@@ -12,12 +12,14 @@ type AccordionProps = {
   children: JSX.Element;
 };
 
+type Story = StoryObj<typeof Accordion>;
+
 export default {
   title: "Accordion",
   component: Accordion,
 } as Meta<typeof Accordion>;
 
-export const Normal = {
+export const Normal: Story = {
   args: {
     title: "¿Hay que pagar para usar los juguetes?",
     children: <p>No, el prestamo es sin costo alguno.</p>,
