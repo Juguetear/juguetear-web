@@ -1,19 +1,21 @@
-import { Meta } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 
 import { State } from "./State";
+
+type Story = StoryObj<typeof State>;
 
 export default {
   title: "State",
   component: State,
 } as Meta<typeof State>;
 
-export const Disponible = {
+export const Disponible: Story = {
   args: {
     available: true,
   },
 };
 
-export const Prestado = {
+export const Prestado: Story = {
   args: {
     available: false,
   },
