@@ -1,12 +1,12 @@
 // TODO: Migrate schemas from './studio/schemas' to './schemas'
 import accessibility_declaration from "schemas/accessibility-declaration";
 import characteristics_list from "schemas/characteristics_list";
+import document from "schemas/document";
 import homePage from "schemas/home-page";
 import about from "studio/schemas/about";
 import block from "studio/schemas/block";
 import characteristics from "studio/schemas/characteristics";
 import collaborate from "studio/schemas/collaborate";
-import document from "studio/schemas/document";
 import documents from "studio/schemas/documents";
 import faq from "studio/schemas/faq";
 import image from "studio/schemas/image";
