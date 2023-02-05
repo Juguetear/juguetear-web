@@ -4,18 +4,28 @@ import Input from "./Input";
 export default {
   title: "Input",
   component: Input,
+  args: {
+    required: false,
+  },
 } as Meta<typeof Input>;
 
-export const Default: StoryFn<typeof Input> = () => (
-  <Input label="Texto" helperText="Mensaje error" name="input" />
+export const Default: StoryFn<typeof Input> = (args) => (
+  <Input {...args} label="Texto" helperText="Mensaje error" name="input" />
 );
 
-export const Error: StoryFn<typeof Input> = () => (
-  <Input label="Texto" helperText="Mensaje error" name="input-error" error />
-);
-
-export const Touched: StoryFn<typeof Input> = () => (
+export const Error: StoryFn<typeof Input> = (args) => (
   <Input
+    {...args}
+    label="Texto"
+    helperText="Mensaje error"
+    name="input-error"
+    error
+  />
+);
+
+export const Touched: StoryFn<typeof Input> = (args) => (
+  <Input
+    {...args}
     label="Texto"
     helperText="Mensaje error"
     name="input-touched"
@@ -23,8 +33,9 @@ export const Touched: StoryFn<typeof Input> = () => (
   />
 );
 
-export const Required: StoryFn<typeof Input> = () => (
+export const Required: StoryFn<typeof Input> = (args) => (
   <Input
+    {...args}
     label="Texto"
     helperText="Mensaje error"
     name="input-touched"

@@ -22,6 +22,27 @@ describe("Input", () => {
     );
   });
 
+  it("Check text label", () => {
+    let value = "";
+
+    const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
+      value = target.value;
+    };
+
+    const { getByLabelText } = render(
+      <Input
+        label="Example"
+        value={value}
+        onChange={handleChange}
+        helperText="helper"
+        name="input"
+        required
+      />
+    );
+
+    expect(getByLabelText(/Example/i, { selector: "input" }));
+  });
+
   it("Check input with error prop", () => {
     let value = "";
 
