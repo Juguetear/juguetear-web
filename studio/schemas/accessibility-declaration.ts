@@ -1,4 +1,4 @@
-import { block } from "../../schemas/block";
+import block from "../../schemas/block";
 
 export default {
   name: "accessibilityDeclaration",
