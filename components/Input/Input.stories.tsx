@@ -33,12 +33,22 @@ export const Touched: StoryFn<typeof Input> = (args) => (
   />
 );
 
+export const Active: StoryFn<typeof Input> = (args) => (
+  <Input
+    {...args}
+    label="Texto"
+    helperText="Mensaje error"
+    name="input-active"
+    className="ring-orange"
+  />
+);
+
 export const Required: StoryFn<typeof Input> = (args) => (
   <Input
     {...args}
     label="Texto"
     helperText="Mensaje error"
-    name="input-touched"
+    name="input-required"
     required
   />
 );

@@ -36,11 +36,10 @@ describe("Input", () => {
         onChange={handleChange}
         helperText="helper"
         name="input"
-        required
       />
     );
 
-    expect(getByLabelText(/Example/i, { selector: "label" }));
+    expect(getByLabelText(/Example/i)).toBeInTheDocument();
   });
 
   it("Check input with error prop", () => {

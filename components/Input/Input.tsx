@@ -38,8 +38,9 @@ const Input = ({
           aria-describedby="error"
           className={`
            ${className}
-           border-solid transition-6 font-normal transition-all w-full p-2 box-border rounded
+           transition-6 font-normal transition-all w-full p-2 rounded
            focus:ring-3 focus:shadow-2md focus:bg-blue-light 
+           active:ring-orange
            ${error ? "ring-red ring-2" : "ring-1 ring-blue"}`}
           {...props}
         />
