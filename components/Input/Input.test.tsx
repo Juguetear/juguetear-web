@@ -40,7 +40,7 @@ describe("Input", () => {
       />
     );
 
-    expect(getByLabelText(/Example/i, { selector: "input" }));
+    expect(getByLabelText(/Example/i, { selector: "label" }));
   });
 
   it("Check input with error prop", () => {
