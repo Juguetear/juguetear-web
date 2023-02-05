@@ -13,6 +13,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 
 ## Indice de contenidos
 
+- [Despliegues](#despliegues)
 - [Cómo contribuir](#cómo-contribuir)
   - [Con materiales](#con-materiales)
   - [Aportando a este repositorio](#aportando-a-este-repositorio)
@@ -30,6 +31,14 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 - [Licencias](#licencias)
 - [Links de interés](#links-de-interés)
 
+---
+
+## Despliegues
+
+- **Web:** [https://juguetear-web.vercel.app/](https://juguetear-web.vercel.app/)
+- **Storybook:** [https://storybook-juguetear-web.vercel.app/](https://storybook-juguetear-web.vercel.app/)
+- **Sanity Studio:** [https://juguetear-web.vercel.app/studio](https://juguetear-web.vercel.app/studio)
+ 
 ---
 
 ## Cómo contribuir
