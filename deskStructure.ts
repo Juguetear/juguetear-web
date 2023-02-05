@@ -3,11 +3,11 @@ import { HelpCircleIcon, HomeIcon } from "@sanity/icons";
 import { StructureBuilder } from "sanity/desk";
 
 // TODO: Migrate schemas from './studio/schemas' to './schemas'
+import homePage from "schemas/home-page";
 import about from "studio/schemas/about";
 import accessibilityDeclaration from "studio/schemas/accessibility-declaration";
 import collaborate from "studio/schemas/collaborate";
 import faq from "studio/schemas/faq";
-import homePage from "studio/schemas/home-page";
 
 // List of 'documents/schemas' to ignore from Sanity's Desk list.
 const pages = [
@@ -28,7 +28,7 @@ const deskStructure = (S: StructureBuilder) => {
       .items([
         // home-page schema
         S.listItem()
-          .title(homePage.title)
+          .title(homePage.title || "Home")
           .icon(HomeIcon)
           .child(
             S.document().schemaType(homePage.name).documentId(homePage.name)

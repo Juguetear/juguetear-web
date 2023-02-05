@@ -9,3 +9,5 @@ export const block = defineType({
     defineArrayMember({ type: "img", title: "Image", name: "blocksimage" }),
   ],
 });
+
+export default block;

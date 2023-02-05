@@ -8,7 +8,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "sanity": "yarn workspace sanity-studio start",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o .sb",
     "lint": "next lint",
@@ -19,6 +18,7 @@
     "node": ">=16.8.0"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.7",
     "@next/font": "^13.1.0",
     "@sanity/client": "^3.4.1",
     "@sanity/vision": "^3.1.2",
