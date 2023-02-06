@@ -20,7 +20,7 @@ export const Checkbox = ({ checked, label, disabled }: CheckboxProps) => {
   return (
     <div className="flex items-center max-w-[13rem]">
       <input
-        id={label.toLowerCase()}
+        id={label.toLowerCase().split(" ").join("")}
         type="checkbox"
         checked={isChecked}
         aria-checked={isChecked}
@@ -29,7 +29,7 @@ export const Checkbox = ({ checked, label, disabled }: CheckboxProps) => {
         disabled={disabled}
       />
       <label
-        htmlFor={label.toLowerCase()}
+        htmlFor={label.toLowerCase().split(" ").join("")}
         className="text-blue text-base font-outfit ml-2 peer-checked:text-orange peer-hover:font-semibold"
       >
         {label}
