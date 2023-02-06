@@ -19,31 +19,34 @@ export default {
       defaultValue: 2,
     },
   },
+  args: {
+    checked: false,
+  },
 } as Meta<typeof Checkbox>;
 
-export const SampleCheckbox: StoryObj<typeof Checkbox> = {
+type Story = StoryObj<typeof Checkbox>;
+
+export const SampleCheckbox: Story = {
   args: {
     label: "Checkbox",
   },
 };
 
-export const Checked: StoryObj<typeof Checkbox> = {
+export const Checked: Story = {
   args: {
     checked: true,
     label: "Checked",
   },
 };
 
-export const Unchecked: StoryObj<typeof Checkbox> = {
+export const Unchecked: Story = {
   args: {
-    checked: false,
     label: "Unchecked",
   },
 };
 
-export const Disabled: StoryObj<typeof Checkbox> = {
+export const Disabled: Story = {
   args: {
-    checked: false,
     disabled: true,
     label: "Disabled",
   },
