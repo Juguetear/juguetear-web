@@ -18,13 +18,13 @@ export const Checkbox = ({ checked, label, disabled }: CheckboxProps) => {
   };
 
   return (
-    <div className="flex max-w-[13rem]">
+    <div className="flex max-w-[13rem] focus-within:shadow-2md p-1 rounded">
       <input
         id={label.toLowerCase().split(" ").join("")}
         type="checkbox"
         checked={isChecked}
         aria-checked={isChecked}
-        className="peer appearance-none w-5 min-w-[1.25rem] h-5 border rounded-[2px] mt-1 border-blue cursor-pointer  checked:border-orange checked:bg-orange hover:enabled:border-2 disabled:cursor-not-allowed"
+        className="peer appearance-none w-5 min-w-[1.25rem] h-5 border rounded-[2px] mt-1 border-blue cursor-pointer checked:border-orange checked:bg-orange hover:enabled:border-2 focus:outline-none disabled:cursor-not-allowed"
         onChange={handleCheck}
         disabled={disabled}
       />
