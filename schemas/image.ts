@@ -1,7 +1,7 @@
 import { defineField, defineType } from "sanity";
 
 const image = defineType({
-  title: "Imagen",
+  title: "Imagen con texto alternativo",
   name: "img",
   options: { hotspot: true },
   type: "image",
