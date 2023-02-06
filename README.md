@@ -230,7 +230,11 @@ _Diseño UX/UI_
 **Mariana Lessi**
 
 _Desarrollo y administración del repositorio_  
-**Verónica García (nykka)**
+**Verónica García ([@nykka](https://github.com/nykka))**
+
+**Manuel Escribano ([@LPRegen](https://github.com/LPRegen))**
+
+**Anthony Mackensen ([@TonyMckes](https://github.com/TonyMckes))**
 
 ---
 
