@@ -5,11 +5,11 @@ import createSchema from "part:@sanity/base/schema-creator";
 // Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
+import characteristics from "../../schemas/characteristics";
 import homePage from "../../schemas/home-page";
 import about from "./about";
 import accessibilityDeclaration from "./accessibility-declaration";
 import block from "./block";
-import characteristics from "./characteristics";
 import characteristics_list from "./characteristics_list";
 import collaborate from "./collaborate";
 import document from "./document";
