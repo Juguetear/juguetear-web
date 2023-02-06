@@ -62,6 +62,7 @@
     "lint-staged": "^13.1.0",
     "postcss": "^8.4.20",
     "prettier": "2.8.1",
+    "rimraf": "^4.1.2",
     "storybook": "^7.0.0-beta.17",
     "tailwindcss": "^3.2.4",
     "tsc-files": "^1.1.3",
