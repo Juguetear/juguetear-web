@@ -19,6 +19,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
   - [Replicando el proyecto en tu ciudad](#replicando-el-proyecto-en-tu-ciudad)
 - [Comunidad](#comunidad)
 - [Requerimientos](#requerimientos)
+- [Despliegues](#despliegues)
 - [Diseño de interfaz (UI/UX)](#diseño-de-interfaz-uiux)
 - [Accesibilidad](#accesibilidad)
 - [Tech Stack](#tech-stack)
@@ -75,6 +76,14 @@ Este proyecto se desarrolla con la participación y el apoyo de FrontendCafé. E
 - Tener una cuenta en [GitHub](https://docs.github.com/es/get-started/signing-up-for-github/signing-up-for-a-new-github-account)
 - Leer y seguir [Código de Conducta][doc-code_of_conduct]
 - Unirte a [FrontendCafé][dc-fec] en Discord
+
+---
+
+## Despliegues
+
+- **Web:** [https://juguetear-web.vercel.app/](https://juguetear-web.vercel.app/)
+- **Storybook:** [https://storybook-juguetear-web.vercel.app/](https://storybook-juguetear-web.vercel.app/)
+- **Sanity Studio:** [https://juguetear-web.vercel.app/studio](https://juguetear-web.vercel.app/studio)
 
 ---
 
