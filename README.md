@@ -22,8 +22,6 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 - [Diseño de interfaz (UI/UX)](#diseño-de-interfaz-uiux)
 - [Accesibilidad](#accesibilidad)
 - [Tech Stack](#tech-stack)
-  - [Sanity](#sanity)
-  - [Storybook](#storybook)
 - [Instalación del proyecto](#instalación-del-proyecto)
 - [Contribuidores](#contribuidores)
 - [Staff](#staff)
@@ -105,7 +103,7 @@ Nuestro tech stack consiste en las siguientes tecnologías:
 
 > 💡 No hace falta tener mucho conocimiento en el tech stack para poder contribuir.
 
-- **<a href="https://nextjs.org/docs">NextJS</a>**. o ReactJS
+- **<a href="https://nextjs.org/docs">NextJS</a>** o ReactJS
 - **<a href="https://www.typescriptlang.org/docs/">TypeScript</a>** o JavaScript
 - **<a href="https://tailwindcss.com/docs/installation">Tailwind CSS</a>**
 - **<a href="https://storybook.js.org/docs/react/get-started/introduction">Storybook</a>**
