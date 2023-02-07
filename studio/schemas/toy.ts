@@ -32,8 +32,8 @@ export default {
     {
       name: "images",
       type: "array",
-      title: "Imágenes del juguete.",
-      description: "Incluir imágenes del juguete.",
+      title: "Recursos visuales.",
+      description: "Incluir recursos visuales del juguete.",
       of: [{ title: "Imagen", type: "img" }, { type: "video" }],
     },
     {
