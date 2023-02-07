@@ -1,10 +1,13 @@
+import { Button } from "components/Button/Button";
 import Image from "next/image";
+import PdfSvg from "../components/assets/pdf.svg";
 
 function Home() {
   return (
     <div>
       <main>
         <h1>Hola!</h1>
+        <Button appearance="buttonWithIcon" icon={PdfSvg} text={"button"} />
       </main>
 
       <footer>
