@@ -13,10 +13,6 @@ export const Checkbox = ({ checked, label, disabled }: CheckboxProps) => {
     return null;
   }
 
-  const handleCheck = () => {
-    setChecked(!isChecked);
-  };
-
   return (
     <div className="flex max-w-[13rem] focus-within:shadow-2md p-1 rounded">
       <input
@@ -24,13 +20,15 @@ export const Checkbox = ({ checked, label, disabled }: CheckboxProps) => {
         type="checkbox"
         checked={isChecked}
         aria-checked={isChecked}
-        className="peer appearance-none w-5 min-w-[1.25rem] h-5 border rounded-[2px] mt-1 border-blue cursor-pointer checked:border-orange checked:bg-orange hover:enabled:border-2 focus:outline-none disabled:cursor-not-allowed"
-        onChange={handleCheck}
+        className="peer appearance-none w-5 min-w-[1.25rem] h-5 border rounded-[2px] mt-1 border-blue cursor-pointer checked:border-orange checked:bg-orange hover:enabled:border-2 focus:outline-none disabled:cursor-not-allowed disabled:border-gray-dark disabled:bg-gray-medium"
+        onChange={() => {
+          setChecked(!isChecked);
+        }}
         disabled={disabled}
       />
       <label
         htmlFor={label.toLowerCase().split(" ").join("")}
-        className="text-blue text-base font-outfit ml-2 peer-checked:text-orange peer-hover:font-semibold"
+        className="text-blue text-base font-outfit ml-2 peer-checked:text-orange peer-hover:font-semibold peer-disabled:text-gray-dark"
       >
         {label}
       </label>
