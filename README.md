@@ -84,7 +84,7 @@ Este proyecto se desarrolla con la participación y el apoyo de FrontendCafé. E
 - **Web:** [https://juguetear-web.vercel.app/](https://juguetear-web.vercel.app/)
 - **Storybook:** [https://storybook-juguetear-web.vercel.app/](https://storybook-juguetear-web.vercel.app/)
 - **Sanity Studio:** [https://juguetear-web.vercel.app/studio](https://juguetear-web.vercel.app/studio)
- 
+
 ---
 
 ## Diseño de interfaz (UI/UX)
