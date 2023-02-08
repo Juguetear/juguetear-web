@@ -1,18 +1,12 @@
 interface NotificationProps {
   children: JSX.Element;
-  hasIcon?: boolean;
 }
-export const Notification = ({
-  children,
-  hasIcon = false,
-}: NotificationProps) => {
+const Notification = ({ children }: NotificationProps) => {
   return (
-    <div
-      className={`flex justify-between bg-turquoise/[0.1] rounded-lg py-8 pr-[83px] ${
-        hasIcon ? " pl-[7px]" : " pl-[83px]"
-      }`}
-    >
+    <div className="flex justify-between bg-turquoise/[0.1] rounded-lg py-8 px-7">
       {children}
     </div>
   );
 };
+
+export default Notification;
