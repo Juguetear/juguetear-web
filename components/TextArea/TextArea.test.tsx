@@ -1,18 +1,18 @@
 import "@testing-library/jest-dom/extend-expect";
 import { render } from "@testing-library/react";
 import { ChangeEvent } from "react";
-import Input from "./Input";
+import TextArea from "./TextArea";
 
-describe("Input", () => {
+describe("TextArea", () => {
   it("Component renders without crashing", () => {
     let value = "";
 
-    const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
+    const handleChange = ({ target }: ChangeEvent<HTMLTextAreaElement>) => {
       value = target.value;
     };
 
     render(
-      <Input
+      <TextArea
         label="texto"
         value={value}
         onChange={handleChange}
@@ -25,37 +25,37 @@ describe("Input", () => {
   it("Check text label", () => {
     let value = "";
 
-    const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
+    const handleChange = ({ target }: ChangeEvent<HTMLTextAreaElement>) => {
       value = target.value;
     };
 
     const { getByLabelText } = render(
-      <Input
+      <TextArea
         label="Example"
         value={value}
         onChange={handleChange}
         helperText="helper"
-        name="input"
+        name="TextArea"
       />
     );
 
     expect(getByLabelText(/Example/i)).toBeInTheDocument();
   });
 
-  it("Check input with error prop", () => {
+  it("Check TextArea with error prop", () => {
     let value = "";
 
-    const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
+    const handleChange = ({ target }: ChangeEvent<HTMLTextAreaElement>) => {
       value = target.value;
     };
 
     const { container, getByText } = render(
-      <Input
+      <TextArea
         label="error"
         value={value}
         onChange={handleChange}
         helperText="helper"
-        name="input"
+        name="TextArea"
         error
       />
     );
@@ -64,20 +64,20 @@ describe("Input", () => {
     expect(getByText(/helper/i)).toBeInTheDocument();
   });
 
-  it("Check input with required prop", () => {
+  it("Check TextArea with required prop", () => {
     let value = "";
 
-    const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
+    const handleChange = ({ target }: ChangeEvent<HTMLTextAreaElement>) => {
       value = target.value;
     };
 
     const { getByLabelText } = render(
-      <Input
+      <TextArea
         label="required"
         value={value}
         onChange={handleChange}
         helperText="helper"
-        name="input"
+        name="TextArea"
         required
       />
     );

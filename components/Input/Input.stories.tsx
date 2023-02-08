@@ -6,49 +6,31 @@ export default {
   component: Input,
   args: {
     required: false,
+    name: "input",
   },
 } as Meta<typeof Input>;
 
 export const Default: StoryFn<typeof Input> = (args) => (
-  <Input {...args} label="Texto" helperText="Mensaje error" name="input" />
+  <Input {...args} label="Texto" helperText="Mensaje" name="input" />
 );
 
 export const Error: StoryFn<typeof Input> = (args) => (
-  <Input
-    {...args}
-    label="Texto"
-    helperText="Mensaje error"
-    name="input-error"
-    error
-  />
+  <Input {...args} label="Texto" helperText="Mensaje" error />
 );
 
-export const Touched: StoryFn<typeof Input> = (args) => (
+export const Focus: StoryFn<typeof Input> = (args) => (
   <Input
     {...args}
     label="Texto"
-    helperText="Mensaje error"
-    name="input-touched"
+    helperText="Mensaje"
     className="ring-[3px] shadow-2md bg-blue-light"
   />
 );
 
-export const Active: StoryFn<typeof Input> = (args) => (
-  <Input
-    {...args}
-    label="Texto"
-    helperText="Mensaje error"
-    name="input-active"
-    className="ring-orange"
-  />
+export const Required: StoryFn<typeof Input> = (args) => (
+  <Input {...args} label="Texto" helperText="Mensaje" required />
 );
 
-export const Required: StoryFn<typeof Input> = (args) => (
-  <Input
-    {...args}
-    label="Texto"
-    helperText="Mensaje error"
-    name="input-required"
-    required
-  />
+export const Disabled: StoryFn<typeof Input> = (args) => (
+  <Input {...args} label="Texto" helperText="Mensaje" required disabled />
 );

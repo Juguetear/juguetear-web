@@ -1,23 +1,24 @@
-import { InputHTMLAttributes, useState } from "react";
+import { TextareaHTMLAttributes, useState } from "react";
 
 interface InputProps
   extends Pick<
-    InputHTMLAttributes<HTMLInputElement>,
+    TextareaHTMLAttributes<HTMLTextAreaElement>,
     | "id"
-    | "type"
     | "value"
     | "onChange"
     | "name"
     | "required"
     | "className"
     | "disabled"
+    | "cols"
+    | "rows"
   > {
   error?: boolean;
   label: string;
   helperText: string;
 }
 
-const Input = ({
+const TextArea = ({
   id,
   error = false,
   label,
@@ -30,10 +31,11 @@ const Input = ({
   const [isTouched, setIsTouched] = useState(false);
   const spanStyles = `h-[35.5px] font-medium ${isTouched ? "font-bold" : ""} ${
     error ? "text-red font-bold" : ""
-  }`;
-  const inputStyles = `${className} resize-none w-full h-[46px] rounded-[3px] p-2 ring-1
-  focus-visible:ring-3 focus-visible:shadow-2md focus-visible:bg-blue-light active:ring-orange 
-  ${disabled ? "ring-gray-dark" : ""} ${
+  } transition-all ease-in-out duration-300`;
+  const inputStyles = `${className} resize-none w-full h-[240px] rounded-[3px] p-2 ring-1
+   focus-visible:ring-3 focus-visible:shadow-2md focus-visible:bg-blue-light active:ring-orange 
+   transition-all ease-in-out duration-150
+   ${disabled ? "ring-gray-dark" : ""} ${
     error ? "ring-3 ring-red" : "ring-blue"
   }`;
   const svgStyles = `absolute right-[13px] top-[11px] ${
@@ -42,15 +44,16 @@ const Input = ({
 
   return (
     <div className="flex flex-col">
-      <label htmlFor={id} className="font-inter text-base flex flex-col">
-        <span className={spanStyles}>{`${required ? "*" : "*"}${label}`}</span>
+      <label htmlFor={id} className="font-inter text-base flex flex-col ">
+        <span className={spanStyles}>{`${required ? "*" : ""}${label}`}</span>
 
         <div className="relative">
-          <input
+          <textarea
             id={id}
             required={required}
             disabled={disabled}
             aria-invalid={error}
+            rows={9}
             aria-describedby="error"
             onClick={() => setIsTouched(true)}
             onBlur={() => setIsTouched(false)}
@@ -89,4 +92,4 @@ const Input = ({
   );
 };
 
-export default Input;
+export default TextArea;
