@@ -6,12 +6,16 @@ interface Appearance {
   button: string;
 }
 
+const BASE_STYLE =
+  "font-extrabold md:rounded focus-within:shadow-md shadow-turquoise text-l font-outfit";
+
+const BASE_STYLE_LINK =
+  "py-1 px-2 text-blue hover:text-orange focus:text-blue underline";
+
 const APPEARANCE: Appearance = {
-  link: "md:rounded focus-within:shadow-md shadow-turquoise py-1 px-2 text-xl font-extrabold text-blue hover:text-orange  focus:text-blue  font-outfit underline",
-  buttonWithIcon:
-    "flex items-center   md:rounded focus-within:shadow-md shadow-turquoise py-1 px-2 text-xl font-extrabold text-blue hover:text-orange  focus:text-blue  font-outfit underline",
-  button:
-    "bg-orange hover:bg-blue focus:bg-orange  md:rounded  focus-within:shadow-md shadow-turquoise py-4 px-8 text-xl font-extrabold text-white font-outfit ",
+  link: `${BASE_STYLE} ${BASE_STYLE_LINK}`,
+  buttonWithIcon: `${BASE_STYLE} flex items-center ${BASE_STYLE_LINK}`,
+  button: `${BASE_STYLE} bg-orange hover:bg-blue focus:bg-orange  py-4 px-8 text-white `,
 };
 
 type Appearances = keyof Appearance;
@@ -32,6 +36,9 @@ interface IButtonProps
 export const Button: React.FC<IButtonProps> = (props: IButtonProps) => {
   const { appearance, text, disabled, icon, handleClick, ...rest } = props;
   const getAppearance = (appearance: Appearances): string => {
+    if (disabled) {
+      return `${APPEARANCE[appearance]} cursor-not-allowed`;
+    }
     return APPEARANCE[appearance];
   };
 

@@ -3,8 +3,13 @@ import PdfSvg from "../assets/pdf.svg";
 import { Button } from "./Button";
 
 export default {
-  title: "button",
+  title: "Button",
   component: Button,
+  argTypes: {
+    handleClick: {
+      action: "Clicked",
+    },
+  },
 } as Meta<typeof Button>;
 
 const Template: StoryFn<typeof Button> = (args) => <Button {...args} />;
@@ -22,18 +27,14 @@ export const simpleButton = Template.bind({});
 simpleButton.args = {
   appearance: "button",
   text: "button",
-  handleClick: () => {
-    alert("simpleButton");
-  },
+  handleClick: () => {},
 };
 
 export const link = Template.bind({});
 link.args = {
   appearance: "link",
   text: "link",
-  handleClick: () => {
-    alert("link");
-  },
+  handleClick: () => {},
 };
 
 export const buttonWithIcon = Template.bind({});
@@ -41,9 +42,7 @@ buttonWithIcon.args = {
   appearance: "buttonWithIcon",
   text: "buttonWithIcon",
   icon: PdfSvg,
-  handleClick: () => {
-    alert("buttonWithIcon");
-  },
+  handleClick: () => {},
 };
 
 export const Disabled = Template.bind({});
