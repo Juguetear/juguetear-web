@@ -7,7 +7,7 @@ interface Appearance {
 }
 
 const BASE_STYLE =
-  "font-extrabold md:rounded focus-within:shadow-md shadow-turquoise text-l font-outfit";
+  "font-extrabold rounded focus-within:shadow-md shadow-turquoise text-lg font-outfit";
 
 const BASE_STYLE_LINK =
   "py-1 px-2 text-blue hover:text-orange focus:text-blue underline";
@@ -37,7 +37,7 @@ export const Button: React.FC<IButtonProps> = (props: IButtonProps) => {
   const { appearance, text, disabled, icon, handleClick, ...rest } = props;
   const getAppearance = (appearance: Appearances): string => {
     if (disabled) {
-      return `${APPEARANCE[appearance]} cursor-not-allowed`;
+      return `${APPEARANCE[appearance]} cursor-not-allowed disabled:opacity-25`;
     }
     return APPEARANCE[appearance];
   };

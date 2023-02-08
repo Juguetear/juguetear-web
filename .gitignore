@@ -60,3 +60,6 @@ next-env.d.ts
 #storybook
 /storybook-static
 migration-storybook.log
+
+#jetbrains
+.idea
