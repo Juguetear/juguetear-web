@@ -23,8 +23,6 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 - [Diseño de interfaz (UI/UX)](#diseño-de-interfaz-uiux)
 - [Accesibilidad](#accesibilidad)
 - [Tech Stack](#tech-stack)
-  - [Sanity](#sanity)
-  - [Storybook](#storybook)
 - [Instalación del proyecto](#instalación-del-proyecto)
 - [Contribuidores](#contribuidores)
 - [Staff](#staff)
@@ -114,12 +112,12 @@ Nuestro tech stack consiste en las siguientes tecnologías:
 
 > 💡 No hace falta tener mucho conocimiento en el tech stack para poder contribuir.
 
-- **NextJS** _o ReactJS_
-- **TypeScript** _o JavaScript_
-- **Tailwind CSS**
-- **Storybook**
-- **Sanity**
-- **Jest**
+- **<a href="https://nextjs.org/docs">NextJS</a>** o ReactJS
+- **<a href="https://www.typescriptlang.org/docs/">TypeScript</a>** o JavaScript
+- **<a href="https://tailwindcss.com/docs/installation">Tailwind CSS</a>**
+- **<a href="https://storybook.js.org/docs/react/get-started/introduction">Storybook</a>**
+- **<a href="https://www.sanity.io/docs">Sanity</a>**
+- **<a href="https://jestjs.io/docs/getting-started">Jest</a>**
 
 <details>
 <summary>Has click aquí, para ver extensiones recomendadas para VSCode</summary><br>
@@ -131,41 +129,6 @@ Nuestro tech stack consiste en las siguientes tecnologías:
 - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
 
 </details>
-
-### Sanity
-
-Todo el contenido se va a administrar usando Sanity como [Headless CMS](https://www.sanity.io/headless-cms).
-
-<!-- TODO: Update after [#126](https://github.com/Juguetear/juguetear-web/issues/126) -->
-
-Dentro del directorio [`/studio/schemas`](studio/schemas/) podes encontrar los _schemas_ disponibles. Los _schemas_ describen los tipos de documentos y sus campos (_fields_).
-
-<details>
-<summary>Ver mas información sobre Sanity haciendo click aca.</summary><br>
-
-En los archivos JSON en los que Sanity Studio escribe los datos el tipo de documento aparecen como la propiedad `_type`.
-
-Ahora, para obtener la información de Sanity, vas a tener que hacer _fetch_ utilizando el método `client()` inicializado en `lib/client.ts`. Por ejemplo, para traer todos los miembros del proyecto, podés hacer:
-
-```js
-const member = await client.fetch(`*[_type == "member"]`);
-```
-
-En el ejemplo de arriba `*[_type == "member"]` es el _query_ con el cual filtramos que información queremos traer. Este _query_ esta escrito en [GROQ](https://www.sanity.io/docs/groq). Sanity nos facilita una [cheat sheet](https://www.sanity.io/docs/query-cheat-sheet) con algunos de los _queries_ más comunes.
-
-Si querés saber más sobre el cliente JavaScript de Sanity, podés leer más en la [documentación](https://www.sanity.io/docs/js-client) de Sanity. Para hacer las cosas más sencillas, utilizamos el [toolkit](https://github.com/sanity-io/next-sanity) de Sanity para NextJS en este proyecto.
-
-Es muy común usar esta propiedad como _query_ para obtener su contenido (por ejemplo `*[_type == "animal"]`). Si querés saber más sobre los _schemas_, podés leer la [documentación](https://www.sanity.io/docs/schema-types) de Sanity al respecto.
-
-</details>
-
----
-
-### Storybook
-
-Storybook es una librería de código abierto que permite desarrollar y documentar tus componentes en un entorno aislado. Vamos a usarla para crear y testear todos los componentes del proyecto Juguetear.
-
-Para poder ver los componentes listos para usar, podes entrar a [este enlace][web-storybook] (_provisorio_).
 
 ---
 
