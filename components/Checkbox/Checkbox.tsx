@@ -36,7 +36,7 @@ export const Checkbox = ({ checked, label, disabled }: CheckboxProps) => {
       />
       <label
         htmlFor={formatLabel(label)}
-        className="text-blue text-base font-outfit ml-2 peer-checked:text-orange font-medium peer-hover:font-bold peer-disabled:text-gray-dark"
+        className="text-blue text-base font-outfit ml-2 peer-checked:text-orange font-medium peer-hover:font-bold peer-disabled:text-gray-dark peer-disabled:hover:font-medium"
       >
         {label}
       </label>
