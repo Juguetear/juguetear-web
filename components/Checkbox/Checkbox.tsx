@@ -6,7 +6,11 @@ export type CheckboxProps = {
   label: string;
 };
 
-export const Checkbox = ({ checked, label, disabled }: CheckboxProps) => {
+export const Checkbox = ({
+  checked = false,
+  label,
+  disabled,
+}: CheckboxProps) => {
   const [isChecked, setChecked] = useState(checked);
   const inputStyle =
     "peer appearance-none w-5 min-w-[1.25rem] h-5 border rounded-[2px] mt-1 border-blue cursor-pointer checked:border-orange checked:bg-orange hover:enabled:border-2 focus:outline-none disabled:cursor-not-allowed disabled:border-gray-dark disabled:bg-gray-medium";
