@@ -1,5 +1,5 @@
 import { DocumentIcon } from "@sanity/icons";
-import { defineArrayMember, defineField } from "sanity";
+import { defineArrayMember, defineField, defineType } from "sanity";
 
 const faqListField = defineField({
   title: "Listado de preguntas y respuestas",
@@ -29,23 +29,23 @@ const faqListField = defineField({
   ],
 });
 
-const faq = {
+const faq = defineType({
   title: "Preguntas y respuestas frequentes",
   name: "faq",
   type: "document",
   icon: DocumentIcon,
   fields: [
-    {
+    defineField({
       name: "pageTitle",
       type: "string",
       initialValue: "Página de preguntas y respuestas frequentes",
       hidden: true,
-    },
+    }),
     faqListField,
   ],
   preview: {
     select: { title: "pageTitle" },
   },
-};
+});
 
 export default faq;
