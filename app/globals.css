@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  html {
+  * {
     @apply font-inter;
   }
   h1 {
