@@ -15763,10 +15763,12 @@ __metadata:
     prettier: 2.8.1
     react: 18.2.0
     react-dom: 18.2.0
+    rimraf: ^4.1.2
     sanity: ^3.1.2
     storybook: ^7.0.0-beta.17
     styled-components: ^5.3.6
     tailwindcss: ^3.2.4
+    tsc-files: ^1.1.3
     typescript: 4.9.4
   languageName: unknown
   linkType: soft
@@ -20897,6 +20899,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rimraf@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "rimraf@npm:4.1.2"
+  bin:
+    rimraf: dist/cjs/src/bin.js
+  checksum: 480b8147fd9bcbef3ac118f88a7b1169c3872977a3411a0c84df838bfc30e175a394c0db6f9619fc8b8a886a18c6d779d5e74f380a0075ecc710afaf81b3f50c
+  languageName: node
+  linkType: hard
+
 "rimraf@npm:~2.6.2":
   version: 2.6.3
   resolution: "rimraf@npm:2.6.3"
@@ -22927,6 +22938,17 @@ __metadata:
     typescript:
       optional: true
   checksum: c2a698b85d521298fe6f2435fbf2d3dc5834b423ea25abd321805ead3f399dbeedce7ca09492d7eb005b9d2c009c6b9587055bc3ab273dc6b9e40eefd7edb5b2
+  languageName: node
+  linkType: hard
+
+"tsc-files@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "tsc-files@npm:1.1.3"
+  peerDependencies:
+    typescript: ">=3"
+  bin:
+    tsc-files: lib/index.js
+  checksum: dd21524d9de841edf65278a00fe963679773a1dbde0b9316cc3ca9aed60b8903dae4c8819974ead0ab28efde7e1c112a572c8152050e02a3653d7b6416009605
   languageName: node
   linkType: hard
 
