@@ -24,6 +24,8 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 - [Accesibilidad](#accesibilidad)
 - [Tech Stack](#tech-stack)
 - [Instalación del proyecto](#instalación-del-proyecto)
+- [Storybook](#storybook)
+- [Sanity](#sanity)
 - [Contribuidores](#contribuidores)
 - [Staff](#staff)
 - [Licencias](#licencias)
@@ -170,6 +172,46 @@ yarn dev
 Se iniciara el servidor de desarrollo. Visitá [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
 > 💡 Podés realizar preguntas en el canal [#juguetear][dc-channel] dentro del servidor de [FrontendCafé][dc-fec] en Discord.
+
+---
+
+## Storybook
+
+> ⚠️ Asegúrate de haber realizado primero los pasos de [Instalación del proyecto](#instalación-del-proyecto).
+
+Este proyecto utiliza [Storybook](https://storybook.js.org/) para la documentación de los componentes.
+
+Los eventos de clic deben registrarse utilizando [storybook/addon-actions](https://storybook.js.org/docs/react/essentials/controls).
+
+Para iniciar **Storybook** en tu local ejecuta:
+
+```
+yarn storybook
+```
+
+Se iniciará el servidor de **Storybook**. Visitá [http://localhost:6006](http://localhost:6006) en tu navegador para ver los componentes.
+
+---
+
+## Sanity
+
+> ⚠️ Asegúrate de haber realizado primero los pasos de [Instalación del proyecto](#instalación-del-proyecto).
+
+Este proyecto utiliza [Sanity](https://www.sanity.io/) para la gestión de contenido.
+
+**Sanity** es un _headless CMS_ que nos permite crear, organizar, publicar y eliminar contenido dentro de la web de **Juguetear**.
+
+Para iniciar **Sanity** en tu local ejecuta:
+
+```bash
+yarn run dev
+# o solo
+yarn dev
+```
+
+Se iniciara el servidor de desarrollo. Visitá [http://localhost:3000/studio](http://localhost:3000/studio) en tu navegador para ver el dashboad.
+
+Para tener accesso al dashboard de **Sanity** deberás contactar a [@nykka](https://github.com/nykka) por DM en Discord, deberás proporcionar tu email y número de [gh-issue](https://github.com/Juguetear/juguetear-web/issues).
 
 ---
 
