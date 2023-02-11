@@ -9,14 +9,17 @@ interface Appearance {
 const BASE_STYLE =
   "font-extrabold rounded focus-within:shadow-md shadow-turquoise text-base font-outfit";
 
-const BASE_STYLE_LINK =
-  "py-1 px-2 text-blue hover:text-orange focus:text-blue underline";
+const BASE_STYLE_LINK = "py-1 px-2 text-blue focus:text-blue underline";
 
-const APPEARANCE: Appearance = {
-  link: `${BASE_STYLE} ${BASE_STYLE_LINK}`,
-  buttonWithIcon: `${BASE_STYLE} flex items-center ${BASE_STYLE_LINK}`,
-  button: `${BASE_STYLE} bg-orange hover:bg-blue focus:bg-orange  py-3 px-7 text-white `,
-};
+const APPEARANCE = (disabled?: boolean): Appearance => ({
+  link: `${BASE_STYLE} ${BASE_STYLE_LINK} ${!disabled && "hover:text-orange"}`,
+  buttonWithIcon: `${BASE_STYLE} flex items-center ${BASE_STYLE_LINK} ${
+    !disabled && "hover:text-orange"
+  }`,
+  button: `${BASE_STYLE} bg-orange focus:bg-orange  py-3 px-7 text-white ${
+    !disabled && "hover:bg-blue"
+  } `,
+});
 
 type Appearances = keyof Appearance;
 
@@ -39,7 +42,7 @@ export const Button: React.FC<IButtonProps> = (props: IButtonProps) => {
   return (
     <button
       disabled={disabled}
-      className={`${APPEARANCE[appearance]} ${
+      className={`${APPEARANCE(disabled)[appearance]} ${
         disabled && "cursor-not-allowed disabled:opacity-25"
       }`}
       onClick={handleClick}
