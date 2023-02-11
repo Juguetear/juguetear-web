@@ -18,9 +18,6 @@ export const button = Template.bind({});
 button.args = {
   appearance: "button",
   text: "button",
-  handleClick: () => {
-    alert("button");
-  },
 };
 
 export const simpleButton = Template.bind({});

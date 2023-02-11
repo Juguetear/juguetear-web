@@ -7,7 +7,7 @@ interface Appearance {
 }
 
 const BASE_STYLE =
-  "font-extrabold rounded focus-within:shadow-md shadow-turquoise text-lg font-outfit";
+  "font-extrabold rounded focus-within:shadow-md shadow-turquoise text-base font-outfit";
 
 const BASE_STYLE_LINK =
   "py-1 px-2 text-blue hover:text-orange focus:text-blue underline";
@@ -15,7 +15,7 @@ const BASE_STYLE_LINK =
 const APPEARANCE: Appearance = {
   link: `${BASE_STYLE} ${BASE_STYLE_LINK}`,
   buttonWithIcon: `${BASE_STYLE} flex items-center ${BASE_STYLE_LINK}`,
-  button: `${BASE_STYLE} bg-orange hover:bg-blue focus:bg-orange  py-4 px-8 text-white `,
+  button: `${BASE_STYLE} bg-orange hover:bg-blue focus:bg-orange  py-3 px-7 text-white `,
 };
 
 type Appearances = keyof Appearance;
