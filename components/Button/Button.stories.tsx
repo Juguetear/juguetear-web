@@ -24,14 +24,12 @@ export const simpleButton = Template.bind({});
 simpleButton.args = {
   appearance: "button",
   text: "button",
-  handleClick: () => {},
 };
 
 export const link = Template.bind({});
 link.args = {
   appearance: "link",
   text: "link",
-  handleClick: () => {},
 };
 
 export const buttonWithIcon = Template.bind({});
@@ -39,7 +37,6 @@ buttonWithIcon.args = {
   appearance: "buttonWithIcon",
   text: "buttonWithIcon",
   icon: PdfSvg,
-  handleClick: () => {},
 };
 
 export const Disabled = Template.bind({});

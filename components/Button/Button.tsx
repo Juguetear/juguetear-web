@@ -27,7 +27,7 @@ interface IButtonProps
   > {
   disabled?: boolean;
   appearance: Appearances;
-  handleClick?: MouseEventHandler;
+  handleClick: MouseEventHandler;
   buttonAttributes?: Partial<HTMLButtonElement>;
   icon?: string;
   text: string;
@@ -35,17 +35,13 @@ interface IButtonProps
 
 export const Button: React.FC<IButtonProps> = (props: IButtonProps) => {
   const { appearance, text, disabled, icon, handleClick, ...rest } = props;
-  const getAppearance = (appearance: Appearances): string => {
-    if (disabled) {
-      return `${APPEARANCE[appearance]} cursor-not-allowed disabled:opacity-25`;
-    }
-    return APPEARANCE[appearance];
-  };
 
   return (
     <button
       disabled={disabled}
-      className={getAppearance(appearance)}
+      className={`${APPEARANCE[appearance]} ${
+        disabled && "cursor-not-allowed disabled:opacity-25"
+      }`}
       onClick={handleClick}
       {...rest}
     >
