@@ -1,35 +1,51 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { RouterContext } from "next/dist/shared/lib/router-context";
-import { Router } from "next/router";
-import { Navbar } from "./Navbar";
-
-const mockRouter = (router: Partial<Router>): Router => {
-  return {
-    ...router,
-  } as Router;
-};
-
-type Story = StoryObj<typeof Navbar>;
+import { Navbar, NavbarItem } from "./Navbar";
 
 export default {
   title: "Navbar",
   component: Navbar,
+  subcomponents: { NavbarItem },
 } as Meta<typeof Navbar>;
 
-export const Default: Story = {};
-
-export const CurrentLinkAbout: Story = {
-  render: () => (
-    <RouterContext.Provider value={mockRouter({ route: "about" })}>
-      <Navbar />
-    </RouterContext.Provider>
-  ),
+const NavbarUsageExample = ({ currentRoute }: { currentRoute: string }) => {
+  const exampleLinks: { route: string; label: string }[] = [
+    { label: "Juguetes", route: "juguetes" },
+    { label: "Colaborar", route: "colaborar" },
+    { label: "Sobre el proyecto", route: "about" },
+    { label: "Documentacion", route: "documentacion" },
+    { label: "Ayuda", route: "ayuda" },
+  ];
+  return (
+    <Navbar>
+      {exampleLinks.map((link) => (
+        <NavbarItem
+          route={link.route}
+          isCurrent={link.route === currentRoute}
+          key={link.route}
+        >
+          {link.label}
+        </NavbarItem>
+      ))}
+    </Navbar>
+  );
 };
 
-export const CurrentLinkColaborar: Story = {
-  render: () => (
-    <RouterContext.Provider value={mockRouter({ route: "colaborar" })}>
-      <Navbar />
-    </RouterContext.Provider>
-  ),
+export const CurrentRouteJuguetes: StoryObj<typeof Navbar> = {
+  render: () => <NavbarUsageExample currentRoute="juguetes" />,
+};
+
+export const CurrentRouteColaborar: StoryObj<typeof Navbar> = {
+  render: () => <NavbarUsageExample currentRoute="colaborar" />,
+};
+
+export const CurrentRouteAbout: StoryObj<typeof Navbar> = {
+  render: () => <NavbarUsageExample currentRoute="about" />,
+};
+
+export const CurrentRouteDocumentacion: StoryObj<typeof Navbar> = {
+  render: () => <NavbarUsageExample currentRoute="documentacion" />,
+};
+
+export const CurrentRouteAyuda: StoryObj<typeof Navbar> = {
+  render: () => <NavbarUsageExample currentRoute="ayuda" />,
 };
