@@ -1,6 +1,7 @@
 // TODO: Migrate schemas from './studio/schemas' to './schemas'
 import characteristics_list from "schemas/characteristics_list";
 import homePage from "schemas/home-page";
+import video from "schemas/video";
 import about from "studio/schemas/about";
 import accessibilityDeclaration from "studio/schemas/accessibility-declaration";
 import block from "studio/schemas/block";
@@ -13,7 +14,6 @@ import image from "studio/schemas/image";
 import link from "studio/schemas/link";
 import member from "studio/schemas/member";
 import toy from "studio/schemas/toy";
-import video from "studio/schemas/video";
 
 const schemas = [
   /* Your types here! */

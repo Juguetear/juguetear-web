@@ -6,6 +6,7 @@ import createSchema from "part:@sanity/base/schema-creator";
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
 import homePage from "../../schemas/home-page";
+import video from "../../schemas/video";
 import about from "./about";
 import accessibilityDeclaration from "./accessibility-declaration";
 import block from "./block";
@@ -19,7 +20,6 @@ import image from "./image";
 import link from "./link";
 import member from "./member";
 import toy from "./toy";
-import video from "./video";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({

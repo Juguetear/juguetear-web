@@ -1,15 +1,16 @@
-import VideoEmbedPreview from "../../components/VideoEmbedPreview";
+import { defineField, defineType } from 'sanity';
+import VideoEmbedPreview from "../components/VideoEmbedPreview";
 
-export default {
+export default defineType({
   name: "video",
   title: "Video en YouTube",
   type: "object",
   fields: [
-    {
+    defineField({
       title: "Enlace del video en Youtube",
       name: "url",
       type: "link",
-    },
+    }),
   ],
   components: {
     preview: VideoEmbedPreview,
@@ -19,4 +20,4 @@ export default {
       url: "url",
     },
   },
-};
+});
