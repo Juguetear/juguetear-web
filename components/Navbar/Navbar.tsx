@@ -12,7 +12,7 @@ export const Navbar = ({
   ...props
 }: Partial<React.HTMLProps<HTMLElement>>) => {
   return (
-    <nav aria-label="Navegacion principal" data-testid="nav" {...props}>
+    <nav aria-label="Navegacion principal" {...props}>
       <div className="flex max-w-5xl mx-auto items-end justify-between">
         <Logo className="w-28 h-auto" />
         <ul className="flex flex-row border-b-gray border-b-[0.5px] space-x-16">
@@ -37,14 +37,12 @@ export const NavbarItem = ({
   return (
     <li
       className={`box-content font-outfit text-[19px] h-24 flex items-center ${conditionalClasses}`}
-      data-testid={`li-${route}`}
       key={route}
       {...props}
     >
       <Link
         className="hover:text-orange hover:font-extrabold duration-300"
         href={route}
-        data-testid={`link-${route}`}
         aria-current={isCurrent ? "page" : false}
       >
         {children}

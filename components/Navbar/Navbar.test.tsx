@@ -14,56 +14,48 @@ const mockRoute = (route: string) => {
 describe("Navbar component ", () => {
   it("should render", async () => {
     mockRoute("/");
-    const { findByTestId } = render(<Navbar />);
-    const nav = await findByTestId("nav");
+    const { findByRole } = render(<Navbar />);
+    const nav = await findByRole("navigation");
 
     expect(nav).toBeInTheDocument();
   });
 
   it("should have accesible descriptions", async () => {
     mockRoute("/");
-    const { findByTestId } = render(<Navbar />);
-    const nav = await findByTestId("nav");
+    const { findByRole } = render(<Navbar />);
+    const nav = await findByRole("navigation");
 
     expect(nav).toHaveAttribute("aria-label", "Navegacion principal");
   });
 
   it("NavbarItem should have text-orange class if isCurrent prop is set to true", async () => {
     mockRoute("about");
-    const { findByTestId } = render(
-      <NavbarItem route="foo" isCurrent={true} />
-    );
-    const about = await findByTestId("li-foo");
+    const { findByRole } = render(<NavbarItem route="foo" isCurrent={true} />);
+    const about = await findByRole("listitem");
 
     expect(about).toHaveClass("text-orange");
   });
 
   it("NavbarItem should have text-blue class if isCurrent prop is set to false", async () => {
     mockRoute("other-path");
-    const { findByTestId } = render(
-      <NavbarItem route="foo" isCurrent={false} />
-    );
-    const about = await findByTestId("li-foo");
+    const { findByRole } = render(<NavbarItem route="foo" isCurrent={false} />);
+    const about = await findByRole("listitem");
 
     expect(about).toHaveClass("text-blue");
   });
 
   it("NavbarItem > a should have a attribute aria-current='page' if isCurrent prop is set to true", async () => {
     mockRoute("about");
-    const { findByTestId } = render(
-      <NavbarItem route="foo" isCurrent={true} />
-    );
-    const link_about = await findByTestId("link-foo");
+    const { findByRole } = render(<NavbarItem route="foo" isCurrent={true} />);
+    const link_about = await findByRole("link");
 
     expect(link_about).toHaveAttribute("aria-current", "page");
   });
 
   it("NavbarItem > a should have a attribute aria-current=false if isCurrent prop is set to false", async () => {
     mockRoute("other-page");
-    const { findByTestId } = render(
-      <NavbarItem route="foo" isCurrent={false} />
-    );
-    const link_about = await findByTestId("link-foo");
+    const { findByRole } = render(<NavbarItem route="foo" isCurrent={false} />);
+    const link_about = await findByRole("link");
 
     expect(link_about).toHaveAttribute("aria-current", "false");
   });
