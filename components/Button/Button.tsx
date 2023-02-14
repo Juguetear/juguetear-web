@@ -11,19 +11,15 @@ const BASE_STYLE =
 
 const BASE_STYLE_LINK = "py-1 px-2 text-blue focus:text-blue underline";
 
-const APPEARANCE = (disabled?: boolean): Appearance => ({
-  link: `${BASE_STYLE} ${BASE_STYLE_LINK} ${!disabled && "hover:text-orange"}`,
-  buttonWithIcon: `${BASE_STYLE} flex items-center ${BASE_STYLE_LINK} ${
-    !disabled && "hover:text-orange"
-  }`,
-  button: `${BASE_STYLE} bg-orange focus:bg-orange  py-3 px-7 text-white ${
-    !disabled && "hover:bg-blue"
-  } `,
-});
+const APPEARANCE: Appearance = {
+  link: `${BASE_STYLE} ${BASE_STYLE_LINK} hover:text-orange`,
+  buttonWithIcon: `${BASE_STYLE} flex items-center ${BASE_STYLE_LINK} "hover:text-orange"`,
+  button: `${BASE_STYLE} bg-orange focus:bg-orange  py-3 px-7 text-white hover:bg-blue`,
+};
 
 type Appearances = keyof Appearance;
 
-interface IButtonProps
+interface ButtonProps
   extends React.DetailedHTMLProps<
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
@@ -36,15 +32,13 @@ interface IButtonProps
   text: string;
 }
 
-export const Button: React.FC<IButtonProps> = (props: IButtonProps) => {
+export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   const { appearance, text, disabled, icon, handleClick, ...rest } = props;
 
   return (
     <button
       disabled={disabled}
-      className={`${APPEARANCE(disabled)[appearance]} ${
-        disabled && "cursor-not-allowed disabled:opacity-25"
-      }`}
+      className={`${APPEARANCE[appearance]} disabled:cursor-not-allowed disabled:bg-gray`}
       onClick={handleClick}
       {...rest}
     >
