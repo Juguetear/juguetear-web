@@ -12,12 +12,7 @@ export const Navbar = ({
   ...props
 }: Partial<React.HTMLProps<HTMLElement>>) => {
   return (
-    <nav
-      aria-label="Navegacion principal"
-      role="navigation"
-      data-testid="nav"
-      {...props}
-    >
+    <nav aria-label="Navegacion principal" data-testid="nav" {...props}>
       <div className="flex max-w-5xl mx-auto items-end justify-between">
         <Logo className="w-28 h-auto" />
         <ul className="flex flex-row border-b-gray border-b-[0.5px] space-x-16">
