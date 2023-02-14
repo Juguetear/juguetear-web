@@ -14,7 +14,7 @@ const mockRoute = (route: string) => {
 describe("Navbar component ", () => {
   it("should render", async () => {
     mockRoute("/");
-    const { findByRole } = render(<Navbar />);
+    const { findByRole } = render(<Navbar isCurrentIndex />);
     const nav = await findByRole("navigation");
 
     expect(nav).toBeInTheDocument();
@@ -22,7 +22,7 @@ describe("Navbar component ", () => {
 
   it("should have accesible descriptions", async () => {
     mockRoute("/");
-    const { findByRole } = render(<Navbar />);
+    const { findByRole } = render(<Navbar isCurrentIndex />);
     const nav = await findByRole("navigation");
 
     expect(nav).toHaveAttribute("aria-label", "Navegacion principal");

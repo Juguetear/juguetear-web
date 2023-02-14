@@ -7,14 +7,17 @@ interface NavbarLinkProps extends React.HTMLProps<HTMLLIElement> {
   isCurrent: boolean;
 }
 
-export const Navbar = ({
-  children,
-  ...props
-}: Partial<React.HTMLProps<HTMLElement>>) => {
+interface NavbarProps extends Partial<React.HTMLProps<HTMLElement>> {
+  isCurrentIndex: boolean;
+}
+
+export const Navbar = ({ children, isCurrentIndex, ...props }: NavbarProps) => {
   return (
     <nav aria-label="Navegacion principal" {...props}>
       <div className="flex max-w-5xl mx-auto items-end justify-between">
-        <Logo className="w-28 h-auto" />
+        <Link href={"/"} aria-current={isCurrentIndex ? "page" : false}>
+          <Logo className="w-28 h-auto" />
+        </Link>
         <ul className="flex flex-row border-b-gray border-b-[0.5px] space-x-16">
           {children}
         </ul>

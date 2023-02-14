@@ -16,7 +16,7 @@ const NavbarUsageExample = ({ currentRoute }: { currentRoute: string }) => {
     { label: "Ayuda", route: "ayuda" },
   ];
   return (
-    <Navbar>
+    <Navbar isCurrentIndex={currentRoute === "/"}>
       {exampleLinks.map((link) => (
         <NavbarItem
           route={link.route}
@@ -28,6 +28,10 @@ const NavbarUsageExample = ({ currentRoute }: { currentRoute: string }) => {
       ))}
     </Navbar>
   );
+};
+
+export const CurrentRouteIndex: StoryObj<typeof Navbar> = {
+  render: () => <NavbarUsageExample currentRoute="/" />,
 };
 
 export const CurrentRouteJuguetes: StoryObj<typeof Navbar> = {
