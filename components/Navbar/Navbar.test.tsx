@@ -58,13 +58,13 @@ describe("Navbar component ", () => {
     expect(link_about).toHaveAttribute("aria-current", "page");
   });
 
-  it("NavbarItem > a should not have a attribute aria-current if isCurrent prop is set to false", async () => {
+  it("NavbarItem > a should have a attribute aria-current=false if isCurrent prop is set to false", async () => {
     mockRoute("other-page");
     const { findByTestId } = render(
       <NavbarItem route="foo" isCurrent={false} />
     );
     const link_about = await findByTestId("link-foo");
 
-    expect(link_about).not.toHaveAttribute("aria-current");
+    expect(link_about).toHaveAttribute("aria-current", "false");
   });
 });

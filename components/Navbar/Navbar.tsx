@@ -45,7 +45,7 @@ export const NavbarItem = ({
         className="hover:text-orange hover:font-extrabold duration-300"
         href={route}
         data-testid={`link-${route}`}
-        aria-current={isCurrent ? "page" : undefined}
+        aria-current={isCurrent ? "page" : false}
       >
         {children}
       </Link>
