@@ -13,7 +13,7 @@ export const Checkbox = ({
 }: CheckboxProps) => {
   const [isChecked, setChecked] = useState(checked);
   const inputStyle =
-    "peer appearance-none w-5 min-w-[1.25rem] h-5 border rounded-[2px] mt-1 border-blue cursor-pointer checked:border-orange checked:bg-orange hover:enabled:border-2 focus:outline-none disabled:cursor-not-allowed disabled:border-gray-dark disabled:bg-gray-medium";
+    "peer appearance-none w-4 min-w-[1.25rem] h-5 border rounded-[2px] border-blue cursor-pointer checked:border-orange checked:bg-orange hover:enabled:border-2 focus:outline-none disabled:cursor-not-allowed disabled:border-gray-dark disabled:bg-gray-medium";
 
   const formatLabel = (label: string) => {
     return label.toLowerCase().split(" ").join("");
@@ -40,7 +40,7 @@ export const Checkbox = ({
       />
       <label
         htmlFor={formatLabel(label)}
-        className="text-blue text-base font-outfit ml-2 peer-checked:text-orange font-medium peer-hover:font-bold peer-disabled:text-gray-dark peer-disabled:font-medium"
+        className="text-blue text-sm mb-1 font-outfit ml-2 peer-checked:text-orange font-medium peer-hover:font-bold peer-disabled:text-gray-dark peer-disabled:font-medium"
       >
         {label}
       </label>
