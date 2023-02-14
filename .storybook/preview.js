@@ -1,8 +1,6 @@
 import { Inter, Outfit } from "@next/font/google";
 import "../app/globals.css";
 
-import { RouterContext } from "next/dist/shared/lib/router-context";
-
 const inter = Inter({
   variable: "--font-inter",
   weight: "400", // Regular
@@ -20,9 +18,6 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
-  },
-  nextRouter: {
-    Provider: RouterContext.Provider,
   },
 };
 
