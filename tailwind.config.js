@@ -7,14 +7,6 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  safelist: [
-    "border-b-orange",
-    "border-b-[5px]",
-    "text-orange",
-    "font-extrabold",
-    "text-blue",
-    "font-semibold",
-  ],
   theme: {
     colors: {
       "blue-light": "#E9F7F9",
