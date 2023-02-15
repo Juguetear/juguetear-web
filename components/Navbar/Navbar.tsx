@@ -53,14 +53,13 @@ export const NavbarItem = ({
   isCurrent,
   ...props
 }: NavbarLinkProps) => {
-  const currentClasses =
-    "border-b-orange border-b-[5px] text-orange font-extrabold";
-  const notCurrentClasses = "text-blue font-semibold";
+  const currentClasses = "border-b-orange text-orange font-extrabold";
+  const notCurrentClasses = "border-transparent text-blue font-semibold  ";
   const conditionalClasses = isCurrent ? currentClasses : notCurrentClasses;
 
   return (
     <li
-      className={`box-content font-outfit text-[19px] h-24 flex items-center ${conditionalClasses}`}
+      className={`font-outfit text-[19px] h-24 flex items-center border-b-[5px] ${conditionalClasses}`}
       key={route}
       {...props}
     >
