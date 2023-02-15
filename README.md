@@ -25,7 +25,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 - [Tech Stack](#tech-stack)
 - [Instalación del proyecto](#instalación-del-proyecto)
 - [Storybook](#storybook)
-- [Sanity](#sanity)
+- [Sanity Studio](#sanity-studio)
 - [Contribuidores](#contribuidores)
 - [Staff](#staff)
 - [Licencias](#licencias)
@@ -177,17 +177,17 @@ Se iniciara el servidor de desarrollo. Visitá [http://localhost:3000](http://lo
 
 Este proyecto utiliza [Sanity](https://www.sanity.io/) para la gestión de contenido.
 
-**Sanity** es un _headless CMS_ que nos permite crear, organizar, publicar y eliminar contenido dentro de la web de **Juguetear**.
+**Sanity Studio** es un _headless CMS_ que nos permite crear, organizar, publicar y eliminar contenido dentro de la web de **Juguetear**.
 
-**Sanity Studio** Se ejecuto junto al mismo servidor al ejecutar `yarn run dev` o `yarn dev`, una vez iniciado el servidor de desarrollo visitá [http://localhost:3000/studio](http://localhost:3000/studio) en tu navegador para ver el dashboad.
+**Sanity Studio** es ejecutado en el servidor de desarrollo con el comando yarn run dev o yarn dev, luego dirigite a [http://localhost:3000/studio](http://localhost:3000/studio) para visualizar el dashboard.
 
-Para tener accesso al dashboard de **Sanity**, dejá un mensaje en el canal #Juguetear de Discord avisando a quienes administran los accesos: **@nykka**, **@TonyMckes** o **@LPRegen**.
+Para tener accesso al dashboard de **Sanity Studio**, dejá un mensaje en el canal #Juguetear de Discord avisando a quienes administran los accesos: **@nykka**, **@TonyMckes** o **@LPRegen**.
 
 ### Storybook
 
 > ⚠️ Asegúrate de haber realizado primero los pasos de [Instalación del proyecto](#instalación-del-proyecto).
 
-Este proyecto utiliza [Storybook](https://storybook.js.org/) para el desarrollo, testeo y documentación de los componentes de la interfaz.
+Este proyecto utiliza [Storybook](https://storybook.js.org/) para el desarrollo, testeo y documentación de los componentes.
 
 Para iniciar **Storybook** en tu entorno local, desde la consola de comandos tenés que ejecutar:
 
