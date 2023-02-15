@@ -18,7 +18,7 @@ describe("Navbar component ", () => {
     expect(nav).toBeInTheDocument();
   });
 
-  it("should have accesible descriptions", async () => {
+  it("should have accesible description", async () => {
     mockPathname("/");
     const { findByRole } = render(<Navbar links={[]} />);
     const nav = await findByRole("navigation");
@@ -32,6 +32,14 @@ describe("Navbar component ", () => {
     const logo_link = await findByRole("link");
 
     expect(logo_link).toBeInTheDocument();
+  });
+
+  it("logo link should have accesible name", async () => {
+    mockPathname("/");
+    const { findByRole } = render(<Navbar links={[]} />);
+    const logo_link = await findByRole("link");
+
+    expect(logo_link).toHaveAttribute("aria-label", "Home");
   });
 
   it("logo link should have aria-current='page' if currentPath='/'", async () => {

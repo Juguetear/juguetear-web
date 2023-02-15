@@ -24,7 +24,11 @@ export const Navbar = ({ links, ...props }: NavbarProps) => {
   return (
     <nav aria-label="Navegacion principal" {...props}>
       <div className="flex max-w-5xl mx-auto items-end justify-between">
-        <Link href={"/"} aria-current={isCurrentIndex ? "page" : false}>
+        <Link
+          aria-label="Home"
+          href={"/"}
+          aria-current={isCurrentIndex ? "page" : false}
+        >
           <Logo className="w-28 h-auto" />
         </Link>
         <ul className="flex flex-row border-b-gray border-b-[0.5px] space-x-16">
