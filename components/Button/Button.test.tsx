@@ -6,13 +6,17 @@ import { Button } from "./Button";
 describe("Button", () => {
   it("Component renders without crashing", () => {
     render(
-      <Button handleClick={jest.fn()} appearance={"button"} text={"button"} />
+      <Button onClick={jest.fn()} appearance={"button"}>
+        test
+      </Button>
     );
   });
 
   it("Button is correctly aria labeled", () => {
     const { getByRole } = render(
-      <Button handleClick={jest.fn()} appearance={"button"} text={"test"} />
+      <Button onClick={jest.fn()} appearance={"button"}>
+        test
+      </Button>
     );
     expect(getByRole("button", { name: "test" })).toBeInTheDocument();
   });
@@ -20,7 +24,9 @@ describe("Button", () => {
   it("HandleClick is run on button click", () => {
     const handleClick = jest.fn();
     const { getByRole } = render(
-      <Button handleClick={handleClick} appearance={"button"} text={"test"} />
+      <Button onClick={handleClick} appearance={"button"}>
+        test
+      </Button>
     );
     const button = getByRole("button");
     act(() => {
@@ -32,12 +38,9 @@ describe("Button", () => {
   it("HandleClick is not run click when button is disabled", () => {
     const handleClick = jest.fn();
     const { getByRole } = render(
-      <Button
-        handleClick={handleClick}
-        disabled={true}
-        appearance={"button"}
-        text={"test"}
-      />
+      <Button onClick={handleClick} disabled={true} appearance={"button"}>
+        test
+      </Button>
     );
     const button = getByRole("button");
     act(() => {
