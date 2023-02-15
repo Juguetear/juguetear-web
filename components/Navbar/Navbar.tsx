@@ -1,6 +1,13 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 import { Logo } from "../Logo/Logo";
+
+export interface Link {
+  label: string;
+  route: string;
+}
 
 interface NavbarLinkProps extends React.HTMLProps<HTMLLIElement> {
   route: string;
@@ -8,10 +15,12 @@ interface NavbarLinkProps extends React.HTMLProps<HTMLLIElement> {
 }
 
 interface NavbarProps extends Partial<React.HTMLProps<HTMLElement>> {
-  isCurrentIndex: boolean;
+  links: Link[];
 }
 
-export const Navbar = ({ children, isCurrentIndex, ...props }: NavbarProps) => {
+export const Navbar = ({ links, ...props }: NavbarProps) => {
+  const pathname = usePathname();
+  const isCurrentIndex = pathname === "/";
   return (
     <nav aria-label="Navegacion principal" {...props}>
       <div className="flex max-w-5xl mx-auto items-end justify-between">
@@ -19,7 +28,15 @@ export const Navbar = ({ children, isCurrentIndex, ...props }: NavbarProps) => {
           <Logo className="w-28 h-auto" />
         </Link>
         <ul className="flex flex-row border-b-gray border-b-[0.5px] space-x-16">
-          {children}
+          {links.map(({ route, label }) => (
+            <NavbarItem
+              key={route}
+              route={route}
+              isCurrent={pathname === route}
+            >
+              {label}
+            </NavbarItem>
+          ))}
         </ul>
       </div>
     </nav>
