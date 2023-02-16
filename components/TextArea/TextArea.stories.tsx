@@ -1,4 +1,5 @@
 import { Meta, StoryFn } from "@storybook/react";
+import { userEvent, within } from "@storybook/testing-library";
 import TextArea from "./TextArea";
 
 export default {
@@ -19,13 +20,14 @@ export const Error: StoryFn<typeof TextArea> = (args) => (
 );
 
 export const Focus: StoryFn<typeof TextArea> = (args) => (
-  <TextArea
-    {...args}
-    label="Texto"
-    helperText="Mensaje"
-    className="ring-[3px] shadow-2md bg-blue-light"
-  />
+  <TextArea {...args} label="Texto" helperText="Mensaje" />
 );
+
+Focus.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const item = await canvas.findByLabelText(/Texto/i);
+  await userEvent.click(item);
+};
 
 export const Required: StoryFn<typeof TextArea> = (args) => (
   <TextArea {...args} label="Texto" helperText="Mensaje" required />

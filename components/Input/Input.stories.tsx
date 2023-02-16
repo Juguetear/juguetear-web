@@ -1,4 +1,5 @@
 import { Meta, StoryFn } from "@storybook/react";
+import { userEvent, within } from "@storybook/testing-library";
 import Input from "./Input";
 
 export default {
@@ -19,13 +20,14 @@ export const Error: StoryFn<typeof Input> = (args) => (
 );
 
 export const Focus: StoryFn<typeof Input> = (args) => (
-  <Input
-    {...args}
-    label="Texto"
-    helperText="Mensaje"
-    className="ring-[3px] shadow-2md bg-blue-light"
-  />
+  <Input {...args} id="focus" label="Texto" helperText="Mensaje" />
 );
+
+Focus.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const item = await canvas.findByLabelText(/Texto/i);
+  await userEvent.click(item);
+};
 
 export const Required: StoryFn<typeof Input> = (args) => (
   <Input {...args} label="Texto" helperText="Mensaje" required />
