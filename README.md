@@ -161,7 +161,6 @@ npm install --global yarn
 > 💡 Podés leer más en este [artículo](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
 
   </details>
-  <br />
 
 ### Correr el entorno de desarrollo localmente
 
@@ -178,10 +177,9 @@ Se iniciara el servidor de desarrollo, visitá [http://localhost:3000](http://lo
 Dentro del mismo servidor de desarrollo se tiene acceso a **Sanity Studio**, visitá [http://localhost:3000/studio](http://localhost:3000/studio) para visualizar el dashboard.
 
 <details>
-  <summary> 💡 Hacé click aquí para obtebner más información para el acceso al <code>dashboard de Sanity Studio</code></summary><br>
+  <summary> 💡 Hacé click aquí para obtener más información para el acceso al <code>dashboard de Sanity Studio</code></summary><br>
   Para tener accesso al dashboard de <b>Sanity Studio</b>, dejá un mensaje en el canal <i>#juguetear</i> de Discord avisando a quienes administran los accesos: <b>@nykka</b>, <b>@TonyMckes</b> o <b>@LPRegen</b>.
 </details>
-<br />
 
 ### Correr Storybook localmente
 
