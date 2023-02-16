@@ -23,9 +23,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 - [Diseño de interfaz (UI/UX)](#diseño-de-interfaz-uiux)
 - [Accesibilidad](#accesibilidad)
 - [Tech Stack](#tech-stack)
-- [Instalación del proyecto](#instalación-del-proyecto)
-- [Storybook](#storybook)
-- [Sanity Studio](#sanity-studio)
+- [Correr el proyecto localmente](#correr-el-proyecto-localmente)
 - [Contribuidores](#contribuidores)
 - [Staff](#staff)
 - [Licencias](#licencias)
@@ -134,19 +132,22 @@ Nuestro tech stack consiste en las siguientes tecnologías:
 
 ---
 
-## Instalación del proyecto
+## Correr el Proyecto Localmente
 
-> ⚠️ Asegúrate de haber leido [**como contribuir**][doc-contributing], y recuerda que si tenés dudas puedes preguntarnos en el canal [#juguetear][dc-channel] en Discord.
+### Instalación
 
-Luego haber leido [**como contribuir**][doc-contributing] y haber clonado el repositorio, debes accedé al directorio del proyecto
+Ubícate en la carpeta donde deseas instalar el proyecto y clona el repositorio ejecutando:
 
-Luego instala las dependencias usando tu terminal de preferencia ejecutando:
+```bash
+git clone https://github.com/Juguetear/juguetear-web.git
+cd juguetear-web
+```
+
+Posteriormente ejecutá el siguiente comando para instalar todas las dependencias listadas en el archivo [`package.json`](package.json).
 
 ```bash
 yarn install
 ```
-
-Esto va a instalar todas las dependencias listadas en el archivo [`package.json`](package.json).
 
   <details>
   <summary> 💡 Hacé click aquí si te aparece un error que dice <code>yarn: command not found</code></summary><br>
@@ -160,8 +161,11 @@ npm install --global yarn
 > 💡 Podés leer más en este [artículo](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
 
   </details>
+  <br />
 
-Después ejecutá:
+### Correr el entorno de desarrollo localmente
+
+Una vez hechos los pasos de instalación ejecutá el siguiente comando:
 
 ```bash
 yarn run dev
@@ -169,25 +173,17 @@ yarn run dev
 yarn dev
 ```
 
-Se iniciara el servidor de desarrollo. Visitá [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
+Se iniciara el servidor de desarrollo, visitá [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-### Sanity Studio
+Dentro del mismo servidor de desarrollo se tiene acceso a **Sanity Studio**, visitá [http://localhost:3000/studio](http://localhost:3000/studio) para visualizar el dashboard.
 
-> ⚠️ Asegúrate de haber realizado primero los pasos de [Instalación del proyecto](#instalación-del-proyecto).
+<details>
+  <summary> 💡 Hacé click aquí para obtebner más información para el acceso al <code>dashboard de Sanity Studio</code></summary><br>
+  Para tener accesso al dashboard de <b>Sanity Studio</b>, dejá un mensaje en el canal <i>#juguetear</i> de Discord avisando a quienes administran los accesos: <b>@nykka</b>, <b>@TonyMckes</b> o <b>@LPRegen</b>.
+</details>
+<br />
 
-Este proyecto utiliza [Sanity](https://www.sanity.io/) para la gestión de contenido.
-
-**Sanity Studio** es un _headless CMS_ que nos permite crear, organizar, publicar y eliminar contenido dentro de la web de **Juguetear**.
-
-**Sanity Studio** es ejecutado en el servidor de desarrollo con el comando yarn run dev o yarn dev, luego dirigite a [http://localhost:3000/studio](http://localhost:3000/studio) para visualizar el dashboard.
-
-Para tener accesso al dashboard de **Sanity Studio**, dejá un mensaje en el canal #Juguetear de Discord avisando a quienes administran los accesos: **@nykka**, **@TonyMckes** o **@LPRegen**.
-
-### Storybook
-
-> ⚠️ Asegúrate de haber realizado primero los pasos de [Instalación del proyecto](#instalación-del-proyecto).
-
-Este proyecto utiliza [Storybook](https://storybook.js.org/) para el desarrollo, testeo y documentación de los componentes.
+### Correr Storybook localmente
 
 Para iniciar **Storybook** en tu entorno local, desde la consola de comandos tenés que ejecutar:
 
@@ -197,7 +193,7 @@ yarn storybook
 
 Se iniciará el servidor de **Storybook**. Visitá [http://localhost:6006](http://localhost:6006) en tu navegador para ver los componentes.
 
-> 💡 Podés realizar preguntas en el canal [#juguetear][dc-channel] dentro del servidor de [FrontendCafé][dc-fec] en Discord.
+> ⚠️ Asegúrate de haber leido [**como contribuir**][doc-contributing], y recuerda que si tenés dudas puedes preguntarnos en el canal [#juguetear][dc-channel] en Discord.
 
 ---
 
