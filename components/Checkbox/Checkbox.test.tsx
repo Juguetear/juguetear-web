@@ -5,8 +5,9 @@ import { Checkbox } from "./Checkbox";
 
 describe("Checkbox", () => {
   const defaultProps = {
-    checked: false,
+    defaultChecked: false,
     label: "Checkbox Label",
+    id: "checkbox",
   };
 
   it("renders the label and checkbox", () => {
@@ -32,7 +33,7 @@ describe("Checkbox", () => {
   });
 
   it("renders with a default checked state", () => {
-    const { getByRole } = render(<Checkbox {...defaultProps} checked />);
+    const { getByRole } = render(<Checkbox {...defaultProps} defaultChecked />);
     const checkbox = getByRole("checkbox");
 
     expect(checkbox).toBeChecked();
