@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 export type CheckboxProps = {
   checked?: boolean;
   disabled?: boolean;
@@ -11,17 +9,12 @@ export const Checkbox = ({
   label,
   disabled,
 }: CheckboxProps) => {
-  const [isChecked, setChecked] = useState(checked);
   const inputStyle =
     "peer appearance-none w-4 min-w-[1.25rem] h-5 mt-[1.5px] border rounded-[2px] border-blue cursor-pointer checked:border-orange checked:bg-orange hover:enabled:border-2 focus:outline-none disabled:cursor-not-allowed disabled:border-gray-dark disabled:bg-gray-medium";
 
   const formatLabel = (label: string) => {
     return label.toLowerCase().split(" ").join("");
   };
-
-  useEffect(() => {
-    setChecked(checked);
-  }, [checked]);
 
   if (!label || label.trim().length === 0) {
     return null;
@@ -32,10 +25,9 @@ export const Checkbox = ({
       <input
         id={formatLabel(label)}
         type="checkbox"
-        checked={isChecked}
-        aria-checked={isChecked}
+        checked={checked}
+        aria-checked={checked}
         className={inputStyle}
-        onChange={() => setChecked(!isChecked)}
         disabled={disabled}
       />
       <label
