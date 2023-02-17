@@ -2,7 +2,6 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "unused-imports"],
-  "extends": ["next", "prettier"],
   "rules": {
     "no-console": 2,
     "prefer-const": 2,
@@ -13,5 +12,15 @@
       2,
       { "vars": "all", "args": "after-used" }
     ]
-  }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest-dom/recommended",
+    "plugin:jsx-a11y/strict",
+    "plugin:storybook/recommended",
+    "plugin:testing-library/react",
+    "next",
+    "prettier"
+  ]
 }
