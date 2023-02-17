@@ -1,17 +1,10 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "unused-imports"],
+  "plugins": ["@typescript-eslint"],
   "rules": {
     "no-console": 2,
-    "prefer-const": 2,
-    "@typescript-eslint/no-explicit-any": 2,
-    "@typescript-eslint/no-unused-vars": 0,
-    "unused-imports/no-unused-imports": 2,
-    "unused-imports/no-unused-vars": [
-      2,
-      { "vars": "all", "args": "after-used" }
-    ]
+    "@typescript-eslint/no-explicit-any": 2
   },
   "extends": [
     "eslint:recommended",
