@@ -5,22 +5,24 @@ export default {
   title: "Checkbox",
   component: Checkbox,
   argTypes: {
-    checked: {
-      control: "boolean",
+    defaultChecked: {
+      table: {
+        disable: true,
+      },
     },
     disabled: {
       control: "boolean",
     },
-    label: {
-      control: "text",
-    },
-    numberOfCheckboxes: {
-      type: "number",
-      defaultValue: 2,
+    onChange: {
+      action: true,
+      table: {
+        disable: true,
+      },
     },
   },
   args: {
-    checked: false,
+    defaultChecked: false,
+    id: "checkbox",
   },
 } as Meta<typeof Checkbox>;
 
@@ -29,12 +31,13 @@ type Story = StoryObj<typeof Checkbox>;
 export const SampleCheckbox: Story = {
   args: {
     label: "Checkbox",
+    id: "checkbox",
   },
 };
 
 export const Checked: Story = {
   args: {
-    checked: true,
+    defaultChecked: true,
     label: "Checked",
   },
 };
@@ -65,7 +68,7 @@ export const MultipleCheckbox: StoryObj<MultipleCheckboxProps> = {
             length: numberOfCheckboxes,
           },
           (_, i) => (
-            <Checkbox key={i} label={`Checkbox ${i}`} />
+            <Checkbox key={i} label={`Checkbox ${i}`} id={`checkbox${i}`} />
           )
         )}
       </ul>
@@ -75,5 +78,11 @@ export const MultipleCheckbox: StoryObj<MultipleCheckboxProps> = {
   args: {
     label: "Checkbox",
     numberOfCheckboxes: 2,
+  },
+  argTypes: {
+    numberOfCheckboxes: {
+      type: "number",
+      defaultValue: 2,
+    },
   },
 };
