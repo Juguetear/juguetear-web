@@ -23,7 +23,7 @@ export const Navbar = ({ links, ...props }: NavbarProps) => {
   const isCurrentIndex = pathname === "/";
   return (
     <nav aria-label="Navegacion principal" {...props}>
-      <div className="flex max-w-5xl mx-auto items-end justify-between">
+      <div className="flex max-w-[1000px] mx-auto items-center justify-between">
         <Link
           aria-label="Home"
           href={"/"}
@@ -31,7 +31,7 @@ export const Navbar = ({ links, ...props }: NavbarProps) => {
         >
           <Logo className="w-28 h-auto" />
         </Link>
-        <ul className="flex flex-row border-b-gray border-b-[0.5px] space-x-16">
+        <ul className="flex flex-row border-b-gray border-b-[0.5px] space-x-[55px] self-start pt-1">
           {links.map(({ route, label }) => (
             <NavbarItem
               key={route}
@@ -53,18 +53,19 @@ export const NavbarItem = ({
   isCurrent,
   ...props
 }: NavbarLinkProps) => {
-  const currentClasses = "border-b-orange text-orange font-extrabold";
-  const notCurrentClasses = "border-transparent text-blue font-semibold  ";
+  const currentClasses = "border-b-orange text-orange font-bold";
+  const notCurrentClasses = "border-transparent text-blue font-medium";
   const conditionalClasses = isCurrent ? currentClasses : notCurrentClasses;
 
   return (
     <li
-      className={`font-outfit text-[19px] h-24 flex items-center border-b-[5px] ${conditionalClasses}`}
+      className={`font-outfit pb-2 text-base h-[60px] flex items-center border-b-[5px]  ${conditionalClasses}`}
       key={route}
       {...props}
     >
       <Link
-        className="hover:text-orange hover:font-extrabold duration-300"
+        data-text={children}
+        className="hover:text-orange hover:font-extrabold duration-300 before:font-extrabold before:overflow-hidden before:content-[attr(data-text)] before:invisible before:h-0 before:block"
         href={route}
         aria-current={isCurrent ? "page" : false}
       >
