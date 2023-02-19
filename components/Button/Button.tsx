@@ -1,14 +1,15 @@
 import React from "react";
 
 const baseStyle =
-  "font-extrabold rounded focus-within:shadow-md shadow-turquoise text-base font-outfit";
+  " flex justify-between gap-2 font-extrabold rounded  text-base font-outfit";
 
-const baseStyleLink = "py-1 px-2 text-blue focus:text-blue underline";
+const baseStyleLink =
+  "py-1 px-2 text-blue focus:text-blue underline focus-within:shadow-md";
 
 const Appearance = {
   link: `${baseStyle} ${baseStyleLink} hover:text-orange`,
-  buttonWithIcon: `${baseStyle} flex items-center ${baseStyleLink} hover:text-orange`,
-  button: `${baseStyle} bg-orange focus:bg-orange  py-3 px-7 text-white hover:bg-blue`,
+  buttonWithIcon: `${baseStyle} ${baseStyleLink} hover:text-orange`,
+  button: `${baseStyle} bg-orange focus:bg-orange  py-3 px-7 text-white hover:bg-blue  focus:border-blue`,
 };
 
 type Appearances = keyof typeof Appearance;

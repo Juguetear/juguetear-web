@@ -38,7 +38,7 @@ buttonWithIcon.args = {
   appearance: "buttonWithIcon",
   children: (
     <>
-      <div className="pr-3">
+      <div>
         <Image src={PdfSvg} alt="SVG" width={27} height={35} />
       </div>
       buttonWithIcon
