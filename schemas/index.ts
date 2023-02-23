@@ -9,10 +9,10 @@ import documents from "schemas/documents";
 import faq from "schemas/faq";
 import homePage from "schemas/home-page";
 import image from "schemas/image";
+import link from "schemas/link";
 import member from "schemas/member";
 import toy from "schemas/toy";
 import collaborate from "studio/schemas/collaborate";
-import link from "studio/schemas/link";
 import video from "studio/schemas/video";
 
 const schemas = [
