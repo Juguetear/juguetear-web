@@ -16,7 +16,6 @@ import document from "./document";
 import documents from "./documents";
 import faq from "./faq";
 import image from "./image";
-import link from "./link";
 import member from "./member";
 import toy from "./toy";
 import video from "./video";
@@ -39,7 +38,6 @@ export default createSchema({
     homePage,
     collaborate,
     image,
-    link,
     member,
     toy,
     accessibilityDeclaration,
