@@ -14,6 +14,7 @@ const link = defineType({
       title: "Enlace",
       name: "url",
       type: "url",
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       validation: (Rule: any) =>
         Rule.uri({
           scheme: ["http", "https", "mailto", "tel"],
