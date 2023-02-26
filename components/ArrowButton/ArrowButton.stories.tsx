@@ -13,11 +13,11 @@ const Template: StoryFn<typeof ArrowButton> = (args) => (
 export const Disabled = Template.bind({});
 Disabled.args = {
   disabled: true,
-  handleClick: () => {},
+  handleClick: () => null,
 };
 
 export const ToRight = Template.bind({});
 ToRight.args = {
   direction: "right",
-  handleClick: () => {},
+  handleClick: () => null,
 };

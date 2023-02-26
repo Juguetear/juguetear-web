@@ -1,24 +1,24 @@
-import "@testing-library/jest-dom/extend-expect";
-import { act, fireEvent, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 
 import { Accordion } from "./Accordion";
 
-test("Accordion click text render", () => {
-  render(
-    <Accordion title="¿Hay que pagar para usar los juguetes?">
-      <p>No, el prestamo es sin costo alguno.</p>
-    </Accordion>
-  );
+describe("Accordion", () => {
+  it("Accordion click text render", async () => {
+    render(
+      <Accordion title="¿Hay que pagar para usar los juguetes?">
+        <p>No, el prestamo es sin costo alguno.</p>
+      </Accordion>
+    );
 
-  const accordeonElement = screen.getByText(
-    "¿Hay que pagar para usar los juguetes?"
-  );
+    const accordeonElement = screen.getByText(
+      "¿Hay que pagar para usar los juguetes?"
+    );
 
-  act(() => {
-    fireEvent.click(accordeonElement);
+    userEvent.click(accordeonElement);
+
+    expect(
+      await screen.findByText("No, el prestamo es sin costo alguno.")
+    ).toBeInTheDocument();
   });
-
-  expect(
-    screen.getByText("No, el prestamo es sin costo alguno.")
-  ).toBeInTheDocument();
 });
