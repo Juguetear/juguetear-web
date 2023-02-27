@@ -23,7 +23,7 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 - [Diseño de interfaz (UI/UX)](#diseño-de-interfaz-uiux)
 - [Accesibilidad](#accesibilidad)
 - [Tech Stack](#tech-stack)
-- [Instalación del proyecto](#instalación-del-proyecto)
+- [Correr el proyecto localmente](#correr-el-proyecto-localmente)
 - [Contribuidores](#contribuidores)
 - [Staff](#staff)
 - [Licencias](#licencias)
@@ -132,19 +132,22 @@ Nuestro tech stack consiste en las siguientes tecnologías:
 
 ---
 
-## Instalación del proyecto
+## Correr el Proyecto Localmente
 
-> ⚠️ Asegúrate de haber leido [**como contribuir**][doc-contributing], y recuerda que si tenés dudas puedes preguntarnos en el canal [#juguetear][dc-channel] en Discord.
+### Instalación
 
-Luego haber leido [**como contribuir**][doc-contributing] y haber clonado el repositorio, debes accedé al directorio del proyecto
+Ubícate en la carpeta donde deseas instalar el proyecto y clona el repositorio ejecutando:
 
-Luego instala las dependencias usando tu terminal de preferencia ejecutando:
+```bash
+git clone https://github.com/Juguetear/juguetear-web.git
+cd juguetear-web
+```
+
+Posteriormente ejecutá el siguiente comando para instalar todas las dependencias listadas en el archivo [`package.json`](package.json).
 
 ```bash
 yarn install
 ```
-
-Esto va a instalar todas las dependencias listadas en el archivo [`package.json`](package.json).
 
   <details>
   <summary> 💡 Hacé click aquí si te aparece un error que dice <code>yarn: command not found</code></summary><br>
@@ -159,7 +162,9 @@ npm install --global yarn
 
   </details>
 
-Después ejecutá:
+### Correr el entorno de desarrollo localmente
+
+Una vez hechos los pasos de instalación ejecutá el siguiente comando:
 
 ```bash
 yarn run dev
@@ -167,9 +172,26 @@ yarn run dev
 yarn dev
 ```
 
-Se iniciara el servidor de desarrollo. Visitá [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
+Se iniciara el servidor de desarrollo, visitá [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-> 💡 Podés realizar preguntas en el canal [#juguetear][dc-channel] dentro del servidor de [FrontendCafé][dc-fec] en Discord.
+Dentro del mismo servidor de desarrollo se tiene acceso a **Sanity Studio**, visitá [http://localhost:3000/studio](http://localhost:3000/studio) para visualizar el dashboard.
+
+<details>
+  <summary> 💡 Hacé click aquí para obtener más información para el acceso al <code>dashboard de Sanity Studio</code></summary><br>
+  Para tener accesso al dashboard de <b>Sanity Studio</b>, dejá un mensaje en el canal <i>#juguetear</i> de Discord avisando a quienes administran los accesos: <b>@nykka</b>, <b>@TonyMckes</b> o <b>@LPRegen</b>.
+</details>
+
+### Correr Storybook localmente
+
+Para iniciar **Storybook** en tu entorno local, desde la consola de comandos tenés que ejecutar:
+
+```
+yarn storybook
+```
+
+Se iniciará el servidor de **Storybook**. Visitá [http://localhost:6006](http://localhost:6006) en tu navegador para ver los componentes.
+
+> ⚠️ Asegúrate de haber leido [**como contribuir**][doc-contributing], y recuerda que si tenés dudas puedes preguntarnos en el canal [#juguetear][dc-channel] en Discord.
 
 ---
 
