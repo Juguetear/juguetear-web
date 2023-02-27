@@ -15,12 +15,12 @@ const Appearance = {
 
 type Appearances = keyof typeof Appearance;
 
-interface LinkProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   appearance: Appearances;
 }
 
 export const Link: React.FC<LinkProps> = (props: LinkProps) => {
-  const { appearance, children } = props;
+  const { appearance = "link", children } = props;
 
   return (
     <NextLink
