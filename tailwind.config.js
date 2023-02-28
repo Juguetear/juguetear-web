@@ -29,14 +29,17 @@ module.exports = {
       DEFAULT: "0.25rem",
       full: "9999px",
     },
+    borderWidth: {
+      DEFAULT: "0.5px",
+    },
     fontSize: {
-      sm: ["1rem", "1.4"],
-      base: ["1.188rem", "1.4"],
-      lg: ["1.25rem", "1.4"],
-      xl: ["1.5rem", "1.4"],
-      "2xl": ["1.75rem", "1.4"],
-      "3xl": ["2.125rem", "1.4"],
-      "4xl": ["2.25rem", "1.4"],
+      /* 16px */ sm: ["1rem", "1.4"],
+      /* 19px */ base: ["1.1875rem", "1.4"],
+      /* 20px */ lg: ["1.25rem", "1.4"],
+      /* 24px */ xl: ["1.5rem", "1.4"],
+      /* 28px */ "2xl": ["1.75rem", "1.4"],
+      /* 34px */ "3xl": ["2.125rem", "1.4"],
+      /* 36px */ "4xl": ["2.25rem", "1.4"],
     },
     extend: {
       fontFamily: {
@@ -45,6 +48,7 @@ module.exports = {
       },
       boxShadow: {
         "2md": "0px 0px 4px 4px #066CFF",
+        "1md": "0px 0px 4px 4px #066CFF",
       },
     },
   },

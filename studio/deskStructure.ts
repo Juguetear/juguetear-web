@@ -2,11 +2,11 @@ import S from "@sanity/desk-tool/structure-builder";
 
 import { HelpCircleIcon, HomeIcon } from "@sanity/icons";
 
+import homePage from "../schemas/home-page";
 import about from "./schemas/about";
 import accessibilityDeclaration from "./schemas/accessibility-declaration";
-import faq from "./schemas/faq";
-import homePage from "./schemas/home-page";
 import collaborate from "./schemas/collaborate";
+import faq from "./schemas/faq";
 
 // List of 'documents/schemas' to ignore from Sanity's Desk list.
 const pages = [
@@ -26,7 +26,7 @@ export default () => {
       .items([
         // home-page schema
         S.listItem()
-          .title(homePage.title)
+          .title(homePage.title || "Home")
           .icon(HomeIcon)
           .child(
             S.document().schemaType(homePage.name).documentId(homePage.name)
