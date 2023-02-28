@@ -38,7 +38,7 @@ const Input = ({
 
   return (
     <div className="text-base font-inter space-y-1 group">
-      <label htmlFor={id} className="relative">
+      <label htmlFor={id} className="relative block">
         <span className={spanStyles}>
           {required ? "*" : ""}
           {label}
