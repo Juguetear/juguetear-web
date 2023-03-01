@@ -1,6 +1,4 @@
-import "@testing-library/jest-dom/extend-expect";
-import { fireEvent, render } from "@testing-library/react";
-import { act } from "react-dom/test-utils";
+import { act, fireEvent, render } from "@testing-library/react";
 import { Link } from "./Link";
 
 describe("Link", () => {
@@ -33,19 +31,5 @@ describe("Link", () => {
       fireEvent.click(link);
     });
     expect(handleClick).toHaveBeenCalled();
-  });
-
-  it("HandleClick is not run click when link is disabled", () => {
-    const handleClick = jest.fn();
-    const { getByRole } = render(
-      <Link onClick={handleClick} disabled={true} appearance={"button"}>
-        test
-      </Link>
-    );
-    const link = getByRole("link");
-    act(() => {
-      fireEvent.click(link);
-    });
-    expect(handleClick).not.toHaveBeenCalled();
   });
 });

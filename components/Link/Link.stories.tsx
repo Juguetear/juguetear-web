@@ -13,6 +13,8 @@ export default {
 
 type Story = StoryObj<typeof Link>
 
+
+
 export const button: Story = {
   args: {
     appearance: "button",
@@ -33,3 +35,4 @@ export const buttonWithIcon: Story = {
     children: "Descargar",
   },
 };
+
