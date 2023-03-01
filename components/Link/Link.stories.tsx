@@ -13,12 +13,6 @@ export default {
 
 type Story = StoryObj<typeof Link>
 
-
-
-
-
-
-
 export const button: Story = {
   args: {
     appearance: "button",
