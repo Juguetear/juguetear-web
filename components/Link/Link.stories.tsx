@@ -4,6 +4,11 @@ import { Link } from "./Link";
 export default {
   title: "Link",
   component: Link,
+  argTypes: {
+    onClick: {
+      action: "Clicked",
+    },
+  },
 } as Meta<typeof Link>;
 
 type Story = StoryObj<typeof Link>
