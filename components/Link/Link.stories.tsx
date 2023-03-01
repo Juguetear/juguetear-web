@@ -1,4 +1,4 @@
-import { Meta, StoryFn } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import { Link } from "./Link";
 
 export default {
@@ -6,25 +6,31 @@ export default {
   component: Link,
 } as Meta<typeof Link>;
 
-// eslint-disable-next-line react/react-in-jsx-scope
-const Template: StoryFn<typeof Link> = (args) => <Link {...args} />;
+type Story = StoryObj<typeof Link>
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  disabled: true,
+
+
+
+
+
+
+export const button: Story = {
+  args: {
+    appearance: "button",
+    children: "Pedir juguete",
+  },
 };
 
-export const button = Template.bind({});
-button.args = {
-  appearance: "button",
+export const link: Story = {
+  args: {
+    appearance: "link",
+    children: "Ver todos los juguetes",
+  },
 };
 
-export const link = Template.bind({});
-link.args = {
-  appearance: "link",
-};
-
-export const buttonWithIcon = Template.bind({});
-buttonWithIcon.args = {
-  appearance: "buttonWithIcon",
+export const buttonWithIcon: Story = {
+  args: {
+    appearance: "buttonWithIcon",
+    children: "Descargar",
+  },
 };
