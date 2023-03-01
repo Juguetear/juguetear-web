@@ -19,7 +19,6 @@ export const SampleTag: StoryObj<typeof Tag> = {
       <Tag {...args} />
     </ul>
   ),
-  name: "SampleTag",
   args: {
     label: "Movimiento",
   },
@@ -30,7 +29,6 @@ export const LongTag: StoryObj<typeof Tag> = {
       <Tag {...args} />
     </ul>
   ),
-  name: "LongTag",
   args: {
     label: "Really long tagname",
   },
@@ -41,7 +39,6 @@ export const TestOnClick: StoryObj<typeof Tag> = {
       <Tag {...args} />
     </ul>
   ),
-  name: "TestOnClick",
   args: {
     label: "On Click",
     onClick: () => alert("Button clicked"),
@@ -66,7 +63,6 @@ export const MultipleTags: StoryObj<MultipleTagsProps> = {
       </ul>
     );
   },
-  name: "MultipleTags",
   args: {
     label: "Tag",
     numTags: 2,
