@@ -5712,6 +5712,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@testing-library/dom@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "@testing-library/dom@npm:9.0.0"
+  dependencies:
+    "@babel/code-frame": ^7.10.4
+    "@babel/runtime": ^7.12.5
+    "@types/aria-query": ^5.0.1
+    aria-query: ^5.0.0
+    chalk: ^4.1.0
+    dom-accessibility-api: ^0.5.9
+    lz-string: ^1.4.4
+    pretty-format: ^27.0.2
+  checksum: 5381bf9438f0ee35f795e7f9b203564aa455e7cd838b6677084c82dd56396779c38cc49ddffed4e57a8bcc3c62b4bc96ea684bb4b24d13655152db745327b2cd
+  languageName: node
+  linkType: hard
+
 "@testing-library/jest-dom@npm:^5.16.2, @testing-library/jest-dom@npm:^5.16.5":
   version: 5.16.5
   resolution: "@testing-library/jest-dom@npm:5.16.5"
@@ -5751,6 +5767,15 @@ __metadata:
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
   checksum: 16319de685fbb7008f1ba667928f458b2d08196918002daca56996de80ef35e6d9de26e9e1ece7d00a004692b95a597cf9142fff0dc53f2f51606a776584f549
+  languageName: node
+  linkType: hard
+
+"@testing-library/user-event@npm:^14.4.3":
+  version: 14.4.3
+  resolution: "@testing-library/user-event@npm:14.4.3"
+  peerDependencies:
+    "@testing-library/dom": ">=7.21.4"
+  checksum: 852c48ea6db1c9471b18276617c84fec4320771e466cd58339a732ca3fd73ad35e5a43ae14f51af51a8d0a150dcf60fcaab049ef367871207bea8f92c4b8195e
   languageName: node
   linkType: hard
 
@@ -15738,8 +15763,10 @@ __metadata:
     "@storybook/nextjs": ^7.0.0-beta.17
     "@storybook/react": ^7.0.0-beta.17
     "@storybook/testing-library": ^0.0.14-next.1
+    "@testing-library/dom": ^9.0.0
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.4.0
+    "@testing-library/user-event": ^14.4.3
     "@types/node": 18.11.17
     "@types/react": 18.0.26
     "@types/react-dom": 18.0.9

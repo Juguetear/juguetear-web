@@ -17,6 +17,7 @@ interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   appearance: appearances;
 }
 
+
 export const Link: React.FC<LinkProps> = (props: LinkProps) => {
   const { appearance = "link", children } = props;
 
