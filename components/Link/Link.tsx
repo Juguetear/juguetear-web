@@ -1,4 +1,4 @@
-import NextLink from "next/link";
+import NextLink, { LinkProps as NextLinkProps } from "next/link";
 import React from "react";
 
 const baseStyle =
@@ -13,10 +13,11 @@ const styles = {
 
 type appearances = keyof typeof styles;
 
-interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+interface LinkProps
+  extends Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, "href">,
+    NextLinkProps {
   appearance: appearances;
 }
-
 
 export const Link: React.FC<LinkProps> = (props: LinkProps) => {
   const { appearance = "link", children } = props;
