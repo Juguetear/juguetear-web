@@ -19,12 +19,11 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
   - [Replicando el proyecto en tu ciudad](#replicando-el-proyecto-en-tu-ciudad)
 - [Comunidad](#comunidad)
 - [Requerimientos](#requerimientos)
+- [Despliegues](#despliegues)
 - [Diseño de interfaz (UI/UX)](#diseño-de-interfaz-uiux)
 - [Accesibilidad](#accesibilidad)
 - [Tech Stack](#tech-stack)
-  - [Sanity](#sanity)
-  - [Storybook](#storybook)
-- [Instalación del proyecto](#instalación-del-proyecto)
+- [Correr el proyecto localmente](#correr-el-proyecto-localmente)
 - [Contribuidores](#contribuidores)
 - [Staff](#staff)
 - [Licencias](#licencias)
@@ -78,6 +77,14 @@ Este proyecto se desarrolla con la participación y el apoyo de FrontendCafé. E
 
 ---
 
+## Despliegues
+
+- **Web:** [https://juguetear-web.vercel.app/](https://juguetear-web.vercel.app/)
+- **Storybook:** [https://storybook-juguetear-web.vercel.app/](https://storybook-juguetear-web.vercel.app/)
+- **Sanity Studio:** [https://juguetear-web.vercel.app/studio](https://juguetear-web.vercel.app/studio)
+
+---
+
 ## Diseño de interfaz (UI/UX)
 
 La interfaz del proyecto fue completamente desarrollada por [Mariana Lessi](https://www.behance.net/marualessi).  
@@ -105,12 +112,12 @@ Nuestro tech stack consiste en las siguientes tecnologías:
 
 > 💡 No hace falta tener mucho conocimiento en el tech stack para poder contribuir.
 
-- **NextJS** _o ReactJS_
-- **TypeScript** _o JavaScript_
-- **Tailwind CSS**
-- **Storybook**
-- **Sanity**
-- **Jest**
+- **<a href="https://nextjs.org/docs">NextJS</a>** o ReactJS
+- **<a href="https://www.typescriptlang.org/docs/">TypeScript</a>** o JavaScript
+- **<a href="https://tailwindcss.com/docs/installation">Tailwind CSS</a>**
+- **<a href="https://storybook.js.org/docs/react/get-started/introduction">Storybook</a>**
+- **<a href="https://www.sanity.io/docs">Sanity</a>**
+- **<a href="https://jestjs.io/docs/getting-started">Jest</a>**
 
 <details>
 <summary>Has click aquí, para ver extensiones recomendadas para VSCode</summary><br>
@@ -123,56 +130,24 @@ Nuestro tech stack consiste en las siguientes tecnologías:
 
 </details>
 
-### Sanity
+---
 
-Todo el contenido se va a administrar usando Sanity como [Headless CMS](https://www.sanity.io/headless-cms).
+## Correr el Proyecto Localmente
 
-<!-- TODO: Update after [#126](https://github.com/Juguetear/juguetear-web/issues/126) -->
+### Instalación
 
-Dentro del directorio [`/studio/schemas`](studio/schemas/) podes encontrar los _schemas_ disponibles. Los _schemas_ describen los tipos de documentos y sus campos (_fields_).
+Ubícate en la carpeta donde deseas instalar el proyecto y clona el repositorio ejecutando:
 
-<details>
-<summary>Ver mas información sobre Sanity haciendo click aca.</summary><br>
-
-En los archivos JSON en los que Sanity Studio escribe los datos el tipo de documento aparecen como la propiedad `_type`.
-
-Ahora, para obtener la información de Sanity, vas a tener que hacer _fetch_ utilizando el método `client()` inicializado en `lib/client.ts`. Por ejemplo, para traer todos los miembros del proyecto, podés hacer:
-
-```js
-const member = await client.fetch(`*[_type == "member"]`);
+```bash
+git clone https://github.com/Juguetear/juguetear-web.git
+cd juguetear-web
 ```
 
-En el ejemplo de arriba `*[_type == "member"]` es el _query_ con el cual filtramos que información queremos traer. Este _query_ esta escrito en [GROQ](https://www.sanity.io/docs/groq). Sanity nos facilita una [cheat sheet](https://www.sanity.io/docs/query-cheat-sheet) con algunos de los _queries_ más comunes.
-
-Si querés saber más sobre el cliente JavaScript de Sanity, podés leer más en la [documentación](https://www.sanity.io/docs/js-client) de Sanity. Para hacer las cosas más sencillas, utilizamos el [toolkit](https://github.com/sanity-io/next-sanity) de Sanity para NextJS en este proyecto.
-
-Es muy común usar esta propiedad como _query_ para obtener su contenido (por ejemplo `*[_type == "animal"]`). Si querés saber más sobre los _schemas_, podés leer la [documentación](https://www.sanity.io/docs/schema-types) de Sanity al respecto.
-
-</details>
-
----
-
-### Storybook
-
-Storybook es una librería de código abierto que permite desarrollar y documentar tus componentes en un entorno aislado. Vamos a usarla para crear y testear todos los componentes del proyecto Juguetear.
-
-Para poder ver los componentes listos para usar, podes entrar a [este enlace][web-storybook] (_provisorio_).
-
----
-
-## Instalación del proyecto
-
-> ⚠️ Asegúrate de haber leido [**como contribuir**][doc-contributing], y recuerda que si tenés dudas puedes preguntarnos en el canal [#juguetear][dc-channel] en Discord.
-
-Luego haber leido [**como contribuir**][doc-contributing] y haber clonado el repositorio, debes accedé al directorio del proyecto
-
-Luego instala las dependencias usando tu terminal de preferencia ejecutando:
+Posteriormente ejecutá el siguiente comando para instalar todas las dependencias listadas en el archivo [`package.json`](package.json).
 
 ```bash
 yarn install
 ```
-
-Esto va a instalar todas las dependencias listadas en el archivo [`package.json`](package.json).
 
   <details>
   <summary> 💡 Hacé click aquí si te aparece un error que dice <code>yarn: command not found</code></summary><br>
@@ -187,7 +162,9 @@ npm install --global yarn
 
   </details>
 
-Después ejecutá:
+### Correr el entorno de desarrollo localmente
+
+Una vez hechos los pasos de instalación ejecutá el siguiente comando:
 
 ```bash
 yarn run dev
@@ -195,9 +172,26 @@ yarn run dev
 yarn dev
 ```
 
-Se iniciara el servidor de desarrollo. Visitá [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
+Se iniciara el servidor de desarrollo, visitá [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-> 💡 Podés realizar preguntas en el canal [#juguetear][dc-channel] dentro del servidor de [FrontendCafé][dc-fec] en Discord.
+Dentro del mismo servidor de desarrollo se tiene acceso a **Sanity Studio**, visitá [http://localhost:3000/studio](http://localhost:3000/studio) para visualizar el dashboard.
+
+<details>
+  <summary> 💡 Hacé click aquí para obtener más información para el acceso al <code>dashboard de Sanity Studio</code></summary><br>
+  Para tener accesso al dashboard de <b>Sanity Studio</b>, dejá un mensaje en el canal <i>#juguetear</i> de Discord avisando a quienes administran los accesos: <b>@nykka</b>, <b>@TonyMckes</b> o <b>@LPRegen</b>.
+</details>
+
+### Correr Storybook localmente
+
+Para iniciar **Storybook** en tu entorno local, desde la consola de comandos tenés que ejecutar:
+
+```
+yarn storybook
+```
+
+Se iniciará el servidor de **Storybook**. Visitá [http://localhost:6006](http://localhost:6006) en tu navegador para ver los componentes.
+
+> ⚠️ Asegúrate de haber leido [**como contribuir**][doc-contributing], y recuerda que si tenés dudas puedes preguntarnos en el canal [#juguetear][dc-channel] en Discord.
 
 ---
 
@@ -221,7 +215,11 @@ _Diseño UX/UI_
 **Mariana Lessi**
 
 _Desarrollo y administración del repositorio_  
-**Verónica García (nykka)**
+**Verónica García ([@nykka](https://github.com/nykka))**
+
+**Manuel Escribano ([@LPRegen](https://github.com/LPRegen))**
+
+**Anthony Mackensen ([@TonyMckes](https://github.com/TonyMckes))**
 
 ---
 

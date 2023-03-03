@@ -2,6 +2,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "prettier.singleQuote": false,
+  "prettier.semi": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": true,
     "source.fixAll.eslint": true
@@ -9,5 +10,6 @@
   "githubIssues.issueBranchTitle": "${issueNumber}${sanitizedIssueTitle}",
   "git.branchProtection": ["master", "main", "development"],
   "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "githubPullRequests.ignoredPullRequestBranches": ["development"]
 }
