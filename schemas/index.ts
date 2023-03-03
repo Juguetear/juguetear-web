@@ -13,7 +13,8 @@ import member from "schemas/member";
 import toy from "schemas/toy";
 import collaborate from "studio/schemas/collaborate";
 import link from "studio/schemas/link";
-import video from "studio/schemas/video";
+import video from "schemas/video";
+
 
 const schemas = [
   /* Your types here! */
