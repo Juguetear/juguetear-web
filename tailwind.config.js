@@ -48,7 +48,8 @@ module.exports = {
         outfit: ["var(--font-outfit)", ...fontFamily.sans],
       },
       boxShadow: {
-        "2md": "0px 0px 4px 4px #066CFF",
+        "2md": "0px 0px 5px 5px #066CFF",
+        "md": "0px 0px 4px 4px #066CFF",
         "1md": "0px 0px 4px 4px #066CFF",
       },
     },
