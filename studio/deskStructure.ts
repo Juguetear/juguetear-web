@@ -2,10 +2,10 @@ import S from "@sanity/desk-tool/structure-builder";
 
 import { HelpCircleIcon, HomeIcon } from "@sanity/icons";
 
+import collaborate from "../schemas/collaborate";
 import homePage from "../schemas/home-page";
 import about from "./schemas/about";
 import accessibilityDeclaration from "./schemas/accessibility-declaration";
-import collaborate from "./schemas/collaborate";
 import faq from "./schemas/faq";
 
 // List of 'documents/schemas' to ignore from Sanity's Desk list.

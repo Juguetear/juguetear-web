@@ -1,4 +1,3 @@
-import React from "react";
 import getYouTubeID from "get-youtube-id";
 
 function VideoEmbedPreview(value: { url: { url: string } }) {

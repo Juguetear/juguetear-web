@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'sanity';
+import { defineField, defineType } from "sanity";
 import VideoEmbedPreview from "../components/VideoEmbedPreview";
 
 export default defineType({
