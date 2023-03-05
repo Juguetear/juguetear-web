@@ -2,15 +2,20 @@
 import { HelpCircleIcon, HomeIcon } from "@sanity/icons";
 import { StructureBuilder } from "sanity/desk";
 
-// TODO: Migrate schemas from './studio/schemas' to './schemas'
+import about from "schemas/about";
+import accessibilityDeclaration from "schemas/accessibility-declaration";
 import collaborate from "schemas/collaborate";
+import faq from "schemas/faq";
 import homePage from "schemas/home-page";
-import about from "studio/schemas/about";
-import accessibilityDeclaration from "studio/schemas/accessibility-declaration";
-import faq from "studio/schemas/faq";
 
 // List of 'documents/schemas' to ignore from Sanity's Desk list.
-const pages = [about.name, accessibilityDeclaration.name, faq.name, homePage.name, collaborate.name];
+const pages = [
+  about.name,
+  accessibilityDeclaration.name,
+  collaborate.name,
+  faq.name,
+  homePage.name,
+];
 
 const deskStructure = (S: StructureBuilder) => {
   return (
@@ -22,29 +27,50 @@ const deskStructure = (S: StructureBuilder) => {
       .items([
         // home-page schema
         S.listItem()
-          .title(homePage.title || "Home")
+          .title(homePage.title || "Home Page")
           .icon(HomeIcon)
-          .child(S.document().schemaType(homePage.name).documentId(homePage.name)),
+          .child(
+            S.document().schemaType(homePage.name).documentId(homePage.name)
+          ),
 
         // accessibility-declaration schema
         S.listItem()
-          .title(accessibilityDeclaration.title)
-          .child(S.document().schemaType(accessibilityDeclaration.name).documentId(accessibilityDeclaration.name)),
+          .title(
+            accessibilityDeclaration.title || "Accessibility Declaration Page"
+          )
+          .child(
+            S.document()
+              .schemaType(accessibilityDeclaration.name)
+              .documentId(accessibilityDeclaration.name)
+          ),
 
         // faq schema
-        S.listItem().title(faq.title).icon(HelpCircleIcon).child(S.document().schemaType(faq.name).documentId(faq.name)),
+        S.listItem()
+          .title(faq.title || "FAQ Page")
+          .icon(HelpCircleIcon)
+          .child(S.document().schemaType(faq.name).documentId(faq.name)),
 
         // about schema
-        S.listItem().title(about.title).child(S.document().schemaType(about.name).documentId(about.name)),
+        S.listItem()
+          .title(about.title || "About Page")
+          .child(S.document().schemaType(about.name).documentId(about.name)),
 
         // collaborate schema
         S.listItem()
-          .title(collaborate.title ? collaborate.title : "")
-          .child(S.document().schemaType(collaborate.name).documentId(collaborate.name)),
+          .title(collaborate.title ? collaborate.title : "Collaborate Page")
+          .child(
+            S.document()
+              .schemaType(collaborate.name)
+              .documentId(collaborate.name)
+          ),
 
         S.divider(),
         // Rest of documents
-        ...S.documentTypeListItems().filter((item) => !pages.includes(item.getId()!)),
+        ...S.documentTypeListItems().filter(
+          (item) => !pages.includes(item.getId() as (typeof pages)[number])
+
+          //
+        ),
       ])
   );
 };
