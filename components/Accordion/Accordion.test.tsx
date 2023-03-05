@@ -11,11 +11,15 @@ describe("Accordion", () => {
       </Accordion>
     );
 
-    const accordeonElement = screen.getByText(
-      "¿Hay que pagar para usar los juguetes?"
-    );
+    expect(
+      screen.queryByText("No, el prestamo es sin costo alguno.")
+    ).not.toBeInTheDocument();
 
-    userEvent.click(accordeonElement);
+    const accordionElement = screen.getByRole("button", {
+      name: "¿Hay que pagar para usar los juguetes?",
+    });
+
+    userEvent.click(accordionElement);
 
     expect(
       await screen.findByText("No, el prestamo es sin costo alguno.")
