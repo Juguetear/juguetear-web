@@ -1,9 +1,6 @@
 {
   "name": "juguetear-web",
   "private": true,
-  "workspaces": [
-    "studio"
-  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
