@@ -11,7 +11,6 @@ export interface Link {
 
 interface NavbarLinkProps extends React.HTMLProps<HTMLLIElement> {
   route: string;
-  isCurrent: boolean;
 }
 
 interface NavbarProps extends Partial<React.HTMLProps<HTMLElement>> {
@@ -33,11 +32,7 @@ export const Navbar = ({ links, ...props }: NavbarProps) => {
         </Link>
         <ul className="flex flex-row border-b-gray border-b-[0.5px] space-x-[55px] self-start pt-1">
           {links.map(({ route, label }) => (
-            <NavbarItem
-              key={route}
-              route={route}
-              isCurrent={pathname === route}
-            >
+            <NavbarItem key={route} route={route}>
               {label}
             </NavbarItem>
           ))}
@@ -47,14 +42,11 @@ export const Navbar = ({ links, ...props }: NavbarProps) => {
   );
 };
 
-export const NavbarItem = ({
-  children,
-  route,
-  isCurrent,
-  ...props
-}: NavbarLinkProps) => {
+export const NavbarItem = ({ children, route, ...props }: NavbarLinkProps) => {
+  const pathname = usePathname();
   const currentClasses = "border-b-orange text-orange font-bold";
   const notCurrentClasses = "border-transparent text-blue font-medium";
+  const isCurrent = pathname === route;
   const conditionalClasses = isCurrent ? currentClasses : notCurrentClasses;
 
   return (

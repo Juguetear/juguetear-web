@@ -59,33 +59,33 @@ describe("Navbar component ", () => {
 });
 
 describe("component NavbarItem", () => {
-  it("should have text-orange class if isCurrent prop is set to true", async () => {
+  it("should have text-orange class if is current pathname is equal to route", async () => {
     mockPathname("about");
-    render(<NavbarItem route="foo" isCurrent={true} />);
+    render(<NavbarItem route="about" />);
     const about = await screen.findByRole("listitem");
 
     expect(about).toHaveClass("text-orange");
   });
 
-  it("should have text-blue class if isCurrent prop is set to false", async () => {
+  it("should have text-blue class if current pathname is not equal to route", async () => {
     mockPathname("other-path");
-    render(<NavbarItem route="foo" isCurrent={false} />);
+    render(<NavbarItem route="foo" />);
     const about = await screen.findByRole("listitem");
 
     expect(about).toHaveClass("text-blue");
   });
 
-  it("link should have a attribute aria-current='page' if isCurrent prop is set to true", async () => {
+  it("link should have a attribute aria-current='page' if current pathname is equal to route", async () => {
     mockPathname("about");
-    render(<NavbarItem route="foo" isCurrent={true} />);
+    render(<NavbarItem route="about" />);
     const link_about = await screen.findByRole("link");
 
     expect(link_about).toHaveAttribute("aria-current", "page");
   });
 
-  it("link should have a attribute aria-current=false if isCurrent prop is set to false", async () => {
+  it("link should have a attribute aria-current=false if current pathname is not equal to route ", async () => {
     mockPathname("other-page");
-    render(<NavbarItem route="foo" isCurrent={false} />);
+    render(<NavbarItem route="foo" />);
     const link_about = await screen.findByRole("link");
 
     expect(link_about).toHaveAttribute("aria-current", "false");
