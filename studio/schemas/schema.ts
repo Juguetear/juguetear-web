@@ -7,12 +7,12 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 import block from "../../schemas/block";
 import characteristics from "../../schemas/characteristics";
+import collaborate from "../../schemas/collaborate";
 import homePage from "../../schemas/home-page";
 import video from "../../schemas/video";
 import about from "./about";
 import accessibilityDeclaration from "./accessibility-declaration";
 import characteristics_list from "./characteristics_list";
-import collaborate from "./collaborate";
 import document from "./document";
 import documents from "./documents";
 import faq from "./faq";
