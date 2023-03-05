@@ -1,20 +1,15 @@
 import getYouTubeID from "get-youtube-id";
 import { PreviewLayoutKey, PreviewProps } from "sanity";
 
-type VideoSelect = {
-  url?: {
-    url: string;
-  };
-};
-
 interface VideoEmbedPreviewProps extends PreviewProps<PreviewLayoutKey> {
-  select?: VideoSelect;
+  video?: {
+    url: string | undefined;
+  };
 }
 
-const VideoEmbedPreview = (props: VideoEmbedPreviewProps) => {
-  const { select } = props;
-  const videoId =
-    !select || !select.url ? undefined : getYouTubeID(select.url?.url);
+const VideoEmbedPreview = ({ video }: VideoEmbedPreviewProps) => {
+  const url = video?.url;
+  const videoId = url ? getYouTubeID(url) : undefined;
   const YTUrl = `https://www.youtube.com/embed/${videoId}`;
 
   if (!videoId) {
