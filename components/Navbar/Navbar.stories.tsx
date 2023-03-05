@@ -35,6 +35,9 @@ const storyWithPathnameAs = (pathname: string) => ({
 export const CurrentRouteIndex: StoryObj<typeof Navbar> =
   storyWithPathnameAs("/");
 
+export const CurrentRouteJuguetes: StoryObj<typeof Navbar> =
+  storyWithPathnameAs("/juguetes");
+
 export const CurrentRouteAbout: StoryObj<typeof Navbar> =
   storyWithPathnameAs("/about");
 
