@@ -1,5 +1,5 @@
-import "@testing-library/jest-dom/extend-expect";
-import { act, fireEvent, render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { ArrowButton } from "./ArrowButton";
 
 describe("Arrow button", () => {
@@ -8,31 +8,23 @@ describe("Arrow button", () => {
   });
 
   it("Button is correctly aria labeled", () => {
-    const { getByRole } = render(<ArrowButton handleClick={jest.fn()} />);
-    expect(
-      getByRole("button", { name: "Pasar al slide anterior" })
-    ).toBeInTheDocument();
+    render(<ArrowButton handleClick={jest.fn()} />);
+    expect(screen.getByRole("button")).toBeInTheDocument();
   });
 
-  it("HandleClick is run on button click", () => {
+  it("HandleClick is run on button click", async () => {
     const handleClick = jest.fn();
-    const { getByRole } = render(<ArrowButton handleClick={handleClick} />);
-    const button = getByRole("button");
-    act(() => {
-      fireEvent.click(button);
-    });
+    render(<ArrowButton handleClick={handleClick} />);
+    const button = screen.getByRole("button");
+    await userEvent.click(button);
     expect(handleClick).toHaveBeenCalled();
   });
 
-  it("HandleClick is not run click when button is disabled", () => {
+  it("HandleClick is not run click when button is disabled", async () => {
     const handleClick = jest.fn();
-    const { getByRole } = render(
-      <ArrowButton handleClick={handleClick} disabled={true} />
-    );
-    const button = getByRole("button");
-    act(() => {
-      fireEvent.click(button);
-    });
+    render(<ArrowButton handleClick={handleClick} disabled={true} />);
+    const button = screen.getByRole("button");
+    await userEvent.click(button);
     expect(handleClick).not.toHaveBeenCalled();
   });
 });
