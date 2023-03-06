@@ -15,26 +15,26 @@ export default {
 
 const Template: StoryFn<typeof Button> = (args) => <Button {...args} />;
 
-export const DefaultButton = Template.bind({});
-DefaultButton.args = {
+export const button = Template.bind({});
+button.args = {
   appearance: "button",
   children: <>button</>,
 };
 
-export const SimpleButton = Template.bind({});
-SimpleButton.args = {
+export const simpleButton = Template.bind({});
+simpleButton.args = {
   appearance: "button",
   children: <>button</>,
 };
 
-export const Link = Template.bind({});
-Link.args = {
+export const link = Template.bind({});
+link.args = {
   appearance: "link",
   children: <>link</>,
 };
 
-export const ButtonWithIcon = Template.bind({});
-ButtonWithIcon.args = {
+export const buttonWithIcon = Template.bind({});
+buttonWithIcon.args = {
   appearance: "buttonWithIcon",
   children: (
     <>

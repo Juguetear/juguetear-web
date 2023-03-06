@@ -1,5 +1,5 @@
-import "@testing-library/jest-dom/extend-expect";
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { Button } from "./Button";
 
 describe("Button", () => {
@@ -14,15 +14,15 @@ describe("Button", () => {
   it("Button is correctly aria labeled", () => {
     render(
       <Button onClick={jest.fn()} appearance={"button"}>
-        tests
+        test
       </Button>
     );
-    const button = screen.getByRole("button", { name: "tests" });
+    const button = screen.getByRole("button", { name: "test" });
 
     expect(button).toBeInTheDocument();
   });
 
-  it("HandleClick is run on button click", () => {
+  it("HandleClick is run on button click", async () => {
     const handleClick = jest.fn();
     render(
       <Button onClick={handleClick} appearance={"button"}>
@@ -31,11 +31,11 @@ describe("Button", () => {
     );
     const button = screen.getByRole("button");
 
-    fireEvent.click(button);
+    await userEvent.click(button);
     expect(handleClick).toHaveBeenCalled();
   });
 
-  it("HandleClick is not run click when button is disabled", () => {
+  it("HandleClick is not run click when button is disabled", async () => {
     const handleClick = jest.fn();
     render(
       <Button onClick={handleClick} disabled={true} appearance={"button"}>
@@ -44,7 +44,7 @@ describe("Button", () => {
     );
     const button = screen.getByRole("button");
 
-    fireEvent.click(button);
+    await userEvent.click(button);
     expect(handleClick).not.toHaveBeenCalled();
   });
 });
