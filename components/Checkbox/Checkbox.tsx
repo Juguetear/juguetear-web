@@ -32,7 +32,7 @@ export const Checkbox = ({ label, id, ...props }: CheckboxProps) => {
   };
 
   return (
-    <div className={`${containerStyle} ${focus !== "" ? focus : null}`}>
+    <div className={`${containerStyle} ${focus}`}>
       <input
         id={formattedId}
         type="checkbox"
