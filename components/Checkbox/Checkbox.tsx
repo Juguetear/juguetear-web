@@ -7,7 +7,7 @@ export interface CheckboxProps
 }
 
 export const Checkbox = ({ label, id, ...props }: CheckboxProps) => {
-  const [focus, setFocus] = useState<string>("focus-within:shadow-2md");
+  const [focus, setFocus] = useState<string>("");
 
   const containerStyle = "flex max-w-[13rem] items-center rounded p-1";
 
