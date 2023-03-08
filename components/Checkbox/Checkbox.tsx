@@ -30,7 +30,7 @@ export const Checkbox = ({ label, id, ...props }: CheckboxProps) => {
       <label htmlFor={formattedId} className={labelStyle}>
         {label}
       </label>
-      <div className="absolute inset-0 z-20 peer-focus-visible:shadow-2md"></div>
+      <div className="absolute inset-0 z-20 rounded peer-focus-visible:shadow-2md"></div>
     </div>
   );
 };
