@@ -1,5 +1,4 @@
-import "@testing-library/jest-dom/extend-expect";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { ChangeEvent } from "react";
 import Input from "./Input";
 
@@ -29,7 +28,7 @@ describe("Input", () => {
       value = target.value;
     };
 
-    const { getByLabelText } = render(
+    render(
       <Input
         label="Example"
         value={value}
@@ -39,7 +38,9 @@ describe("Input", () => {
       />
     );
 
-    expect(getByLabelText(/Example/i)).toBeInTheDocument();
+    const label = screen.getByLabelText(/Example/i);
+
+    expect(label).toBeInTheDocument();
   });
 
   it("Check input with error prop", () => {
@@ -49,7 +50,7 @@ describe("Input", () => {
       value = target.value;
     };
 
-    const { container, getByText } = render(
+    render(
       <Input
         label="error"
         value={value}
@@ -60,8 +61,13 @@ describe("Input", () => {
       />
     );
 
-    expect(container.getElementsByClassName("text-red").length).toBe(2);
-    expect(getByText(/helper/i)).toBeInTheDocument();
+    const spanElement = screen.getByText(/error/);
+    const helperText = screen.getByText(/helper/i);
+
+    expect(helperText).toBeInTheDocument();
+    expect(helperText).toHaveClass("text-red");
+    expect(spanElement).toBeInTheDocument();
+    expect(spanElement).toHaveClass("text-red");
   });
 
   it("Check input with required prop", () => {
@@ -71,7 +77,7 @@ describe("Input", () => {
       value = target.value;
     };
 
-    const { getByLabelText } = render(
+    render(
       <Input
         label="required"
         value={value}
@@ -82,6 +88,8 @@ describe("Input", () => {
       />
     );
 
-    expect(getByLabelText(/ */i)).toBeInTheDocument();
+    const requiredInput = screen.getByLabelText(/ */i);
+
+    expect(requiredInput).toBeInTheDocument();
   });
 });
