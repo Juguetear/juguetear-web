@@ -1,5 +1,4 @@
-import "@testing-library/jest-dom/extend-expect";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { ChangeEvent } from "react";
 import TextArea from "./TextArea";
 
@@ -29,7 +28,7 @@ describe("TextArea", () => {
       value = target.value;
     };
 
-    const { getByLabelText } = render(
+    render(
       <TextArea
         label="Example"
         value={value}
@@ -39,7 +38,7 @@ describe("TextArea", () => {
       />
     );
 
-    expect(getByLabelText(/Example/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Example/i)).toBeInTheDocument();
   });
 
   it("Check TextArea with error prop", () => {
@@ -49,7 +48,7 @@ describe("TextArea", () => {
       value = target.value;
     };
 
-    const { container, getByText } = render(
+    render(
       <TextArea
         label="error"
         value={value}
@@ -60,8 +59,10 @@ describe("TextArea", () => {
       />
     );
 
-    expect(container.getElementsByClassName("text-red").length).toBe(2);
-    expect(getByText(/helper/i)).toBeInTheDocument();
+    const errorMessage = screen.getByText(/helper/i);
+
+    expect(errorMessage).toHaveClass("visible");
+    expect(errorMessage).toBeInTheDocument();
   });
 
   it("Check TextArea with required prop", () => {
@@ -71,7 +72,7 @@ describe("TextArea", () => {
       value = target.value;
     };
 
-    const { getByLabelText } = render(
+    render(
       <TextArea
         label="required"
         value={value}
@@ -82,6 +83,6 @@ describe("TextArea", () => {
       />
     );
 
-    expect(getByLabelText(/ */i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/ */i)).toBeInTheDocument();
   });
 });
