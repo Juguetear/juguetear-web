@@ -1,4 +1,5 @@
 import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event/";
 import { ChangeEvent } from "react";
 import TextArea from "./TextArea";
 
@@ -21,11 +22,11 @@ describe("TextArea", () => {
     );
   });
 
-  it("Check text label", () => {
+  it("Check text label", async () => {
     let value = "";
 
     const handleChange = ({ target }: ChangeEvent<HTMLTextAreaElement>) => {
-      value = target.value;
+      value = value + target.value;
     };
 
     render(
@@ -38,7 +39,11 @@ describe("TextArea", () => {
       />
     );
 
-    expect(screen.getByLabelText(/Example/i)).toBeInTheDocument();
+    const textarea = screen.getByLabelText(/Example/i);
+    await userEvent.type(textarea, "Hola Mundo");
+
+    expect(textarea).toBeInTheDocument();
+    expect(value).toBe("Hola Mundo");
   });
 
   it("Check TextArea with error prop", () => {
