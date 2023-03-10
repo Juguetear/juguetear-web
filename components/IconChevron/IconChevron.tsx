@@ -6,12 +6,13 @@ interface IconChevronProps {
 export const IconChevron = ({ open, className }: IconChevronProps) => {
   return (
     <svg
+      data-testid={`${open}-${className}`}
       width="16"
       height="9"
       viewBox="0 0 16 9"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`${className} motion-reduce:transition-none motion-safe:transition-transform ${
+      className={`${className} motion-safe:transition-transform motion-reduce:transition-none ${
         open ? "rotate-180" : ""
       }`}
     >
