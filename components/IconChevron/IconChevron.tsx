@@ -7,6 +7,7 @@ export const IconChevron = ({ open, className }: IconChevronProps) => {
   return (
     <svg
       data-testid={`${open}-${className}`}
+      aria-hidden="true"
       width="16"
       height="9"
       viewBox="0 0 16 9"
