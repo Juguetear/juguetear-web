@@ -4,7 +4,7 @@ import { ChangeEvent } from "react";
 import TextArea from "./TextArea";
 
 describe("TextArea", () => {
-  it("Component renders without crashing", () => {
+  it("Should render the component", () => {
     let value = "";
 
     const handleChange = ({ target }: ChangeEvent<HTMLTextAreaElement>) => {
@@ -13,7 +13,7 @@ describe("TextArea", () => {
 
     render(
       <TextArea
-        label="texto"
+        label="Example"
         value={value}
         onChange={handleChange}
         helperText="helper"
@@ -22,7 +22,7 @@ describe("TextArea", () => {
     );
   });
 
-  it("Check text label", async () => {
+  it("Should be a text with the text typed ", async () => {
     let value = "";
 
     const handleChange = ({ target }: ChangeEvent<HTMLTextAreaElement>) => {
@@ -46,7 +46,7 @@ describe("TextArea", () => {
     expect(value).toBe("Hola Mundo");
   });
 
-  it("Check TextArea with error prop", () => {
+  it("Should be a textarea with the error prop", () => {
     let value = "";
 
     const handleChange = ({ target }: ChangeEvent<HTMLTextAreaElement>) => {
@@ -70,7 +70,7 @@ describe("TextArea", () => {
     expect(errorMessage).toBeInTheDocument();
   });
 
-  it("Check TextArea with required prop", () => {
+  it("Should be a textarea with the required prop", () => {
     let value = "";
 
     const handleChange = ({ target }: ChangeEvent<HTMLTextAreaElement>) => {
@@ -79,7 +79,7 @@ describe("TextArea", () => {
 
     render(
       <TextArea
-        label="required"
+        label="Example"
         value={value}
         onChange={handleChange}
         helperText="helper"
@@ -88,6 +88,7 @@ describe("TextArea", () => {
       />
     );
 
-    expect(screen.getByLabelText(/ */i)).toBeInTheDocument();
+    const textarea = screen.getByLabelText(/Example/i);
+    expect(textarea).toBeRequired();
   });
 });
