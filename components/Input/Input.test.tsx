@@ -1,4 +1,5 @@
 import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event/";
 import { ChangeEvent } from "react";
 import Input from "./Input";
 
@@ -21,11 +22,11 @@ describe("Input", () => {
     );
   });
 
-  it("Check text label", () => {
+  it("Checks that input value is modified correctly", async () => {
     let value = "";
 
     const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
-      value = target.value;
+      value += target.value;
     };
 
     render(
@@ -38,12 +39,14 @@ describe("Input", () => {
       />
     );
 
-    const label = screen.getByLabelText(/Example/i);
+    const input = screen.getByLabelText(/Example/i);
+    await userEvent.type(input, "Test");
 
-    expect(label).toBeInTheDocument();
+    expect(input).toBeInTheDocument();
+    expect(value).toBe("Test");
   });
 
-  it("Check input with error prop", () => {
+  it("Checks that errors are displayed correctly when error prop is set to true", () => {
     let value = "";
 
     const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
@@ -70,7 +73,7 @@ describe("Input", () => {
     expect(spanElement).toHaveClass("text-red");
   });
 
-  it("Check input with required prop", () => {
+  it("Checks that the required prop of input is working correctly", () => {
     let value = "";
 
     const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
@@ -91,5 +94,6 @@ describe("Input", () => {
     const requiredInput = screen.getByLabelText(/ */i);
 
     expect(requiredInput).toBeInTheDocument();
+    expect(requiredInput).toBeRequired();
   });
 });
