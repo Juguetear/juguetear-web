@@ -4,8 +4,10 @@ import { Link } from "./Link";
 export default {
   title: "Link",
   component: Link,
-  argTypes: {
+  args: {
     href: "",
+  },
+  argTypes: {
     onClick: {
       action: "Clicked",
     },
