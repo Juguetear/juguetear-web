@@ -4,7 +4,7 @@ import { Link } from "./Link";
 describe("Link", () => {
   it("Component renders without crashing", () => {
     render(
-      <Link onClick={jest.fn()} appearance={"button"}>
+      <Link href={""} appearance={"button"}>
         test
       </Link>
     );
@@ -12,7 +12,7 @@ describe("Link", () => {
 
   it("Link is correctly aria labeled", () => {
     const { getByRole } = render(
-      <Link onClick={jest.fn()} appearance={"button"}>
+      <Link href={""} appearance={"button"}>
         test
       </Link>
     );
@@ -22,7 +22,7 @@ describe("Link", () => {
   it("HandleClick is run on link click", () => {
     const handleClick = jest.fn();
     const { getByRole } = render(
-      <Link onClick={handleClick} appearance={"button"}>
+      <Link href={""} appearance={"button"}>
         test
       </Link>
     );
