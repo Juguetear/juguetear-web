@@ -5,15 +5,14 @@ export default {
   title: "Link",
   component: Link,
   argTypes: {
+    href: "",
     onClick: {
       action: "Clicked",
     },
   },
 } as Meta<typeof Link>;
 
-type Story = StoryObj<typeof Link>
-
-
+type Story = StoryObj<typeof Link>;
 
 export const button: Story = {
   args: {
@@ -35,4 +34,3 @@ export const buttonWithIcon: Story = {
     children: "Descargar",
   },
 };
-
