@@ -21,15 +21,13 @@ describe("Link", () => {
 
   it("HandleClick is run on link click", () => {
     const handleClick = jest.fn();
-    const { getByRole } = render(
-      <Link href={""} appearance={"button"}>
-        test
-      </Link>
-    );
+    const href = "";
+    const { getByRole } = render(<Link appearance={"button"}>test</Link>);
     const link = getByRole("link");
     act(() => {
       fireEvent.click(link);
     });
     expect(handleClick).toHaveBeenCalled();
+    expect(link).toHaveAttribute(href, "/");
   });
 });
