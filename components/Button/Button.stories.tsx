@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from "@storybook/react";
+import { PDFIcon } from "../assets/PDFIcon";
 import { Button } from "./Button";
-import { PDFIcon } from "./PDFIcon";
 
 export default {
   title: "Button",
