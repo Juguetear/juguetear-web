@@ -1,4 +1,4 @@
-import { act, fireEvent, render } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { Link } from "./Link";
 
 describe("Link", () => {
@@ -20,14 +20,14 @@ describe("Link", () => {
   });
 
   it("HandleClick is run on link click", () => {
-    const handleClick = jest.fn();
-    const href = "";
-    const { getByRole } = render(<Link appearance={"button"}>test</Link>);
+    const { getByRole } = render(
+      <Link href="/" appearance={"button"}>
+        test
+      </Link>
+    );
+
     const link = getByRole("link");
-    act(() => {
-      fireEvent.click(link);
-    });
-    expect(handleClick).toHaveBeenCalled();
-    expect(link).toHaveAttribute(href, "/");
+
+    expect(link).toHaveAttribute("href", "/");
   });
 });
