@@ -1,4 +1,5 @@
 import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import TextArea from "./TextArea";
 
 describe("TextArea", () => {
@@ -24,5 +25,14 @@ describe("TextArea", () => {
 
     const textarea = screen.getByLabelText(/Example/i);
     expect(textarea).toBeRequired();
+  });
+
+  it("Should be a text with the text typed", async () => {
+    render(<TextArea label="Example" helperText="helper" name="TextArea" />);
+
+    const textarea = screen.getByLabelText("Example");
+    await userEvent.type(textarea, "Hola Mundo");
+
+    expect(textarea).toHaveValue("Hola Mundo");
   });
 });
