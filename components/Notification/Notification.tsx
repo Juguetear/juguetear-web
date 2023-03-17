@@ -1,9 +1,10 @@
+import { ReactNode } from "react";
 interface NotificationProps {
-  children: JSX.Element;
+  children: ReactNode;
 }
 const Notification = ({ children }: NotificationProps) => {
   return (
-    <div className="flex justify-between bg-turquoise/[0.1] rounded-lg py-8 px-7">
+    <div className="rounded-lg bg-turquoise/[0.1] py-8 px-7 text-center text-blue">
       {children}
     </div>
   );
