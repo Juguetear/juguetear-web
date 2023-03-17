@@ -1,5 +1,4 @@
-import "@testing-library/jest-dom/extend-expect";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Notification from "./Notification";
 
 describe("Notification", () => {
@@ -15,11 +14,13 @@ describe("Notification", () => {
   });
 
   it("Component renders children", () => {
-    const { getByText } = render(
+    render(
       <Notification>
-        <div>No tenemos juguetes...</div>
+        <p>No tenemos juguetes...</p>
       </Notification>
     );
-    expect(getByText("No tenemos juguetes...")).toBeTruthy();
+
+    const children = screen.getByText("No tenemos juguetes...");
+    expect(children).toBeInTheDocument();
   });
 });
