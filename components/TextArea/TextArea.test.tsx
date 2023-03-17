@@ -1,87 +1,38 @@
-import "@testing-library/jest-dom/extend-expect";
-import { render } from "@testing-library/react";
-import { ChangeEvent } from "react";
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import TextArea from "./TextArea";
 
 describe("TextArea", () => {
-  it("Component renders without crashing", () => {
-    let value = "";
+  it("Should render the component", () => {
+    render(<TextArea label="Example" helperText="helper" name="" />);
+  });
 
-    const handleChange = ({ target }: ChangeEvent<HTMLTextAreaElement>) => {
-      value = target.value;
-    };
-
+  it("Should be a textarea with the error prop", () => {
     render(
-      <TextArea
-        label="texto"
-        value={value}
-        onChange={handleChange}
-        helperText="helper"
-        name=""
-      />
+      <TextArea label="error" helperText="helper" name="TextArea" error />
     );
+
+    const errorMessage = screen.getByText(/helper/i);
+
+    expect(errorMessage).toHaveClass("visible");
+    expect(errorMessage).toBeInTheDocument();
   });
 
-  it("Check text label", () => {
-    let value = "";
-
-    const handleChange = ({ target }: ChangeEvent<HTMLTextAreaElement>) => {
-      value = target.value;
-    };
-
-    const { getByLabelText } = render(
-      <TextArea
-        label="Example"
-        value={value}
-        onChange={handleChange}
-        helperText="helper"
-        name="TextArea"
-      />
+  it("Should be a textarea with the required prop", () => {
+    render(
+      <TextArea label="Example" helperText="helper" name="TextArea" required />
     );
 
-    expect(getByLabelText(/Example/i)).toBeInTheDocument();
+    const textarea = screen.getByLabelText(/Example/i);
+    expect(textarea).toBeRequired();
   });
 
-  it("Check TextArea with error prop", () => {
-    let value = "";
+  it("Should be a text with the text typed", async () => {
+    render(<TextArea label="Example" helperText="helper" name="TextArea" />);
 
-    const handleChange = ({ target }: ChangeEvent<HTMLTextAreaElement>) => {
-      value = target.value;
-    };
+    const textarea = screen.getByLabelText("Example");
+    await userEvent.type(textarea, "Hola Mundo");
 
-    const { container, getByText } = render(
-      <TextArea
-        label="error"
-        value={value}
-        onChange={handleChange}
-        helperText="helper"
-        name="TextArea"
-        error
-      />
-    );
-
-    expect(container.getElementsByClassName("text-red").length).toBe(2);
-    expect(getByText(/helper/i)).toBeInTheDocument();
-  });
-
-  it("Check TextArea with required prop", () => {
-    let value = "";
-
-    const handleChange = ({ target }: ChangeEvent<HTMLTextAreaElement>) => {
-      value = target.value;
-    };
-
-    const { getByLabelText } = render(
-      <TextArea
-        label="required"
-        value={value}
-        onChange={handleChange}
-        helperText="helper"
-        name="TextArea"
-        required
-      />
-    );
-
-    expect(getByLabelText(/ */i)).toBeInTheDocument();
+    expect(textarea).toHaveValue("Hola Mundo");
   });
 });

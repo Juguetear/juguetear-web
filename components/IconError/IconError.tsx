@@ -6,6 +6,7 @@ export const IconError = ({ className }: IconErrorProps) => {
   return (
     <svg
       aria-hidden="true"
+      data-testid={className}
       width="13"
       height="13"
       viewBox="0 0 512.000000 512.000000"

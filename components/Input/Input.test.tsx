@@ -1,87 +1,42 @@
-import "@testing-library/jest-dom/extend-expect";
-import { render } from "@testing-library/react";
-import { ChangeEvent } from "react";
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event/";
 import Input from "./Input";
 
 describe("Input", () => {
   it("Component renders without crashing", () => {
-    let value = "";
+    render(<Input label="texto" helperText="helper" name="" />);
+  });
 
-    const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
-      value = target.value;
-    };
+  it("Checks that input value is modified correctly", async () => {
+    render(<Input label="Example" helperText="helper" name="input" />);
 
+    const input = screen.getByLabelText(/Example/i);
+    await userEvent.type(input, "Test");
+
+    expect(input).toBeInTheDocument();
+    expect(input).toHaveValue("Test");
+  });
+
+  it("Checks that errors are displayed correctly when error prop is set to true", () => {
+    render(<Input label="error" helperText="helper" name="input" error />);
+
+    const spanElement = screen.getByText(/error/);
+    const helperText = screen.getByText(/helper/i);
+
+    expect(helperText).toBeInTheDocument();
+    expect(helperText).toHaveClass("text-red");
+    expect(spanElement).toBeInTheDocument();
+    expect(spanElement).toHaveClass("text-red");
+  });
+
+  it("Checks that the required prop of input is working correctly", () => {
     render(
-      <Input
-        label="texto"
-        value={value}
-        onChange={handleChange}
-        helperText="helper"
-        name=""
-      />
-    );
-  });
-
-  it("Check text label", () => {
-    let value = "";
-
-    const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
-      value = target.value;
-    };
-
-    const { getByLabelText } = render(
-      <Input
-        label="Example"
-        value={value}
-        onChange={handleChange}
-        helperText="helper"
-        name="input"
-      />
+      <Input label="required" helperText="helper" name="input" required />
     );
 
-    expect(getByLabelText(/Example/i)).toBeInTheDocument();
-  });
+    const requiredInput = screen.getByLabelText(/ */i);
 
-  it("Check input with error prop", () => {
-    let value = "";
-
-    const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
-      value = target.value;
-    };
-
-    const { container, getByText } = render(
-      <Input
-        label="error"
-        value={value}
-        onChange={handleChange}
-        helperText="helper"
-        name="input"
-        error
-      />
-    );
-
-    expect(container.getElementsByClassName("text-red").length).toBe(2);
-    expect(getByText(/helper/i)).toBeInTheDocument();
-  });
-
-  it("Check input with required prop", () => {
-    let value = "";
-
-    const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
-      value = target.value;
-    };
-
-    const { getByLabelText } = render(
-      <Input
-        label="required"
-        value={value}
-        onChange={handleChange}
-        helperText="helper"
-        name="input"
-        required
-      />
-    );
-
-    expect(getByLabelText(/ */i)).toBeInTheDocument();
+    expect(requiredInput).toBeInTheDocument();
+    expect(requiredInput).toBeRequired();
   });
 });
