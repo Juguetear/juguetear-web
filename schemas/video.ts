@@ -17,7 +17,7 @@ export default defineType({
   },
   preview: {
     select: {
-      url: "url",
+      video: "url",
     },
   },
 });
