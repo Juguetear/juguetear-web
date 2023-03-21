@@ -1,7 +1,15 @@
 import getYouTubeID from "get-youtube-id";
+import { PreviewLayoutKey, PreviewProps } from "sanity";
 
-function VideoEmbedPreview(value: { url: { url: string } }) {
-  const videoId = getYouTubeID(value.url?.url);
+interface VideoEmbedPreviewProps extends PreviewProps<PreviewLayoutKey> {
+  video?: {
+    url: string | undefined;
+  };
+}
+
+const VideoEmbedPreview = ({ video }: VideoEmbedPreviewProps) => {
+  const url = video?.url;
+  const videoId = url ? getYouTubeID(url) : undefined;
   const YTUrl = `https://www.youtube.com/embed/${videoId}`;
 
   if (!videoId) {
@@ -17,6 +25,6 @@ function VideoEmbedPreview(value: { url: { url: string } }) {
       allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     ></iframe>
   );
-}
+};
 
 export default VideoEmbedPreview;
