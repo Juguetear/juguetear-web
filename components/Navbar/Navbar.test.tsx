@@ -1,8 +1,9 @@
 import { render, screen } from "@testing-library/react";
+import * as navigation from "next/navigation";
 
 import { Navbar, NavbarItem } from "./Navbar";
 
-const usePathname = jest.spyOn(require("next/navigation"), "usePathname");
+const usePathname = jest.spyOn(navigation, "usePathname");
 
 const mockPathname = (pathname: string) => {
   usePathname.mockImplementationOnce(() => pathname);
