@@ -6,7 +6,7 @@ export default {
   title: "Arrow button",
   component: ArrowButton,
   argTypes: {
-    onClick: { action: "Clicked" },
+    handleClick: { action: "Clicked" },
   },
 } as Meta<typeof ArrowButton>;
 
