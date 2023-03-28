@@ -28,7 +28,6 @@
     "styled-components": "^5.3.9"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.7",
     "@storybook/addon-a11y": "^7.0.0-rc.8",
     "@storybook/addon-actions": "^7.0.0-rc.8",
     "@storybook/addon-essentials": "^7.0.0-rc.8",
@@ -48,7 +47,6 @@
     "@typescript-eslint/eslint-plugin": "^5.47.0",
     "@typescript-eslint/parser": "^5.47.0",
     "autoprefixer": "^10.4.13",
-    "babel-loader": "^9.1.0",
     "eslint": "^8.30.0",
     "eslint-config-next": "13.1.0",
     "eslint-config-prettier": "^8.5.0",
