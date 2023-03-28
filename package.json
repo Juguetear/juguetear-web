@@ -16,15 +16,16 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.7",
-    "@sanity/client": "^3.4.1",
-    "@sanity/vision": "^3.1.2",
+    "@portabletext/react": "^2.0.2",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.8.0",
     "get-youtube-id": "^1.0.1",
     "next": "^13.2.4",
-    "next-sanity": "^3.1.5",
+    "next-sanity": "^4.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sanity": "^3.1.2",
-    "styled-components": "^5.3.6"
+    "sanity": "^3.8.0",
+    "styled-components": "^5.3.9"
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",
