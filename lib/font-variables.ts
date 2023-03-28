@@ -1,4 +1,4 @@
-import { Inter, Outfit } from "@next/font/google";
+import { Inter, Outfit } from "next/font/google";
 
 const inter = Inter({
   variable: "--font-inter",
