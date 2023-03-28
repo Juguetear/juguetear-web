@@ -1,4 +1,3 @@
-// TODO: Migrate schemas from './studio/schemas' to './schemas'
 import about from "schemas/about";
 import accessibility_declaration from "schemas/accessibility-declaration";
 import block from "schemas/block";

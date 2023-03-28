@@ -17,7 +17,7 @@ interface InputProps
   label: string;
   helperText: string;
 }
-
+// TODO: El icono de error se ve fuera de lugar en Firefox.
 const TextArea = ({
   id,
   error = false,
@@ -38,7 +38,7 @@ const TextArea = ({
   const svgStyles = `absolute right-5 top-11 ${error ? "block" : "hidden"}`;
 
   return (
-    <div className="font-inter text-base space-y-1 group">
+    <div className="group space-y-1 font-inter text-base">
       <label htmlFor={id} className="relative">
         <span className={spanStyles}>
           {required ? "*" : ""}

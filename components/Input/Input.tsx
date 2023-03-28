@@ -16,7 +16,7 @@ interface InputProps
   label: string;
   helperText: string;
 }
-
+// TODO: Corregir el `border-radius` de los input's, deberia ser de `4px`.
 const Input = ({
   id,
   error = false,
@@ -37,7 +37,7 @@ const Input = ({
   const svgStyles = `absolute right-5 top-11 ${error ? "block" : "hidden"}`;
 
   return (
-    <div className="text-base font-inter space-y-1 group">
+    <div className="group space-y-1 font-inter text-base">
       <label htmlFor={id} className="relative block">
         <span className={spanStyles}>
           {required ? "*" : ""}

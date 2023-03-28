@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} \*/
@@ -25,6 +26,7 @@ module.exports = {
       green: "#005C62",
       red: "#E53559",
     },
+    // TODO: #253 Remover propiedades `borderRadius` y `borderWidth` la config de Tailwind.
     borderRadius: {
       none: "0",
       DEFAULT: "0.25rem",
@@ -49,7 +51,7 @@ module.exports = {
       },
       boxShadow: {
         "2md": "0px 0px 5px 5px #066CFF",
-        "md": "0px 0px 4px 4px #066CFF",
+        md: "0px 0px 4px 4px #066CFF",
         "1md": "0px 0px 4px 4px #066CFF",
       },
     },

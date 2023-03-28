@@ -1,6 +1,7 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  // TODO: #254 Mover la config de 'Prettier' al `package.json`.
   "prettier.singleQuote": false,
   "prettier.semi": true,
   "editor.codeActionsOnSave": {

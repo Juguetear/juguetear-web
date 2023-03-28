@@ -16,6 +16,7 @@ export const DarkBackground: StoryObj<typeof Logo> = {
   args: {
     darkBackground: true,
   },
+  // TODO: #255 Agregar background 'dark' la historia de Logo 'light'.
 };
 
 export const ExtendedWithSVGPropsUsingClassnameExample: StoryObj<typeof Logo> =
