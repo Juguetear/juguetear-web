@@ -1,10 +1,11 @@
-const EnvelopeIcon = () => {
+const EnvelopeIcon = ({ ...props }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={50}
       height={50}
       viewBox="0 0 142.004 109.214"
+      {...props}
     >
       <path
         d="M37.099 149.666h61.753v79.405H37.099z"
