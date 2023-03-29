@@ -21,13 +21,13 @@ export const Default: StoryObj = {
 export const NotificationWithIcon: StoryObj = {
   args: {
     children: (
-      <>
-        <EnvelopeIcon />
+      <div className="flex justify-center">
+        <EnvelopeIcon className="shrink-0" />
         <div className="ml-5 text-center">
           <p>¡Tu mensaje fue enviado! Te responderemos a la brevedad.</p>
           <p className="font-semibold">Enviar otro mensaje</p>
         </div>
-      </>
+      </div>
     ),
   },
 };
