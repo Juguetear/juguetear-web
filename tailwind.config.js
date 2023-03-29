@@ -25,14 +25,6 @@ module.exports = {
       green: "#005C62",
       red: "#E53559",
     },
-    borderRadius: {
-      none: "0",
-      DEFAULT: "0.25rem",
-      full: "9999px",
-    },
-    borderWidth: {
-      DEFAULT: "0.5px",
-    },
     fontSize: {
       /* 16px */ sm: ["1rem", "1.4"],
       /* 19px */ base: ["1.1875rem", "1.4"],
