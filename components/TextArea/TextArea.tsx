@@ -31,7 +31,7 @@ const TextArea = ({
     error ? "text-red font-bold" : ""
   }`;
   const inputStyles = `resize-none w-full rounded-[3px] py-[.08rem] ring-1 mt-[0.44rem] px-2
-   focus-visible:ring-3 outline-none ring-inset focus-visible:shadow-2md focus-visible:bg-blue-light focus:ring-orange 
+   focus-visible:ring-3 outline-none ring-inset focus-visible:shadow-md focus-visible:bg-blue-light focus:ring-orange 
    disabled:ring-gray-dark disabled:bg-gray-light ${
      error ? "ring-2 ring-red font-bold" : "ring-blue"
    } `;

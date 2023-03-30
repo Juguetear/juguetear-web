@@ -26,15 +26,6 @@ module.exports = {
       green: "#005C62",
       red: "#E53559",
     },
-    // TODO: #253 Remover propiedades `borderRadius` y `borderWidth` la config de Tailwind.
-    borderRadius: {
-      none: "0",
-      DEFAULT: "0.25rem",
-      full: "9999px",
-    },
-    borderWidth: {
-      DEFAULT: "0.5px",
-    },
     fontSize: {
       /* 16px */ sm: ["1rem", "1.4"],
       /* 19px */ base: ["1.1875rem", "1.4"],
@@ -50,9 +41,7 @@ module.exports = {
         outfit: ["var(--font-outfit)", ...fontFamily.sans],
       },
       boxShadow: {
-        "2md": "0px 0px 5px 5px #066CFF",
         md: "0px 0px 4px 4px #066CFF",
-        "1md": "0px 0px 4px 4px #066CFF",
       },
     },
   },
