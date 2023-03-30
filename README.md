@@ -233,7 +233,7 @@ El contenido de la web de Juguetear se publica con licencia [Creative Commons At
 
 - [Colegio Lincoln](https://colegiolincoln.edu.ar/juguetear/)
 - [Antonio Sacco](http://antoniosacco.com.ar/)
-- [FronendCafé](https://frontend.cafe/)
+- [FrontendCafé](https://frontend.cafe/)
 
 <!-- Listado de enlaces de referencia, mantenerlos actualizados en cada archivo -->
 <!-- Enlaces a las paginas web del proyecto -->
