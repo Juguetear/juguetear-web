@@ -30,14 +30,14 @@ const Input = ({
     error ? "text-red font-bold" : ""
   }`;
   const inputStyles = `w-full py-[0.68rem] rounded-[3px] p-2 ring-1 mt-[0.44rem]
-  focus-visible:ring-[3px] outline-none ring-inset focus-visible:shadow-2md focus-visible:bg-blue-light focus:ring-orange 
+  focus-visible:ring-[3px] outline-none ring-inset focus-visible:shadow-md focus-visible:bg-blue-light focus:ring-orange 
   disabled:ring-gray-dark disabled:bg-gray-light ${
     error ? "ring-2 ring-red font-bold" : "ring-blue"
   }`;
   const svgStyles = `absolute right-5 top-11 ${error ? "block" : "hidden"}`;
 
   return (
-    <div className="text-base font-inter space-y-1 group">
+    <div className="group space-y-1 font-inter text-base">
       <label htmlFor={id} className="relative block">
         <span className={spanStyles}>
           {required ? "*" : ""}
