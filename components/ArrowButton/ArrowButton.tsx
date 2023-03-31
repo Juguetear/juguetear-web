@@ -12,18 +12,18 @@ export const ArrowButton = ({
   handleClick,
 }: ArrowButtonProps) => {
   return (
-    <div className="rounded-full p-1 lg:p-2 m-2 w-fit focus-within:shadow-2md shadow-turquoise">
+    <div className="rounded-full m-2 w-fit p-1 shadow-turquoise focus-within:shadow-md lg:p-2">
       <button
         aria-label={`Pasar al slide ${
           direction === "right" ? "siguiente" : "anterior"
         }`}
-        className="group font-inter font-extrabold text-xl h-6 w-6 rounded-full border-2 border-orange flex 
-      justify-center items-center lg:h-12 lg:w-12 hover:border-blue disabled:border-gray focus-within:outline-none"
+        className="rounded-full group flex h-6 w-6 items-center justify-center border-2 border-orange font-inter 
+      text-xl font-extrabold focus-within:outline-none hover:border-blue disabled:border-gray lg:h-12 lg:w-12"
         disabled={disabled}
         onClick={handleClick}
       >
         <svg
-          className={`h-2 w-2 lg:h-4 lg:w-4 fill-none ${
+          className={`h-2 w-2 fill-none lg:h-4 lg:w-4 ${
             direction === "left" && "rotate-180"
           }`}
           viewBox="0 0 5 8"
