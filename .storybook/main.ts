@@ -1,4 +1,6 @@
-module.exports = {
+import type { StorybookConfig } from "@storybook/nextjs";
+
+const config: StorybookConfig = {
   stories: [
     "../components/**/*.stories.mdx",
     "../components/**/*.stories.@(js|jsx|ts|tsx)",
@@ -17,3 +19,5 @@ module.exports = {
     autodocs: true,
   },
 };
+
+export default config;

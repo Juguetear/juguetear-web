@@ -1,7 +1,8 @@
-import { Inter, Outfit } from "@next/font/google";
+import { Inter, Outfit } from "next/font/google";
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin"],
   weight: [
     "400", // Regular
     "500", // Medium
@@ -11,6 +12,7 @@ const inter = Inter({
 
 const outfit = Outfit({
   variable: "--font-outfit",
+  subsets: ["latin"],
   weight: [
     "400", // Regular
     "500", // Medium

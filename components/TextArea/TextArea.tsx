@@ -17,7 +17,7 @@ interface InputProps
   label: string;
   helperText: string;
 }
-
+// TODO: El icono de error se ve fuera de lugar en Firefox.
 const TextArea = ({
   id,
   error = false,

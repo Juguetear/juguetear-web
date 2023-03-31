@@ -17,7 +17,7 @@ export const ArrowButton = ({
         aria-label={`Pasar al slide ${
           direction === "right" ? "siguiente" : "anterior"
         }`}
-        className="border-2 group flex h-6 w-6 items-center justify-center rounded-full border-orange font-inter 
+        className="group flex h-6 w-6 items-center justify-center rounded-full border-2 border-orange font-inter 
       text-xl font-extrabold focus-within:outline-none hover:border-blue disabled:border-gray lg:h-12 lg:w-12"
         disabled={disabled}
         onClick={handleClick}
