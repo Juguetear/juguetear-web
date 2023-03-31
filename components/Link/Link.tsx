@@ -2,7 +2,7 @@ import NextLink, { LinkProps as NextLinkProps } from "next/link";
 import React from "react";
 
 const baseStyle =
-  " flex justify-between gap-2 font-extrabold rounded  text-base font-outfit focus-within:shadow-md";
+  " inline-flex justify-between gap-2 font-extrabold rounded  text-base font-outfit focus-within:shadow-md";
 
 const baseStyleLink = "py-1 px-2 text-blue focus:text-blue underline ";
 
