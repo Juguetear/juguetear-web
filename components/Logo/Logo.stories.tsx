@@ -15,9 +15,12 @@ export const LightBackground: StoryObj<typeof Logo> = {
 export const DarkBackground: StoryObj<typeof Logo> = {
   args: {
     darkBackground: true,
+    style: {
+      backgroundColor: "#00245A",
+      padding: "20px",
+    },
   },
 };
-
 export const ExtendedWithSVGPropsUsingClassnameExample: StoryObj<typeof Logo> =
   {
     args: {
