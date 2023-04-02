@@ -1,6 +1,8 @@
 import fontVariables from "lib/font-variables";
 import "./globals.css";
 
+// TODO: #251 Exportar objecto 'metadata' con el titulo del proyecto.
+
 export default function RootLayout({
   // Layouts must accept a children prop.
   // This will be populated with nested layouts or pages
