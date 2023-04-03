@@ -6,6 +6,7 @@ export const IconCheckmark = ({ className }: IconCheckmarkProps) => {
   return (
     <svg
       aria-hidden="true"
+      data-testid={className}
       width="13"
       height="13"
       viewBox="0 0 13 13"
