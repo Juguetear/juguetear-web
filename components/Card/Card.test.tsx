@@ -17,7 +17,7 @@ describe("Card", () => {
     render(<Card {...propDefault} />);
   });
 
-  it("Card waith image", () => {
+  it("Card with image", () => {
     render(<Card {...propDefault} />);
   });
 });

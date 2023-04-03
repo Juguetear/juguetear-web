@@ -22,20 +22,20 @@ export const Card = ({
         {title}
       </h3>
       {image?.src ? (
-        <Image width="270" height="168" src={image?.src} alt={image?.alt} />
+        <div className="relative rounded border">
+          <Image fill sizes="33vw" src={image?.src} alt={image?.alt} />
+        </div>
       ) : (
         <svg
-          height="168"
-          className="mx-0 w-full"
+          className="h-full w-full"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <rect
-            width="100%"
-            height="168"
+            className="h-full w-full"
             rx="4"
             fill="black"
-            fill-opacity="0.2"
+            fillOpacity="0.2"
           />
         </svg>
       )}
