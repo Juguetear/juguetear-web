@@ -1,7 +1,13 @@
 import fontVariables from "lib/font-variables";
 import "./globals.css";
 
-// TODO: #251 Exportar objecto 'metadata' con el titulo del proyecto.
+export const metadata = {
+  title: "Juguetear",
+  viewport: "width=device-width, initial-scale=1",
+  description:
+    "Juguetear es un proyecto solidario, sin fines de lucro, que tiene como objetivo adaptar juguetes para niñes con discapacidades motrices complejas y ofrecerlos en calidad de préstamo, sin costo para las familias.",
+  icons: "/favicon.ico",
+};
 
 export default function RootLayout({
   // Layouts must accept a children prop.
