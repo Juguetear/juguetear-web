@@ -1,23 +1,29 @@
-import { Meta, StoryFn } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
+import { userEvent, within } from "@storybook/testing-library";
 import { ArrowButton } from "./ArrowButton";
 
 export default {
   title: "Arrow button",
   component: ArrowButton,
+  argTypes: {
+    handleClick: { action: "Clicked" },
+  },
 } as Meta<typeof ArrowButton>;
 
-const Template: StoryFn<typeof ArrowButton> = (args) => (
-  <ArrowButton {...args} />
-);
-
-export const Disabled = Template.bind({});
-Disabled.args = {
-  disabled: true,
-  handleClick: () => {},
+export const Disabled: StoryObj<typeof ArrowButton> = {
+  args: {
+    disabled: true,
+  },
 };
 
-export const ToRight = Template.bind({});
-ToRight.args = {
-  direction: "right",
-  handleClick: () => {},
+export const ToRight: StoryObj<typeof ArrowButton> = {
+  args: {
+    direction: "right",
+  },
+};
+
+ToRight.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+
+  await userEvent.click(canvas.getByRole("button"));
 };
