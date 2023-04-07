@@ -1,6 +1,5 @@
 import { Meta, StoryFn } from "@storybook/react";
-import Image from "next/image";
-import PdfSvg from "../assets/pdf.svg";
+import { PDFIcon } from "../assets/PDFIcon";
 import { Button } from "./Button";
 
 export default {
@@ -15,32 +14,24 @@ export default {
 
 const Template: StoryFn<typeof Button> = (args) => <Button {...args} />;
 
-export const button = Template.bind({});
-button.args = {
+export const SimpleButton = Template.bind({});
+SimpleButton.args = {
   appearance: "button",
   children: <>button</>,
 };
 
-export const simpleButton = Template.bind({});
-simpleButton.args = {
-  appearance: "button",
-  children: <>button</>,
-};
-
-export const link = Template.bind({});
-link.args = {
+export const Link = Template.bind({});
+Link.args = {
   appearance: "link",
   children: <>link</>,
 };
 
-export const buttonWithIcon = Template.bind({});
-buttonWithIcon.args = {
+export const ButtonWithIcon = Template.bind({});
+ButtonWithIcon.args = {
   appearance: "buttonWithIcon",
   children: (
     <>
-      <div>
-        <Image src={PdfSvg} alt="SVG" width={27} height={35} />
-      </div>
+      <PDFIcon />
       buttonWithIcon
     </>
   ),
