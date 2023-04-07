@@ -23,7 +23,7 @@ export const Button: Story = {
   },
 };
 
-export const Link: Story = {
+export const Default: Story = {
   args: {
     appearance: "link",
     children: "Ver todos los juguetes",
