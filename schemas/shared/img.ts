@@ -7,7 +7,7 @@ const image = defineType({
   type: "image",
   fields: [
     defineField({
-      name: "alt_text",
+      name: "altText",
       title: "Texto alternativo",
       type: "string",
       validation: (Rule) =>

@@ -1,7 +1,7 @@
+import VideoEmbedPreview from "components/VideoEmbedPreview";
 import { defineField, defineType } from "sanity";
-import VideoEmbedPreview from "../components/VideoEmbedPreview";
 
-export default defineType({
+const video = defineType({
   name: "video",
   title: "Video en YouTube",
   type: "object",
@@ -21,3 +21,5 @@ export default defineType({
     },
   },
 });
+
+export default video;

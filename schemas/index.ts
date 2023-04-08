@@ -4,16 +4,17 @@ import collaboratePage from "schemas/pages/collaborate-page";
 import faqPage from "schemas/pages/faq-page";
 import homePage from "schemas/pages/home-page";
 
-import block from "schemas/block";
+import content from "schemas/shared/content";
+import image from "schemas/shared/img";
+import link from "schemas/shared/link";
+import video from "schemas/shared/video";
+
 import characteristics from "schemas/characteristics";
 import characteristics_list from "schemas/characteristics_list";
 import document from "schemas/document";
 import documents from "schemas/documents";
-import image from "schemas/image";
-import link from "schemas/link";
 import member from "schemas/member";
 import toy from "schemas/toy";
-import video from "schemas/video";
 
 const schemas = [
   /* Your types here! */
@@ -23,17 +24,17 @@ const schemas = [
   faqPage,
   homePage,
 
-  block,
+  content,
+  image,
+  link,
+  video,
+
   characteristics_list,
   characteristics,
   document,
   documents,
-  homePage,
-  image,
-  link,
   member,
   toy,
-  video,
 ];
 
 export default schemas;
