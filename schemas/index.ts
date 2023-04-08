@@ -1,13 +1,14 @@
-import about from "schemas/about";
-import accessibility_declaration from "schemas/accessibility-declaration";
+import aboutPage from "schemas/pages/about-page";
+import accessibilityDeclarationPage from "schemas/pages/accessibility-declaration-page";
+import collaboratePage from "schemas/pages/collaborate-page";
+import faqPage from "schemas/pages/faq-page";
+import homePage from "schemas/pages/home-page";
+
 import block from "schemas/block";
 import characteristics from "schemas/characteristics";
 import characteristics_list from "schemas/characteristics_list";
-import collaborate from "schemas/collaborate";
 import document from "schemas/document";
 import documents from "schemas/documents";
-import faq from "schemas/faq";
-import homePage from "schemas/home-page";
 import image from "schemas/image";
 import link from "schemas/link";
 import member from "schemas/member";
@@ -16,21 +17,23 @@ import video from "schemas/video";
 
 const schemas = [
   /* Your types here! */
-  about,
-  accessibility_declaration,
+  aboutPage,
+  accessibilityDeclarationPage,
+  collaboratePage,
+  faqPage,
+  homePage,
+
   block,
   characteristics_list,
   characteristics,
   document,
   documents,
-  faq,
   homePage,
   image,
   link,
   member,
   toy,
   video,
-  collaborate,
 ];
 
 export default schemas;
