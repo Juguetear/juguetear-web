@@ -1,9 +1,9 @@
 import { DocumentsIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
-const documents = defineType({
-  title: "Documentos",
-  name: "documents",
+const docsCategory = defineType({
+  title: "Categorías de documentos",
+  name: "docsCategory",
   type: "document",
   icon: DocumentsIcon,
   fields: [
@@ -14,7 +14,7 @@ const documents = defineType({
     }),
     defineField({
       title: "Lista de documentos",
-      name: "documents_list",
+      name: "documentsList",
       type: "array",
       of: [
         defineArrayMember({
@@ -26,4 +26,4 @@ const documents = defineType({
   ],
 });
 
-export default documents;
+export default docsCategory;

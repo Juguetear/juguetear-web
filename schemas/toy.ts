@@ -66,7 +66,7 @@ const toy = defineType({
     }),
     defineField({
       title: "Lista de documentos",
-      name: "documents_list",
+      name: "documentsList",
       type: "array",
       of: [defineArrayMember({ type: "reference", to: [{ type: "doc" }] })],
     }),

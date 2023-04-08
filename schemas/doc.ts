@@ -1,9 +1,9 @@
 import { DocumentIcon } from "@sanity/icons";
 import { defineField, defineType } from "sanity";
 
-const document = defineType({
+const doc = defineType({
   name: "doc",
-  title: "Documento",
+  title: "Documentos",
   type: "document",
   icon: DocumentIcon,
   fields: [
@@ -25,4 +25,4 @@ const document = defineType({
   ],
 });
 
-export default document;
+export default doc;

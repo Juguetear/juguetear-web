@@ -11,8 +11,8 @@ import video from "schemas/shared/video";
 
 import characteristics from "schemas/characteristics";
 import characteristics_list from "schemas/characteristics_list";
-import document from "schemas/document";
-import documents from "schemas/documents";
+import doc from "schemas/doc";
+import docsCategory from "schemas/docs-category";
 import member from "schemas/member";
 import toy from "schemas/toy";
 
@@ -31,8 +31,8 @@ const schemas = [
 
   characteristics_list,
   characteristics,
-  document,
-  documents,
+  doc,
+  docsCategory,
   member,
   toy,
 ];
