@@ -8,7 +8,7 @@ import faqPage from "schemas/pages/faq-page";
 import homePage from "schemas/pages/home-page";
 
 // List of 'documents/schemas' to ignore from Sanity's Desk list.
-const pages = [
+export const pages = [
   aboutPage.name,
   accessibilityDeclarationPage.name,
   collaboratePage.name,
