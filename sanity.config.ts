@@ -4,7 +4,7 @@ import { dataset, projectId, title } from "lib/sanity-variables";
 import { defineConfig, definePlugin, isDev, WorkspaceOptions } from "sanity";
 import { deskTool } from "sanity/desk";
 import schemas from "schemas";
-import deskStructure from "./deskStructure";
+import deskStructure, { pages } from "./deskStructure";
 
 const devOnlyPlugins = isDev ? [visionTool()] : [];
 
@@ -12,6 +12,17 @@ const sharedConfig = definePlugin({
   name: "shareConfig",
   plugins: [deskTool({ structure: deskStructure }), ...devOnlyPlugins],
   schema: { types: schemas },
+  document: {
+    newDocumentOptions: (prev, { creationContext }) => {
+      if (creationContext.type === "global") {
+        return prev.filter(
+          (templateItem) =>
+            !pages.includes(templateItem.templateId as (typeof pages)[number])
+        );
+      }
+      return prev;
+    },
+  },
 });
 
 const devWorkspace: WorkspaceOptions = {
