@@ -2,27 +2,27 @@ import { EditIcon } from "@sanity/icons";
 import { defineField, defineType } from "sanity";
 
 const characteristics = defineType({
-  name: "characteristics",
+  name: "characteristic",
   title: "Características",
   type: "document",
   icon: EditIcon,
   fields: [
     defineField({
-      name: "characteristic_name",
+      name: "name",
       title: "Nombre de la característica",
       type: "string",
     }),
     defineField({
-      name: "characteristics_category",
+      name: "category",
       title: "A qué categoría pertenece?",
       type: "reference",
-      to: [{ type: "characteristics_list" }],
+      to: [{ type: "characteristicsCategory" }],
     }),
   ],
   preview: {
     select: {
-      title: "characteristic_name",
-      subtitle: "characteristics_category.characteristics_list_name",
+      title: "name",
+      subtitle: "category.name",
     },
   },
 });

@@ -6,32 +6,32 @@ const toy = defineType({
   type: "document",
   preview: {
     select: {
-      title: "toyName",
-      subtitle: "toyDescription",
+      title: "name",
+      subtitle: "description",
     },
   },
   fields: [
     defineField({
-      name: "toyName",
+      name: "name",
       type: "string",
       title: "Nombre del juguete.",
       description: "Completar con el nombre del juguete.",
     }),
     defineField({
-      name: "toySlug",
+      name: "slug",
       type: "slug",
       title: "Slug",
       description:
         "Slug a traves del cual se accederá al juguete desde la web.",
       options: {
-        source: "toyName",
+        source: "name",
         maxLength: 200,
         slugify: (input: string) =>
           input.toLowerCase().replace(/\s+/g, "-").slice(0, 200),
       },
     }),
     defineField({
-      name: "toyDescription",
+      name: "description",
       type: "array",
       of: [defineArrayMember({ type: "block" })],
       title: "Descripción del juguete.",
@@ -48,25 +48,25 @@ const toy = defineType({
       ],
     }),
     defineField({
-      name: "available",
+      name: "isAvailable",
       type: "boolean",
       title: "¿El juguete se encuentra disponible?",
       description: "Indicar si el juguete se encuentra disponible o no.",
     }),
     defineField({
       title: "Lista de características",
-      name: "characteristics_list_array",
+      name: "characteristics",
       type: "array",
       of: [
         defineArrayMember({
           type: "reference",
-          to: [{ type: "characteristics" }],
+          to: [{ type: "characteristic" }],
         }),
       ],
     }),
     defineField({
       title: "Lista de documentos",
-      name: "documentsList",
+      name: "documents",
       type: "array",
       of: [defineArrayMember({ type: "reference", to: [{ type: "doc" }] })],
     }),

@@ -9,8 +9,8 @@ import image from "schemas/shared/img";
 import link from "schemas/shared/link";
 import video from "schemas/shared/video";
 
-import characteristics from "schemas/characteristics";
-import characteristics_list from "schemas/characteristics_list";
+import characteristic from "schemas/characteristic";
+import characteristicsCategory from "schemas/characteristics-category";
 import doc from "schemas/doc";
 import docsCategory from "schemas/docs-category";
 import member from "schemas/member";
@@ -29,8 +29,8 @@ const schemas = [
   link,
   video,
 
-  characteristics_list,
-  characteristics,
+  characteristic,
+  characteristicsCategory,
   doc,
   docsCategory,
   member,
