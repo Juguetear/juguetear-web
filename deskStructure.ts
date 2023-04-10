@@ -1,5 +1,5 @@
 // TODO: Add missing icons
-import { HelpCircleIcon, HomeIcon } from "@sanity/icons";
+import { DesktopIcon, HelpCircleIcon, HomeIcon } from "@sanity/icons";
 import { StructureBuilder } from "sanity/desk";
 
 import about from "schemas/about";
@@ -7,6 +7,7 @@ import accessibilityDeclaration from "schemas/accessibility-declaration";
 import collaborate from "schemas/collaborate";
 import faq from "schemas/faq";
 import homePage from "schemas/home-page";
+import layout from "schemas/pages/layout";
 
 // List of 'documents/schemas' to ignore from Sanity's Desk list.
 const pages = [
@@ -15,6 +16,7 @@ const pages = [
   collaborate.name,
   faq.name,
   homePage.name,
+  layout.name,
 ];
 
 const deskStructure = (S: StructureBuilder) => {
@@ -25,6 +27,12 @@ const deskStructure = (S: StructureBuilder) => {
 
       // Documents listed inside 'Contenido'
       .items([
+        // layout schema
+        S.listItem()
+          .title(layout.title || "Layout")
+          .icon(DesktopIcon)
+          .child(S.document().schemaType(layout.name).documentId(layout.name)),
+
         // home-page schema
         S.listItem()
           .title(homePage.title || "Home Page")
