@@ -22,8 +22,8 @@ function Home() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen justify-evenly bg-blue-light ">
-      <main className="px-4 mx-auto space-y-5 max-w-prose">
+    <div className="flex min-h-screen flex-col justify-evenly bg-blue-light ">
+      <main className="mx-auto max-w-prose space-y-5 px-4">
         <Logo className="mx-auto" />
         <h1 className="text-center">¡Sitio web en construcción!</h1>
         <p>
@@ -45,7 +45,7 @@ function Home() {
           </StyledLink>{" "}
           en Discord.
         </p>
-        <p className="px-4 py-6 rounded bg-black/10">
+        <p className="rounded bg-black/10 px-4 py-6">
           ⚠️ Por favor, leer y adherir al{" "}
           <StyledLink href="https://github.com/Juguetear/juguetear-web/blob/development/CODE_OF_CONDUCT.md">
             código de conducta
