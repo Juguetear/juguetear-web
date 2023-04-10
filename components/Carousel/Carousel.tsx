@@ -27,10 +27,10 @@ const StyledSwiper = styled(Swiper)`
   max-width: 1020px;
 
   .swiper-wrapper {
-    max-width: 858px;
+    max-width: 857px;
 
     .swiper-slide {
-      width: 267px;
+      width: 273px;
     }
   }
 `;
@@ -87,7 +87,9 @@ const CarouselSlide = ({
             Disponible &nbsp; <IconCheckmark className="fill-green" />
           </div>
         ) : (
-          <div></div>
+          <div className="flex flex-row items-center font-outfit font-bold text-green">
+            No disponible
+          </div>
         )}{" "}
       </div>
 
@@ -101,13 +103,31 @@ const CarouselSlide = ({
 };
 
 const Carousel = ({ slides }: CarouselData) => {
+  const breakpointsConfig = {
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 19,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+  };
+
   return (
     <StyledSwiper
       modules={[Navigation]}
       direction="horizontal"
-      slidesPerView={3}
-      spaceBetween={19}
       navigation
+      breakpoints={breakpointsConfig}
+      slidesOffsetAfter={34}
+      slidesOffsetBefore={34}
+      initialSlide={1}
+      slidesPerView="auto"
     >
       {slides.map((slide) => {
         return (

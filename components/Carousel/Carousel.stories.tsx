@@ -21,7 +21,7 @@ const mockSlides: CarouselSlideData[] = [
   {
     title: "Dragón",
     description: "Dragón que emite luces y sonido cuando se pulsa el botón.",
-    isAvailable: true,
+    isAvailable: false,
     link: "/",
   },
   {
