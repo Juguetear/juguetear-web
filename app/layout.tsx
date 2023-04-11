@@ -2,6 +2,7 @@ import fontVariables from "lib/font-variables";
 import "./globals.css";
 
 export const metadata = {
+  // Static metadata docs https://beta.nextjs.org/docs/api-reference/metadata#static-metadata
   title: "Juguetear",
   viewport: "width=device-width, initial-scale=1",
   description:
@@ -18,11 +19,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={fontVariables}>
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
       <body>{children}</body>
     </html>
   );
