@@ -1,6 +1,4 @@
-"use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React from "react";
 import { Logo } from "../Logo/Logo";
 
@@ -20,9 +18,6 @@ interface FooterProps extends Partial<React.HTMLProps<HTMLElement>> {
 const focusClasses = "focus:shadow-md focus:border-white focus:border-[2px]";
 
 export const Footer = ({ links }: FooterProps) => {
-  const pathname = usePathname();
-  const isCurrentIndex = pathname === "/";
-
   return (
     <footer
       className="flex items-center justify-center bg-blue pb-14 pt-10 md:pt-[52px]"
@@ -33,7 +28,7 @@ export const Footer = ({ links }: FooterProps) => {
         <Link
           className={`border-2 border-transparent outline-none md:pl-2 ${focusClasses}`}
           aria-label="Home"
-          aria-current={isCurrentIndex ? "page" : false}
+          aria-current="page"
           href={"/"}
         >
           <Logo className="h-auto w-20 md:w-24" darkBackground={true} />
@@ -51,11 +46,6 @@ export const Footer = ({ links }: FooterProps) => {
 };
 
 export const FooterItem = ({ children, route, ...props }: FooterLinkProps) => {
-  const pathname = usePathname();
-  const isCurrent = pathname === route;
-  const currentClasses = "underline text-white font-semibold";
-  const notCurrentClasses = "text-white font-font-semibold";
-  const conditionalClasses = isCurrent ? currentClasses : notCurrentClasses;
   return (
     <li
       key={route}
@@ -63,10 +53,10 @@ export const FooterItem = ({ children, route, ...props }: FooterLinkProps) => {
       {...props}
     >
       <Link
-        className={`rounded-sm border-2 border-transparent  px-1 outline-none hover:underline ${focusClasses} ${conditionalClasses}`}
+        className={`rounded-sm border-2 border-transparent  px-1 font-semibold text-white outline-none hover:underline ${focusClasses}`}
         data-text={children}
         href={route}
-        aria-current={isCurrent ? "page" : false}
+        aria-current="page"
       >
         {children}
       </Link>
