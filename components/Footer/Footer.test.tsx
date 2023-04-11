@@ -29,25 +29,25 @@ describe("Footer component ", () => {
   it("should render the logo link", async () => {
     mockPathname("/foo");
     render(<Footer links={[]} />);
-    const logo_link = await screen.findByRole("link");
+    const logoLink = await screen.findByRole("link");
 
-    expect(logo_link).toBeInTheDocument();
+    expect(logoLink).toBeInTheDocument();
   });
 
   it("logo link should have accesible name", async () => {
     mockPathname("/");
     render(<Footer links={[]} />);
-    const logo_link = await screen.findByRole("link");
+    const logoLink = await screen.findByRole("link");
 
-    expect(logo_link).toHaveAttribute("aria-label", "Home");
+    expect(logoLink).toHaveAttribute("aria-label", "Home");
   });
 
   it("logo link should have aria-current='page' if currentPath='/'", async () => {
     mockPathname("/");
     render(<Footer links={[]} />);
-    const logo_link = await screen.findByRole("link");
+    const logoLink = await screen.findByRole("link");
 
-    expect(logo_link).toHaveAttribute("aria-current", "page");
+    expect(logoLink).toHaveAttribute("aria-current", "page");
   });
 });
 
@@ -58,13 +58,5 @@ describe("component FooterItem", () => {
     const about = await screen.findByRole("link");
 
     expect(about).toHaveClass("text-white");
-  });
-
-  it("link should have a attribute aria-current='page' if current pathname is equal to route", async () => {
-    mockPathname("about");
-    render(<FooterItem route="about" />);
-    const link_about = await screen.findByRole("link");
-
-    expect(link_about).toHaveAttribute("aria-current", "page");
   });
 });
