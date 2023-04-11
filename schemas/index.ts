@@ -11,11 +11,17 @@ import homePage from "schemas/home-page";
 import image from "schemas/image";
 import link from "schemas/link";
 import member from "schemas/member";
+import layout from "schemas/pages/layout";
 import toy from "schemas/toy";
 import video from "schemas/video";
+import relativeUrl from "./shared/relative-url";
 
 const schemas = [
   /* Your types here! */
+  layout,
+
+  relativeUrl,
+
   about,
   accessibility_declaration,
   block,
