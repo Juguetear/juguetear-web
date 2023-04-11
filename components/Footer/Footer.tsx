@@ -56,7 +56,6 @@ export const FooterItem = ({ children, route, ...props }: FooterLinkProps) => {
         className={`rounded-sm border-2 border-transparent  px-1 font-semibold text-white outline-none hover:underline ${focusClasses}`}
         data-text={children}
         href={route}
-        aria-current="page"
       >
         {children}
       </Link>
