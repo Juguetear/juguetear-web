@@ -3,11 +3,13 @@ import accessibilityDeclarationPage from "schemas/pages/accessibility-declaratio
 import collaboratePage from "schemas/pages/collaborate-page";
 import faqPage from "schemas/pages/faq-page";
 import homePage from "schemas/pages/home-page";
+import layout from "schemas/pages/layout";
 
 import content from "schemas/shared/content";
 import image from "schemas/shared/img";
 import link from "schemas/shared/link";
 import video from "schemas/shared/video";
+import relativeUrl from "./shared/relative-url";
 
 import characteristic from "schemas/characteristic";
 import characteristicsCategory from "schemas/characteristics-category";
@@ -23,10 +25,14 @@ const schemas = [
   collaboratePage,
   faqPage,
   homePage,
+  layout,
 
   content,
   image,
+  layout,
   link,
+  relativeUrl,
+  relativeUrl,
   video,
 
   characteristic,
