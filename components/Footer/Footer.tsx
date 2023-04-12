@@ -29,7 +29,7 @@ export const Footer = ({ links }: FooterProps) => {
       aria-label="Footer"
       data-testid="footer"
     >
-      <nav className="mx-2 flex max-w-5xl flex-col items-center justify-between self-start md:flex-row">
+      <nav className="mx-2 flex w-full max-w-5xl flex-col items-center justify-between md:flex-row">
         <Link
           className={`rounded-sm border-2 border-transparent p-1 outline-none ${focusClasses}`}
           aria-label="Home"
