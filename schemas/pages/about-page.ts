@@ -1,26 +1,15 @@
 import { UserIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
-const about = defineType({
-  name: "about",
+const aboutPage = defineType({
+  name: "aboutPage",
   title: "Acerca del proyecto",
   type: "document",
   icon: UserIcon,
   preview: {
-    select: { title: "pageTitle" },
+    prepare: () => ({ title: "Información sobre el proyecto." }),
   },
   fields: [
-    defineField({
-      name: "pageTitle",
-      type: "string",
-      initialValue: "Información sobre el proyecto.",
-      hidden: true,
-    }),
-    defineField({
-      name: "title",
-      title: "Titulo",
-      type: "string",
-    }),
     defineField({
       name: "content",
       type: "content",
@@ -35,4 +24,4 @@ const about = defineType({
   ],
 });
 
-export default about;
+export default aboutPage;
