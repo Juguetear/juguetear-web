@@ -16,9 +16,9 @@ interface FooterProps extends Partial<React.HTMLProps<HTMLElement>> {
 }
 
 const textClasses =
-  "font-outfit text-[0.875rem] text-center font-semibold text-white";
+  "font-outfit md:text-base text-center font-semibold text-white";
 
-const focusClasses = "focus:shadow-md focus:border-white focus:border-2";
+const focusClasses = "focus:shadow-md focus:border-white focus:border-[3px]";
 
 const disabledClasses = "disabled:cursor-not-allowed disabled:bg-gray";
 
@@ -31,7 +31,7 @@ export const Footer = ({ links }: FooterProps) => {
     >
       <nav className="mx-2 flex w-full max-w-5xl flex-col items-center justify-between md:flex-row">
         <Link
-          className={`rounded-sm border-2 border-transparent p-1 outline-none ${focusClasses}`}
+          className={`rounded-sm border-[3px] border-transparent p-1 outline-none ${focusClasses}`}
           aria-label="Home"
           href={"/"}
         >
@@ -53,7 +53,7 @@ export const FooterItem = ({ children, route, ...props }: FooterLinkProps) => {
   return (
     <li key={route} className="pb-5 md:pb-0" {...props}>
       <Link
-        className={`rounded-sm border-2 border-transparent p-1 outline-none hover:underline ${disabledClasses} ${textClasses} ${focusClasses}`}
+        className={`rounded-sm border-[3px] border-transparent p-1 outline-none hover:underline ${disabledClasses} ${textClasses} ${focusClasses}`}
         data-text={children}
         href={route}
       >
