@@ -15,25 +15,29 @@ interface FooterProps extends Partial<React.HTMLProps<HTMLElement>> {
   links: Link[];
 }
 
-const focusClasses = "focus:shadow-md focus:border-white focus:border-[2px]";
+const textClasses =
+  "font-outfit text-[0.875rem] text-center font-semibold text-white";
+
+const focusClasses = "focus:shadow-md focus:border-white focus:border-2";
+
+const disabledClasses = "disabled:cursor-not-allowed disabled:bg-gray";
 
 export const Footer = ({ links }: FooterProps) => {
   return (
     <footer
-      className="flex items-center justify-center bg-blue pb-14 pt-10 md:pt-[52px]"
+      className="bg-blue pb-14 pt-10 md:pt-14"
       aria-label="Footer"
       data-testid="footer"
     >
-      <div className="mx-auto flex w-full max-w-[1040px] flex-col items-center justify-between md:flex-row">
+      <div className="mx-auto flex max-w-screen-lg flex-col items-center justify-between md:flex-row">
         <Link
-          className={`border-2 border-transparent outline-none md:pl-2 ${focusClasses}`}
+          className={`mx-2 rounded-sm border-2 border-transparent p-1 outline-none ${focusClasses}`}
           aria-label="Home"
-          aria-current="page"
           href={"/"}
         >
-          <Logo className="h-auto w-20 md:w-24" darkBackground={true} />
+          <Logo className="h-auto w-20 md:w-24" darkBackground />
         </Link>
-        <ul className="flex w-4/5 flex-col items-center justify-around pt-8 md:flex-row md:pt-0">
+        <ul className="flex w-10/12 flex-col items-center justify-around pt-8 md:flex-row md:pt-0">
           {links.map(({ route, label }) => (
             <FooterItem key={route} route={route}>
               {label}
@@ -47,13 +51,9 @@ export const Footer = ({ links }: FooterProps) => {
 
 export const FooterItem = ({ children, route, ...props }: FooterLinkProps) => {
   return (
-    <li
-      key={route}
-      className={`flex items-center pb-[19px] font-outfit text-[14px] font-semibold leading-4 md:pb-0`}
-      {...props}
-    >
+    <li key={route} className={`flex items-center pb-5 md:pb-0`} {...props}>
       <Link
-        className={`rounded-sm border-2 border-transparent  px-1 font-semibold text-white outline-none hover:underline ${focusClasses}`}
+        className={`rounded-sm border-2 border-transparent p-1 outline-none hover:underline ${disabledClasses} ${textClasses} ${focusClasses}`}
         data-text={children}
         href={route}
       >

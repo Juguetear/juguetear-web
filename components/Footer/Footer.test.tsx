@@ -41,14 +41,6 @@ describe("Footer component ", () => {
 
     expect(logoLink).toHaveAttribute("aria-label", "Home");
   });
-
-  it("logo link should have aria-current='page' if currentPath='/'", async () => {
-    mockPathname("/");
-    render(<Footer links={[]} />);
-    const logoLink = await screen.findByRole("link");
-
-    expect(logoLink).toHaveAttribute("aria-current", "page");
-  });
 });
 
 describe("component FooterItem", () => {
