@@ -25,13 +25,13 @@ const disabledClasses = "disabled:cursor-not-allowed disabled:bg-gray";
 export const Footer = ({ links }: FooterProps) => {
   return (
     <footer
-      className="bg-blue pb-14 pt-10 md:pt-14"
+      className="flex justify-center bg-blue pb-14 pt-10 md:pt-14"
       aria-label="Footer"
       data-testid="footer"
     >
-      <nav className="mx-auto flex w-full max-w-[1040px] flex-col items-center justify-between md:flex-row">
+      <nav className="mx-2 flex max-w-5xl flex-col items-center justify-between self-start md:flex-row">
         <Link
-          className={`mx-2 rounded-sm border-2 border-transparent p-1 outline-none ${focusClasses}`}
+          className={`rounded-sm border-2 border-transparent p-1 outline-none ${focusClasses}`}
           aria-label="Home"
           href={"/"}
         >
@@ -51,7 +51,7 @@ export const Footer = ({ links }: FooterProps) => {
 
 export const FooterItem = ({ children, route, ...props }: FooterLinkProps) => {
   return (
-    <li key={route} className={`flex items-center pb-5 md:pb-0`} {...props}>
+    <li key={route} className="pb-5 md:pb-0" {...props}>
       <Link
         className={`rounded-sm border-2 border-transparent p-1 outline-none hover:underline ${disabledClasses} ${textClasses} ${focusClasses}`}
         data-text={children}
