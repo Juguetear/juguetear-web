@@ -1,37 +1,46 @@
-// TODO: Migrate schemas from './studio/schemas' to './schemas'
-import about from "schemas/about";
-import accessibility_declaration from "schemas/accessibility-declaration";
-import block from "schemas/block";
-import characteristics from "schemas/characteristics";
-import characteristics_list from "schemas/characteristics_list";
-import collaborate from "schemas/collaborate";
-import document from "schemas/document";
-import documents from "schemas/documents";
-import faq from "schemas/faq";
-import homePage from "schemas/home-page";
-import image from "schemas/image";
-import link from "schemas/link";
+import aboutPage from "schemas/pages/about-page";
+import accessibilityDeclarationPage from "schemas/pages/accessibility-declaration-page";
+import collaboratePage from "schemas/pages/collaborate-page";
+import faqPage from "schemas/pages/faq-page";
+import homePage from "schemas/pages/home-page";
+import layout from "schemas/pages/layout";
+
+import content from "schemas/shared/content";
+import image from "schemas/shared/img";
+import link from "schemas/shared/link";
+import video from "schemas/shared/video";
+import relativeUrl from "./shared/relative-url";
+
+import characteristic from "schemas/characteristic";
+import characteristicsCategory from "schemas/characteristics-category";
+import doc from "schemas/doc";
+import docsCategory from "schemas/docs-category";
 import member from "schemas/member";
 import toy from "schemas/toy";
-import video from "schemas/video";
 
 const schemas = [
   /* Your types here! */
-  about,
-  accessibility_declaration,
-  block,
-  characteristics_list,
-  characteristics,
-  document,
-  documents,
-  faq,
+  aboutPage,
+  accessibilityDeclarationPage,
+  collaboratePage,
+  faqPage,
   homePage,
+  layout,
+
+  content,
   image,
+  layout,
   link,
+  relativeUrl,
+  relativeUrl,
+  video,
+
+  characteristic,
+  characteristicsCategory,
+  doc,
+  docsCategory,
   member,
   toy,
-  video,
-  collaborate,
 ];
 
 export default schemas;

@@ -17,7 +17,7 @@ interface InputProps
   label: string;
   helperText: string;
 }
-
+// TODO: El icono de error se ve fuera de lugar en Firefox.
 const TextArea = ({
   id,
   error = false,
@@ -31,14 +31,14 @@ const TextArea = ({
     error ? "text-red font-bold" : ""
   }`;
   const inputStyles = `resize-none w-full rounded-[3px] py-[.08rem] ring-1 mt-[0.44rem] px-2
-   focus-visible:ring-3 outline-none ring-inset focus-visible:shadow-2md focus-visible:bg-blue-light focus:ring-orange 
+   focus-visible:ring-3 outline-none ring-inset focus-visible:shadow-md focus-visible:bg-blue-light focus:ring-orange 
    disabled:ring-gray-dark disabled:bg-gray-light ${
      error ? "ring-2 ring-red font-bold" : "ring-blue"
    } `;
   const svgStyles = `absolute right-5 top-11 ${error ? "block" : "hidden"}`;
 
   return (
-    <div className="font-inter text-base space-y-1 group">
+    <div className="group space-y-1 font-inter text-base">
       <label htmlFor={id} className="relative">
         <span className={spanStyles}>
           {required ? "*" : ""}

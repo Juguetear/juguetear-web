@@ -14,7 +14,7 @@ export const Accordion = ({ title, children }: AccordionProps) => {
     <Disclosure>
       {({ open }) => (
         <>
-          <Disclosure.Button className="sm:text-base text-left border-b border-gray last:border-none px-3 py-5 flex justify-between items-center text-sm text-blue hover:text-orange font-outfit font-bold focus:shadow-1md focus:outline-none focus:rounded w-full">
+          <Disclosure.Button className="focus:rounded flex w-full items-center justify-between border-b border-gray px-3 py-5 text-left font-outfit text-sm font-bold text-blue last:border-none hover:text-orange focus:shadow-md focus:outline-none sm:text-base">
             {title}
             <IconChevron className="fill-orange" open={open} />
           </Disclosure.Button>
@@ -27,7 +27,7 @@ export const Accordion = ({ title, children }: AccordionProps) => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Disclosure.Panel className="sm:text-base text-left px-3 py-5 text-blue font-outfit font-normal text-sm">
+            <Disclosure.Panel className="px-3 py-5 text-left font-outfit text-sm font-normal text-blue sm:text-base">
               {children}
             </Disclosure.Panel>
           </Transition>

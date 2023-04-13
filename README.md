@@ -59,9 +59,11 @@ La naturaleza libre y solidaria de esta idea no se refiere solo a la posibilidad
 
 ## Comunidad
 
-<!-- TODO: El texto del logo es difícil de leer en temas claros (light themes)  -->
-
-[![logo-frontendcafe](https://user-images.githubusercontent.com/78808163/198993731-299e973d-8f3b-4a6c-a445-b2b77e0b3286.svg)][dc-fec]
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/78808163/198993731-299e973d-8f3b-4a6c-a445-b2b77e0b3286.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/78808163/228854353-cbd1f9b2-68a3-4cf0-851c-d2c49b3eb85c.svg">
+  <img alt="logo-frontendcafe" src="https://user-images.githubusercontent.com/78808163/198993731-299e973d-8f3b-4a6c-a445-b2b77e0b3286.svg">
+</picture>
 
 Este proyecto se desarrolla con la participación y el apoyo de FrontendCafé. Es requerido unirte a nuestro [server][dc-fec] y buscar el canal [#juguetear][dc-channel]. Ahí vas a poder compartir dudas e ideas del proyecto. El código de conducta de este proyecto es extensible también a tu participación en el server de FrontendCafé en Discord.
 
@@ -233,7 +235,7 @@ El contenido de la web de Juguetear se publica con licencia [Creative Commons At
 
 - [Colegio Lincoln](https://colegiolincoln.edu.ar/juguetear/)
 - [Antonio Sacco](http://antoniosacco.com.ar/)
-- [FronendCafé](https://frontend.cafe/)
+- [FrontendCafé](https://frontend.cafe/)
 
 <!-- Listado de enlaces de referencia, mantenerlos actualizados en cada archivo -->
 <!-- Enlaces a las paginas web del proyecto -->

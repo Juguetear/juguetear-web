@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { Link } from "./Link";
 
 describe("Link", () => {
@@ -11,22 +11,25 @@ describe("Link", () => {
   });
 
   it("Link is correctly aria labeled", () => {
-    const { getByRole } = render(
+    render(
       <Link href={""} appearance={"button"}>
         test
       </Link>
     );
-    expect(getByRole("link", { name: "test" })).toBeInTheDocument();
+
+    const link = screen.getByRole("link", { name: "test" });
+
+    expect(link).toBeInTheDocument();
   });
 
   it("HandleClick is run on link click", () => {
-    const { getByRole } = render(
+    render(
       <Link href="/" appearance={"button"}>
         test
       </Link>
     );
 
-    const link = getByRole("link");
+    const link = screen.getByRole("link");
 
     expect(link).toHaveAttribute("href", "/");
   });

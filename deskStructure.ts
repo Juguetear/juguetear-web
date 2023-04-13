@@ -1,20 +1,22 @@
 // TODO: Add missing icons
-import { HelpCircleIcon, HomeIcon } from "@sanity/icons";
+import { DesktopIcon, HelpCircleIcon, HomeIcon } from "@sanity/icons";
 import { StructureBuilder } from "sanity/desk";
 
-import about from "schemas/about";
-import accessibilityDeclaration from "schemas/accessibility-declaration";
-import collaborate from "schemas/collaborate";
-import faq from "schemas/faq";
-import homePage from "schemas/home-page";
+import aboutPage from "schemas/pages/about-page";
+import accessibilityDeclarationPage from "schemas/pages/accessibility-declaration-page";
+import collaboratePage from "schemas/pages/collaborate-page";
+import faqPage from "schemas/pages/faq-page";
+import homePage from "schemas/pages/home-page";
+import layout from "schemas/pages/layout";
 
 // List of 'documents/schemas' to ignore from Sanity's Desk list.
-const pages = [
-  about.name,
-  accessibilityDeclaration.name,
-  collaborate.name,
-  faq.name,
+export const pages = [
+  aboutPage.name,
+  accessibilityDeclarationPage.name,
+  collaboratePage.name,
+  faqPage.name,
   homePage.name,
+  layout.name,
 ];
 
 const deskStructure = (S: StructureBuilder) => {
@@ -25,6 +27,12 @@ const deskStructure = (S: StructureBuilder) => {
 
       // Documents listed inside 'Contenido'
       .items([
+        // layout schema
+        S.listItem()
+          .title(layout.title || "Layout")
+          .icon(DesktopIcon)
+          .child(S.document().schemaType(layout.name).documentId(layout.name)),
+
         // home-page schema
         S.listItem()
           .title(homePage.title || "Home Page")
@@ -36,32 +44,39 @@ const deskStructure = (S: StructureBuilder) => {
         // accessibility-declaration schema
         S.listItem()
           .title(
-            accessibilityDeclaration.title || "Accessibility Declaration Page"
+            accessibilityDeclarationPage.title ||
+              "Accessibility Declaration Page"
           )
           .child(
             S.document()
-              .schemaType(accessibilityDeclaration.name)
-              .documentId(accessibilityDeclaration.name)
+              .schemaType(accessibilityDeclarationPage.name)
+              .documentId(accessibilityDeclarationPage.name)
           ),
 
         // faq schema
         S.listItem()
-          .title(faq.title || "FAQ Page")
+          .title(faqPage.title || "FAQ Page")
           .icon(HelpCircleIcon)
-          .child(S.document().schemaType(faq.name).documentId(faq.name)),
+          .child(
+            S.document().schemaType(faqPage.name).documentId(faqPage.name)
+          ),
 
         // about schema
         S.listItem()
-          .title(about.title || "About Page")
-          .child(S.document().schemaType(about.name).documentId(about.name)),
+          .title(aboutPage.title || "About Page")
+          .child(
+            S.document().schemaType(aboutPage.name).documentId(aboutPage.name)
+          ),
 
         // collaborate schema
         S.listItem()
-          .title(collaborate.title ? collaborate.title : "Collaborate Page")
+          .title(
+            collaboratePage.title ? collaboratePage.title : "Collaborate Page"
+          )
           .child(
             S.document()
-              .schemaType(collaborate.name)
-              .documentId(collaborate.name)
+              .schemaType(collaboratePage.name)
+              .documentId(collaboratePage.name)
           ),
 
         S.divider(),
