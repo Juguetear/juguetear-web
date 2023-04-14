@@ -2,7 +2,7 @@ import { Button } from "components/Button/Button";
 import { State } from "components/State/State";
 import Image from "next/image";
 
-interface CardProps {
+export interface CardProps {
   image?: { src: string; alt: string };
   title: string;
   available: boolean;

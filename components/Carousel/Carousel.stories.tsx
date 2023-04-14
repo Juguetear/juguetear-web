@@ -1,5 +1,6 @@
 import { Meta } from "@storybook/react";
-import Carousel, { CarouselSlideData } from "./Carousel";
+import { Card, CardProps } from "components/Card/Card";
+import Carousel from "./Carousel";
 
 export default {
   title: "Carousel",
@@ -11,39 +12,53 @@ export default {
   },
 } as Meta<typeof Carousel>;
 
-const mockSlides: CarouselSlideData[] = [
+const mockSlides: CardProps[] = [
   {
     title: "Dragón",
     description: "Dragón que emite luces y sonido cuando se pulsa el botón.",
-    isAvailable: true,
+    available: true,
     link: "/",
   },
   {
     title: "Dragón",
     description: "Dragón que emite luces y sonido cuando se pulsa el botón.",
-    isAvailable: false,
+    available: false,
     link: "/",
   },
   {
     title: "Dragón",
     description: "Dragón que emite luces y sonido cuando se pulsa el botón.",
-    isAvailable: true,
+    available: true,
     link: "/",
   },
   {
     title: "Dragón",
     description: "Dragón que emite luces y sonido cuando se pulsa el botón.",
-    isAvailable: true,
+    available: true,
     link: "/",
   },
   {
     title: "Dragón",
     description: "Dragón que emite luces y sonido cuando se pulsa el botón.",
-    isAvailable: true,
+    available: true,
     link: "/",
   },
 ];
 
 export const SimpleCarousel = () => {
-  return <Carousel slides={mockSlides} />;
+  return (
+    <Carousel>
+      {mockSlides.map((slide, index) => {
+        return (
+          <Card
+            key={index}
+            title={slide.title}
+            link={slide.link}
+            description={slide.description}
+            available={slide.available}
+          />
+        );
+      })}
+    </Carousel>
+  );
 };
