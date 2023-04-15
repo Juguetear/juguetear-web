@@ -29,9 +29,7 @@ const schemas = [
 
   content,
   image,
-  layout,
   link,
-  relativeUrl,
   relativeUrl,
   video,
 

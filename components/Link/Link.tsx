@@ -19,7 +19,7 @@ interface LinkProps
     NextLinkProps {
   appearance: appearances;
 }
-// TODO: #252 El componente 'Link' deberia verse como un elemento 'inline'.
+
 export const Link: React.FC<LinkProps> = (props: LinkProps) => {
   const { appearance = "link", children } = props;
 
