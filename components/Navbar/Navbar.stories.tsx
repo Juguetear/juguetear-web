@@ -1,12 +1,13 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Link, Navbar } from "./Navbar";
+import { Navbar } from "./Navbar";
+import { NavbarLink } from "types/layout-schema-types";
 
-const exampleLinks: Link[] = [
-  { label: "Juguetes", route: "/juguetes" },
-  { label: "Colaborar", route: "/colaborar" },
-  { label: "Sobre el proyecto", route: "/about" },
-  { label: "Documentacion", route: "/documentacion" },
-  { label: "Ayuda", route: "/ayuda" },
+const exampleLinks: NavbarLink[] = [
+  { name: "Juguetes", url: "/juguetes" },
+  { name: "Colaborar", url: "/colaborar" },
+  { name: "Sobre el proyecto", url: "/about" },
+  { name: "Documentacion", url: "/documentacion" },
+  { name: "Ayuda", url: "/ayuda" },
 ];
 
 export default {

@@ -16,8 +16,8 @@ export interface FooterLink {
 }
 
 export interface NavbarLink {
-  _key: string;
-  _type: string;
+  _key?: string;
+  _type?: string;
   name: string;
   url: string;
 }
