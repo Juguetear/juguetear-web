@@ -17,7 +17,7 @@ export default async function WebsiteLayout({ children }: Props) {
       {/* <pre>{JSON.stringify(navbarLinks, null, 2)}</pre> */}
       <main>{children}</main>
       {/* TODO: Agregar componente Footer */}
-      {/* <pre>{JSON.stringify(footerLinks, null, 2)}</pre> */}
+      <pre>{JSON.stringify(footerLinks, null, 2)}</pre>
     </>
   );
 }
