@@ -9,15 +9,15 @@ export interface LayoutSchema {
 }
 
 export interface FooterLink {
-  _key: string;
-  _type: string;
+  _key?: string;
+  _type?: string;
   name: string;
   url: string;
 }
 
 export interface NavbarLink {
-  _key: string;
-  _type: string;
+  _key?: string;
+  _type?: string;
   name: string;
   url: string;
 }

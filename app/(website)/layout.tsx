@@ -1,6 +1,9 @@
+import { Navbar } from "components/Navbar/Navbar";
 import { client } from "lib/client";
 import { groq } from "next-sanity";
 import type { LayoutSchema } from "types/layout-schema-types";
+
+import { Footer } from "components/Footer/Footer";
 
 interface Props {
   children: React.ReactNode;
@@ -13,11 +16,9 @@ export default async function WebsiteLayout({ children }: Props) {
 
   return (
     <>
-      {/* TODO: Agregar componente Navbar */}
-      {/* <pre>{JSON.stringify(navbarLinks, null, 2)}</pre> */}
+      <Navbar links={navbarLinks} />
       <main>{children}</main>
-      {/* TODO: Agregar componente Footer */}
-      {/* <pre>{JSON.stringify(footerLinks, null, 2)}</pre> */}
+      <Footer links={footerLinks} />
     </>
   );
 }

@@ -1,13 +1,14 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Footer, Link } from "./Footer";
+import { Footer } from "./Footer";
+import { FooterLink } from "types/layout-schema-types";
 
-const exampleLinks: Link[] = [
-  { label: "Home", route: "/" },
-  { label: "Juguetes disponibles", route: "/juguetes" },
-  { label: "Colaborar", route: "/colaborar" },
-  { label: "Sobre el proyecto", route: "/about" },
-  { label: "Ayuda", route: "/ayuda" },
-  { label: "Accesibilidad", route: "/accesibilidad" },
+const exampleLinks: FooterLink[] = [
+  { name: "Home", url: "/" },
+  { name: "Juguetes disponibles", url: "/juguetes" },
+  { name: "Colaborar", url: "/colaborar" },
+  { name: "Sobre el proyecto", url: "/about" },
+  { name: "Ayuda", url: "/ayuda" },
+  { name: "Accesibilidad", url: "/accesibilidad" },
 ];
 
 export default {
