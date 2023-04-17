@@ -2,17 +2,14 @@ import Link from "next/link";
 import React from "react";
 import { Logo } from "../Logo/Logo";
 
-export interface Link {
-  label: string;
-  route: string;
-}
+import { FooterLink } from "types/layout-schema-types";
 
 interface FooterLinkProps extends React.HTMLProps<HTMLLIElement> {
   route: string;
 }
 
 interface FooterProps extends Partial<React.HTMLProps<HTMLElement>> {
-  links: Link[];
+  links: FooterLink[];
 }
 
 const textClasses =
@@ -38,9 +35,9 @@ export const Footer = ({ links }: FooterProps) => {
           <Logo className="h-auto w-20 md:w-24" darkBackground />
         </Link>
         <ul className="flex w-10/12 flex-col items-center justify-around pt-8 md:flex-row md:pt-0">
-          {links.map(({ route, label }) => (
-            <FooterItem key={route} route={route}>
-              {label}
+          {links.map(({ url, name }) => (
+            <FooterItem key={url} route={url}>
+              {name}
             </FooterItem>
           ))}
         </ul>
