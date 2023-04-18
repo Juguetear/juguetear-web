@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from "@storybook/react";
-import { Hero, HeroProps } from "components/Hero/Hero";
+import { Hero, HeroSection } from "components/Hero/Hero";
 
 export default {
   title: "Hero",
@@ -7,10 +7,19 @@ export default {
   args: {
     title:
       "Adaptamos y prestamos juguetes para niños y niñas con discapacidades motrices complejas.",
-    subTitle: "El prestamo no tiene costo",
-    image: {
-      src: "https://i.imgur.com/JujA9mV.jpg",
-      alt: "Hero imagen",
+    description: "El prestamo no tiene costo",
+    cta: {
+      _type: "photo",
+      name: "Ver juguetes",
+      url: "##",
+    },
+    photo: {
+      _type: "photo",
+      altText: "Hero imagen",
+      asset: {
+        _ref: "image-maestro-750x478-jpg",
+        _type: "image",
+      },
     },
   },
   parameters: {
@@ -20,6 +29,6 @@ export default {
   },
 } as Meta<typeof Hero>;
 
-const Template: StoryFn<HeroProps> = (args) => <Hero {...args} />;
+const Template: StoryFn<HeroSection> = (args) => <Hero {...args} />;
 
 export const Default = Template.bind({});
