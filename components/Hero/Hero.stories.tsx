@@ -11,14 +11,14 @@ export default {
     cta: {
       _type: "photo",
       name: "Ver juguetes",
-      url: "##",
+      url: "/juguetes",
     },
     photo: {
       _type: "photo",
       altText: "Hero imagen",
       asset: {
-        _ref: "image-maestro-750x478-jpg",
-        _type: "image",
+        _ref: "image-2c6ca8b13a29f52d84ed64aca9ef05cc61c1f2b4-681x478-jpg",
+        _type: "reference",
       },
     },
   },
