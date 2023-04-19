@@ -29,6 +29,4 @@ export default {
   },
 } as Meta<typeof Hero>;
 
-const Template: StoryFn<HeroSection> = (args) => <Hero {...args} />;
-
-export const Default = Template.bind({});
+export const Default = {};
