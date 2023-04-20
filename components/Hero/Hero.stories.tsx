@@ -1,7 +1,7 @@
-import { Meta } from "@storybook/react";
-import { Hero } from "components/Hero/Hero";
+import { Meta, StoryObj } from "@storybook/react";
+import { Hero } from "./Hero";
 
-export default {
+const meta = {
   title: "Hero",
   component: Hero,
   args: {
@@ -27,6 +27,10 @@ export default {
       appDirectory: true,
     },
   },
-} as Meta<typeof Hero>;
+} satisfies Meta<typeof Hero>;
 
-export const Default = {};
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {};
