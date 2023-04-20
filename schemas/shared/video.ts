@@ -1,4 +1,4 @@
-import VideoEmbedPreview from "components/VideoEmbedPreview";
+import VideoEmbedPreview from "components/VideoEmbedPreview/VideoEmbedPreview";
 import { defineField, defineType } from "sanity";
 
 const video = defineType({
