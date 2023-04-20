@@ -13,7 +13,7 @@ export interface HeroSection extends React.HTMLProps<HTMLElement> {
 
 export const Hero = ({ title, description, photo, cta }: HeroSection) => {
   return (
-    <section className="relative py-10">
+    <section className="py-10">
       <div className="flex max-w-screen-xl flex-col lg:mx-auto lg:flex-row lg:items-center">
         <article className="mb-14 lg:mb-0 lg:w-5/12">
           <h1 className="mb-1 max-w-4xl text-blue md:mb-5">{title}</h1>
