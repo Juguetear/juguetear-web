@@ -1,7 +1,8 @@
 import getYouTubeID from "get-youtube-id";
 import { PreviewLayoutKey, PreviewProps } from "sanity";
 
-export interface VideoEmbedPreviewProps extends PreviewProps<PreviewLayoutKey> {
+export interface VideoEmbedPreviewProps
+  extends Partial<PreviewProps<PreviewLayoutKey>> {
   video?: {
     url: string | undefined;
   };
@@ -18,9 +19,9 @@ const VideoEmbedPreview = ({ video }: VideoEmbedPreviewProps) => {
 
   return (
     <iframe
-      className="aspect-video h-full w-full lg:max-w-xl"
+      className="aspect-video h-full w-full"
       src={YTUrl}
-      title="YouTube video player"
+      title="Reproductor de videos de Youtube"
       allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     ></iframe>
   );

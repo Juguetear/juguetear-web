@@ -1,19 +1,64 @@
-import { Meta } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import VideoEmbedPreview from "./VideoEmbedPreview";
 
-export default {
+const meta = {
   title: "VideoEmbedPreview",
   component: VideoEmbedPreview,
   args: {
     video: {
-      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      url: "https://www.youtube.com/watch?v=eoGSR7kNARE",
     },
   },
-  parameters: {
-    nextjs: {
-      appDirectory: true,
-    },
-  },
-} as Meta<typeof VideoEmbedPreview>;
+} satisfies Meta<typeof VideoEmbedPreview>;
 
-export const Default = {};
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {
+  parameters: {
+    viewport: {
+      defaultViewport: "responsive",
+    },
+  },
+};
+
+export const Desktop: Story = {
+  parameters: {
+    viewport: {
+      defaultViewport: "desktop",
+    },
+  },
+};
+
+export const Tablet: Story = {
+  parameters: {
+    viewport: {
+      defaultViewport: "tablet",
+    },
+  },
+};
+
+export const SmallMobile: Story = {
+  parameters: {
+    viewport: {
+      defaultViewport: "mobile1",
+    },
+  },
+};
+
+export const LargeMobile: Story = {
+  parameters: {
+    viewport: {
+      defaultViewport: "mobile2",
+    },
+  },
+};
+
+export const WithInvalidURL: Story = {
+  args: {
+    video: {
+      url: "this-is-invalid-url",
+    },
+  },
+};
