@@ -16,7 +16,7 @@ interface InputProps
   label: string;
   helperText: string;
 }
-// TODO: Corregir el `border-radius` de los input's, deberia ser de `4px`.
+// TODO: #292 Corregir el `border-radius` de los input's, deberia ser de `4px`.
 const Input = ({
   id,
   error = false,
