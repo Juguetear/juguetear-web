@@ -26,10 +26,6 @@ module.exports = {
       green: "#005C62",
       red: "#E53559",
     },
-    // TODO: #291 Remover `borderRadius` de la configuracion de Tailwind
-    borderRadius: {
-      lg: "8px",
-    },
     fontSize: {
       /* 16px */ sm: ["1rem", "1.4"],
       /* 19px */ base: ["1.1875rem", "1.4"],
