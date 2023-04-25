@@ -20,6 +20,12 @@ const link = defineType({
         }),
     }),
   ],
+  preview: {
+    select: {
+      title: "name",
+      subtitle: "url",
+    },
+  },
 });
 
 export default link;
