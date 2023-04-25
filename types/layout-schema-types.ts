@@ -21,3 +21,18 @@ export interface NavbarLink {
   name: string;
   url: string;
 }
+
+export interface CTA {
+  _type: string;
+  name: string;
+  url: string;
+}
+export interface Photo {
+  _type: string;
+  altText: string;
+  asset: Asset;
+}
+export interface Asset {
+  _ref: string;
+  _type: string;
+}
