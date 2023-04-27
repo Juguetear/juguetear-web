@@ -1,6 +1,10 @@
-import { PortableText } from "@portabletext/react";
+import {
+  PortableText,
+  type PortableTextReactComponents,
+} from "@portabletext/react";
 import { urlFor } from "lib/client";
 import Image from "next/image";
+import { type TypedObject } from "sanity";
 
 interface BlockImg {
   value: {
@@ -15,12 +19,10 @@ interface BlockImg {
 //   children: Array<string>;
 // }
 
-const customComponents = {
+const customComponents: Partial<PortableTextReactComponents> = {
   block: {
-    // eslint-disable-next-line
-    normal: (props: any) => <p>{props.children}</p>,
-    // eslint-disable-next-line
-    h2: (props: any) => <h2 className="text-center">{props.children}</h2>,
+    normal: (props) => <p>{props.children}</p>,
+    h2: (props) => <h2 className="text-center">{props.children}</h2>,
   },
   types: {
     // ISSUE: Add loader for image
@@ -37,8 +39,10 @@ const customComponents = {
   },
 };
 
-// FIX: Remove eslint-disable
-// eslint-disable-next-line
-export const PortableTxt = ({ content }: any) => (
+interface Props {
+  content: TypedObject | TypedObject[];
+}
+
+export const PortableTxt = ({ content }: Props) => (
   <PortableText value={content} components={customComponents} />
 );
