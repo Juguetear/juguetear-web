@@ -16,12 +16,6 @@ export default {
   args: {
     links: exampleLinks,
   },
-  // TODO: #293 Remover el objecto `parameters` de las stories del Navbar y Footer
-  parameters: {
-    nextjs: {
-      appDirectory: true,
-    },
-  },
 } as Meta<typeof Navbar>;
 
 const storyWithPathnameAs = (pathname: string) => ({
