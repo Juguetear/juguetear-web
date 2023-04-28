@@ -1,8 +1,8 @@
-import { Meta, StoryFn } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import { PDFIcon } from "../assets/PDFIcon";
 import { Button } from "./Button";
 
-export default {
+const meta = {
   title: "Button",
   component: Button,
   argTypes: {
@@ -10,36 +10,42 @@ export default {
       action: "Clicked",
     },
   },
-} as Meta<typeof Button>;
+} satisfies Meta<typeof Button>;
 
-const Template: StoryFn<typeof Button> = (args) => <Button {...args} />;
+export default meta;
 
-export const SimpleButton = Template.bind({});
-SimpleButton.args = {
-  appearance: "button",
-  children: <>button</>,
+type Story = StoryObj<typeof meta>;
+
+export const SimpleButton: Story = {
+  args: {
+    appearance: "button",
+    children: <>button</>,
+  },
 };
 
-export const Link = Template.bind({});
-Link.args = {
-  appearance: "link",
-  children: <>link</>,
+export const Link: Story = {
+  args: {
+    appearance: "link",
+    children: <>link</>,
+  },
 };
 
-export const ButtonWithIcon = Template.bind({});
-ButtonWithIcon.args = {
-  appearance: "buttonWithIcon",
-  children: (
-    <>
-      <PDFIcon />
-      buttonWithIcon
-    </>
-  ),
+export const ButtonWithIcon: Story = {
+  args: {
+    appearance: "buttonWithIcon",
+    children: (
+      <>
+        <PDFIcon />
+        buttonWithIcon
+      </>
+    ),
+  },
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  appearance: "button",
-  disabled: true,
-  children: <>button disabled</>,
+export const Disabled: Story = {
+  args: {
+    appearance: "button",
+    disabled: true,
+    children: <>button disabled</>,
+  },
 };
