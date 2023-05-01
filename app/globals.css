@@ -56,11 +56,11 @@ input[type="checkbox"]:checked::before {
 }
 
 .link {
-  @apply button__base link__base hover:text-orange;
+  @apply button__base link__base hover:text-orange !important;
 }
 
 .button {
-  @apply link__base bg-orange px-7 py-3 text-white outline-blue hover:bg-blue focus:bg-orange focus:outline active:bg-blue;
+  @apply link__base bg-orange px-7 py-3 text-white outline-blue hover:bg-blue focus:bg-orange focus:outline active:bg-blue !important;
 }
 
 .button__link-disabled {
