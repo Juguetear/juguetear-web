@@ -22,7 +22,7 @@ export const Link: React.FC<LinkProps> = ({
   return (
     <NextLink
       {...rest}
-      className={`button__link-disabled ${styles[appearance]}`}
+      className={`${styles[appearance]} button__link-disabled`}
     >
       {children}
     </NextLink>
