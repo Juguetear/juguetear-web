@@ -4,37 +4,47 @@ import {
 } from "@portabletext/react";
 import { urlFor } from "lib/client";
 import Image from "next/image";
+import Link from "next/link";
 import { type TypedObject } from "sanity";
-
-interface BlockImg {
-  value: {
-    asset: {
-      _ref: string;
-    };
-    altText: string;
-  };
-}
-
-// interface BlockComp {
-//   children: Array<string>;
-// }
 
 const customComponents: Partial<PortableTextReactComponents> = {
   block: {
     normal: (props) => <p>{props.children}</p>,
-    h2: (props) => <h2 className="text-center">{props.children}</h2>,
+    h1: (props) => <h1 className="text-center">{props.children}</h1>,
   },
   types: {
     // ISSUE: Add loader for image
-    blocksimage: ({ value }: BlockImg) => (
+    blocksimage: ({ value }) => (
       <Image
         // TODO: `isInline` should be included?
         src={urlFor(value.asset._ref).fit("max").auto("format").url()}
         // FIX: Check width and height.
-        width={750}
-        height={478}
+        width={860}
+        height={485}
         alt={value.altText}
+        className="rounded"
       />
+    ),
+  },
+  marks: {
+    link: ({ children, value }) => {
+      const style = "font-medium text-blue underline hover:text-orange";
+      return (
+        <Link className={style} href={value.href}>
+          {children}
+        </Link>
+      );
+    },
+    em: ({ children }) => (
+      <em className="font-semibold text-blue">{children}</em>
+    ),
+  },
+  list: {
+    bullet: ({ children }) => (
+      <ul className="ml-4 list-disc marker:text-blue">{children}</ul>
+    ),
+    number: ({ children }) => (
+      <ol className="ml-5 list-decimal marker:text-blue">{children}</ol>
     ),
   },
 };
