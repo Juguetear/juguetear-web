@@ -48,19 +48,21 @@ input[type="checkbox"]:checked::before {
 }
 
 .button__base {
-  @apply flex justify-between gap-2 rounded font-outfit text-base font-extrabold focus-within:shadow-md;
+  @apply !importat flex justify-between gap-2 rounded font-outfit text-base font-extrabold focus-within:shadow-md;
 }
 
 .link__base {
-  @apply px-2 py-1 text-blue underline focus:text-blue;
+  @apply !importat px-2 py-1 text-blue underline focus:text-blue;
 }
 
 .link {
-  @apply button__base link__base hover:text-orange;
+  @apply button__base link__base !importat hover:text-orange;
 }
+
 .button {
-  @apply link__base bg-orange px-7 py-3 text-white outline-blue hover:bg-blue focus:bg-orange focus:outline active:bg-blue;
+  @apply link__base !importat bg-orange px-7 py-3 text-white outline-blue hover:bg-blue focus:bg-orange focus:outline active:bg-blue;
 }
+
 .button__link-disabled {
-  @apply disabled:cursor-not-allowed disabled:bg-gray;
+  @apply !importat disabled:cursor-not-allowed disabled:bg-gray;
 }
