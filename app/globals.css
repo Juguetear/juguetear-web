@@ -48,7 +48,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .button__base {
-  @apply flex justify-between gap-2 rounded font-outfit text-base font-extrabold focus-within:shadow-md disabled:cursor-not-allowed disabled:bg-gray;
+  @apply flex justify-between gap-2 rounded font-outfit text-base font-extrabold focus-within:shadow-md;
 }
 
 .link__base {
@@ -60,4 +60,7 @@ input[type="checkbox"]:checked::before {
 }
 .button {
   @apply link__base bg-orange px-7 py-3 text-white outline-blue hover:bg-blue focus:bg-orange focus:outline active:bg-blue;
+}
+.button__link-disabled {
+  @apply disabled:cursor-not-allowed disabled:bg-gray;
 }
