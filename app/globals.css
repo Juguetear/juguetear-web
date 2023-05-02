@@ -36,7 +36,7 @@
   }
 
   .button {
-    @apply bg-orange px-7 py-3 text-white outline-blue hover:bg-blue focus:bg-orange focus:outline active:bg-blue;
+    @apply bg-orange px-7 py-3 text-white outline-blue hover:bg-blue focus:bg-orange focus:outline active:bg-blue disabled:cursor-not-allowed disabled:bg-gray;
   }
 }
 
