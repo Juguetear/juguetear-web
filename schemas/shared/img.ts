@@ -16,6 +16,10 @@ const image = defineType({
         ),
     }),
   ],
+  validation: (Rule) =>
+    Rule.required().error(
+      "Para utilizar este componente es necesario una imagen."
+    ),
 });
 
 export default image;
