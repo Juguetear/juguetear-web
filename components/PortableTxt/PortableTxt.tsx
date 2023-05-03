@@ -10,7 +10,10 @@ import { type TypedObject } from "sanity";
 const customComponents: Partial<PortableTextReactComponents> = {
   block: {
     normal: (props) => <p>{props.children}</p>,
-    h1: (props) => <h1 className="text-center">{props.children}</h1>,
+    h1: (props) => (
+      // TODO: Check margin bottom for headings
+      <h1 className="text-center">{props.children}</h1>
+    ),
   },
   types: {
     // ISSUE: Add loader for image
@@ -54,5 +57,7 @@ interface Props {
 }
 
 export const PortableTxt = ({ content }: Props) => (
-  <PortableText value={content} components={customComponents} />
+  <article className={"mx-4 max-w-[860px] lg:mx-auto"}>
+    <PortableText value={content} components={customComponents} />
+  </article>
 );
