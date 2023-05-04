@@ -10,7 +10,7 @@
     @apply md:text-base;
   }
   :is(h1, h2, h3, h4, h5, h6) {
-    @apply font-extrabold font-outfit text-blue;
+    @apply font-outfit font-extrabold text-blue;
   }
   h1 {
     @apply text-2xl md:text-4xl;
@@ -23,6 +23,20 @@
   h5,
   h6 {
     @apply text-lg md:text-3xl;
+  }
+}
+
+@layer components {
+  .button__link__base {
+    @apply inline-flex justify-between gap-2 rounded font-outfit text-base font-extrabold focus-within:shadow-md;
+  }
+
+  .link {
+    @apply button__link__base px-2 py-1 text-blue hover:text-orange hover:underline focus:text-blue focus:underline focus:outline-none;
+  }
+
+  .button {
+    @apply button__link__base bg-orange px-7 py-3 text-white outline-blue hover:bg-blue focus:bg-orange focus:outline active:bg-blue disabled:cursor-not-allowed disabled:bg-gray;
   }
 }
 
