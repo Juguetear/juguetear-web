@@ -1,4 +1,4 @@
-import { defineField, defineType } from "sanity";
+import { defineArrayMember, defineField, defineType } from "sanity";
 
 const images = defineType({
   title: "Imágenes",
@@ -7,14 +7,14 @@ const images = defineType({
   description: "Cada imagen necesita un texto alternativo.",
   fields: [
     defineField({
-      type: "img",
-      name: "firstImg",
+      type: "array",
+      name: "imgContainer",
       title: "Primera imagen",
-    }),
-    defineField({
-      type: "img",
-      name: "secondImg",
-      title: "Segunda imagen",
+      of: [
+        defineArrayMember({
+          type: "img",
+        }),
+      ],
     }),
   ],
   // FIX: Add small img for preview.
