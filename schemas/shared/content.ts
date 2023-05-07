@@ -6,7 +6,7 @@ const content = defineType({
   type: "array",
   of: [
     defineArrayMember({ type: "block", title: "Texto", name: "blockscontent" }),
-    defineArrayMember({ type: "img", title: "Imagen", name: "blocksimage" }),
+    // TODO: remove img schema
     defineArrayMember({ type: "images" }),
   ],
 });

@@ -32,7 +32,7 @@ const homePage = defineType({
         defineField({
           title: "Foto",
           name: "photo",
-          type: "img",
+          type: "images",
         }),
       ],
     }),
@@ -48,7 +48,7 @@ const homePage = defineType({
           type: "array",
           of: [
             defineArrayMember({
-              type: "img",
+              type: "images",
             }),
           ],
         }),
@@ -97,7 +97,7 @@ const homePage = defineType({
                 ...textFields,
                 defineField({
                   name: "image",
-                  type: "img",
+                  type: "images",
                 }),
               ],
             }),

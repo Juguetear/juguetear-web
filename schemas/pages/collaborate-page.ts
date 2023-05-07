@@ -26,7 +26,7 @@ const collaboratePage = defineType({
         }),
         defineField({
           name: "image",
-          type: "image",
+          type: "images",
         }),
       ],
     }),

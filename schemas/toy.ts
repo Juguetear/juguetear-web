@@ -43,7 +43,7 @@ const toy = defineType({
       title: "Recursos visuales.",
       description: "Incluir recursos visuales del juguete.",
       of: [
-        defineArrayMember({ title: "Imagen", type: "img" }),
+        defineArrayMember({ title: "Imagen", type: "images" }),
         defineArrayMember({ type: "video" }),
       ],
     }),
