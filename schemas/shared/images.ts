@@ -9,7 +9,7 @@ const images = defineType({
     defineField({
       type: "array",
       name: "imgContainer",
-      title: "Primera imagen",
+      title: "Imagen/es",
       of: [
         defineArrayMember({
           title: "Imagen con texto alternativo",
@@ -33,6 +33,10 @@ const images = defineType({
             ),
         }),
       ],
+      validation: (Rule) =>
+        Rule.required()
+          .max(2)
+          .error("Este componente permite máximo dos imágenes."),
     }),
   ],
   // FIX: Add small img for preview.
