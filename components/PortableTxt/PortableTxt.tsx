@@ -18,7 +18,7 @@ interface Image {
 
 const customComponents: Partial<PortableTextReactComponents> = {
   block: {
-    normal: ({ children }) => <p>{children}</p>,
+    normal: ({ children }) => <p className="mb-4">{children}</p>,
     h1: ({ children }) => <h1 className="mb-10 text-center">{children}</h1>,
     h2: ({ children }) => <h2 className="mb-10">{children}</h2>,
     h3: ({ children }) => <h3 className="mb-4">{children}</h3>,
@@ -38,14 +38,16 @@ const customComponents: Partial<PortableTextReactComponents> = {
             alt={altText}
             width={860}
             height={485}
-            className="rounded"
+            className="my-10 rounded"
           />
         );
       }
 
       return (
         <div
-          className={"flex flex-col items-center gap-4 lg:flex-row lg:gap-5"}
+          className={
+            "mb-4 flex flex-col items-center gap-4 lg:flex-row lg:gap-5"
+          }
         >
           {value.imgContainer.map((img: Image) => (
             <div key={img._key} className="rounded">
@@ -76,10 +78,10 @@ const customComponents: Partial<PortableTextReactComponents> = {
   },
   list: {
     bullet: ({ children }) => (
-      <ul className="ml-4 list-disc marker:text-blue">{children}</ul>
+      <ul className="mb-4 ml-4 list-disc marker:text-blue">{children}</ul>
     ),
     number: ({ children }) => (
-      <ol className="ml-5 list-decimal marker:text-blue">{children}</ol>
+      <ol className="mb-4 ml-5 list-decimal marker:text-blue">{children}</ol>
     ),
   },
 };
