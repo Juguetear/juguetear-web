@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { em, h1, h2, span, strong, underline } from "./mockedData";
+import { em, h1, h2, images, span, strong, underline } from "./mockedData";
 import { PortableTxt } from "./PortableTxt";
 
 describe("Portable text component", () => {
@@ -45,5 +45,23 @@ describe("Portable text component", () => {
 
     const ulStyle = screen.getByText("underline text");
     expect(ulStyle).toHaveStyle("text-decoration: underline");
+  });
+
+  describe("Images", () => {
+    const imgsQty = images.imgContainer.length;
+
+    it("Minimum of one image", () => {
+      expect(imgsQty).toBeGreaterThanOrEqual(1);
+    });
+
+    it("Maximum of two images", () => {
+      expect(imgsQty).toBeLessThanOrEqual(2);
+    });
+
+    it("Contains alternative text", () => {
+      render(<PortableTxt content={images} />);
+      const img = screen.getAllByRole("img")[0];
+      expect(img).toHaveAttribute("alt");
+    });
   });
 });

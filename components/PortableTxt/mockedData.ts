@@ -66,4 +66,26 @@ const em = {
   ],
 };
 
-export { em, h1, h2, span, strong, underline };
+const images = {
+  _type: "images",
+  imgContainer: [
+    {
+      _type: "img",
+      altText: "Imagen doble",
+      asset: {
+        _ref: "image-54942b7ea04fa5820b3e9d3f03df0a602a7d67c5-420x236-png",
+        _type: "reference",
+      },
+    },
+    {
+      _type: "img",
+      altText: "Otra imagen doble",
+      asset: {
+        _ref: "image-849770bef25dd174bb17c55af8f840c53a6debb0-420x236-png",
+        _type: "reference",
+      },
+    },
+  ],
+};
+
+export { em, h1, h2, images, span, strong, underline };
