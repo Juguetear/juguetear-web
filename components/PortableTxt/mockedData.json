@@ -1,0 +1,332 @@
+{
+  "description": [
+    {
+      "_key": "c6286ab2658d",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "1a07c5707abb0",
+          "_type": "span",
+          "marks": [],
+          "text": "Replicá el proyecto"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "e1fa7baedec9",
+      "_type": "images",
+      "imgContainer": [
+        {
+          "_key": "7f0cb06838ea",
+          "_type": "img",
+          "altText": "Persona modifcando dinosaurio de juguete",
+          "asset": {
+            "_ref": "image-0110559ad84fe4b7fbd0aecc0a254c3f3be66ad7-862x485-webp",
+            "_type": "reference"
+          }
+        }
+      ]
+    },
+    {
+      "_key": "394b539d86a1",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "91eef9f9e126",
+          "_type": "span",
+          "marks": [],
+          "text": "La "
+        },
+        {
+          "_key": "c240831dd33c",
+          "_type": "span",
+          "marks": ["strong"],
+          "text": "naturaleza"
+        },
+        {
+          "_key": "230917911a9a",
+          "_type": "span",
+          "marks": [],
+          "text": " libre y "
+        },
+        {
+          "_key": "6fe39c20bcec",
+          "_type": "span",
+          "marks": ["em"],
+          "text": "solidaria"
+        },
+        {
+          "_key": "b7710b89240c",
+          "_type": "span",
+          "marks": [],
+          "text": " de esta "
+        },
+        {
+          "_key": "82ab91e4af9e",
+          "_type": "span",
+          "marks": ["underline"],
+          "text": "idea"
+        },
+        {
+          "_key": "b49766573bdc",
+          "_type": "span",
+          "marks": [],
+          "text": " no se refiere solo a la posibilidad de que las familias de niños y niñas con discapacidades motrices complejas puedan acceder a los juguetes sin ningún costo sino que, además, querríamos que se pueda replicar en todos los lugares donde haya instituciones y personas con voluntad para llevarlo adelante, ya que familias que puedan aprovecharlo existen en todo el mundo.\nLa principal limitación actual de este Proyecto es que, no contando con fondos que permitan el envío de juguetes a familias de otras ciudades, requiere que los interesados se acerquen a retirarlos, en este caso de la sede de APRILP, en La Plata.\nPor ello, queremos compartir todos los detalles de nuestra experiencia, de manera que quienes quiera puedan replicar el Proyecto y, por supuesto, mejorarlo."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "49451ada3391",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "ab9a59fe3de10",
+          "_type": "span",
+          "marks": [],
+          "text": "Taller de adaptaciones"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "6f7a163555a7",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "2633566d8e240",
+          "_type": "span",
+          "marks": [],
+          "text": "Lo primero con lo que debemos contar es con un taller que tenga la capacidad técnica de adaptar juguetes. Estas operaciones incluyen desarmado, soldaduras de conectores de distinto tipo, etc. Si quiere saber más detalles, puede acceder a este sitio web.\nEn nuestro caso, las adaptaciones se realizan en el Taller de Ayudas técnicas de bajo costo de APRILP, en el que desde hace varios años un grupo de jóvenes con discapacidad, coordinados por el Ing. Sergio Ruau, realizan adaptaciones de bajo costo para personas con discapacidades motrices.\nEste taller debe contar con un espacio de trabajo, las herramientas necesarias y, por supuesto, las personas que realicen allí las adaptaciones."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "858d192f0243",
+      "_type": "images",
+      "imgContainer": [
+        {
+          "_key": "2c8a03f3682e",
+          "_type": "img",
+          "altText": "kjr",
+          "asset": {
+            "_ref": "image-54942b7ea04fa5820b3e9d3f03df0a602a7d67c5-420x236-png",
+            "_type": "reference"
+          }
+        },
+        {
+          "_key": "7024bf2cd219",
+          "_type": "img",
+          "altText": "khgasd",
+          "asset": {
+            "_ref": "image-849770bef25dd174bb17c55af8f840c53a6debb0-420x236-png",
+            "_type": "reference"
+          }
+        }
+      ]
+    },
+    {
+      "_key": "a75bc974a812",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "17cf908f306b0",
+          "_type": "span",
+          "marks": [],
+          "text": "Provisión de juguetes y adaptaciones"
+        }
+      ],
+      "markDefs": [],
+      "style": "h4"
+    },
+    {
+      "_key": "d745a9c0c13d",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "092dee3b52fb0",
+          "_type": "span",
+          "marks": [],
+          "text": "Contar con juguetes y materiales resulta fundamental, y un ámbito en el que se puede conseguir el aporte de los mismos, sin que tenga que mediar dinero, es en escuelas.\nEn nuestro caso, esta primera experiencia cuenta con el aporte de toda la comunidad educativa del Colegio Lincoln de La Plata, coordinada por el Ing. Antonio Sacco.\nLos alumnos, padres, madres y docentes del Colegio llevaron (de manera voluntaria, por supuesto) tanto juguetes como materiales para su adaptación, que luego se entregaron a APRILP.\nDetallamos a continuación varios aspectos que consideramos importantes y pueden ayudar en la multiplicación de este tipo de experiencias."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aa5a4d880d34",
+      "_type": "images",
+      "imgContainer": [
+        {
+          "_key": "2360d60b7095",
+          "_type": "img",
+          "altText": "Colegio",
+          "asset": {
+            "_ref": "image-571b3ec17fe5e55a16a0cc3c9b555915bbce3f4d-862x485-png",
+            "_type": "reference"
+          }
+        }
+      ]
+    },
+    {
+      "_key": "d1ed28745ad8",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "5daf5a6a9b840",
+          "_type": "span",
+          "marks": [],
+          "text": "Juguetes y materiales"
+        }
+      ],
+      "markDefs": [],
+      "style": "h5"
+    },
+    {
+      "_key": "7a34fd2b37cc",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "42ac9fad05860",
+          "_type": "span",
+          "marks": [],
+          "text": "Los juguetes que pueden ser adaptados son prácticamente todos aquellos que funcionan con pilas o baterías de cualquier tipo. Pueden tener movimiento, sonido, luces… pero lo importante es que tengan pilas o baterías, ya que es en ese caso que se les puede conectar uno o más switches para activarlos.\nAdemás de los juguetes, se necesitan materiales que suelen adquirirse en negocios de electrónica, pero como no queríamos pedir dinero en este proyecto, lo que hicimos fue definir una serie de elementos básicos que llamamos “kit Lincoln para juguetes adaptados”, y quienes querían podían comprarlos por su cuenta y llevarlos al Colegio.\n\nEl kit consiste en:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "8b37f509d4ea",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "06ef7275ae32",
+          "_type": "span",
+          "marks": [],
+          "text": "1 conector plug hembra 3.5 mm mono (para zócalo/chasis)"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e4d36cf9fe43",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "4000272dbc76",
+          "_type": "span",
+          "marks": [],
+          "text": "1 conector plug macho 3.5 mm mono (plástico o metálico)"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "26bd1f231005",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "d0d418da2995",
+          "_type": "span",
+          "marks": [],
+          "text": "1 conector macho recto con trabas para IDC de 10"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "292c562a52b9",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "6fbfeca5dc75",
+          "_type": "span",
+          "marks": [],
+          "text": "1 conector ficha hembra IDC para cable plano de 10"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "436efc2b3d9f",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "14f74e6190e4",
+          "_type": "span",
+          "marks": [],
+          "text": "1 metro de cable audio helicoidal estero EMP 1066"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "6de3c5cf5b8a",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "965272df6aab",
+          "_type": "span",
+          "marks": [],
+          "text": "1 metro de cable plano 10 vías o hilos conductores"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "6e242fa5d973",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "6796a2cc5f62",
+          "_type": "span",
+          "marks": [],
+          "text": "6 precintos plásticos de 2,5 mm"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "d167abaa7ddd",
+      "_type": "blockscontent",
+      "children": [
+        {
+          "_key": "e7e8a57be24f",
+          "_type": "span",
+          "marks": [],
+          "text": "Hablamos entonces con cuatro de las principales casas de venta de artículos electrónicos de la ciudad, en las que dejamos un folleto con la descripción del proyecto y la lista de materiales. El costo total de este kit es de aproximadamente U$S 4, e incluso alguno de esos negocios ofreció un descuento para estas compras, colaborando de esa forma también ellos.\n"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ]
+}
