@@ -1,6 +1,8 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { PortableTxt } from "./PortableTxt";
-import mockedData from "./mockedData.json";
+import { em, h1, h2, span, strong, underline } from "./mockedData";
+
+const description = [em, h1, h2, span, strong, underline];
 
 type Story = StoryObj<typeof PortableTxt>;
 
@@ -10,7 +12,7 @@ const meta: Meta<typeof PortableTxt> = {
 };
 
 export const Content: Story = {
-  render: () => <PortableTxt content={mockedData.description} />,
+  render: () => <PortableTxt content={description} />,
 };
 
 export default meta;
