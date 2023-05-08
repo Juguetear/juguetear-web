@@ -23,8 +23,8 @@
           "_type": "img",
           "altText": "Persona modifcando dinosaurio de juguete",
           "asset": {
-            "_ref": "image-0110559ad84fe4b7fbd0aecc0a254c3f3be66ad7-862x485-webp",
-            "_type": "reference"
+            "_type": "reference",
+            "_ref": "image-e6f8f7816bfe655bdf9228ed2297f53ec96a06d5-681x478-png"
           }
         }
       ]
