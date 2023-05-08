@@ -7,6 +7,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { type TypedObject } from "sanity";
 
+interface Image {
+  altText: string;
+  _key: string;
+  asset: {
+    _ref: string;
+    _type: string;
+  };
+}
+
 const customComponents: Partial<PortableTextReactComponents> = {
   block: {
     normal: (props) => <p>{props.children}</p>,
@@ -16,18 +25,39 @@ const customComponents: Partial<PortableTextReactComponents> = {
     ),
   },
   types: {
-    // ISSUE: Add loader for image
-    blocksimage: ({ value }) => (
-      <Image
-        // TODO: `isInline` should be included?
-        src={urlFor(value.asset._ref).fit("max").auto("format").url()}
-        // FIX: Check width and height.
-        width={860}
-        height={485}
-        alt={value.altText}
-        className="rounded"
-      />
-    ),
+    images: ({ value }) => {
+      const lengthArr = value.imgContainer.length;
+
+      if (lengthArr === 1) {
+        const { altText, asset } = value.imgContainer[0];
+        return (
+          <Image
+            src={urlFor(asset).auto("format").url()}
+            alt={altText}
+            width={860}
+            height={485}
+            className="rounded"
+          />
+        );
+      }
+
+      return (
+        <div
+          className={"flex flex-col items-center gap-4 lg:flex-row lg:gap-5"}
+        >
+          {value.imgContainer.map((img: Image) => (
+            <div key={img._key} className="rounded">
+              <Image
+                src={urlFor(img.asset).auto("format").url()}
+                width={420}
+                height={240}
+                alt={img.altText}
+              />
+            </div>
+          ))}
+        </div>
+      );
+    },
   },
   marks: {
     link: ({ children, value }) => {
@@ -57,7 +87,5 @@ interface Props {
 }
 
 export const PortableTxt = ({ content }: Props) => (
-  <article className={"mx-4 max-w-[860px] lg:mx-auto"}>
-    <PortableText value={content} components={customComponents} />
-  </article>
+  <PortableText value={content} components={customComponents} />
 );
