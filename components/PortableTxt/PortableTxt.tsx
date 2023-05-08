@@ -19,7 +19,12 @@ interface Image {
 const customComponents: Partial<PortableTextReactComponents> = {
   block: {
     normal: ({ children }) => <p>{children}</p>,
-    h1: ({ children }) => <h1 className="text-center">{children}</h1>,
+    h1: ({ children }) => <h1 className="mb-10 text-center">{children}</h1>,
+    h2: ({ children }) => <h2 className="mb-10">{children}</h2>,
+    h3: ({ children }) => <h3 className="mb-4">{children}</h3>,
+    h4: ({ children }) => <h4 className="mb-4">{children}</h4>,
+    h5: ({ children }) => <h5 className="mb-4">{children}</h5>,
+    h6: ({ children }) => <h6 className="mb-4">{children}</h6>,
   },
   types: {
     images: ({ value }) => {
