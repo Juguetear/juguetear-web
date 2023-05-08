@@ -2864,15 +2864,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@portabletext/react@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "@portabletext/react@npm:2.0.2"
+"@portabletext/react@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@portabletext/react@npm:3.0.0"
   dependencies:
     "@portabletext/toolkit": ^2.0.1
     "@portabletext/types": ^2.0.2
   peerDependencies:
     react: ^17 || ^18
-  checksum: 5b0fe0ee350af227a7330d931bc84e9e92c79e90358f9c9584b385164ada08265d4c338144f1079b1b615e6fb6f344f8617467ecea58ddcb29d2065d0aa29b09
+  checksum: 8839959e852ed7429bb5fcdbaf620fcc1be7ba406c7998bb3b3e130642451589fd9bfd3d582e69115993ca08458f452b4c5b64e57b5b0d104c61af922a797325
   languageName: node
   linkType: hard
 
@@ -11535,7 +11535,7 @@ __metadata:
   resolution: "juguetear-web@workspace:."
   dependencies:
     "@headlessui/react": ^1.7.7
-    "@portabletext/react": ^2.0.2
+    "@portabletext/react": ^3.0.0
     "@sanity/image-url": ^1.0.2
     "@sanity/vision": ^3.8.0
     "@storybook/addon-a11y": ^7.0.0-rc.8
