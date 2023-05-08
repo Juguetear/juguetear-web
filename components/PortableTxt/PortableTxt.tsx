@@ -18,11 +18,8 @@ interface Image {
 
 const customComponents: Partial<PortableTextReactComponents> = {
   block: {
-    normal: (props) => <p>{props.children}</p>,
-    h1: (props) => (
-      // TODO: Check margin bottom for headings
-      <h1 className="text-center">{props.children}</h1>
-    ),
+    normal: ({ children }) => <p>{children}</p>,
+    h1: ({ children }) => <h1 className="text-center">{children}</h1>,
   },
   types: {
     images: ({ value }) => {
