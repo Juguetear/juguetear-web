@@ -6,20 +6,16 @@ export default {
   component: Spinner,
 } as Meta<typeof Spinner>;
 
-export const DefaultSpinner: StoryObj = {
-  args: {
-    className: "",
-  },
-};
+export const DefaultSpinner: StoryObj = {};
 
 export const BigSpinner: StoryObj = {
   args: {
-    className: "w-[100px]",
+    className: "fill-blue w-[100px]",
   },
 };
 
-export const BlueSpinner: StoryObj = {
+export const GreenSpinner: StoryObj = {
   args: {
-    className: "fill-blue",
+    className: "fill-green",
   },
 };
