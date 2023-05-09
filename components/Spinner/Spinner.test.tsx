@@ -14,9 +14,15 @@ describe("Spinner", () => {
     expect(svgElement).toHaveClass("test-class");
   });
 
-  test("Spinner has the correct aria-label attribute", () => {
+  test("Spinner has the correct aria-labelledby attribute", () => {
     render(<Spinner className="" />);
     const svgElement = screen.getByTestId("spinner");
-    expect(svgElement).toHaveAttribute("aria-label", "Cargando");
+    expect(svgElement).toHaveAttribute("aria-labelledby", "juguetear-spinner");
+  });
+
+  test("Spinner should have the correct accesible name", () => {
+    render(<Spinner className="" />);
+    const svgElement = screen.getByRole("img");
+    expect(svgElement).toHaveAccessibleName("Cargando");
   });
 });
