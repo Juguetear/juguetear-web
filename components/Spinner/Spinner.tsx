@@ -1,6 +1,6 @@
 import { SVGProps } from "react";
 
-const Spinner = ({ className }: SVGProps<SVGSVGElement>) => {
+const Spinner = ({ className = "fill-blue" }: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       role="img"
