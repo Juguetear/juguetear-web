@@ -1,8 +1,6 @@
-interface SpinnerProps {
-  className: string;
-}
+import { SVGProps } from "react";
 
-const Spinner = ({ className }: SpinnerProps) => {
+const Spinner = ({ className }: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       role="img"
