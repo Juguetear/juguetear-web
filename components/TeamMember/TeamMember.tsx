@@ -42,9 +42,9 @@ export const TeamMember = ({
         ></div>
       )}
       <div className="self-center text-center font-inter text-blue md:text-left">
-        <h2 className="mb-0.5 ml-2 text-base font-bold">{`${name} ${surname}`}</h2>
+        <h2 className="mb-0.5 ml-2 text-base font-bold">{`${name} ${surname} (${pronouns})`}</h2>
         <p data-testid="member-role" className="mb-1 ml-2 text-sm">
-          {`${pronouns} ${role}`}
+          {role}
         </p>
         <div className="flex gap-2 text-sm font-medium">
           {contactLinks.map(({ name, url }) => (
