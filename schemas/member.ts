@@ -45,7 +45,7 @@ const member = defineType({
     defineField({
       name: "image",
       title: "Avatar",
-      type: "images",
+      type: "img",
     }),
   ],
 });
