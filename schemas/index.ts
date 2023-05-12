@@ -6,6 +6,7 @@ import homePage from "schemas/pages/home-page";
 import layout from "schemas/pages/layout";
 
 import content from "schemas/shared/content";
+import image from "schemas/shared/img";
 import images from "./shared/images";
 import link from "schemas/shared/link";
 import video from "schemas/shared/video";
@@ -28,6 +29,7 @@ const schemas = [
   layout,
 
   content,
+  image,
   images,
   link,
   relativeUrl,
