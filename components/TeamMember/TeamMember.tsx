@@ -4,7 +4,7 @@ import { Link } from "../Link/Link";
 import { ContactLink, Img } from "types/layout-schema-types";
 import { urlFor } from "lib/client";
 
-interface TeamMemberProps extends Partial<React.HTMLProps<HTMLElement>> {
+interface TeamMemberProps extends React.HTMLProps<HTMLElement> {
   _id: string;
   image?: Img;
   name: string;
