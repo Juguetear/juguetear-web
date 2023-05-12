@@ -8,7 +8,7 @@ const images = defineType({
   fields: [
     defineField({
       type: "array",
-      name: "imgContainer",
+      name: "images",
       title: "Imagen/es",
       of: [
         defineArrayMember({
