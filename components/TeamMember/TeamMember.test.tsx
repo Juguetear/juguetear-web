@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import { TeamMember } from "components/TeamMember/TeamMember";
+import { TeamMember, TeamMemberProps } from "components/TeamMember/TeamMember";
 
-const member = {
+const member: TeamMemberProps = {
   _id: "1",
   name: "Miguevara",
   surname: "Pantoja",
@@ -23,7 +23,7 @@ describe("TeamMember", () => {
 
   it("renders the profile image and placeholder", () => {
     render(<TeamMember {...member} />);
-    if (Object.hasOwn(member, "image")) {
+    if (member.image) {
       const image = screen.getByRole("img") as HTMLImageElement;
       expect(image).toBeInTheDocument();
       expect(image).toHaveAttribute("src");
