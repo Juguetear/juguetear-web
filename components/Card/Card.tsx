@@ -30,7 +30,7 @@ export const Card = ({
         <div className="flex h-full w-full flex-col items-center justify-center rounded bg-white-blue">
           <Logo
             style={{ transform: "translateY(10px)" }}
-            withoutTitle={true}
+            hideBrandname={true}
             className="w-[8.5rem] opacity-40"
           />
           <p
