@@ -11,7 +11,13 @@ interface Props {
 
 export default async function WebsiteLayout({ children }: Props) {
   const { navbarLinks, footerLinks } = await client.fetch<LayoutSchema>(
-    groq`*[_type == 'layout'][0]`
+    groq`*[_type == 'layout'][0] { 
+      navbarLinks[]->{ "name": title, "url": path }, 
+      footerLinks[]{ 
+        _type != 'pageRef' => { name, url }, 
+        _type == 'pageRef' => @-> { "name": title, "url": path } 
+      } 
+    }`
   );
 
   return (

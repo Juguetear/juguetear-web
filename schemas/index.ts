@@ -4,6 +4,7 @@ import collaboratePage from "schemas/pages/collaborate-page";
 import faqPage from "schemas/pages/faq-page";
 import homePage from "schemas/pages/home-page";
 import layout from "schemas/pages/layout";
+import page from "./pages/page";
 
 import content from "schemas/shared/content";
 import image from "schemas/shared/img";
@@ -26,6 +27,7 @@ const schemas = [
   faqPage,
   homePage,
   layout,
+  page,
 
   content,
   image,
