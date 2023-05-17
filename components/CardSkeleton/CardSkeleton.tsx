@@ -16,7 +16,7 @@ export const CardSkeleton = () => {
       ></div>
       <div
         data-testid="card-skeleton-rect"
-        className="relative h-40 rounded bg-gray-light"
+        className="h-40 rounded bg-gray-light"
       ></div>
       <div
         data-testid="card-skeleton-rect"
