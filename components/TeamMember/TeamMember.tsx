@@ -4,7 +4,7 @@ import { Link } from "../Link/Link";
 import { ContactLink, Img } from "types/layout-schema-types";
 import { urlFor } from "lib/client";
 
-export interface TeamMemberProps extends React.HTMLProps<HTMLElement> {
+export interface TeamMemberProps {
   _id: string;
   image?: Img;
   name: string;
@@ -47,7 +47,7 @@ export const TeamMember = ({
           {role}
         </p>
         <div className="flex gap-2 text-sm font-medium">
-          {contactLinks.map(({ name, url }) => (
+          {contactLinks?.map(({ name, url }) => (
             <Link appearance="link" href={url} key={url} target="_blank">
               {name}
             </Link>
