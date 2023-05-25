@@ -49,7 +49,7 @@ const customComponents: Partial<PortableTextReactComponents> = {
             "mb-4 flex flex-col items-center gap-4 lg:flex-row lg:gap-5"
           }
         >
-          {value.imgContainer.map((img: Image) => (
+          {value.images.map((img: Image) => (
             <div key={img._key} className="rounded">
               <Image
                 src={urlFor(img.asset).auto("format").url()}
