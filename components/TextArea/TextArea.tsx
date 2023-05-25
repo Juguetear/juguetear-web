@@ -18,7 +18,6 @@ interface InputProps
   helperText: string;
 }
 // TODO: El icono de error se ve fuera de lugar en Firefox.
-// TODO: #292 Corregir el `border-radius` de los input's, deberia ser de `4px`.
 const TextArea = ({
   id,
   error = false,
