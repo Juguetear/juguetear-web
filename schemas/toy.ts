@@ -18,6 +18,13 @@ const toy = defineType({
       description: "Completar con el nombre del juguete.",
     }),
     defineField({
+      name: "highlight",
+      title: "Destacar",
+      type: "boolean",
+      description:
+        "Si se encuentra destacado, será mostrado en el carrusel de la pagina de inicio.",
+    }),
+    defineField({
       name: "slug",
       type: "slug",
       title: "Slug",

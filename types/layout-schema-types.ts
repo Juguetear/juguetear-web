@@ -36,3 +36,13 @@ export interface Asset {
   _ref: string;
   _type: string;
 }
+
+export interface ContactLink {
+  name: string;
+  url: string;
+}
+
+export interface Img {
+  altText: string;
+  asset: Asset;
+}

@@ -13,12 +13,10 @@ const layout = defineType({
       type: "array",
       of: [
         defineArrayMember({
-          name: "absoluteUrl",
-          type: "link",
-        }),
-        defineArrayMember({
-          name: "relativeUrl",
-          type: "relativeUrl",
+          title: "Path/URL",
+          name: "pageRef",
+          type: "reference",
+          to: [{ type: "page" }],
         }),
       ],
       validation: (Rule) => Rule.unique(),
@@ -33,8 +31,10 @@ const layout = defineType({
           type: "link",
         }),
         defineArrayMember({
-          name: "relativeUrl",
-          type: "relativeUrl",
+          title: "Path/URL",
+          name: "pageRef",
+          type: "reference",
+          to: [{ type: "page" }],
         }),
       ],
       validation: (Rule) => Rule.unique(),

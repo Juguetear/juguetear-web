@@ -1,26 +1,38 @@
 import { CodeBlockIcon, RobotIcon } from "@sanity/icons";
 import { visionTool } from "@sanity/vision";
 import { projectId } from "lib/sanity-variables";
-import { WorkspaceOptions, defineConfig, definePlugin, isDev } from "sanity";
+import { defineConfig, definePlugin, isDev, WorkspaceOptions } from "sanity";
 import { deskTool } from "sanity/desk";
 import schemas from "schemas";
 import deskStructure, { pages } from "./deskStructure";
 
 const devOnlyPlugins = isDev ? [visionTool()] : [];
 
+const readOnlySchemas = [...pages, "page"] as const;
+type ReadOnlySchemas = (typeof readOnlySchemas)[number];
+
 const sharedConfig = definePlugin({
   name: "shareConfig",
   plugins: [deskTool({ structure: deskStructure }), ...devOnlyPlugins],
   schema: { types: schemas },
   document: {
-    newDocumentOptions: (prev, { creationContext }) => {
-      if (creationContext.type === "global") {
-        return prev.filter(
-          (templateItem) =>
-            !pages.includes(templateItem.templateId as (typeof pages)[number])
+    actions: (prev, { schemaType }) => {
+      if (readOnlySchemas.includes(schemaType as ReadOnlySchemas))
+        prev.filter(
+          ({ action }) =>
+            isDev && !["unpublish", "delete", "duplicate"].includes(action!)
         );
-      }
+
       return prev;
+    },
+    newDocumentOptions: (prev, { creationContext }) => {
+      if (creationContext.type !== "global" && isDev) {
+        return prev;
+      }
+      return prev.filter(
+        (templateItem) =>
+          !readOnlySchemas.includes(templateItem.templateId as ReadOnlySchemas)
+      );
     },
   },
 });
