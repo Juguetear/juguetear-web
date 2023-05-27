@@ -22,13 +22,9 @@ const Carousel = ({ children }: CarouselData) => {
     },
   };
 
-  function onClick() {
-    return;
-  }
-
   return (
     <div className="flex items-center">
-      <ArrowButton handleClick={onClick} />
+      <ArrowButton />
       <Swiper
         modules={[Navigation]}
         direction="horizontal"
@@ -54,7 +50,7 @@ const Carousel = ({ children }: CarouselData) => {
           );
         })}
       </Swiper>
-      <ArrowButton direction="right" handleClick={onClick} />
+      <ArrowButton direction="right" />
     </div>
   );
 };
