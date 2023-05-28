@@ -48,7 +48,7 @@ describe("Portable text component", () => {
   });
 
   describe("Images", () => {
-    const imgsQty = images.imgContainer.length;
+    const imgsQty = images.images.length;
 
     it("Minimum of one image", () => {
       expect(imgsQty).toBeGreaterThanOrEqual(1);
