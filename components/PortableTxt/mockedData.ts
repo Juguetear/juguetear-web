@@ -68,7 +68,7 @@ const em = {
 
 const images = {
   _type: "images",
-  imgContainer: [
+  images: [
     {
       _type: "img",
       altText: "Imagen doble",

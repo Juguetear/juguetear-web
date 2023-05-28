@@ -28,10 +28,10 @@ const customComponents: Partial<PortableTextReactComponents> = {
   },
   types: {
     images: ({ value }) => {
-      const lengthArr = value.imgContainer.length;
+      const lengthArr = value.images.length;
 
       if (lengthArr === 1) {
-        const { altText, asset } = value.imgContainer[0];
+        const { altText, asset } = value.images[0];
         return (
           <Image
             src={urlFor(asset).auto("format").url()}
