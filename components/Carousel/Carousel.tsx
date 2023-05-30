@@ -12,7 +12,6 @@ interface CarouselData {
 
 const Carousel = ({ children }: CarouselData) => {
   const childrenArray = React.Children.toArray(children);
-
   const breakpointsConfig = {
     768: {
       slidesPerView: 2,
@@ -39,11 +38,7 @@ const Carousel = ({ children }: CarouselData) => {
           return (
             <SwiperSlide
               key={index}
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
+              className="flex items-center justify-center"
             >
               {child}
             </SwiperSlide>
