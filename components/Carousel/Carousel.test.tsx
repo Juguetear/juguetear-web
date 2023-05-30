@@ -32,4 +32,12 @@ describe("Carousel", () => {
     expect(leftArrowButton).toBeInTheDocument();
     expect(rightArrowButton).toBeInTheDocument();
   });
+
+  it("Carousel arrow buttons should have the correct aria label", () => {
+    render(<Carousel>{carouselContent}</Carousel>);
+    const leftArrowButton = screen.getByLabelText("Pasar al slide anterior");
+    const rightArrowButton = screen.getByLabelText("Pasar al slide siguiente");
+    expect(leftArrowButton).toBeInTheDocument();
+    expect(rightArrowButton).toBeInTheDocument();
+  });
 });
