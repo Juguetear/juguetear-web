@@ -51,6 +51,7 @@ const homePage = defineType({
               type: "img",
             }),
           ],
+          validation: (Rule) => Rule.max(2).error("Máximo dos fotos"),
         }),
       ],
     }),
