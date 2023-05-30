@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import { Card, CardProps } from "components/Card/Card";
 import Carousel from "./Carousel";
 
@@ -8,6 +8,12 @@ export default {
   parameters: {
     nextjs: {
       appDirectory: true,
+    },
+  },
+  argTypes: {
+    cardCount: {
+      type: "number",
+      defaultValue: 3,
     },
   },
 } as Meta<typeof Carousel>;
@@ -61,4 +67,34 @@ export const SimpleCarousel = () => {
       })}
     </Carousel>
   );
+};
+
+interface MultipleCardsProps {
+  cardCount: number;
+}
+export const MultipleCardsCarousel: StoryObj<MultipleCardsProps> = {
+  render: (args) => {
+    const { cardCount } = args;
+    return (
+      <Carousel>
+        {Array.from(
+          {
+            length: cardCount,
+          },
+          (_, i) => (
+            <Card
+              key={i}
+              title="Dragón"
+              link="/"
+              description="Dragón que emite luces y sonido cuando se pulsa el botón."
+              available={true}
+            />
+          )
+        )}
+      </Carousel>
+    );
+  },
+  args: {
+    cardCount: 3,
+  },
 };
