@@ -25,7 +25,7 @@ export const TeamMember = ({
   return (
     <div
       data-testid="team-member"
-      className="flex flex-col items-center gap-8 px-16 py-5 md:max-w-md md:flex-row"
+      className="flex flex-col items-center gap-8 px-4 py-5 md:max-w-md md:flex-row md:px-16"
     >
       {image ? (
         <Image
