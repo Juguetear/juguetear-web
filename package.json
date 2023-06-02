@@ -18,13 +18,13 @@
     "@headlessui/react": "^1.7.7",
     "@portabletext/react": "^2.0.2",
     "@sanity/image-url": "^1.0.2",
-    "@sanity/vision": "^3.8.0",
+    "@sanity/vision": "^3.11.5",
     "get-youtube-id": "^1.0.1",
     "next": "^13.4.4",
-    "next-sanity": "^4.1.6",
+    "next-sanity": "^4.3.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sanity": "^3.8.0",
+    "sanity": "^3.11.5",
     "styled-components": "^5.3.9"
   },
   "devDependencies": {
