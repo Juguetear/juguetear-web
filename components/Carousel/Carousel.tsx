@@ -33,6 +33,8 @@ const Carousel = ({ children }: CarouselData) => {
         }}
         a11y={{
           enabled: true,
+          prevSlideMessage: "Pasar al slide anterior",
+          nextSlideMessage: "Pasar al slide siguiente",
         }}
         keyboard
         breakpoints={breakpointsConfig}
