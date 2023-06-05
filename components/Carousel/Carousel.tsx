@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Navigation, Keyboard } from "swiper";
+import { Navigation, A11y, Keyboard } from "swiper";
 import "swiper/swiper.min.css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -25,11 +25,14 @@ const Carousel = ({ children }: CarouselData) => {
     <div className="flex items-center">
       <ArrowButton />
       <Swiper
-        modules={[Navigation, Keyboard]}
+        modules={[Navigation, Keyboard, A11y]}
         direction="horizontal"
         navigation={{
           prevEl: "#custom-left-button",
           nextEl: "#custom-right-button",
+        }}
+        a11y={{
+          enabled: true,
         }}
         keyboard
         breakpoints={breakpointsConfig}
