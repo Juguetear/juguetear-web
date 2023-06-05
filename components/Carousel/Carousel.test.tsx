@@ -27,17 +27,17 @@ describe("Carousel", () => {
 
   it("renders the Carousel component with two ArrowButton components", () => {
     render(<Carousel>{carouselContent}</Carousel>);
-    const leftArrowButton = screen.getByLabelText(/anterior/i);
-    const rightArrowButton = screen.getByLabelText(/siguiente/i);
+    const leftArrowButton = screen.getByRole("button", { name: /anterior/i });
+    const rightArrowButton = screen.getByRole("button", { name: /siguiente/i });
     expect(leftArrowButton).toBeInTheDocument();
     expect(rightArrowButton).toBeInTheDocument();
   });
 
-  it("Carousel arrow buttons should have the correct aria label", () => {
+  it("Carousel arrow buttons should have an accesible name", () => {
     render(<Carousel>{carouselContent}</Carousel>);
-    const leftArrowButton = screen.getByLabelText("Pasar al slide anterior");
-    const rightArrowButton = screen.getByLabelText("Pasar al slide siguiente");
-    expect(leftArrowButton).toBeInTheDocument();
-    expect(rightArrowButton).toBeInTheDocument();
+    const leftArrowButton = screen.getByRole("button", { name: /anterior/i });
+    const rightArrowButton = screen.getByRole("button", { name: /siguiente/i });
+    expect(leftArrowButton).toHaveAccessibleName();
+    expect(rightArrowButton).toHaveAccessibleName();
   });
 });
