@@ -3,7 +3,7 @@ import { MouseEventHandler } from "react";
 interface ArrowButtonProps {
   disabled?: boolean;
   direction?: "left" | "right";
-  handleClick: MouseEventHandler;
+  handleClick?: MouseEventHandler;
 }
 
 export const ArrowButton = ({
@@ -12,15 +12,16 @@ export const ArrowButton = ({
   handleClick,
 }: ArrowButtonProps) => {
   return (
-    <div className="rounded-full m-2 w-fit p-1 shadow-turquoise focus-within:shadow-md lg:p-2">
+    <div className="m-2 w-fit rounded-full p-1 shadow-turquoise focus-within:shadow-md lg:p-2">
       <button
         aria-label={`Pasar al slide ${
           direction === "right" ? "siguiente" : "anterior"
         }`}
-        className="rounded-full group flex h-6 w-6 items-center justify-center border-2 border-orange font-inter 
+        className="group flex h-6 w-6 items-center justify-center rounded-full border-2 border-orange font-inter 
       text-xl font-extrabold focus-within:outline-none hover:border-blue disabled:border-gray lg:h-12 lg:w-12"
         disabled={disabled}
         onClick={handleClick}
+        id={`custom-${direction}-button`}
       >
         <svg
           className={`h-2 w-2 fill-none lg:h-4 lg:w-4 ${

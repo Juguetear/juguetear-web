@@ -2,7 +2,7 @@ import { Button } from "components/Button/Button";
 import { State } from "components/State/State";
 import Image from "next/image";
 
-interface CardProps {
+export interface CardProps {
   image?: { src: string; alt: string };
   title: string;
   available: boolean;
@@ -17,12 +17,12 @@ export const Card = ({
   link,
 }: CardProps) => {
   return (
-    <div className=" m-4 max-w-xs space-y-4 rounded border p-6">
+    <div className=" rounded m-4 max-w-xs space-y-4 border p-6">
       <h3 className="border-b border-gray-light pb-2 font-bold text-darkblue">
         {title}
       </h3>
       {image?.src ? (
-        <div className="relative rounded border">
+        <div className="rounded relative border">
           <Image fill sizes="33vw" src={image?.src} alt={image?.alt} />
         </div>
       ) : (
