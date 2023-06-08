@@ -10,6 +10,7 @@ module.exports = {
   ],
   theme: {
     colors: {
+      "white-blue": "#dbeaf7",
       "blue-light": "#E9F7F9",
       turquoise: "#23B1BF",
       orange: "#D2451A",

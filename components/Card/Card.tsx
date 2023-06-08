@@ -1,4 +1,5 @@
 import { Button } from "components/Button/Button";
+import { Logo } from "components/Logo/Logo";
 import { State } from "components/State/State";
 import Image from "next/image";
 
@@ -26,18 +27,19 @@ export const Card = ({
           <Image fill sizes="33vw" src={image?.src} alt={image?.alt} />
         </div>
       ) : (
-        <svg
-          className="h-full w-full"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            className="h-full w-full"
-            rx="4"
-            fill="black"
-            fillOpacity="0.2"
+        <div className="flex h-full w-full flex-col items-center justify-center rounded bg-white-blue">
+          <Logo
+            style={{ transform: "translateY(10px)" }}
+            hideBrandname={true}
+            className="w-[8.5rem] opacity-40"
           />
-        </svg>
+          <p
+            style={{ transform: "translateY(-70px)" }}
+            className="text-center font-bold opacity-40"
+          >
+            Imagen no disponible
+          </p>
+        </div>
       )}
       <State available={available} />
       <p className="font-medium text-darkblue">{description}</p>
