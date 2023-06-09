@@ -12,13 +12,6 @@ interface FooterProps extends Partial<React.HTMLProps<HTMLElement>> {
   links: FooterLink[];
 }
 
-const textClasses =
-  "font-outfit lg:text-base text-center font-semibold text-white";
-
-const focusClasses = "focus:shadow-md focus:border-white focus:border-[3px]";
-
-const disabledClasses = "disabled:cursor-not-allowed disabled:bg-gray";
-
 export const Footer = ({ links }: FooterProps) => {
   return (
     <footer
@@ -29,7 +22,7 @@ export const Footer = ({ links }: FooterProps) => {
       <nav className="mx-2 flex w-full max-w-5xl flex-col items-center justify-between lg:flex-row">
         <Link
           /* TODO: #318 Ajustar los estilos en links del Footer */
-          className={`rounded-sm border-[3px] border-transparent p-1 outline-none ${focusClasses}`}
+          className="rounded-sm border-[3px] border-transparent p-1 outline-none"
           aria-label="Home"
           href={"/"}
         >
@@ -52,7 +45,7 @@ export const FooterItem = ({ children, route, ...props }: FooterLinkProps) => {
     <li key={route} className="pb-5 lg:pb-0" {...props}>
       <Link
         /* TODO: #318 Ajustar los estilos en links del Footer */
-        className={`rounded-sm border-[3px] border-transparent p-1 outline-none hover:underline ${disabledClasses} ${textClasses} ${focusClasses}`}
+        className="rounded-sm border-[3px] border-transparent p-1 outline-none hover:underline"
         data-text={children}
         href={route}
       >
