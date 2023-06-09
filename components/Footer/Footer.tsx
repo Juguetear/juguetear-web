@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { Logo } from "../Logo/Logo";
-
 import { FooterLink } from "types/layout-schema-types";
 
 interface FooterLinkProps extends React.HTMLProps<HTMLLIElement> {
@@ -22,7 +21,7 @@ export const Footer = ({ links }: FooterProps) => {
       <nav className="mx-2 flex w-full max-w-5xl flex-col items-center justify-between lg:flex-row">
         <Link
           /* TODO: #318 Ajustar los estilos en links del Footer */
-          className="rounded-sm border-[3px] border-transparent p-1 outline-none"
+          className="link rounded-sm border-[3px] border-transparent p-1 outline-none"
           aria-label="Home"
           href={"/"}
         >
@@ -45,7 +44,7 @@ export const FooterItem = ({ children, route, ...props }: FooterLinkProps) => {
     <li key={route} className="pb-5 lg:pb-0" {...props}>
       <Link
         /* TODO: #318 Ajustar los estilos en links del Footer */
-        className="rounded-sm border-[3px] border-transparent p-1 outline-none hover:underline"
+        className="link rounded-sm border-[3px] border-transparent p-1 outline-none hover:underline"
         data-text={children}
         href={route}
       >
