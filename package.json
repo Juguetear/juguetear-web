@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.7",
-    "@portabletext/react": "^2.0.2",
+    "@portabletext/react": "^3.0.0",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.8.0",
     "get-youtube-id": "^1.0.1",

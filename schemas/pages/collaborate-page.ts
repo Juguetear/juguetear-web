@@ -31,10 +31,10 @@ const collaboratePage = defineType({
       ],
     }),
     defineField({
-      name: "sections",
-      title: "Lista de secciones sobre cómo colaborar con el proyecto",
+      name: "description",
+      title: "Descripción sobre cómo colaborar con el proyecto",
       description:
-        "Este listado se mostrará en la página web. Para ordenar el listado, haga click en el primer ícono de la izquierda y arrastre la sección a la posición deseada.",
+        "Acá podrás editar el contenido que se mostrará en esta sección.",
       type: "content",
     }),
   ],
