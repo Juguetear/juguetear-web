@@ -1,3 +1,4 @@
+import { ProjectParticipants } from "components/ProjectParticipants/ProjectParticipants";
 import { TeamMemberProps } from "components/TeamMember/TeamMember";
 import { client } from "lib/client";
 
@@ -6,8 +7,7 @@ async function Page() {
 
   return (
     <>
-      {/* TODO: #319 Agregar seccion "Quienes participan en el proyecto" */}
-      <pre>{JSON.stringify(members, null, 2)}</pre>
+      <ProjectParticipants {...members} />
     </>
   );
 }
