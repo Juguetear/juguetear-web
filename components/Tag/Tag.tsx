@@ -11,7 +11,7 @@ export const Tag = ({ label, onClick }: TagProps) => {
   }
 
   const liStyle =
-    "w-fit max-w-[9.5rem] bg-gray-light text-blue fill-blue rounded-[14px] border-2 border-transparent focus-within:border-white focus-within:shadow-md";
+    "w-fit max-w-[10rem] bg-gray-light text-blue fill-blue rounded-[14px] border-2 border-transparent focus-within:border-white focus-within:shadow-md";
 
   return (
     <li className={liStyle}>
@@ -24,7 +24,7 @@ export const Tag = ({ label, onClick }: TagProps) => {
         <span className="ml-2 pr-1">
           <XMark />
         </span>
-        <span className="ml-1 mr-4 whitespace-normal break-all border-l border-gray pl-2 font-outfit">
+        <span className="ml-1 mr-4 whitespace-normal break-words border-l border-gray pl-2 font-outfit">
           {label}
         </span>
       </button>
