@@ -1,5 +1,5 @@
 import { Navbar } from "components/Navbar/Navbar";
-import { client } from "lib/client";
+import { client } from "lib/sanity-client";
 import { groq } from "next-sanity";
 import type { LayoutSchema } from "types/layout-schema-types";
 

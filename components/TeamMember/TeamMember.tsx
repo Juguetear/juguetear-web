@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Link } from "../Link/Link";
 import { ContactLink, Img } from "types/layout-schema-types";
-import { urlFor } from "lib/client";
+import { urlFor } from "lib/sanity-client";
 
 export interface TeamMemberProps {
   _id: string;

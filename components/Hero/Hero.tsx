@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Link } from "components/Link/Link";
 import { CTA, Photo } from "types/layout-schema-types";
-import { urlFor } from "lib/client";
+import { urlFor } from "lib/sanity-client";
 
 export interface HeroSection extends React.HTMLProps<HTMLElement> {
   cta: CTA;

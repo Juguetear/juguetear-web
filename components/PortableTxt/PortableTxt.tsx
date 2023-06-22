@@ -2,7 +2,7 @@ import {
   PortableText,
   type PortableTextReactComponents,
 } from "@portabletext/react";
-import { urlFor } from "lib/client";
+import { urlFor } from "lib/sanity-client";
 import Image from "next/image";
 import Link from "next/link";
 import { type TypedObject } from "sanity";
