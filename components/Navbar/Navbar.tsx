@@ -2,8 +2,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import type { NavbarLink } from "types/layout";
 import { Logo } from "../Logo/Logo";
-import { NavbarLink } from "types/layout-schema-types";
 
 interface NavbarLinkProps extends React.HTMLProps<HTMLLIElement> {
   route: string;

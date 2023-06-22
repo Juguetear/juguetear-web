@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { Logo } from "../Logo/Logo";
 
-import { FooterLink } from "types/layout-schema-types";
+import type { FooterLink } from "types/layout";
 
 interface FooterLinkProps extends React.HTMLProps<HTMLLIElement> {
   route: string;

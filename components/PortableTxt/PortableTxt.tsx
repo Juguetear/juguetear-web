@@ -6,15 +6,7 @@ import { urlFor } from "lib/sanity-client";
 import Image from "next/image";
 import Link from "next/link";
 import { type TypedObject } from "sanity";
-
-interface Image {
-  altText: string;
-  _key: string;
-  asset: {
-    _ref: string;
-    _type: string;
-  };
-}
+import type { SanityImage } from "types/common";
 
 const customComponents: Partial<PortableTextReactComponents> = {
   block: {
@@ -31,7 +23,7 @@ const customComponents: Partial<PortableTextReactComponents> = {
       const lengthArr = value.images.length;
 
       if (lengthArr === 1) {
-        const { altText, asset } = value.images[0];
+        const { altText, asset, placeholder } = value.images[0];
         return (
           <Image
             src={urlFor(asset).auto("format").url()}
@@ -39,6 +31,8 @@ const customComponents: Partial<PortableTextReactComponents> = {
             width={860}
             height={485}
             className="my-10 rounded"
+            placeholder="blur"
+            blurDataURL={placeholder}
           />
         );
       }
@@ -49,13 +43,15 @@ const customComponents: Partial<PortableTextReactComponents> = {
             "mb-4 flex flex-col items-center gap-4 lg:flex-row lg:gap-5"
           }
         >
-          {value.images.map((img: Image) => (
-            <div key={img._key} className="rounded">
+          {value.images.map((img: SanityImage) => (
+            <div key={img.asset._ref} className="rounded">
               <Image
                 src={urlFor(img.asset).auto("format").url()}
                 width={420}
                 height={240}
                 alt={img.altText}
+                placeholder="blur"
+                blurDataURL={img.placeholder}
               />
             </div>
           ))}
