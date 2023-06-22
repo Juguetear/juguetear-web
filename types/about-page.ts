@@ -11,7 +11,7 @@ export interface TeamMember {
   surname: string;
   pronouns: string;
   role: string;
-  image: SanityImage;
+  image?: SanityImage;
   contactLinks: ContactLink[];
 }
 
