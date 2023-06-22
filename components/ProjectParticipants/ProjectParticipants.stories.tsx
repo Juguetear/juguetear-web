@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { TeamMemberProps } from "components/TeamMember/TeamMember";
+import type { TeamMember as TeamMemberProps } from "types/about-page";
 import { ProjectParticipants } from "./ProjectParticipants";
 
 const members: TeamMemberProps[] = [
@@ -10,8 +10,12 @@ const members: TeamMemberProps[] = [
     pronouns: "Él",
     role: "Coordenador",
     contactLinks: [
-      { name: "Linkedin", url: "https://linkedin.com/in/joao-silva" },
-      { name: "Instagram", url: "https://instagram.com/joao-silva" },
+      {
+        _key: "1",
+        name: "Linkedin",
+        url: "https://linkedin.com/in/joao-silva",
+      },
+      { _key: "2", name: "Instagram", url: "https://instagram.com/joao-silva" },
     ],
   },
   {
@@ -21,8 +25,16 @@ const members: TeamMemberProps[] = [
     pronouns: "Ella",
     role: "Desarrollador",
     contactLinks: [
-      { name: "Linkedin", url: "https://linkedin.com/in/maria-santos" },
-      { name: "Instagram", url: "https://instagram.com/maria-santos" },
+      {
+        _key: "1",
+        name: "Linkedin",
+        url: "https://linkedin.com/in/maria-santos",
+      },
+      {
+        _key: "2",
+        name: "Instagram",
+        url: "https://instagram.com/maria-santos",
+      },
     ],
   },
 ];
