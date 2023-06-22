@@ -2,6 +2,8 @@ import { Logo } from "components/Logo/Logo";
 import Image from "next/image";
 
 function Home() {
+  // TODO: #329 Agregar fetch para 'homePage' y el componente Hero.
+
   const StyledLink = ({
     href,
     children,
@@ -66,6 +68,15 @@ function Home() {
         </a>
       </footer>
     </div>
+  );
+
+  return (
+    <>
+      {/* TODO: Agregar la sección "Hero" */}
+      {/* <pre className="max-w-prose">
+        {JSON.stringify(heroSection, null, 2)}
+      </pre> */}
+    </>
   );
 }
 
