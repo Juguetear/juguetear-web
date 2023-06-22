@@ -8,7 +8,7 @@ async function Page() {
 
   return (
     <>
-      <ProjectParticipants {...members} />
+      <ProjectParticipants {...team} />
     </>
   );
 }
