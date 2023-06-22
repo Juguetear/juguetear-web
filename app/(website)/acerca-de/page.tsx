@@ -1,9 +1,10 @@
 import { ProjectParticipants } from "components/ProjectParticipants/ProjectParticipants";
-import { TeamMemberProps } from "components/TeamMember/TeamMember";
 import { client } from "lib/sanity-client";
+import { aboutPageQuery } from "lib/sanity-queries";
+import type { AboutPage } from "types/about-page";
 
 async function Page() {
-  const members: TeamMemberProps[] = await client.fetch(`*[_type == 'member']`);
+  const { content, team } = await client.fetch<AboutPage>(aboutPageQuery);
 
   return (
     <>

@@ -13,7 +13,6 @@ export interface HomePage {
 }
 
 export interface HeroSection {
-  _id: string;
   title: string;
   description: string;
   cta: CallToAction;

@@ -1,17 +1,7 @@
 import { urlFor } from "lib/sanity-client";
 import Image from "next/image";
-import type { CallToAction, SanityImage } from "types/common";
+import type { TeamMember as TeamMemberProps } from "types/about-page";
 import { Link } from "../Link/Link";
-
-export interface TeamMemberProps {
-  _id: string;
-  image?: SanityImage;
-  name: string;
-  surname: string;
-  pronouns: string;
-  role: string;
-  contactLinks: CallToAction[];
-}
 
 export const TeamMember = ({
   name,
