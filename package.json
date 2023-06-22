@@ -12,7 +12,7 @@
     "postinstall": "husky install"
   },
   "engines": {
-    "node": ">=16.8.0"
+    "node": ">=18.x"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.7",
