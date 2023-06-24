@@ -1,5 +1,5 @@
-import React from "react";
-import { TeamMember, TeamMemberProps } from "components/TeamMember/TeamMember";
+import { TeamMember } from "components/TeamMember/TeamMember";
+import type { TeamMember as TeamMemberProps } from "types/about-page";
 
 export const ProjectParticipants = (members: TeamMemberProps[]) => {
   return (

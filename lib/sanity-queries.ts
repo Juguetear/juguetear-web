@@ -49,3 +49,10 @@ export const homePageQuery = groq`
     }
   }
 `;
+
+export const aboutPageQuery = groq`
+  *[_type == 'aboutPage'][0] {
+    ...,
+    team[] ->
+  }
+`;
