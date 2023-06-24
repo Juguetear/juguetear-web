@@ -8,6 +8,8 @@ async function Page() {
 
   return (
     <>
+      {/* TODO: #336 Agregar sección "Sobre el proyecto" y agregar componente `PortableTxt` */}
+
       <ProjectParticipants {...team} />
     </>
   );
