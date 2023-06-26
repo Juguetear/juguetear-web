@@ -12,7 +12,7 @@ interface FooterProps extends Partial<React.HTMLProps<HTMLElement>> {
 }
 
 const linkStyles =
-  "link rounded-sm border-2 border-transparent p-1 text-white focus:text-white hover:text-white focus:ring focus:ring-white";
+  "link rounded-sm p-1 text-white focus:text-white hover:text-white focus:ring focus:ring-white";
 
 export const Footer = ({ links }: FooterProps) => {
   return (
