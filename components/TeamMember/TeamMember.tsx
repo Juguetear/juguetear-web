@@ -1,18 +1,7 @@
-import React from "react";
+import { urlFor } from "lib/sanity-client";
 import Image from "next/image";
+import type { TeamMember as TeamMemberProps } from "types/about-page";
 import { Link } from "../Link/Link";
-import { ContactLink, Img } from "types/layout-schema-types";
-import { urlFor } from "lib/client";
-
-export interface TeamMemberProps {
-  _id: string;
-  image?: Img;
-  name: string;
-  surname: string;
-  pronouns: string;
-  role: string;
-  contactLinks: ContactLink[];
-}
 
 export const TeamMember = ({
   name,

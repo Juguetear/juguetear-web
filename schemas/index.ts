@@ -8,6 +8,7 @@ import page from "./pages/page";
 
 import content from "schemas/shared/content";
 import image from "schemas/shared/img";
+import images from "./shared/images";
 import link from "schemas/shared/link";
 import video from "schemas/shared/video";
 import relativeUrl from "./shared/relative-url";
@@ -31,6 +32,7 @@ const schemas = [
 
   content,
   image,
+  images,
   link,
   relativeUrl,
   video,

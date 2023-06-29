@@ -11,8 +11,12 @@ const meta = {
     pronouns: "Él",
     role: "Capitan",
     contactLinks: [
-      { name: "Instagram", url: "https://instagram.com/miguel-perez" },
-      { name: "Linkedin", url: "https://linkedin.com/miguel-perez" },
+      {
+        _key: "1",
+        name: "Instagram",
+        url: "https://instagram.com/miguel-perez",
+      },
+      { _key: "2", name: "Linkedin", url: "https://linkedin.com/miguel-perez" },
     ],
   },
 } satisfies Meta<typeof TeamMember>;

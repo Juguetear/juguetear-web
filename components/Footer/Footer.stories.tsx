@@ -1,6 +1,6 @@
-import { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react";
+import type { FooterLink } from "types/layout";
 import { Footer } from "./Footer";
-import { FooterLink } from "types/layout-schema-types";
 
 const exampleLinks: FooterLink[] = [
   { name: "Home", url: "/" },

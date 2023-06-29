@@ -18,7 +18,9 @@
   h2 {
     @apply text-xl md:text-3xl;
   }
-  h3,
+  h3 {
+    @apply text-xl font-bold;
+  }
   h4,
   h5,
   h6 {

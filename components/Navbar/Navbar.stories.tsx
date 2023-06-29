@@ -1,6 +1,6 @@
-import { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react";
+import type { NavbarLink } from "types/layout";
 import { Navbar } from "./Navbar";
-import { NavbarLink } from "types/layout-schema-types";
 
 const exampleLinks: NavbarLink[] = [
   { name: "Juguetes", url: "/juguetes" },

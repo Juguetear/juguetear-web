@@ -1,3 +1,4 @@
+// TODO: #330 Refactor componente "Card"
 import { Button } from "components/Button/Button";
 import { Logo } from "components/Logo/Logo";
 import { State } from "components/State/State";
@@ -10,6 +11,7 @@ export interface CardProps {
   description: string;
   link: string;
 }
+// TODO: Extender o usar el type 'Toy'.
 export const Card = ({
   image,
   title,
@@ -18,12 +20,14 @@ export const Card = ({
   link,
 }: CardProps) => {
   return (
-    <div className=" rounded m-4 max-w-xs space-y-4 border p-6">
+    <div className="m-4 max-w-xs space-y-4 rounded border p-6">
+      {/* TODO: EL color y weight (en global.css) no es igual al de los diseños. */}
       <h3 className="border-b border-gray-light pb-2 font-bold text-darkblue">
         {title}
       </h3>
+      {/* TODO: Usar una de las funciones helper 'imgUrlFrom' o 'forUrl' para la imagen. */}
       {image?.src ? (
-        <div className="rounded relative border">
+        <div className="relative aspect-video rounded border">
           <Image fill sizes="33vw" src={image?.src} alt={image?.alt} />
         </div>
       ) : (
@@ -42,7 +46,7 @@ export const Card = ({
         </div>
       )}
       <State available={available} />
-      <p className="font-medium text-darkblue">{description}</p>
+      {/* TODO: Remover el comp. Button y agregar el comp. Link y estilos para el estado `disabled` */}
       <Button appearance="button" disabled={available ? false : true}>
         <a href={link}>Pedir juguete</a>
       </Button>
