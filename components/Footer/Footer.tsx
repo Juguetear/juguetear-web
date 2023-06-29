@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { Logo } from "../Logo/Logo";
-
 import type { FooterLink } from "types/layout";
 
 interface FooterLinkProps extends React.HTMLProps<HTMLLIElement> {
@@ -12,12 +11,8 @@ interface FooterProps extends Partial<React.HTMLProps<HTMLElement>> {
   links: FooterLink[];
 }
 
-const textClasses =
-  "font-outfit lg:text-base text-center font-semibold text-white";
-
-const focusClasses = "focus:shadow-md focus:border-white focus:border-[3px]";
-
-const disabledClasses = "disabled:cursor-not-allowed disabled:bg-gray";
+const linkStyles =
+  "link rounded-sm p-1 text-white focus:text-white hover:text-white focus:ring focus:ring-white";
 
 export const Footer = ({ links }: FooterProps) => {
   return (
@@ -27,12 +22,7 @@ export const Footer = ({ links }: FooterProps) => {
       data-testid="footer"
     >
       <nav className="mx-2 flex w-full max-w-5xl flex-col items-center justify-between lg:flex-row">
-        <Link
-          /* TODO: #318 Ajustar los estilos en links del Footer */
-          className={`rounded-sm border-[3px] border-transparent p-1 outline-none ${focusClasses}`}
-          aria-label="Home"
-          href={"/"}
-        >
+        <Link className={linkStyles} aria-label="Home" href={"/"}>
           <Logo className="h-auto w-20 md:w-24" darkBackground />
         </Link>
         <ul className="flex w-10/12 flex-col items-center justify-around pt-8 text-center md:block md:columns-2 lg:flex lg:flex-row lg:pt-0">
@@ -50,12 +40,7 @@ export const Footer = ({ links }: FooterProps) => {
 export const FooterItem = ({ children, route, ...props }: FooterLinkProps) => {
   return (
     <li key={route} className="pb-5 lg:pb-0" {...props}>
-      <Link
-        /* TODO: #318 Ajustar los estilos en links del Footer */
-        className={`rounded-sm border-[3px] border-transparent p-1 outline-none hover:underline ${disabledClasses} ${textClasses} ${focusClasses}`}
-        data-text={children}
-        href={route}
-      >
+      <Link className={linkStyles} data-text={children} href={route}>
         {children}
       </Link>
     </li>
