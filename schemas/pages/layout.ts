@@ -5,7 +5,8 @@ const layout = defineType({
   title: "Layout de la website",
   name: "layout",
   type: "document",
-  icon: DashboardIcon,
+  // @ts-expect-error Wrong type
+  icon: DashboardIcon as unknown,
   fields: [
     defineField({
       title: "Navbar Links",

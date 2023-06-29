@@ -5,7 +5,8 @@ const characteristics = defineType({
   name: "characteristic",
   title: "Características",
   type: "document",
-  icon: EditIcon,
+  // @ts-expect-error Wrong type
+  icon: EditIcon as unknown,
   fields: [
     defineField({
       name: "name",

@@ -6,7 +6,8 @@ const page = defineType({
   title: "Pages",
   name: "page",
   type: "document",
-  icon: DocumentsIcon,
+  // @ts-expect-error Wrong type
+  icon: DocumentsIcon as unknown,
   fields: [
     defineField({
       name: "title",

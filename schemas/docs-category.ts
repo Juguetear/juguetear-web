@@ -5,7 +5,8 @@ const docsCategory = defineType({
   title: "Categorías de documentos",
   name: "docsCategory",
   type: "document",
-  icon: DocumentsIcon,
+  // @ts-expect-error Wrong type
+  icon: DocumentsIcon as unknown,
   fields: [
     defineField({
       title: "Categoría",

@@ -5,7 +5,8 @@ const CharacteristicsList = defineType({
   name: "characteristicsCategory",
   title: "Categorías de características",
   type: "document",
-  icon: MenuIcon,
+  // @ts-expect-error Wrong type
+  icon: MenuIcon as unknown,
   fields: [
     defineField({
       name: "name",

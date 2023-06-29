@@ -5,7 +5,8 @@ const aboutPage = defineType({
   name: "aboutPage",
   title: "Acerca del proyecto",
   type: "document",
-  icon: UserIcon,
+  // @ts-expect-error Wrong type
+  icon: UserIcon as unknown,
   preview: {
     prepare: () => ({ title: "Información sobre el proyecto." }),
   },

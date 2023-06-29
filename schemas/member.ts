@@ -5,7 +5,8 @@ const member = defineType({
   name: "member",
   title: "Team Member",
   type: "document",
-  icon: UserIcon,
+  // @ts-expect-error Wrong type
+  icon: UserIcon as unknown,
   preview: {
     select: { title: "name", media: "image" },
   },

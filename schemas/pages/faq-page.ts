@@ -5,7 +5,8 @@ const faqPage = defineType({
   title: "Preguntas y respuestas frequentes",
   name: "faqPage",
   type: "document",
-  icon: DocumentIcon,
+  // @ts-expect-error Wrong type
+  icon: DocumentIcon as unknown,
   fields: [
     defineField({
       name: "title",
@@ -25,7 +26,8 @@ const faqPage = defineType({
       type: "array",
       of: [
         defineArrayMember({
-          icon: DocumentIcon,
+          // @ts-expect-error Wrong type
+          icon: DocumentIcon as unknown,
           name: "faq",
           type: "object",
           fields: [

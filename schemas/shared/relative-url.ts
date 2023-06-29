@@ -5,7 +5,8 @@ const relativeUrl = defineType({
   title: "URL relativa",
   name: "relativeUrl",
   type: "object",
-  icon: LinkIcon,
+  // @ts-expect-error Wrong type
+  icon: LinkIcon as unknown,
   fields: [
     defineField({
       title: "Nombre para URL",
