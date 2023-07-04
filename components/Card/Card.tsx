@@ -20,7 +20,7 @@ export const Card = ({
   link,
 }: CardProps) => {
   return (
-    <div className="m-4 max-w-xs space-y-4 rounded border p-6">
+    <div className="w-full flex-grow space-y-4 justify-self-stretch rounded border p-6 lg:max-w-xs">
       {/* TODO: EL color y weight (en global.css) no es igual al de los diseños. */}
       <h3 className="border-b border-gray-light pb-2 font-bold text-darkblue">
         {title}
@@ -31,7 +31,7 @@ export const Card = ({
           <Image fill sizes="33vw" src={image?.src} alt={image?.alt} />
         </div>
       ) : (
-        <div className="flex h-full w-full flex-col items-center justify-center rounded bg-white-blue">
+        <div className="flex w-full flex-col items-center justify-center rounded bg-white-blue">
           <Logo
             style={{ transform: "translateY(10px)" }}
             hideBrandname={true}
