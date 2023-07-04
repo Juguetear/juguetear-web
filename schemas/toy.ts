@@ -18,6 +18,12 @@ const toy = defineType({
       description: "Completar con el nombre del juguete.",
     }),
     defineField({
+      name: "shortDescription",
+      type: "string",
+      title: "Descripción corta del juguete.",
+      description: "Completar con una descripción corta del juguete.",
+    }),
+    defineField({
       name: "highlight",
       title: "Destacar",
       type: "boolean",

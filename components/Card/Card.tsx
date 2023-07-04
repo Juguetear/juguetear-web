@@ -46,6 +46,7 @@ export const Card = ({
         </div>
       )}
       <State available={available} />
+      <p className="pt-1 text-sm">{description}</p>
       {/* TODO: Remover el comp. Button y agregar el comp. Link y estilos para el estado `disabled` */}
       <Button appearance="button" disabled={available ? false : true}>
         <a href={link}>Pedir juguete</a>

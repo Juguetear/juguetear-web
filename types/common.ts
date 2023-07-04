@@ -4,6 +4,7 @@ export interface Toy {
   _id: string;
   slug: Slug;
   name: string;
+  shortDescription: string;
   description: PortableTextContent[];
   characteristics: Characteristic[];
   images: SanityImage[];
