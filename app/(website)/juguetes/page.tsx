@@ -19,7 +19,7 @@ async function Page() {
               key={toy._id}
               title={toy.name}
               available={toy.isAvailable}
-              description=""
+              description={toy.shortDescription}
               link=""
             />
           ))}
