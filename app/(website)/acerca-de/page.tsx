@@ -9,7 +9,11 @@ async function Page() {
 
   return (
     <>
-      <PortableTxt content={content} />
+      <section className="flex flex-col items-center">
+        <div className="m-8 max-w-3xl">
+          <PortableTxt content={content} />
+        </div>
+      </section>
       <ProjectParticipants {...team} />
     </>
   );
