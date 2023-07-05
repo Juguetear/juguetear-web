@@ -24,7 +24,7 @@
   h4,
   h5,
   h6 {
-    @apply text-lg md:text-3xl;
+    @apply text-lg font-bold;
   }
 }
 
