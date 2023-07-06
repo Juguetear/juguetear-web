@@ -26,7 +26,7 @@ export const LoanRequestForm = () => {
             Completá los datos del formulario.
           </h4>
           <p className="mb-16">Los campos con * son obligatorios</p>
-          <p className="mb-8 border-b border-blue pb-4 font-outfit font-medium text-blue">
+          <p className="mb-8 border-b border-blue pb-4 font-outfit font-medium text-blue md:border-none">
             Datos del adulto responsable
           </p>
           <Input
@@ -135,7 +135,7 @@ export const LoanRequestForm = () => {
             type="url"
             required
           />
-          <p className="mb-8 mt-6 border-b border-blue pb-4 font-outfit font-medium text-blue">
+          <p className="mb-8 mt-6 border-b border-blue pb-4 font-outfit font-medium text-blue md:border-none">
             Datos del niño o niña
           </p>
           <Input
