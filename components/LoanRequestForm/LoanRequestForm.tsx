@@ -6,7 +6,7 @@ import { Link } from "components/Link/Link";
 
 export const LoanRequestForm = () => {
   return (
-    <section className="p-10">
+    <section className="py-5 md:py-10">
       <div className="mx-auto max-w-3xl">
         <h3 className="mb-8 text-center">
           Formulario para solicitar el préstamo
