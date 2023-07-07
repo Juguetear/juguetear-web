@@ -5,7 +5,7 @@ import React from "react";
 
 export const Escribinos = () => {
   return (
-    <section className="p-10">
+    <section className="py-5 md:py-10">
       <div className="mx-auto max-w-3xl">
         <h2 className="mb-8 text-center">Escribinos</h2>
         <p className="mb-8 text-center">
