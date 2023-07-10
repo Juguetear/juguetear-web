@@ -1,3 +1,5 @@
+import { LoanRequestForm } from "components/LoanRequestForm/LoanRequestForm";
+
 interface Props {
   params: {
     slug: string;
@@ -9,7 +11,7 @@ async function Page({ params: { slug } }: Props) {
 
   return (
     <>
-      {/* TODO: #333 Crear (maquetar) sección/formulario "Formulario para solicitar el préstamo" */}
+      <LoanRequestForm />
     </>
   );
 }
