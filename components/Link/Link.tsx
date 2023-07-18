@@ -12,6 +12,8 @@ interface LinkProps
   extends Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, "href">,
     NextLinkProps {
   appearance: appearances;
+  children: string;
+  disabled: boolean;
 }
 
 export const Link: React.FC<LinkProps> = ({

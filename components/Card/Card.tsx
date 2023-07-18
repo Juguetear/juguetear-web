@@ -1,34 +1,33 @@
-// TODO: #330 Refactor componente "Card"
-import { Button } from "components/Button/Button";
+import { Link } from "components/Link/Link";
 import { Logo } from "components/Logo/Logo";
 import { State } from "components/State/State";
 import Image from "next/image";
+import { Toy } from "types/common";
+import { urlFor } from "../../lib/sanity-client";
 
-export interface CardProps {
+export interface CardProps extends Toy {
   image?: { src: string; alt: string };
   title: string;
   available: boolean;
-  description: string;
   link: string;
 }
-// TODO: Extender o usar el type 'Toy'.
-export const Card = ({
-  image,
-  title,
-  available,
-  description,
-  link,
-}: CardProps) => {
+
+export const Card = ({ image, title, available, link }: CardProps) => {
   return (
     <div className="m-4 max-w-xs space-y-4 rounded border p-6">
       {/* TODO: EL color y weight (en global.css) no es igual al de los diseños. */}
-      <h3 className="border-b border-gray-light pb-2 font-bold text-darkblue">
+      <h3 className="border-b border-gray-light pb-2 font-bold text-blue">
         {title}
       </h3>
-      {/* TODO: Usar una de las funciones helper 'imgUrlFrom' o 'forUrl' para la imagen. */}
+
       {image?.src ? (
         <div className="relative aspect-video rounded border">
-          <Image fill sizes="33vw" src={image?.src} alt={image?.alt} />
+          <Image
+            fill
+            sizes="33vw"
+            src={urlFor(image?.src).width(528).url()}
+            alt={image?.alt}
+          />
         </div>
       ) : (
         <div className="flex h-full w-full flex-col items-center justify-center rounded bg-white-blue">
@@ -46,10 +45,10 @@ export const Card = ({
         </div>
       )}
       <State available={available} />
-      {/* TODO: Remover el comp. Button y agregar el comp. Link y estilos para el estado `disabled` */}
-      <Button appearance="button" disabled={available ? false : true}>
-        <a href={link}>Pedir juguete</a>
-      </Button>
+
+      <Link href={link} appearance="button" disabled={available ? false : true}>
+        Pedir juguete
+      </Link>
     </div>
   );
 };
