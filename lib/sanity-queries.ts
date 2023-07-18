@@ -56,3 +56,6 @@ export const aboutPageQuery = groq`
     team[] ->
   }
 `;
+
+export const toyQuery = groq`
+  *[_type == 'toy']`;

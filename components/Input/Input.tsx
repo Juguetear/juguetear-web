@@ -11,6 +11,8 @@ interface InputProps
     | "required"
     | "className"
     | "disabled"
+    | "placeholder"
+    | "pattern"
   > {
   error?: boolean;
   label: string;
@@ -31,7 +33,7 @@ const Input = ({
   }`;
   const inputStyles = `w-full py-[0.68rem] rounded p-2 ring-1 mt-[0.44rem]
   focus-visible:ring-[3px] outline-none ring-inset focus-visible:shadow-md focus-visible:bg-blue-light focus:ring-orange 
-  disabled:ring-gray-dark disabled:bg-gray-light ${
+  disabled:ring-gray-dark disabled:bg-gray-light placeholder:text-gray-dark placeholder:text-sm ${
     error ? "ring-2 ring-red font-bold" : "ring-blue"
   }`;
   const svgStyles = `absolute right-5 top-11 ${error ? "block" : "hidden"}`;

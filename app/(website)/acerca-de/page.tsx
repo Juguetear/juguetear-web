@@ -1,4 +1,5 @@
 import { ProjectParticipants } from "components/ProjectParticipants/ProjectParticipants";
+import { PortableTxt } from "components/PortableTxt/PortableTxt";
 import { client } from "lib/sanity-client";
 import { aboutPageQuery } from "lib/sanity-queries";
 import type { AboutPage } from "types/about-page";
@@ -8,8 +9,11 @@ async function Page() {
 
   return (
     <>
-      {/* TODO: #336 Agregar sección "Sobre el proyecto" y agregar componente `PortableTxt` */}
-
+      <section>
+        <div className="mx-auto max-w-3xl p-4">
+          <PortableTxt content={content} />
+        </div>
+      </section>
       <ProjectParticipants {...team} />
     </>
   );

@@ -1,8 +1,12 @@
+import { Hero } from "components/Hero/Hero";
 import { Logo } from "components/Logo/Logo";
+import { client } from "lib/sanity-client";
+import { homePageQuery } from "lib/sanity-queries";
 import Image from "next/image";
+import { HomePage } from "types/home-page";
 
-function Home() {
-  // TODO: #329 Agregar fetch para 'homePage' y el componente Hero.
+async function Home() {
+  const { heroSection } = await client.fetch<HomePage>(homePageQuery);
 
   const StyledLink = ({
     href,
@@ -55,7 +59,7 @@ function Home() {
           de este proyecto.
         </p>
       </main>
-
+      <Hero {...heroSection} />
       <footer>
         <a
           className="flex items-center justify-center gap-2"
@@ -68,15 +72,6 @@ function Home() {
         </a>
       </footer>
     </div>
-  );
-
-  return (
-    <>
-      {/* TODO: Agregar la sección "Hero" */}
-      {/* <pre className="max-w-prose">
-        {JSON.stringify(heroSection, null, 2)}
-      </pre> */}
-    </>
   );
 }
 
