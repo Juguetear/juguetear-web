@@ -15,7 +15,6 @@ export interface CardProps extends Toy {
 export const Card = ({ image, title, available, link }: CardProps) => {
   return (
     <div className="w-full flex-grow space-y-4 justify-self-stretch rounded border p-6 lg:max-w-xs">
-      {/* TODO: EL color y weight (en global.css) no es igual al de los diseños. */}
       <h3 className="border-b border-gray-light pb-2 font-bold text-blue">
         {title}
       </h3>
@@ -48,7 +47,10 @@ export const Card = ({ image, title, available, link }: CardProps) => {
       
       <p className="pt-1 text-sm">{description}</p>
 
-      <Link href={link} appearance="button" disabled={available ? false : true}>
+      <Link
+        href={available ? link : "#"}
+        appearance={available ? "button" : "disabled"}
+      >
         Pedir juguete
       </Link>
         
