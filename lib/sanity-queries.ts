@@ -59,3 +59,6 @@ export const aboutPageQuery = groq`
 
 export const toyQuery = groq`
   *[_type == 'toy']`;
+
+export const toySlugQuery = groq`
+  *[_type == 'toy' && slug.current == $slug]`;
