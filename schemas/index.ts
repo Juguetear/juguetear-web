@@ -18,6 +18,8 @@ import characteristicsCategory from "schemas/characteristics-category";
 import doc from "schemas/doc";
 import docsCategory from "schemas/docs-category";
 import member from "schemas/member";
+import message from "schemas/message";
+
 import toy from "schemas/toy";
 
 const schemas = [
@@ -42,6 +44,7 @@ const schemas = [
   doc,
   docsCategory,
   member,
+  message,
   toy,
 ];
 
