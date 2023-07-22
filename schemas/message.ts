@@ -12,16 +12,22 @@ const message = defineType({
       name: "name",
       title: "*Nombre completo",
       type: "string",
+      validation: (Rule) =>
+        Rule.required().regex(
+          /^[A-Za-zñÑáÁéÉíÍóÓúÚ]+( [A-Za-zñÑáÁéÉíÍóÓúÚ]+)*$/
+        ),
     }),
     defineField({
       name: "email",
       title: "*Email",
       type: "string",
+      validation: (Rule) => Rule.required().email(),
     }),
     defineField({
       name: "body",
       title: "*Mensaje",
       type: "text",
+      validation: (Rule) => Rule.required(),
     }),
   ],
 });
