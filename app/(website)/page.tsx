@@ -65,6 +65,12 @@ async function Home() {
         </p>
       </main>
       <Hero {...heroSection} />
+
+      {/* TODO: #353 Agregar (maquetar) sección "Sobre el proyecto" */}
+      {/* {JSON.stringify(twoImagesSection)} */}
+
+      {/* TODO: #354 Agregar (maquetar) sección "Cómo puedo colaborar" */}
+      {/* {JSON.stringify(cooperateSection)} */}
       <footer>
         <a
           className="flex items-center justify-center gap-2"
