@@ -6,7 +6,12 @@ import Image from "next/image";
 import { HomePage } from "types/home-page";
 
 async function Home() {
-  const { heroSection } = await client.fetch<HomePage>(homePageQuery);
+  const {
+    heroSection,
+    twoImagesSection,
+    featuredToysSection,
+    cooperateSection,
+  } = await client.fetch<HomePage>(homePageQuery);
 
   const StyledLink = ({
     href,
