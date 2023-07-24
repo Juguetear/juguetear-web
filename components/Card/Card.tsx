@@ -1,31 +1,38 @@
+import Image from "next/image";
 import { Link } from "components/Link/Link";
 import { Logo } from "components/Logo/Logo";
 import { State } from "components/State/State";
-import Image from "next/image";
-import { Toy } from "types/common";
-import { urlFor } from "../../lib/sanity-client";
+import { urlFor } from "lib/sanity-client";
+import type { SanityImage } from "types/common";
 
-export interface CardProps extends Toy {
-  image?: { src: string; alt: string };
+export interface CardProps {
+  image: SanityImage;
   title: string;
   available: boolean;
   link: string;
+  description: string;
 }
 
-export const Card = ({ image, title, available, link }: CardProps) => {
+export const Card = ({
+  image,
+  title,
+  available,
+  link,
+  description,
+}: CardProps) => {
   return (
     <div className="w-full flex-grow space-y-4 justify-self-stretch rounded border p-6 lg:max-w-xs">
       <h3 className="border-b border-gray-light pb-2 font-bold text-blue">
         {title}
       </h3>
 
-      {image?.src ? (
+      {image !== undefined ? (
         <div className="relative aspect-video rounded border">
           <Image
             fill
             sizes="33vw"
-            src={urlFor(image?.src).width(528).url()}
-            alt={image?.alt}
+            src={urlFor(image).width(528).url()}
+            alt={image?.altText}
           />
         </div>
       ) : (
@@ -44,7 +51,7 @@ export const Card = ({ image, title, available, link }: CardProps) => {
         </div>
       )}
       <State available={available} />
-      
+
       <p className="pt-1 text-sm">{description}</p>
 
       <Link
@@ -53,7 +60,6 @@ export const Card = ({ image, title, available, link }: CardProps) => {
       >
         Pedir juguete
       </Link>
-        
     </div>
   );
 };
