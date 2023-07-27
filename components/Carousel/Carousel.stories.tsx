@@ -120,18 +120,18 @@ export const FullScreenCarousel = () => {
     <Carousel isFullWidth>
       {mockInnerImages.map((image, index) => {
         return (
-          <div className="aspect-video rounded lg:max-w-4xl" key={index}>
-            <Image
-              src={image.src}
-              alt={image.alt}
-              width={0}
-              height={0}
-              style={{
-                width: "100%",
-                maxHeight: "520px",
-              }}
-            />
-          </div>
+          <Image
+            key={index}
+            className="mx-auto aspect-video rounded lg:max-w-4xl"
+            src={image.src}
+            alt={image.alt}
+            width={0}
+            height={0}
+            style={{
+              width: "100%",
+              maxHeight: "520px",
+            }}
+          />
         );
       })}
     </Carousel>
