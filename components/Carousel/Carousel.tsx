@@ -8,9 +8,10 @@ import { ArrowButton } from "components/ArrowButton/ArrowButton";
 
 interface CarouselData {
   children: React.ReactNode;
+  isFullWidth?: boolean;
 }
 
-const Carousel = ({ children }: CarouselData) => {
+const Carousel = ({ children, isFullWidth }: CarouselData) => {
   const childrenArray = React.Children.toArray(children);
   const breakpointsConfig = {
     768: {
@@ -37,7 +38,7 @@ const Carousel = ({ children }: CarouselData) => {
           nextSlideMessage: "Pasar al slide siguiente",
         }}
         keyboard
-        breakpoints={breakpointsConfig}
+        breakpoints={isFullWidth ? undefined : breakpointsConfig}
         slidesPerView={1}
       >
         {childrenArray.map((child, index) => {
