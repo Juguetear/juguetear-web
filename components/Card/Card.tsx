@@ -1,34 +1,39 @@
-// TODO: #330 Refactor componente "Card"
-import { Button } from "components/Button/Button";
+import Image from "next/image";
+import { Link } from "components/Link/Link";
 import { Logo } from "components/Logo/Logo";
 import { State } from "components/State/State";
-import Image from "next/image";
+import { urlFor } from "lib/sanity-client";
+import type { SanityImage } from "types/common";
 
 export interface CardProps {
-  image?: { src: string; alt: string };
+  image: SanityImage;
   title: string;
   available: boolean;
-  description: string;
   link: string;
+  description: string;
 }
-// TODO: Extender o usar el type 'Toy'.
+
 export const Card = ({
   image,
   title,
   available,
-  description,
   link,
+  description,
 }: CardProps) => {
   return (
     <div className="w-full flex-grow space-y-4 justify-self-stretch rounded border p-6 lg:max-w-xs">
-      {/* TODO: EL color y weight (en global.css) no es igual al de los diseños. */}
-      <h3 className="border-b border-gray-light pb-2 font-bold text-darkblue">
+      <h3 className="border-b border-gray-light pb-2 font-bold text-blue">
         {title}
       </h3>
-      {/* TODO: Usar una de las funciones helper 'imgUrlFrom' o 'forUrl' para la imagen. */}
-      {image?.src ? (
+
+      {image !== undefined ? (
         <div className="relative aspect-video rounded border">
-          <Image fill sizes="33vw" src={image?.src} alt={image?.alt} />
+          <Image
+            fill
+            sizes="33vw"
+            src={urlFor(image).width(528).url()}
+            alt={image?.altText}
+          />
         </div>
       ) : (
         <div className="flex w-full flex-col items-center justify-center rounded bg-white-blue">
@@ -46,11 +51,15 @@ export const Card = ({
         </div>
       )}
       <State available={available} />
+
       <p className="pt-1 text-sm">{description}</p>
-      {/* TODO: Remover el comp. Button y agregar el comp. Link y estilos para el estado `disabled` */}
-      <Button appearance="button" disabled={available ? false : true}>
-        <a href={link}>Pedir juguete</a>
-      </Button>
+
+      <Link
+        href={available ? link : "#"}
+        appearance={available ? "button" : "disabled"}
+      >
+        Pedir juguete
+      </Link>
     </div>
   );
 };

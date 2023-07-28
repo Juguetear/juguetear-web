@@ -4,6 +4,7 @@ const styles = {
   link: "link",
   buttonWithIcon: "link",
   button: "button",
+  disabled: "disabled",
 };
 
 type appearances = keyof typeof styles;
