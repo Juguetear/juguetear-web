@@ -18,6 +18,8 @@ async function Page({ params: { slug } }: Props) {
         <h2 className="mb-8 text-center text-2xl font-bold md:text-4xl">
           {toy.name}
         </h2>
+        {/* TODO: #358 Crear (maquetar) sección del juguete */}
+
         <div>
           <LoanRequestForm />
         </div>
