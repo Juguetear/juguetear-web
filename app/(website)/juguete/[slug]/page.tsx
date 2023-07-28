@@ -10,8 +10,7 @@ interface Props {
 }
 
 async function Page({ params: { slug } }: Props) {
-  const toyArray = await client.fetch<Toy[]>(toySlugQuery, { slug });
-  const toy = toyArray[0];
+  const toy = await client.fetch<Toy>(toySlugQuery, { slug });
 
   return (
     <section className="py-10">

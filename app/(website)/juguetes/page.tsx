@@ -1,10 +1,10 @@
 import { Card } from "components/Card/Card";
 import { client } from "lib/sanity-client";
-import { toyQuery } from "lib/sanity-queries";
+import { toysQuery } from "lib/sanity-queries";
 import { Toy } from "types/common";
 
 async function Page() {
-  const toys = await client.fetch<Toy[]>(toyQuery);
+  const toys = await client.fetch<Toy[]>(toysQuery);
 
   return (
     <section className="py-10">
@@ -20,6 +20,7 @@ async function Page() {
               available={toy.isAvailable}
               description={toy.shortDescription}
               link={`juguete/${toy.slug.current}`}
+              image={toy.images[0]}
             />
           ))}
         </div>

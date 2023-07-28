@@ -57,8 +57,14 @@ export const aboutPageQuery = groq`
   }
 `;
 
-export const toyQuery = groq`
-  *[_type == 'toy']`;
+export const toysQuery = groq`
+  *[_type == 'toy'] {
+    ...,
+    images[] ${sanityImageProjection},
+  }`;
 
 export const toySlugQuery = groq`
-  *[_type == 'toy' && slug.current == $slug]`;
+  *[_type == 'toy' && slug.current == $slug][0] {
+    ...,
+    images[] ${sanityImageProjection},
+  }`;
