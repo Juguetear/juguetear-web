@@ -1,9 +1,12 @@
 import { Hero } from "components/Hero/Hero";
 import { Logo } from "components/Logo/Logo";
+import { PortableTxt } from "components/PortableTxt/PortableTxt";
+import Notification from "components/Notification/Notification";
 import { client } from "lib/sanity-client";
 import { homePageQuery } from "lib/sanity-queries";
 import Image from "next/image";
 import { HomePage } from "types/home-page";
+import { urlFor } from "lib/sanity-client";
 
 async function Home() {
   const {
@@ -13,6 +16,7 @@ async function Home() {
     cooperateSection,
   } = await client.fetch<HomePage>(homePageQuery);
 
+  const { title, description, blocks, callOut } = cooperateSection;
   const StyledLink = ({
     href,
     children,
@@ -71,6 +75,28 @@ async function Home() {
 
       {/* TODO: #354 Agregar (maquetar) sección "Cómo puedo colaborar" */}
       {/* {JSON.stringify(cooperateSection)} */}
+      <section>
+        <div className="mx-auto max-w-3xl p-4">
+          <h1>{title}</h1>
+          <p>{description}</p>
+          {blocks.map((block) => (
+            <div key={block._key}>
+              <Image
+                src={urlFor(block.image).url()}
+                className=""
+                width={250}
+                height={250}
+                alt={block.image.altText}
+              />
+              <h2>{block.title}</h2>
+              <p>{block.description}</p>
+            </div>
+          ))}
+          <Notification>
+            <PortableTxt content={callOut} />
+          </Notification>
+        </div>
+      </section>
       <footer>
         <a
           className="flex items-center justify-center gap-2"
