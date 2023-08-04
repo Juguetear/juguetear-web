@@ -1,5 +1,4 @@
 import type { StorybookConfig } from "@storybook/nextjs";
-
 const config: StorybookConfig = {
   stories: [
     "../components/**/*.stories.mdx",
@@ -10,6 +9,7 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "@storybook/addon-a11y",
+    "@storybook/addon-mdx-gfm",
   ],
   framework: {
     name: "@storybook/nextjs",
@@ -19,5 +19,4 @@ const config: StorybookConfig = {
     autodocs: true,
   },
 };
-
 export default config;
