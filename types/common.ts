@@ -5,7 +5,7 @@ export interface Toy {
   slug: Slug;
   name: string;
   shortDescription: string;
-  description: PortableTextContent[];
+  description: PortableTextContent;
   characteristics: Characteristic[];
   images: SanityImage[];
   isAvailable: boolean;
