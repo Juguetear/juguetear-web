@@ -18,29 +18,29 @@ async function Page({ params: { slug } }: Props) {
   const description = toy.description;
   return (
     <section className="py-10">
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-5xl">
         <h4 className="mb-4 text-center">Juguetes</h4>
         <h1 className="mb-8 text-center text-2xl font-bold md:text-4xl">
           {toy.name}
         </h1>
-        <div className="relative mx-auto mb-10 lg:max-w-3xl">
-          <Carousel isFullWidth>
-            {images.map((image) => (
-              <Image
-                width={0}
-                height={0}
-                sizes="(max-width: 768px) 100vw"
-                placeholder={"blur"}
-                blurDataURL={image.placeholder}
-                key={image.asset._ref}
-                src={urlFor(image).url()}
-                alt={image.altText}
-                className="mx-auto aspect-video w-full rounded"
-              />
-            ))}
-          </Carousel>
-        </div>
-        <h2 className="mb-4 text-2xl font-bold md:text-4xl">Descripción</h2>
+
+        <Carousel isFullWidth>
+          {images.map((image) => (
+            <Image
+              width={0}
+              height={0}
+              sizes="(max-width: 768px) 100vw"
+              placeholder={"blur"}
+              blurDataURL={image.placeholder}
+              key={image.asset._ref}
+              src={urlFor(image).url()}
+              alt={image.altText}
+              className="mx-auto aspect-video w-full rounded"
+            />
+          ))}
+        </Carousel>
+
+        <h2 className="my-8 text-2xl font-bold md:text-4xl">Descripción</h2>
         <PortableTxt content={description} />
         <LoanRequestForm />
       </div>
