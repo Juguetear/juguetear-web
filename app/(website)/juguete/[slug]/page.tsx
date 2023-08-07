@@ -18,12 +18,12 @@ async function Page({ params: { slug } }: Props) {
   const description = toy.description;
   return (
     <section className="py-10">
-      <div className="mx-auto max-w-5xl">
-        <h4 className="mb-4 text-center">Juguetes</h4>
-        <h1 className="mb-8 text-center text-2xl font-bold md:text-4xl">
-          {toy.name}
-        </h1>
+      <div className="mx-auto max-w-3xl text-center">
+        <h4 className="mb-4">Juguetes</h4>
+        <h1 className="mb-8 text-2xl font-bold md:text-4xl">{toy.name}</h1>
+      </div>
 
+      <div className="mx-auto max-w-5xl">
         <Carousel isFullWidth>
           {images.map((image) => (
             <Image
@@ -39,7 +39,9 @@ async function Page({ params: { slug } }: Props) {
             />
           ))}
         </Carousel>
+      </div>
 
+      <div className="mx-auto mt-12 max-w-3xl">
         <h2 className="my-8 text-2xl font-bold md:text-4xl">Descripción</h2>
         <PortableTxt content={description} />
         <LoanRequestForm />
