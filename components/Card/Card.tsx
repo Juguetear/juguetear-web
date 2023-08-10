@@ -6,7 +6,7 @@ import { urlFor } from "lib/sanity-client";
 import type { SanityImage } from "types/common";
 
 export interface CardProps {
-  image: SanityImage;
+  image?: SanityImage;
   title: string;
   available: boolean;
   link: string;
