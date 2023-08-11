@@ -7,12 +7,13 @@ const mockedHero: HeroSection = {
     "Adaptamos y prestamos juguetes para niños y niñas con discapacidades motrices complejas.",
   description: "El prestamo no tiene costo",
   cta: {
-    _type: "photo",
     name: "Ver juguetes",
     url: "##",
   },
   photo: {
     _type: "photo",
+    placeholder:
+      "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAOABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUEBgf/xAAgEAABBAIDAAMAAAAAAAAAAAABAgMEEQAFBhIxExVx/8QAFgEBAQEAAAAAAAAAAAAAAAAABAID/8QAGxEAAgMAAwAAAAAAAAAAAAAAAQMAAgQRElH/2gAMAwEAAhEDEQA/AIHGJLC9cw3JkK+BlXZIq7OPNjszJMaNAkqYIctfcV+Yh4o86riK1xujL5spcCbIOGhiDcwC7t1F+aHClTwNXXmFeuygL8xSmVb2oBNHgbtMeKhuW4pbw9UB7hlF+nfRaW5zoSPATeGYjXf0SRkE/9k=",
     altText: "Hero imagen",
     asset: {
       _ref: "image-2c6ca8b13a29f52d84ed64aca9ef05cc61c1f2b4-681x478-jpg",
