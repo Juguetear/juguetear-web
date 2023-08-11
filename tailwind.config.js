@@ -9,6 +9,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "1rem",
+      screens: {
+        lg: "1024px",
+      },
+    },
     colors: {
       "white-blue": "#dbeaf7",
       "blue-light": "#E9F7F9",

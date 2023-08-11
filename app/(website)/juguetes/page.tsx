@@ -8,7 +8,7 @@ async function Page() {
 
   return (
     <section className="py-10">
-      <div className="mx-auto max-w-5xl">
+      <div className="container">
         <h2 className="mb-8 text-center text-2xl font-bold md:text-4xl">
           Nuestros juguetes
         </h2>

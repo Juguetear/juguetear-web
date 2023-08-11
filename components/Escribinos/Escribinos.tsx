@@ -6,13 +6,13 @@ import React from "react";
 export const Escribinos = () => {
   return (
     <section className="py-5 md:py-10">
-      <div className="mx-auto max-w-3xl">
+      <div className="container max-w-3xl">
         <h2 className="mb-8 text-center">Escribinos</h2>
         <p className="mb-8 text-center">
           Los campos que contengan * son obligatorios
         </p>
 
-        <form action="" className="mx-auto max-w-2xl" method="POST">
+        <form action="" className="container max-w-2xl" method="POST">
           <Input
             helperText="Nombre"
             id="name"
