@@ -7,7 +7,7 @@ const meta = {
   args: {
     title: "About Project",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ultrices nisi, ac vulputate nunc. Sed vitae ultrices nisi, ac vulputate nunc. Sed vitae ultrices nisi, ac vulputate nunc. Sed",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ultrices nisi, ac vulputate nunc. Sed vitae ultrices nisi, ac vulputate nunc. Sed vitae ultrices nisi, ac vulputate nunc. Sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ultrices nisi, ac vulputate nunc. Sed vitae ultrices nisi, ac vulputate nunc. Sed vitae ultrices nisi, ac vulputate nunc. Sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ultrices nisi, ac vulputate nunc. Sed vitae ultrices nisi, ac vulputate nunc. Sed vitae ultrices nisi, ac vulputate nunc. Sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ultrices nisi, ac vulputate nunc. Sed vitae ultrices nisi, ac vulputate nunc. Sed vitae ultrices nisi, ac vulputate nunc. Sed",
     photos: [
       {
         asset: {
