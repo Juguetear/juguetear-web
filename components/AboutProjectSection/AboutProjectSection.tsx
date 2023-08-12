@@ -20,28 +20,32 @@ export const AboutProjectSection = ({
             <strong>{firstSentence}</strong>
             <br /> {restOfSentence}
           </p>
-          <div className="absolute left-0 mx-auto flex w-full max-w-3xl flex-col items-center gap-6 md:left-auto md:flex-row">
-            <Image
-              src={urlFor(firstPhoto).url()}
-              alt={firstPhoto.altText}
-              key={firstPhoto.asset._ref}
-              width={372}
-              height={210}
-              placeholder="blur"
-              blurDataURL={firstPhoto.placeholder}
-              className="mx-auto aspect-video self-center rounded"
-              priority
-            />
-            <Image
-              src={urlFor(secondPhoto).url()}
-              alt={secondPhoto.altText}
-              key={secondPhoto.asset._ref}
-              width={372}
-              height={210}
-              placeholder="blur"
-              blurDataURL={secondPhoto.placeholder}
-              className="hidden aspect-video rounded lg:block"
-            />
+          <div className="absolute left-1/2 flex w-4/5 max-w-3xl -translate-x-1/2 flex-col items-center justify-center gap-2 md:flex-row md:gap-5">
+            <div className="relative aspect-video w-80 max-w-full md:w-5/12 lg:w-1/2">
+              <Image
+                src={urlFor(firstPhoto).url()}
+                alt={firstPhoto.altText}
+                key={firstPhoto.asset._ref}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                placeholder="blur"
+                blurDataURL={firstPhoto.placeholder}
+                className="aspect-video rounded"
+                priority
+              />
+            </div>
+            <div className="relative hidden aspect-video w-80 max-w-full md:block md:w-5/12 lg:w-1/2">
+              <Image
+                src={urlFor(secondPhoto).url()}
+                alt={secondPhoto.altText}
+                key={secondPhoto.asset._ref}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                placeholder="blur"
+                blurDataURL={secondPhoto.placeholder}
+                className=" aspect-video rounded"
+              />
+            </div>
           </div>
         </div>
       </div>
