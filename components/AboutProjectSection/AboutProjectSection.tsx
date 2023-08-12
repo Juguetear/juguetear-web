@@ -20,7 +20,7 @@ export const AboutProjectSection = ({
             <strong>{firstSentence}</strong>
             <br /> {restOfSentence}
           </p>
-          <div className="absolute left-0 mx-auto flex w-full max-w-3xl flex-col items-center gap-6 md:flex-row">
+          <div className="absolute left-0 mx-auto flex w-full max-w-3xl flex-col items-center gap-6 md:left-auto md:flex-row">
             <Image
               src={urlFor(firstPhoto).url()}
               alt={firstPhoto.altText}
