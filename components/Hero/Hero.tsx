@@ -30,6 +30,8 @@ export const Hero = ({ title, description, photo, cta }: HeroSection) => {
             className="lg:translate-x-20 lg:rounded-l-[56px]"
             width={750}
             height={478}
+            placeholder="blur"
+            blurDataURL={photo.placeholder}
             alt={photo.altText}
           />
         </span>
