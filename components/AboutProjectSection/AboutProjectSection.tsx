@@ -21,7 +21,7 @@ export const AboutProjectSection = ({
             <br /> {restOfSentence}
           </p>
           <div className="absolute left-1/2 flex w-4/5 max-w-3xl -translate-x-1/2 flex-col items-center justify-center gap-2 md:flex-row md:gap-5">
-            <div className="relative aspect-video w-80 max-w-full md:w-5/12 lg:w-1/2">
+            <div className="relative aspect-video w-72 max-w-full md:w-5/12 lg:w-1/2">
               <Image
                 src={urlFor(firstPhoto).url()}
                 alt={firstPhoto.altText}
@@ -34,7 +34,7 @@ export const AboutProjectSection = ({
                 priority
               />
             </div>
-            <div className="relative hidden aspect-video w-80 max-w-full md:block md:w-5/12 lg:w-1/2">
+            <div className="relative hidden aspect-video w-72 max-w-full md:block md:w-5/12 lg:w-1/2">
               <Image
                 src={urlFor(secondPhoto).url()}
                 alt={secondPhoto.altText}
