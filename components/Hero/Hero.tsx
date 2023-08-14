@@ -1,13 +1,13 @@
-import React from "react";
-import Image from "next/image";
 import { Link } from "components/Link/Link";
+import { imgUrlFrom } from "lib/sanity-client";
+import Image from "next/image";
+import React from "react";
 import type { CallToAction, SanityImage } from "types/common";
-import { urlFor } from "lib/sanity-client";
 
 export interface HeroSection extends React.HTMLProps<HTMLElement> {
   cta: CallToAction;
   description: string;
-  photo: SanityImage;
+  photo: SanityImage | null;
   title: string;
 }
 
@@ -26,13 +26,13 @@ export const Hero = ({ title, description, photo, cta }: HeroSection) => {
         </div>
         <span className="overflow-hidden">
           <Image
-            src={urlFor(photo).url()}
+            src={imgUrlFrom(photo, { width: 750, height: 478 })!}
             className="lg:translate-x-20 lg:rounded-l-[56px]"
             width={750}
             height={478}
             placeholder="blur"
-            blurDataURL={photo.placeholder}
-            alt={photo.altText}
+            blurDataURL={photo?.placeholder || "htts://placehold/10x10/webp"}
+            alt={photo?.altText || "Hero image"}
           />
         </span>
       </div>
