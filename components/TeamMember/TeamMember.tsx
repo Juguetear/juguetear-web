@@ -14,7 +14,7 @@ export const TeamMember = ({
   return (
     <div
       data-testid="team-member"
-      className="flex flex-col items-center gap-8 px-4 py-5 md:max-w-md md:flex-row md:px-16"
+      className="flex flex-col items-center gap-6 md:max-w-md md:flex-row"
     >
       {image ? (
         <Image
@@ -31,11 +31,11 @@ export const TeamMember = ({
         ></div>
       )}
       <div className="self-center text-center font-inter text-blue md:text-left">
-        <h2 className="mb-0.5 ml-2 text-base font-bold">{`${name} ${surname} (${pronouns})`}</h2>
-        <p data-testid="member-role" className="mb-1 ml-2 text-sm">
+        <h2 className="text-base font-bold">{`${name} ${surname} (${pronouns})`}</h2>
+        <p data-testid="member-role" className="text-sm">
           {role}
         </p>
-        <div className="flex gap-2 text-sm font-medium">
+        <div className="flex justify-around gap-3 text-sm font-medium md:justify-start">
           {contactLinks?.map(({ name, url }) => (
             <Link appearance="link" href={url} key={url} target="_blank">
               {name}

@@ -9,8 +9,8 @@ async function Page() {
 
   return (
     <>
-      <section>
-        <div className="mx-auto max-w-3xl p-4">
+      <section className="mt-8">
+        <div className="container max-w-3xl">
           <PortableTxt content={content} />
         </div>
       </section>

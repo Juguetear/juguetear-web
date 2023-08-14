@@ -7,7 +7,7 @@ import { Link } from "components/Link/Link";
 export const LoanRequestForm = () => {
   return (
     <section className="py-5 md:py-10">
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto max-w-3xl">
         <h3 className="mb-8 text-center">
           Formulario para solicitar el préstamo
         </h3>
@@ -20,7 +20,7 @@ export const LoanRequestForm = () => {
           </Link>
         </p>
 
-        <form action="" className="mx-auto max-w-3xl" method="POST">
+        <form action="" className="mx-auto max-w-2xl" method="POST">
           <h4 className="mb-8">
             Paso 1 de 2: <br />
             Completá los datos del formulario.
