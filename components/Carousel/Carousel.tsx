@@ -8,7 +8,7 @@ import { ArrowButton } from "components/ArrowButton/ArrowButton";
 
 interface CarouselData {
   children: React.ReactNode;
-  isFullWidth?: boolean;
+  isFullWidth?: true;
 }
 
 const Carousel = ({ children, isFullWidth }: CarouselData) => {
@@ -40,6 +40,7 @@ const Carousel = ({ children, isFullWidth }: CarouselData) => {
         keyboard
         breakpoints={isFullWidth ? undefined : breakpointsConfig}
         slidesPerView={1}
+        wrapperClass={isFullWidth && "aspect-video !w-[48rem]"}
       >
         {childrenArray.map((child, index) => {
           return (

@@ -27,15 +27,13 @@ async function Page({ params: { slug } }: Props) {
         <Carousel isFullWidth>
           {images.map((image) => (
             <Image
-              width={0}
-              height={0}
-              sizes="(max-width: 768px) 100vw"
+              fill
               placeholder={"blur"}
               blurDataURL={image.placeholder}
               key={image.asset._ref}
               src={urlFor(image).url()}
               alt={image.altText}
-              className="mx-auto aspect-video w-full rounded"
+              className=" rounded object-contain"
             />
           ))}
         </Carousel>
