@@ -3,7 +3,7 @@ import { userEvent, within } from "@storybook/testing-library";
 import { ArrowButton } from "./ArrowButton";
 
 export default {
-  title: "Arrow button",
+  title: "Component/Arrow button",
   component: ArrowButton,
   argTypes: {
     handleClick: { action: "Clicked" },

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Escribinos } from "./Escribinos";
 
 const meta = {
-  title: "Escribinos",
+  title: "Module/Escribinos",
   component: Escribinos,
   args: {},
 } satisfies Meta<typeof Escribinos>;

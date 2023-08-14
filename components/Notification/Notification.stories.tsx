@@ -3,7 +3,7 @@ import EnvelopeIcon from "../assets/EnvelopeIcon";
 import Notification from "./Notification";
 
 export default {
-  title: "Notification",
+  title: "Component/Notification",
   component: Notification,
 } as Meta<typeof Notification>;
 

@@ -3,7 +3,7 @@ import { Card } from "./Card";
 import { SanityImage } from "types/common";
 
 const meta = {
-  title: "Card",
+  title: "Component/Card",
   component: Card,
   args: {
     title: "Dragón",

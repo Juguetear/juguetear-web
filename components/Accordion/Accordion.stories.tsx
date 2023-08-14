@@ -15,7 +15,7 @@ type AccordionProps = {
 type Story = StoryObj<typeof Accordion>;
 
 export default {
-  title: "Accordion",
+  title: "Component/Accordion",
   component: Accordion,
 } as Meta<typeof Accordion>;
 

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Hero } from "./Hero";
 
 const meta = {
-  title: "Hero",
+  title: "Module/Hero",
   component: Hero,
   args: {
     title:

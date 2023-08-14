@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Link } from "./Link";
 
 export default {
-  title: "Link",
+  title: "Component/Link",
   component: Link,
   args: {
     href: "",

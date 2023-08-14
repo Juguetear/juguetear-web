@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import VideoEmbedPreview from "./VideoEmbedPreview";
 
 const meta = {
-  title: "VideoEmbedPreview",
+  title: "Component/VideoEmbedPreview",
   component: VideoEmbedPreview,
   args: {
     video: {

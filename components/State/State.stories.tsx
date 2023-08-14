@@ -5,7 +5,7 @@ import { State } from "./State";
 type Story = StoryObj<typeof State>;
 
 export default {
-  title: "State",
+  title: "Component/State",
   component: State,
 } as Meta<typeof State>;
 

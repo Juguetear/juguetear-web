@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Checkbox, CheckboxProps } from "./Checkbox";
 
 export default {
-  title: "Checkbox",
+  title: "Component/Checkbox",
   component: Checkbox,
   argTypes: {
     defaultChecked: {

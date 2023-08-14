@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { TeamMember } from "./TeamMember";
 
 const meta = {
-  title: "TeamMember",
+  title: "Component/TeamMember",
   component: TeamMember,
   args: {
     _id: "1",

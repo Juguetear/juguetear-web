@@ -3,7 +3,7 @@ import { PDFIcon } from "../assets/PDFIcon";
 import { Button } from "./Button";
 
 const meta = {
-  title: "Button",
+  title: "Component/Button",
   component: Button,
   argTypes: {
     onClick: {

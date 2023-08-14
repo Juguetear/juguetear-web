@@ -7,7 +7,7 @@ const description = [em, h1, h2, span, strong, underline];
 type Story = StoryObj<typeof PortableTxt>;
 
 const meta: Meta<typeof PortableTxt> = {
-  title: "PortableText",
+  title: "Component/PortableText",
   component: PortableTxt,
 };
 

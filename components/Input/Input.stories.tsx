@@ -3,7 +3,7 @@ import { userEvent, within } from "@storybook/testing-library";
 import Input from "./Input";
 
 export default {
-  title: "Input",
+  title: "Component/Input",
   component: Input,
   args: {
     required: false,

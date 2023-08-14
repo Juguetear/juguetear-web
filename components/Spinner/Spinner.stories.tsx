@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import Spinner from "./Spinner";
 
 export default {
-  title: "Spinner",
+  title: "Iconos/Spinner",
   component: Spinner,
 } as Meta<typeof Spinner>;
 

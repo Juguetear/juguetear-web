@@ -12,7 +12,7 @@ const exampleLinks: FooterLink[] = [
 ];
 
 export default {
-  title: "Footer",
+  title: "Layout/Footer",
   component: Footer,
   args: {
     links: exampleLinks,

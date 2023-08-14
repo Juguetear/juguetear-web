@@ -11,7 +11,7 @@ const exampleLinks: NavbarLink[] = [
 ];
 
 export default {
-  title: "Navbar",
+  title: "Layout/Navbar",
   component: Navbar,
   args: {
     links: exampleLinks,

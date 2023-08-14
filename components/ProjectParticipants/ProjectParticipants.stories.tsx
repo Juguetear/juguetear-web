@@ -39,7 +39,7 @@ const members: TeamMemberProps[] = [
   },
 ];
 const meta = {
-  title: "ProjectParticipants",
+  title: "Module/ProjectParticipants",
   args: {
     ...members,
   },

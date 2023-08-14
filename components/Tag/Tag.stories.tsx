@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { Tag, TagProps } from "./Tag";
 export default {
-  title: "Tag",
+  title: "Component/Tag",
   component: Tag,
   argTypes: {
     onClick: {

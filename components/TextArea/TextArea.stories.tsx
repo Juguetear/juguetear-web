@@ -3,7 +3,7 @@ import { userEvent, within } from "@storybook/testing-library";
 import TextArea from "./TextArea";
 
 export default {
-  title: "TextArea",
+  title: "Component/TextArea",
   component: TextArea,
   args: {
     required: false,

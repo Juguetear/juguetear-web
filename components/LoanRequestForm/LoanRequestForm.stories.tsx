@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { LoanRequestForm } from "./LoanRequestForm";
 
 const meta = {
-  title: "LoanRequestForm",
+  title: "Module/LoanRequestForm",
   component: LoanRequestForm,
   args: {},
 } satisfies Meta<typeof LoanRequestForm>;

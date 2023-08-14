@@ -3,7 +3,7 @@ import { AboutProjectSection } from "./AboutProjectSection";
 
 const meta = {
   component: AboutProjectSection,
-  title: "AboutProjectSection",
+  title: "Module/AboutProjectSection",
   args: {
     title: "About Project",
     description:

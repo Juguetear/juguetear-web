@@ -4,7 +4,7 @@ import Carousel from "./Carousel";
 import Image from "next/image";
 
 export default {
-  title: "Carousel",
+  title: "Component/Carousel",
   component: Carousel,
   parameters: {
     nextjs: {
