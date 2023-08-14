@@ -19,38 +19,13 @@ export default {
   },
 } as Meta<typeof Carousel>;
 
-const mockSlides: CardProps[] = [
-  {
-    title: "Dragón",
-    description: "Dragón que emite luces y sonido cuando se pulsa el botón.",
-    available: true,
-    link: "/",
-  },
-  {
-    title: "Dragón",
-    description: "Dragón que emite luces y sonido cuando se pulsa el botón.",
-    available: false,
-    link: "/",
-  },
-  {
-    title: "Dragón",
-    description: "Dragón que emite luces y sonido cuando se pulsa el botón.",
-    available: true,
-    link: "/",
-  },
-  {
-    title: "Dragón",
-    description: "Dragón que emite luces y sonido cuando se pulsa el botón.",
-    available: true,
-    link: "/",
-  },
-  {
-    title: "Dragón",
-    description: "Dragón que emite luces y sonido cuando se pulsa el botón.",
-    available: true,
-    link: "/",
-  },
-];
+const mockSlides: CardProps = {
+  title: "Dragón",
+  description: "Dragón que emite luces y sonido cuando se pulsa el botón.",
+  available: true,
+  link: "/",
+  image: null,
+};
 
 const mockInnerImages = [
   {
@@ -70,17 +45,20 @@ const mockInnerImages = [
 export const SimpleCarousel = () => {
   return (
     <Carousel>
-      {mockSlides.map((slide, index) => {
-        return (
-          <Card
-            key={index}
-            title={slide.title}
-            link={slide.link}
-            description={slide.description}
-            available={slide.available}
-          />
-        );
-      })}
+      {Array(5)
+        .fill(mockSlides)
+        .map((slide, index) => {
+          return (
+            <Card
+              image={null}
+              key={index}
+              title={slide.title}
+              link={slide.link}
+              description={slide.description}
+              available={slide.available}
+            />
+          );
+        })}
     </Carousel>
   );
 };
@@ -99,6 +77,7 @@ export const MultipleCardsCarousel: StoryObj<MultipleCardsProps> = {
           },
           (_, i) => (
             <Card
+              image={null}
               key={i}
               title="Dragón"
               link="/"
