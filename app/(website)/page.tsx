@@ -1,4 +1,5 @@
 import { AboutProjectSection } from "components/AboutProjectSection/AboutProjectSection";
+import { FeaturedToysSection } from "components/FeaturedToysSection/FeaturedToysSection";
 import { Hero } from "components/Hero/Hero";
 import { client } from "lib/sanity-client";
 import { homePageQuery } from "lib/sanity-queries";
@@ -16,6 +17,8 @@ async function Home() {
     <div className="space-y-20">
       <Hero {...heroSection} />
       <AboutProjectSection {...twoImagesSection} />
+      <FeaturedToysSection {...featuredToysSection} />
+
       {/* TODO: #354 Agregar (maquetar) sección "Cómo puedo colaborar" */}
       {/* {JSON.stringify(cooperateSection)} */}
     </div>

@@ -1,5 +1,7 @@
 import type { TypedObject } from "sanity";
 
+export type MaybeImage = SanityImage | null;
+
 export interface Toy {
   _id: string;
   slug: Slug;
@@ -7,10 +9,9 @@ export interface Toy {
   shortDescription: string;
   description: PortableTextContent;
   characteristics: Characteristic[];
-  images: SanityImage[];
+  images: MaybeImage[];
   isAvailable: boolean;
 }
-
 export interface Characteristic {
   _id: string;
   name: string;
