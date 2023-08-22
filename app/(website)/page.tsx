@@ -75,23 +75,32 @@ async function Home() {
 
       {/* TODO: #354 Agregar (maquetar) sección "Cómo puedo colaborar" */}
       {/* {JSON.stringify(cooperateSection)} */}
-      <section>
-        <div className="mx-auto max-w-3xl p-4">
-          <h1>{title}</h1>
-          <p>{description}</p>
-          {blocks.map((block) => (
-            <div key={block._key}>
-              <Image
-                src={urlFor(block.image).url()}
-                className=""
-                width={250}
-                height={250}
-                alt={block.image.altText}
-              />
-              <h2>{block.title}</h2>
-              <p>{block.description}</p>
-            </div>
-          ))}
+      <section className="mx-auto max-w-6xl p-4">
+        <div className="flex flex-col items-center">
+          <h2>{title}</h2>
+          <p className="py-7 text-center text-sm">{description}</p>
+          <div className="flex h-[400px]">
+            {blocks.map((block, index) => (
+              <div
+                className={`flex w-[400px] flex-col justify-evenly border-gray-medium ${
+                  index === 0 ? "sm:border-r" : "sm:border-l"
+                }`}
+                key={block._key}
+              >
+                <Image
+                  src={urlFor(block.image).url()}
+                  className="self-center"
+                  width={100}
+                  height={100}
+                  alt={block.image.altText}
+                />
+                <div>
+                  <h3 className="pb-3 text-lg">{block.title}</h3>
+                  <p className="text-sm">{block.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
           <Notification>
             <PortableTxt content={callOut} />
           </Notification>
