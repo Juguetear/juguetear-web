@@ -33,7 +33,7 @@ describe("Hero component", () => {
     const image = screen.getByRole("img") as HTMLImageElement;
     expect(image).toBeInTheDocument();
     expect(image).toHaveAttribute("src");
-    expect(image.src).toContain(mockedHero.photo.asset._ref.split("-")[1]);
-    expect(image).toHaveAttribute("alt", mockedHero.photo.altText);
+    expect(image.src).toContain(mockedHero.photo?.asset._ref.split("-")[1]);
+    expect(image).toHaveAttribute("alt", mockedHero.photo?.altText);
   });
 });
