@@ -8,7 +8,7 @@ import type {
 export interface HomePage {
   heroSection: HeroSection;
   twoImagesSection: TwoImagesSection;
-  featuredToysSection: FeaturedToysSection;
+  featuredToysSection: IFeaturedToysSection;
   cooperateSection: CooperateSection;
 }
 
@@ -25,7 +25,7 @@ export interface TwoImagesSection {
   photos: [SanityImage, SanityImage];
 }
 
-export interface FeaturedToysSection {
+export interface IFeaturedToysSection {
   title: string;
   description: string;
   toys: Toy[];
