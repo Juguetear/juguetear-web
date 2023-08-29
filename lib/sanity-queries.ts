@@ -58,26 +58,7 @@ export const aboutPageQuery = groq`
 `;
 
 export const faqPageQuery = groq`
-*[_type == 'faqPage'][0] {
-  ...,
-  title,
-  paragraph,
-  faqList[] {
-    ...,
-    faq {
-      ...,
-      question,
-      answer[] {
-        ...,
-        _type == 'block' => {
-          "type": _type,
-          "text": text
-        }
-      }
-    }
-  }
-}
-`;
+*[_type == 'faqPage'][0]`;
 
 export const toysQuery = groq`
   *[_type == 'toy'] {
