@@ -6,6 +6,8 @@ import { toySlugQuery } from "lib/sanity-queries";
 import { Toy } from "types/common";
 import { PortableTxt } from "components/PortableTxt/PortableTxt";
 
+import { Logo } from "components/Logo/Logo";
+
 interface Props {
   params: {
     slug: string;
@@ -25,17 +27,29 @@ async function Page({ params: { slug } }: Props) {
 
       <div className="container">
         <Carousel isFullWidth>
-          {images.map((image) => (
-            <Image
-              fill
-              placeholder={"blur"}
-              blurDataURL={image.placeholder}
-              key={image.asset._ref}
-              src={urlFor(image).url()}
-              alt={image.altText}
-              className=" rounded object-contain"
-            />
-          ))}
+          {images.map((image, index) =>
+            image !== null ? (
+              <Image
+                fill
+                placeholder={"blur"}
+                blurDataURL={image?.placeholder}
+                key={image?.asset._ref}
+                src={urlFor(image).url()}
+                alt={image.altText || "Placeholder for image"}
+                className=" rounded object-contain"
+              />
+            ) : (
+              <div
+                key={index}
+                className="relative flex h-full flex-col items-center justify-center bg-white-blue"
+              >
+                <Logo hideBrandname={true} className="h-24 opacity-40" />
+                <p className="absolute bottom-6 text-center font-bold opacity-40">
+                  Imagen no disponible
+                </p>
+              </div>
+            )
+          )}
         </Carousel>
       </div>
 
