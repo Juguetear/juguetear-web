@@ -13,8 +13,10 @@ export const CooperateSection: React.FC<ICooperateSection> = ({
 }) => {
   return (
     /**
-     * The spacing is not the same as the design, but I think it's better this way to mantain the same spacing in the whole section
-     * The padding bottom could be managed in the page or the layout, because I am assuming that this section is the last one in the page
+     * The spacing is not the same as the design, but I think it's better this way to mantain
+     * the same spacing in the whole section, and the design has many different spacings
+     * The padding bottom could be managed in the page or the layout,
+     * because I am assuming that this section is the last one in the page
      */
     <section className="container flex flex-col items-center gap-6 pb-20 text-gray-dark">
       <h2 className="text-center">{title}</h2>
@@ -38,7 +40,11 @@ export const CooperateSection: React.FC<ICooperateSection> = ({
             ? block.description.split(".").slice(1).join(".")
             : "";
 
-          // We only use the divider in the even blocks, so will work only if we have even number of blocks
+          /**
+           * We only use the divider in the even blocks, so will work only if we have even number of blocks
+           * This match with the interface of blocks who explicitly says that we have 2 blocks
+           */
+
           const isEven = i % 2 === 0;
 
           return (
