@@ -74,7 +74,10 @@ export const CooperateSection: React.FC<ICooperateSection> = ({
       {/** TODO: find a way to pass font-outfit to PortableTxt component */}
       {/** TODO: The py could be py-6 but PortableText has a default mb-3 */}
       {/** TODO: Check how to insert the Link into "colaborar" word of the callout */}
-      <div className="mt-4 rounded-[4px] bg-turquoise/10 px-9 pb-3 pt-6 font-outfit text-base font-extrabold text-blue md:mt-8">
+      {/** TODO: I saw this wrapper in other part of the app,
+       * but their styles are not too consistent, maybe could help separate it in a new component who
+       * receives a children? Maybe could be called HighlightWrapper */}
+      <div className="mt-4 rounded-[4px] bg-turquoise/10 px-9 pb-3 pt-6 font-outfit text-base font-extrabold text-blue md:mt-8 md:rounded-[21px]">
         <PortableTxt content={callOut} />
       </div>
     </section>
