@@ -1,4 +1,5 @@
 import { AboutProjectSection } from "components/AboutProjectSection/AboutProjectSection";
+import { CooperateSection } from "components/CooperateSection/CooperateSection";
 import { FeaturedToysSection } from "components/FeaturedToysSection/FeaturedToysSection";
 import { Hero } from "components/Hero/Hero";
 import { client } from "lib/sanity-client";
@@ -18,9 +19,7 @@ async function Home() {
       <Hero {...heroSection} />
       <AboutProjectSection {...twoImagesSection} />
       <FeaturedToysSection {...featuredToysSection} />
-
-      {/* TODO: #354 Agregar (maquetar) sección "Cómo puedo colaborar" */}
-      {/* {JSON.stringify(cooperateSection)} */}
+      <CooperateSection {...cooperateSection} />
     </div>
   );
 }
