@@ -27,20 +27,20 @@ async function Page({ params: { slug } }: Props) {
 
       <div className="container">
         <Carousel isFullWidth>
-          {images.map((image, index) =>
-            image !== null ? (
+          {images?.map((image) =>
+            image ? (
               <Image
                 fill
                 placeholder={"blur"}
-                blurDataURL={image?.placeholder}
-                key={image?.asset._ref}
+                blurDataURL={image.placeholder}
+                key={image.asset._ref}
                 src={urlFor(image).url()}
                 alt={image.altText || "Placeholder for image"}
-                className=" rounded object-contain"
+                className="rounded object-contain"
               />
             ) : (
               <div
-                key={index}
+                key={toy._id}
                 className="relative flex h-full flex-col items-center justify-center bg-white-blue"
               >
                 <Logo hideBrandname={true} className="h-24 opacity-40" />

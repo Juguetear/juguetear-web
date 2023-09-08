@@ -1,6 +1,6 @@
 import type { TypedObject } from "sanity";
 
-export type MaybeImage = SanityImage | null;
+export type MaybeImage = SanityImage | null | undefined;
 
 export interface Toy {
   _id: string;
