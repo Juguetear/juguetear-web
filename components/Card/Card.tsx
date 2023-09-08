@@ -3,10 +3,10 @@ import { Logo } from "components/Logo/Logo";
 import { State } from "components/State/State";
 import { imgUrlFrom } from "lib/sanity-client";
 import Image from "next/image";
-import type { SanityImage } from "types/common";
+import type { MaybeImage } from "types/common";
 
 export interface CardProps {
-  image: SanityImage | null;
+  image: MaybeImage;
   title: string;
   available: boolean;
   link: string;
