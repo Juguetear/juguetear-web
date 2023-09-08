@@ -10,8 +10,8 @@ export const FAQSection = ({ title, faqList, paragraph }: FaqPage) => {
         <h2 className="mb-5 text-center md:mb-8">{title}</h2>
         <p className="mb-5 text-center md:mb-12">{paragraph}</p>
         <div className="mb-5 md:mb-8">
-          {faqList.map((faq, index) => (
-            <Accordion key={index} title={faq.question}>
+          {faqList.map((faq) => (
+            <Accordion key={faq._key} title={faq.question}>
               <PortableTxt content={faq.answer} />
             </Accordion>
           ))}
