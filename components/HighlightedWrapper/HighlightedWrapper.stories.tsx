@@ -1,11 +1,11 @@
 import { Meta, StoryObj } from "@storybook/react";
 import EnvelopeIcon from "../assets/EnvelopeIcon";
-import Notification from "./Notification";
+import HighlightedWrapper from "./HighlightedWrapper";
 
 export default {
-  title: "Component/Notification",
-  component: Notification,
-} as Meta<typeof Notification>;
+  title: "Component/HighlightedWrapper",
+  component: HighlightedWrapper,
+} as Meta<typeof HighlightedWrapper>;
 
 export const Default: StoryObj = {
   args: {
@@ -18,7 +18,7 @@ export const Default: StoryObj = {
   },
 };
 
-export const NotificationWithIcon: StoryObj = {
+export const HighlightedWrapperWithIcon: StoryObj = {
   args: {
     children: (
       <div className="flex justify-center">

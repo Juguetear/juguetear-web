@@ -1,23 +1,23 @@
 import { render, screen } from "@testing-library/react";
-import Notification from "./Notification";
+import HighlightedWrapper from "./HighlightedWrapper";
 
-describe("Notification", () => {
+describe("HighlightedWrapper", () => {
   it("Component renders without crashing", () => {
     render(
-      <Notification>
+      <HighlightedWrapper>
         <div>
           No tenemos juguetes disponibles en esta categoría. Volvé a intentarlo
           más tarde o mirá <span>todos los juguetes disponibles.</span>
         </div>
-      </Notification>
+      </HighlightedWrapper>
     );
   });
 
   it("Component renders children", () => {
     render(
-      <Notification>
+      <HighlightedWrapper>
         <p>No tenemos juguetes...</p>
-      </Notification>
+      </HighlightedWrapper>
     );
 
     const children = screen.getByText("No tenemos juguetes...");

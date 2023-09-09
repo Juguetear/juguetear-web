@@ -1,4 +1,5 @@
 import { Divider } from "components/Divider/Divider";
+import HighlightedWrapper from "components/HighlightedWrapper/HighlightedWrapper";
 import { PortableTxt } from "components/PortableTxt/PortableTxt";
 import { urlFor } from "lib/sanity-client";
 import Image from "next/image";
@@ -70,13 +71,10 @@ export const CooperateSection: React.FC<ICooperateSection> = ({
 
       {/** TODO: find a way to pass font-outfit to PortableTxt component */}
       {/** TODO: find a way to pass correct font weight to the link with "colaborar" label into PortableTxt component */}
-      {/** TODO: The py could be py-6 but PortableText has a default mb-3 */}
-      {/** TODO: I saw this wrapper in other part of the app,
-       * but their styles are not too consistent, maybe could help separate it in a new component who
-       * receives a children? Maybe could be called HighlightWrapper */}
-      <div className="mt-4 rounded-[4px] bg-turquoise/10 px-9 pb-3 pt-6 font-outfit text-base font-extrabold text-blue md:mt-8 md:rounded-[21px]">
+      {/** The pb is overriden because PortableText has a default mb-3 */}
+      <HighlightedWrapper className="mt-4 pb-5 text-left text-base font-extrabold md:mt-8">
         <PortableTxt content={callOut} />
-      </div>
+      </HighlightedWrapper>
     </section>
   );
 };
