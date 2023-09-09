@@ -1,19 +1,30 @@
-export const VerticalDivider = () => (
-  <div className="h-full w-px justify-self-center bg-gray"></div>
+interface BaseDividerProps {
+  className?: string;
+}
+
+export const VerticalDivider: React.FC<BaseDividerProps> = ({
+  className = "",
+}) => (
+  <div className={`h-full w-px justify-self-center bg-gray ${className}`}></div>
 );
 
-export const HorizontalDivider = () => (
-  <div className="h-px w-full justify-self-center bg-gray"></div>
+export const HorizontalDivider: React.FC<BaseDividerProps> = ({
+  className = "",
+}) => (
+  <div className={`h-px w-full justify-self-center bg-gray ${className}`}></div>
 );
 
-interface IDivider {
+interface IDivider extends BaseDividerProps {
   type?: "vertical" | "horizontal";
 }
 
-export const Divider: React.FC<IDivider> = ({ type = "horizontal" }) => {
+export const Divider: React.FC<IDivider> = ({
+  type = "horizontal",
+  className,
+}) => {
   if (type === "vertical") {
-    return <VerticalDivider />;
+    return <VerticalDivider className={className} />;
   }
 
-  return <HorizontalDivider />;
+  return <HorizontalDivider className={className} />;
 };

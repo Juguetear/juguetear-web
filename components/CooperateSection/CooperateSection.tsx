@@ -40,13 +40,6 @@ export const CooperateSection: React.FC<ICooperateSection> = ({
             ? block.description.split(".").slice(1).join(".")
             : "";
 
-          /**
-           * We only use the divider in the even blocks, so will work only if we have even number of blocks
-           * This match with the interface of blocks who explicitly says that we have 2 blocks
-           */
-
-          const isEven = i % 2 === 0;
-
           return (
             <Fragment key={block._key}>
               <div className="flex w-full flex-col items-center gap-6">
@@ -65,7 +58,11 @@ export const CooperateSection: React.FC<ICooperateSection> = ({
                 </p>
               </div>
 
-              {isEven && <Divider type="vertical" />}
+              {/**
+               * We only use the divider in the even blocks, so will work only if we have even number of blocks
+               * This match with the interface of blocks who explicitly says that we have 2 blocks
+               */}
+              <Divider type="vertical" className="odd:hidden even:block" />
             </Fragment>
           );
         })}
