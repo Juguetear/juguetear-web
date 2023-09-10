@@ -1,7 +1,13 @@
 import { isAssetObjectStub, type SanityImageSource } from "@sanity/asset-utils";
 import imageUrlBuilder from "@sanity/image-url";
 import { createClient, SanityClient } from "next-sanity";
-import { apiVersion, dataset, projectId, token } from "./sanity-variables";
+import {
+  apiVersion,
+  dataset,
+  projectId,
+  token,
+  writeToken,
+} from "./sanity-variables";
 
 export const client: SanityClient = createClient({
   projectId,
@@ -9,6 +15,13 @@ export const client: SanityClient = createClient({
   token,
   apiVersion,
   useCdn: process.env.NODE_ENV === "production",
+});
+
+export const postClient: SanityClient = createClient({
+  projectId,
+  dataset,
+  token: writeToken,
+  apiVersion,
 });
 
 const builder = imageUrlBuilder(client);
