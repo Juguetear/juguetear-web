@@ -7,6 +7,6 @@ const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION || YYYY_MM_DD; // 
 
 const token = process.env.SANITY_API_READ_TOKEN;
 // Optional, useful if you plan to add API functions that can write to your dataset
-const writeToken = process.env.SANITY_API_WRITE_TOKEN;
+const writeToken = process.env.NEXT_PUBLIC_SANITY_API_WRITE_TOKEN;
 
 export { dataset, projectId, token, writeToken, apiVersion };
