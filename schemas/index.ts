@@ -8,9 +8,9 @@ import page from "./pages/page";
 
 import content from "schemas/shared/content";
 import image from "schemas/shared/img";
-import images from "./shared/images";
 import link from "schemas/shared/link";
 import video from "schemas/shared/video";
+import images from "./shared/images";
 import relativeUrl from "./shared/relative-url";
 
 import characteristic from "schemas/characteristic";
@@ -19,8 +19,8 @@ import doc from "schemas/doc";
 import docsCategory from "schemas/docs-category";
 import member from "schemas/member";
 import message from "schemas/message";
-
 import toy from "schemas/toy";
+import loanApplication from "./loan-application";
 
 const schemas = [
   /* Your types here! */
@@ -43,6 +43,7 @@ const schemas = [
   characteristicsCategory,
   doc,
   docsCategory,
+  loanApplication,
   member,
   message,
   toy,
