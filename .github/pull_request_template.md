@@ -38,6 +38,7 @@
 - [ ] He leído seguir el [código de conducta][doc-code_of_conduct] de este proyecto.
 - [ ] He leído seguir las normas de [cómo contribuir][doc-contributing] a este proyecto.
 
+> [!note]
 > ⛑️ En caso de que necesites ayuda o tengas alguna duda recordá que también podés preguntar en el canal [#juguetear][dc-channel] dentro de la comunidad [FrontendCafé][dc-fec] en Discord. El código de conducta de este proyecto es extensible también a tu participación en el server de [FrontendCafé][dc-fec].
 
 <!-- Listado de enlaces de referencia, mantenerlos actualizados en cada archivo -->

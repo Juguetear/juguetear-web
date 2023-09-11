@@ -13,21 +13,25 @@ La web de **Juguetear** surge como respuesta a la necesitad de modernizar y mejo
 
 ## Indice de contenidos
 
+- [Indice de contenidos](#indice-de-contenidos)
 - [Cómo contribuir](#cómo-contribuir)
   - [Con materiales](#con-materiales)
   - [Aportando a este repositorio](#aportando-a-este-repositorio)
   - [Replicando el proyecto en tu ciudad](#replicando-el-proyecto-en-tu-ciudad)
-- [Comunidad](#comunidad)
-- [Requerimientos](#requerimientos)
 - [Despliegues](#despliegues)
 - [Diseño de interfaz (UI/UX)](#diseño-de-interfaz-uiux)
-- [Accesibilidad](#accesibilidad)
 - [Tech Stack](#tech-stack)
 - [Correr el proyecto localmente](#correr-el-proyecto-localmente)
+  - [Requerimientos](#requerimientos)
+  - [Instalación](#instalación)
+  - [Correr el entorno de desarrollo localmente](#correr-el-entorno-de-desarrollo-localmente)
+  - [Correr Storybook localmente](#correr-storybook-localmente)
 - [Contribuidores](#contribuidores)
 - [Staff](#staff)
+- [Accesibilidad](#accesibilidad)
+- [Comunidad](#comunidad)
 - [Licencias](#licencias)
-- [Links de interés](#links-de-interés)
+- [Enlaces de interés](#enlaces-de-interés)
 
 ---
 
@@ -49,33 +53,12 @@ Aca puedes ver el [Tech Stack](#tech-stack) usado en este repositorio.
 
 Si tenés interés en colaborar con el repositorio, consultá [`contributing.md`][doc-contributing] para conocer las formas de comenzar a contribuir, tené en cuenta que tenemos ciertos lineamientos.
 
-> ⚠️ Por favor, leer y adherir al [**código de conducta**][doc-code_of_conduct] de este proyecto.
+> [!warning]
+> Por favor, leer y adherir al [**código de conducta**][doc-code_of_conduct] de este proyecto.
 
 ### Replicando el proyecto en tu ciudad
 
 La naturaleza libre y solidaria de esta idea no se refiere solo a la posibilidad de que las familias de niñes con discapacidades motrices complejas puedan acceder a los juguetes sin ningún costo sino que, además, queremos que se pueda replicar en todos los lugares donde haya instituciones y personas con voluntad para llevarlo adelante. Para saber como replicar el proyecto, por favor lee nuestra [documentación][doc-replicate].
-
----
-
-## Comunidad
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/78808163/198993731-299e973d-8f3b-4a6c-a445-b2b77e0b3286.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/78808163/228854353-cbd1f9b2-68a3-4cf0-851c-d2c49b3eb85c.svg">
-  <img alt="logo-frontendcafe" src="https://user-images.githubusercontent.com/78808163/198993731-299e973d-8f3b-4a6c-a445-b2b77e0b3286.svg">
-</picture>
-
-Este proyecto se desarrolla con la participación y el apoyo de FrontendCafé. Es requerido unirte a nuestro [server][dc-fec] y buscar el canal [#juguetear][dc-channel]. Ahí vas a poder compartir dudas e ideas del proyecto. El código de conducta de este proyecto es extensible también a tu participación en el server de FrontendCafé en Discord.
-
----
-
-## Requerimientos
-
-- Tener instalada una versión de [Node](https://nodejs.org/es/) superior a `v16.16.0` (incluye `npm`)
-- Tener un editor de texto ([Visual Studio Code](https://code.visualstudio.com/), [Vim](https://www.vim.org/), etc)
-- Tener una cuenta en [GitHub](https://docs.github.com/es/get-started/signing-up-for-github/signing-up-for-a-new-github-account)
-- Leer y seguir [Código de Conducta][doc-code_of_conduct]
-- Unirte a [FrontendCafé][dc-fec] en Discord
 
 ---
 
@@ -85,34 +68,20 @@ Este proyecto se desarrolla con la participación y el apoyo de FrontendCafé. E
 - **Storybook:** [https://storybook-juguetear-web.vercel.app/](https://storybook-juguetear-web.vercel.app/)
 - **Sanity Studio:** [https://juguetear-web.vercel.app/studio](https://juguetear-web.vercel.app/studio)
 
----
-
 ## Diseño de interfaz (UI/UX)
 
 La interfaz del proyecto fue completamente desarrollada por [Mariana Lessi](https://www.behance.net/marualessi).  
-Puedes acceder a [**este enlace**][figma] para ver los diseño de la web.
+Puedes acceder a [**este enlace en Figma**][figma] para ver los diseño de la web.
 
-> 💡 Cualquier duda, feedback o sugerencia podés compartirla en el canal [#juguetear][dc-channel] del server de [FrontendCafé][dc-fec] en Discord.
-
----
-
-## Accesibilidad
-
-Quienes administramos este repositorio nos comprometemos a hacer todo lo posible por garantizar la accesibilidad digital para personas con discapacidades. Estamos continuamente mejorando la experiencia del usuario y aplicando los estándares de accesibilidad pertinentes.
-
-Las Pautas de Accesibilidad para el Contenido Web (WCAG) definen los requisitos para que les diseñadores y desarrolladores mejoren la accesibilidad para las personas con discapacidades. Éste define tres niveles de conformidad: Nivel A, Nivel AA y Nivel AAA.
-
-**Parte importante de los requerimientos a la hora de contribuir con este proyecto es cumplir al menos con los requisitos WCAG 2.1 nivel AA.**
-
-Por favor, si encontrás barreras de accesibilidad en la web de Juguetear enviando un email a [juguetear2021@gmail.com][email] o abrí un issue. Para hacerlo, necesitás leer la documentación sobre [cómo contribuir][doc-contributing].
-
----
+> [!note]
+> Cualquier duda, feedback o sugerencia podés compartirla en el canal [#juguetear][dc-channel] del server de [FrontendCafé][dc-fec] en Discord.
 
 ## Tech Stack
 
 Nuestro tech stack consiste en las siguientes tecnologías:
 
-> 💡 No hace falta tener mucho conocimiento en el tech stack para poder contribuir.
+> [!important]
+> No hace falta tener mucho conocimiento en el tech stack para poder contribuir.
 
 - **<a href="https://nextjs.org/docs">NextJS</a>** o ReactJS
 - **<a href="https://www.typescriptlang.org/docs/">TypeScript</a>** o JavaScript
@@ -121,20 +90,33 @@ Nuestro tech stack consiste en las siguientes tecnologías:
 - **<a href="https://www.sanity.io/docs">Sanity</a>**
 - **<a href="https://jestjs.io/docs/getting-started">Jest</a>**
 
-<details>
-<summary>Has click aquí, para ver extensiones recomendadas para VSCode</summary><br>
-
-- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss),
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
-- [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
-
-</details>
+> [!note]
+>
+> <details>
+>   <summary>
+>     <b>Has click aquí, para ver extensiones de VSCode recomendadas</b>
+>   </summary>
+>   <br>
+>
+> - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss),
+> - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+> - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+> - [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+> - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+>
+> </details>
 
 ---
 
-## Correr el Proyecto Localmente
+## Correr el proyecto localmente
+
+### Requerimientos
+
+- Leer y seguir [Código de Conducta][doc-code_of_conduct]
+- Unirte a [FrontendCafé][dc-fec] en Discord
+- Tener instalada una versión de [Node](https://nodejs.org/es/) superior a `v16.16.0` (incluye `npm`)
+- Tener un editor de texto ([Visual Studio Code](https://code.visualstudio.com/), [Vim](https://www.vim.org/), etc)
+- Tener una cuenta en [GitHub](https://docs.github.com/es/get-started/signing-up-for-github/signing-up-for-a-new-github-account)
 
 ### Instalación
 
@@ -151,18 +133,23 @@ Posteriormente ejecutá el siguiente comando para instalar todas las dependencia
 yarn install
 ```
 
-  <details>
-  <summary> 💡 Hacé click aquí si te aparece un error que dice <code>yarn: command not found</code></summary><br>
-
-Quiere decir que no tenés instalado `yarn`. Para instalarlo, primero asegurate de tener instalada una versión [Node](https://nodejs.org/es/) superior a `v16.16.0` y luego instalar `yarn` via `npm` (_node package manager_) ejecutando:
-
-```bash
-npm install --global yarn
-```
-
-> 💡 Podés leer más en este [artículo](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
-
-  </details>
+> [!important]
+>
+> <details>
+>  <summary>
+>    <b>Hacé click aquí si te aparece un error que dice <code>yarn: command not found</code></b>
+>  </summary>
+>  <br>
+>
+> Quiere decir que no tenés instalado `yarn`. Para instalarlo, primero asegurate de tener instalada una versión [Node](https://nodejs.org/es/) superior a `v16.16.0` y luego instalar `yarn` via `npm` (_node package manager_) ejecutando:
+>
+> ```bash
+> npm install --global yarn
+> ```
+>
+> > 💡 Podés leer más en este [artículo](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
+>
+> </details>
 
 ### Correr el entorno de desarrollo localmente
 
@@ -170,18 +157,23 @@ Una vez hechos los pasos de instalación ejecutá el siguiente comando:
 
 ```bash
 yarn run dev
-# o solo
-yarn dev
 ```
 
 Se iniciara el servidor de desarrollo, visitá [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-Dentro del mismo servidor de desarrollo se tiene acceso a **Sanity Studio**, visitá [http://localhost:3000/studio](http://localhost:3000/studio) para visualizar el dashboard.
+En el mismo servidor de desarrollo se tiene acceso al CMS **Sanity Studio**, visitá [http://localhost:3000/studio](http://localhost:3000/studio) para visualizar el dashboard.
 
-<details>
-  <summary> 💡 Hacé click aquí para obtener más información para el acceso al <code>dashboard de Sanity Studio</code></summary><br>
-  Para tener accesso al dashboard de <b>Sanity Studio</b>, dejá un mensaje en el canal <i>#juguetear</i> de Discord avisando a quienes administran los accesos: <b>@nykka</b>, <b>@TonyMckes</b> o <b>@LPRegen</b>.
-</details>
+> [!note]
+>
+> <details>
+>   <summary>
+>    <b>Hacé click aquí para obtener más información para el acceso al dashboard de Sanity Studio</b>
+>   </summary>
+>   <br>
+>
+> Para tener accesso al dashboard de <b>Sanity Studio</b>, dejá un mensaje en el canal <i>#juguetear</i> de Discord avisando a quienes administran los accesos: <b>@nykka</b>, <b>@TonyMckes</b> o <b>@LPRegen</b>.
+>
+> </details>
 
 ### Correr Storybook localmente
 
@@ -193,7 +185,8 @@ yarn storybook
 
 Se iniciará el servidor de **Storybook**. Visitá [http://localhost:6006](http://localhost:6006) en tu navegador para ver los componentes.
 
-> ⚠️ Asegúrate de haber leido [**como contribuir**][doc-contributing], y recuerda que si tenés dudas puedes preguntarnos en el canal [#juguetear][dc-channel] en Discord.
+> [!note]
+> Asegúrate de haber leido [**como contribuir**][doc-contributing], y recuerda que si tenés dudas puedes preguntarnos en el canal [#juguetear][dc-channel] en Discord.
 
 ---
 
@@ -207,23 +200,45 @@ Made with [contrib.rocks](https://contrib.rocks).
 
 ## Staff
 
-_Coordinador del taller de ayudas técnicas_  
-**Sergio Ruau**
+**Coordinador del taller de ayudas técnicas:**
 
-_Consultor / Asesor_  
-**Antonio Sacco**
+- Sergio Ruau
 
-_Diseño UX/UI_  
-**Mariana Lessi**
+**Consultor / Asesor:**
 
-_Desarrollo y administración del repositorio_  
-**Verónica García ([@nykka](https://github.com/nykka))**
+- [Antonio Sacco](http://antoniosacco.com.ar/)
 
-**Manuel Escribano ([@LPRegen](https://github.com/LPRegen))**
+**Diseño UX/UI:**
 
-**Anthony Mackensen ([@TonyMckes](https://github.com/TonyMckes))**
+- [Mariana Lessi](https://www.behance.net/marualessi)
+
+**Desarrollo y administración del repositorio:**
+
+- Verónica García ([@nykka](https://github.com/nykka))
+- Manuel Escribano ([@LPRegen](https://github.com/LPRegen))
+- Anthony Mackensen ([@TonyMckes](https://github.com/TonyMckes))
 
 ---
+
+## Accesibilidad
+
+Quienes administramos este repositorio nos comprometemos a hacer todo lo posible por garantizar la accesibilidad digital para personas con discapacidades. Estamos continuamente mejorando la experiencia del usuario y aplicando los estándares de accesibilidad pertinentes.
+
+Las Pautas de Accesibilidad para el Contenido Web (WCAG) definen los requisitos para que les diseñadores y desarrolladores mejoren la accesibilidad para las personas con discapacidades. Éste define tres niveles de conformidad: Nivel A, Nivel AA y Nivel AAA.
+
+**Parte importante de los requerimientos a la hora de contribuir con este proyecto es cumplir al menos con los requisitos WCAG 2.1 nivel AA.**
+
+Por favor, si encontrás barreras de accesibilidad en la web de Juguetear enviando un email a [juguetear2021@gmail.com][email] o abrí un issue. Para hacerlo, necesitás leer la documentación sobre [cómo contribuir][doc-contributing].
+
+## Comunidad
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/78808163/198993731-299e973d-8f3b-4a6c-a445-b2b77e0b3286.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/78808163/228854353-cbd1f9b2-68a3-4cf0-851c-d2c49b3eb85c.svg">
+  <img alt="logo-frontendcafe" src="https://user-images.githubusercontent.com/78808163/198993731-299e973d-8f3b-4a6c-a445-b2b77e0b3286.svg">
+</picture>
+
+Este proyecto se desarrolla con la participación y el apoyo de FrontendCafé. Es requerido unirte a nuestro [server][dc-fec] y buscar el canal [#juguetear][dc-channel]. Ahí vas a poder compartir dudas e ideas del proyecto. El código de conducta de este proyecto es extensible también a tu participación en el server de FrontendCafé en Discord.
 
 ## Licencias
 
@@ -231,7 +246,7 @@ Este repositorio se publica con licencia [GNU General Public License v3.0][doc-l
 
 El contenido de la web de Juguetear se publica con licencia [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International][doc-lic-2].
 
-## Links de interés
+## Enlaces de interés
 
 - [Colegio Lincoln](https://colegiolincoln.edu.ar/juguetear/)
 - [Antonio Sacco](http://antoniosacco.com.ar/)
