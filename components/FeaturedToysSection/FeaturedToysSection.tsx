@@ -10,6 +10,8 @@ export const FeaturedToysSection = ({
   title,
   toys,
 }: IFeaturedToysSection) => {
+  // TODO: #375 Corregir enlaces a juguetes individuales
+
   return (
     <section className="py-10">
       <div className="container text-center">

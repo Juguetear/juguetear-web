@@ -27,7 +27,7 @@ const homePage = defineType({
         defineField({
           title: "Llamada a la acción",
           name: "cta",
-          type: "link",
+          type: "relativeUrl",
         }),
         defineField({
           title: "Foto",
@@ -41,6 +41,7 @@ const homePage = defineType({
       name: "twoImagesSection",
       type: "object",
       fields: [
+        // TODO: #376 Modificar el campo 'description' en el esquema `home-page`
         ...textFields,
         defineField({
           title: "Fotos",
@@ -64,7 +65,7 @@ const homePage = defineType({
         defineField({
           title: "Llamada a la acción",
           name: "cta",
-          type: "link",
+          type: "relativeUrl",
         }),
         defineField({
           title: "Juguetes",
@@ -95,6 +96,7 @@ const homePage = defineType({
               name: "blockSection",
               type: "object",
               fields: [
+                // TODO: #376 Modificar el campo 'description' en el esquema `home-page`
                 ...textFields,
                 defineField({
                   name: "image",

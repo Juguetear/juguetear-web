@@ -22,6 +22,7 @@ export const Card = ({
 }: CardProps) => {
   const remoteImage = imgUrlFrom(image, { width: 400, height: 225 });
 
+  // TODO: #374 Ajustar los estilos en los textos de las Cards
   return (
     <div className="w-full flex-grow space-y-4 justify-self-stretch rounded border p-6 lg:max-w-xs">
       <h3 className="border-b border-gray-light pb-2 font-bold text-blue">

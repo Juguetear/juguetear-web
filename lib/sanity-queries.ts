@@ -33,7 +33,7 @@ export const homePageQuery = groq`
       ...,
       toys[] -> {
         ...,
-        images[] -> ${sanityImageProjection},
+        images[] ${sanityImageProjection},
         characteristics[] -> {
           ...,
           category->

@@ -1,10 +1,12 @@
 "use client";
+
+import { ArrowButton } from "components/ArrowButton/ArrowButton";
 import React from "react";
-import { Navigation, A11y, Keyboard } from "swiper";
+import { A11y, Keyboard, Navigation, type SwiperOptions } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/swiper.min.css";
 import "swiper/css/navigation";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { ArrowButton } from "components/ArrowButton/ArrowButton";
 
 interface CarouselData {
   children: React.ReactNode;
@@ -13,7 +15,7 @@ interface CarouselData {
 
 const Carousel = ({ children, isFullWidth }: CarouselData) => {
   const childrenArray = React.Children.toArray(children);
-  const breakpointsConfig = {
+  const breakpointsConfig: Record<number, SwiperOptions> = {
     768: {
       slidesPerView: 2,
     },
@@ -22,6 +24,7 @@ const Carousel = ({ children, isFullWidth }: CarouselData) => {
     },
   };
 
+  // TODO: #373 Agregar margenes entre las slides del Carousel
   return (
     <div className="flex items-center">
       <ArrowButton />

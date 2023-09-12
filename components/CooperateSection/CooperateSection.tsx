@@ -13,26 +13,12 @@ export const CooperateSection: React.FC<ICooperateSection> = ({
   callOut,
 }) => {
   return (
-    /**
-     * The spacing is not the same as the design, but I think it's better this way to mantain
-     * the same spacing in the whole section, and the design has many different spacings
-     * The padding bottom could be managed in the page or the layout,
-     * because I am assuming that this section is the last one in the page
-     */
     <section className="container flex flex-col items-center gap-6 pb-20 text-gray-dark">
       <h2 className="text-center">{title}</h2>
       <p className="max-w-2xl text-center">{description}</p>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-[5fr,1fr,5fr] md:gap-1">
         {blocks.map((block, i) => {
-          /**
-           * TODO: maybe should come from Sanity a better way to identify this
-           * Explanation:
-           * After the first "." the font-weight should be bold, so we split the
-           * description in two parts and add a <strong> tag to the second part
-           * We previously know that the only case where this happens is in the
-           * first block, so we check if the index is 0
-           */
           const hasDiferentFontWeightInDescription = i === 0;
           const firstPart = hasDiferentFontWeightInDescription
             ? block.description.split(".")[0]
@@ -70,8 +56,6 @@ export const CooperateSection: React.FC<ICooperateSection> = ({
       </div>
 
       {/** TODO: find a way to pass font-outfit to PortableTxt component */}
-      {/** TODO: find a way to pass correct font weight to the link with "colaborar" label into PortableTxt component */}
-      {/** The pb is overriden because PortableText has a default mb-3 */}
       <HighlightedWrapper className="w-full">
         <PortableTxt content={callOut} wrapperClassName="!text-blue" />
       </HighlightedWrapper>
