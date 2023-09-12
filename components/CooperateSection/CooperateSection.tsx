@@ -72,8 +72,8 @@ export const CooperateSection: React.FC<ICooperateSection> = ({
       {/** TODO: find a way to pass font-outfit to PortableTxt component */}
       {/** TODO: find a way to pass correct font weight to the link with "colaborar" label into PortableTxt component */}
       {/** The pb is overriden because PortableText has a default mb-3 */}
-      <HighlightedWrapper className="mt-4 pb-5 text-left text-base font-extrabold md:mt-8">
-        <PortableTxt content={callOut} />
+      <HighlightedWrapper className="w-full">
+        <PortableTxt content={callOut} wrapperClassName="!text-blue" />
       </HighlightedWrapper>
     </section>
   );

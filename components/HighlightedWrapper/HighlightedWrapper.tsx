@@ -9,7 +9,7 @@ const HighlightedWrapper = ({
 }: NotificationProps) => {
   return (
     <div
-      className={`rounded-lg bg-turquoise/[0.1] px-7 py-8 text-center text-blue ${className}`}
+      className={`rounded-lg bg-turquoise/[0.1] px-7 py-8 text-blue ${className}`}
     >
       {children}
     </div>

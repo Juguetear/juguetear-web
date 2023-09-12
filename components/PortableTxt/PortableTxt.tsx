@@ -2,21 +2,21 @@ import {
   PortableText,
   type PortableTextReactComponents,
 } from "@portabletext/react";
+import { Link } from "components/Link/Link";
 import { urlFor } from "lib/sanity-client";
 import Image from "next/image";
-import Link from "next/link";
 import { type TypedObject } from "sanity";
 import type { SanityImage } from "types/common";
 
 const customComponents: Partial<PortableTextReactComponents> = {
   block: {
-    normal: ({ children }) => <p className="mb-4">{children}</p>,
+    normal: ({ children }) => <p>{children}</p>,
     h1: ({ children }) => <h1 className="mb-10 text-center">{children}</h1>,
     h2: ({ children }) => <h2 className="mb-10">{children}</h2>,
-    h3: ({ children }) => <h3 className="mb-4">{children}</h3>,
-    h4: ({ children }) => <h4 className="mb-4">{children}</h4>,
-    h5: ({ children }) => <h5 className="mb-4">{children}</h5>,
-    h6: ({ children }) => <h6 className="mb-4">{children}</h6>,
+    h3: ({ children }) => <h3>{children}</h3>,
+    h4: ({ children }) => <h4>{children}</h4>,
+    h5: ({ children }) => <h5>{children}</h5>,
+    h6: ({ children }) => <h6>{children}</h6>,
   },
   types: {
     images: ({ value }) => {
@@ -61,15 +61,14 @@ const customComponents: Partial<PortableTextReactComponents> = {
   },
   marks: {
     link: ({ children, value }) => {
-      const style = "font-medium text-blue underline hover:text-orange";
       return (
-        <Link className={style} href={value.href}>
+        <Link appearance="link" className="p-0 underline" href={value.href}>
           {children}
         </Link>
       );
     },
-    em: ({ children }) => (
-      <em className="font-semibold text-blue">{children}</em>
+    code: ({ children }) => (
+      <code className="rounded bg-darkblue/10 px-1">{children}</code>
     ),
   },
   list: {
@@ -84,8 +83,11 @@ const customComponents: Partial<PortableTextReactComponents> = {
 
 interface Props {
   content: TypedObject | TypedObject[];
+  wrapperClassName?: string;
 }
 
-export const PortableTxt = ({ content }: Props) => (
-  <PortableText value={content} components={customComponents} />
+export const PortableTxt = ({ content, wrapperClassName }: Props) => (
+  <div className={`space-y-4 text-gray-dark ${wrapperClassName}`}>
+    <PortableText value={content} components={customComponents} />
+  </div>
 );

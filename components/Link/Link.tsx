@@ -18,10 +18,11 @@ interface LinkProps
 export const Link: React.FC<LinkProps> = ({
   appearance = "link",
   children,
+  className,
   ...rest
 }: LinkProps) => {
   return (
-    <NextLink {...rest} className={styles[appearance]}>
+    <NextLink {...rest} className={`${styles[appearance]} ${className}`}>
       {children}
     </NextLink>
   );
