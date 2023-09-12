@@ -9,4 +9,6 @@ export interface FaqPage {
 export interface Faq {
   question: string;
   answer: PortableTextContent;
+  _key?: string;
+  _type?: string;
 }
