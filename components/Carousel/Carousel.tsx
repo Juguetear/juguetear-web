@@ -43,6 +43,7 @@ const Carousel = ({ children, isFullWidth }: CarouselData) => {
         keyboard
         breakpoints={isFullWidth ? undefined : breakpointsConfig}
         slidesPerView={1}
+        spaceBetween={20}
         wrapperClass={isFullWidth && "aspect-video !w-[48rem]"}
       >
         {childrenArray.map((child, index) => {
