@@ -10,8 +10,6 @@ export const FeaturedToysSection = ({
   title,
   toys,
 }: IFeaturedToysSection) => {
-  // TODO: #375 Corregir enlaces a juguetes individuales
-
   return (
     <section className="py-10">
       <div className="container text-center">
@@ -24,7 +22,7 @@ export const FeaturedToysSection = ({
               image={toy.images[0]}
               key={toy._id}
               title={toy.name}
-              link={`/${toy.slug.current}`}
+              link={`juguete/${toy.slug.current}`}
               available={toy.isAvailable}
               description={toy.shortDescription}
             />
