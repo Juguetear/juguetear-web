@@ -9,7 +9,7 @@ const textFields = [
   defineField({
     title: "Descripción",
     name: "description",
-    type: "string",
+    type: "block",
   }),
 ];
 
@@ -41,7 +41,6 @@ const homePage = defineType({
       name: "twoImagesSection",
       type: "object",
       fields: [
-        // TODO: #376 Modificar el campo 'description' en el esquema `home-page`
         ...textFields,
         defineField({
           title: "Fotos",
@@ -96,7 +95,6 @@ const homePage = defineType({
               name: "blockSection",
               type: "object",
               fields: [
-                // TODO: #376 Modificar el campo 'description' en el esquema `home-page`
                 ...textFields,
                 defineField({
                   name: "image",
