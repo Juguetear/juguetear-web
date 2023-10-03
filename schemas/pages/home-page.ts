@@ -9,6 +9,14 @@ const textFields = [
   defineField({
     title: "Descripción",
     name: "description",
+    type: "string",
+  }),
+];
+
+const descriptionBlockField = [
+  defineField({
+    title: "Descripción",
+    name: "description",
     type: "block",
   }),
 ];
@@ -42,6 +50,7 @@ const homePage = defineType({
       type: "object",
       fields: [
         ...textFields,
+        ...descriptionBlockField,
         defineField({
           title: "Fotos",
           name: "photos",
@@ -96,6 +105,7 @@ const homePage = defineType({
               type: "object",
               fields: [
                 ...textFields,
+                ...descriptionBlockField,
                 defineField({
                   name: "image",
                   type: "img",
