@@ -45,6 +45,7 @@ export const NavbarItem = ({ children, route, ...props }: NavbarLinkProps) => {
   const isCurrent = pathname === route;
   const conditionalClasses = isCurrent ? currentClasses : notCurrentClasses;
 
+  // TODO: #385 Adjust styles of the navigation bar
   return (
     <li
       className={`flex h-[60px] items-center border-b-[5px] pb-2 font-outfit text-base  ${conditionalClasses}`}
