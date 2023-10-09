@@ -13,6 +13,20 @@ const textFields = [
   }),
 ];
 
+const blockTextFields = [
+  defineField({
+    title: "Título",
+    name: "title",
+    type: "string",
+  }),
+  defineField({
+    title: "Descripción",
+    name: "description",
+    type: "array",
+    of: [{ type: "block" }],
+  }),
+];
+
 const homePage = defineType({
   title: "Home",
   name: "homePage",
@@ -41,8 +55,7 @@ const homePage = defineType({
       name: "twoImagesSection",
       type: "object",
       fields: [
-        // TODO: #376 Modificar el campo 'description' en el esquema `home-page`
-        ...textFields,
+        ...blockTextFields,
         defineField({
           title: "Fotos",
           name: "photos",
@@ -96,8 +109,7 @@ const homePage = defineType({
               name: "blockSection",
               type: "object",
               fields: [
-                // TODO: #376 Modificar el campo 'description' en el esquema `home-page`
-                ...textFields,
+                ...blockTextFields,
                 defineField({
                   name: "image",
                   type: "img",
