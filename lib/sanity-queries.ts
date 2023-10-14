@@ -60,6 +60,17 @@ export const aboutPageQuery = groq`
 export const faqPageQuery = groq`
 *[_type == 'faqPage'][0]`;
 
+export const collaboratePageQuery = groq`
+*[_type == 'collaboratePage'][0] {
+  ...,
+  heroSection {
+    ...,
+    image ${sanityImageProjection},
+  }
+}
+
+`;
+
 export const toysQuery = groq`
   *[_type == 'toy'] {
     ...,
