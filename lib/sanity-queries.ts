@@ -15,8 +15,7 @@ export const layoutQuery = groq`
       _type != 'pageRef' => { name, url },
       _type == 'pageRef' => @-> { "name": title, "url": path }
     }
-  }
-`;
+  }`;
 
 export const homePageQuery = groq`
   *[_type == 'homePage'][0] {
@@ -47,15 +46,13 @@ export const homePageQuery = groq`
         image ${sanityImageProjection},
       }
     }
-  }
-`;
+  }`;
 
 export const aboutPageQuery = groq`
   *[_type == 'aboutPage'][0] {
     ...,
     team[] ->
-  }
-`;
+  }`;
 
 export const faqPageQuery = groq`
 *[_type == 'faqPage'][0]`;
@@ -67,9 +64,10 @@ export const collaboratePageQuery = groq`
     ...,
     image ${sanityImageProjection},
   }
-}
+}`;
 
-`;
+export const accessibilityDeclarationPageQuery = groq`
+  *[_type == 'accessibilityDeclarationPage'][0]`;
 
 export const toysQuery = groq`
   *[_type == 'toy'] {
