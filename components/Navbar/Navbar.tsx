@@ -40,21 +40,20 @@ export const Navbar = ({ links, ...props }: NavbarProps) => {
 
 export const NavbarItem = ({ children, route, ...props }: NavbarLinkProps) => {
   const pathname = usePathname();
-  const currentClasses = "border-b-orange text-orange font-bold";
-  const notCurrentClasses = "border-transparent text-blue font-medium";
+  const currentClasses = "border-b-orange text-orange";
+  const notCurrentClasses = "border-transparent text-blue";
   const isCurrent = pathname === route;
   const conditionalClasses = isCurrent ? currentClasses : notCurrentClasses;
 
-  // TODO: #385 Adjust styles of the navigation bar
   return (
     <li
-      className={`flex h-[60px] items-center border-b-[5px] pb-2 font-outfit text-base  ${conditionalClasses}`}
+      className={`link flex h-[60px] items-center rounded-none border-b-[5px] pb-2 font-outfit text-base font-medium ${conditionalClasses}`}
       key={route}
       {...props}
     >
       <Link
         data-text={children}
-        className="duration-300 before:invisible before:block before:h-0 before:overflow-hidden before:font-extrabold before:content-[attr(data-text)] hover:font-extrabold hover:text-orange"
+        className="duration-300 before:invisible before:block before:h-0 before:overflow-hidden before:font-medium before:content-[attr(data-text)] hover:font-medium hover:text-orange"
         href={route}
         aria-current={isCurrent ? "page" : false}
       >
