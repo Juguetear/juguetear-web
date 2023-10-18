@@ -7,17 +7,16 @@ interface ContactFormProps {
 }
 
 export const ContactForm = ({ children }: ContactFormProps) => {
-  const handleSubmit = async (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const form = event.currentTarget as HTMLInputElement;
+    const formData = new FormData(event.currentTarget);
+    const { name, email, body } = Object.fromEntries(formData);
+
     const response = await postClient.create({
       _type: "message",
-      // @ts-expect-error TODO: Correct type
-      name: form.name.value,
-      // @ts-expect-error TODO: Correct type
-      email: form.email.value,
-      // @ts-expect-error TODO: Correct type
-      body: form.body.value,
+      name,
+      email,
+      body,
     });
     return response;
   };
