@@ -34,7 +34,7 @@
   }
 
   .link {
-    @apply button__link__base px-2 py-1 text-blue hover:text-orange hover:underline focus:text-blue focus:underline focus:outline-none;
+    @apply button__link__base px-2 py-1 text-blue focus-within:outline-none hover:text-orange hover:underline focus:text-blue focus:underline focus:outline-none;
   }
 
   .button {
