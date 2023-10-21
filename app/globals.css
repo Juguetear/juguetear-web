@@ -30,11 +30,11 @@
 
 @layer components {
   .button__link__base {
-    @apply inline-flex justify-between gap-2 rounded font-outfit text-base font-extrabold focus:shadow-md;
+    @apply inline-flex justify-between gap-2 rounded font-outfit text-base font-extrabold focus-within:shadow-md;
   }
 
   .link {
-    @apply button__link__base px-2 py-1 text-blue hover:text-orange hover:underline focus:text-blue focus:underline focus:outline-none;
+    @apply button__link__base px-2 py-1 text-blue focus-within:outline-none hover:text-orange hover:underline focus:text-blue focus:underline focus:outline-none;
   }
 
   .button {

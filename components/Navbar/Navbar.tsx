@@ -47,13 +47,13 @@ export const NavbarItem = ({ children, route, ...props }: NavbarLinkProps) => {
 
   return (
     <li
-      className={`link flex h-[60px] items-center rounded-none border-b-[5px] pb-2 font-outfit text-base font-medium ${conditionalClasses}`}
+      className={`flex h-[60px] items-center rounded-none border-b-[5px] pb-2 font-outfit text-base font-medium ${conditionalClasses}`}
       key={route}
       {...props}
     >
       <Link
         data-text={children}
-        className="duration-300 before:invisible before:block before:h-0 before:overflow-hidden before:font-medium before:content-[attr(data-text)] hover:font-medium hover:text-orange"
+        className="link block overflow-hidden font-medium duration-300 hover:text-orange"
         href={route}
         aria-current={isCurrent ? "page" : false}
       >
