@@ -53,7 +53,7 @@ export const NavbarItem = ({ children, route, ...props }: NavbarLinkProps) => {
     >
       <Link
         data-text={children}
-        className="link block overflow-hidden font-medium duration-300 hover:text-orange"
+        className="link block overflow-hidden font-medium hover:text-orange"
         href={route}
         aria-current={isCurrent ? "page" : false}
       >
