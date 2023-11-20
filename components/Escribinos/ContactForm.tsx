@@ -1,6 +1,6 @@
 "use client";
 
-import Notification from "components/Notification/Notification";
+import Notification from "components/HighlightedWrapper/HighlightedWrapper";
 import EnvelopeIcon from "components/assets/EnvelopeIcon";
 import { postClient } from "lib/sanity-client";
 import { useState } from "react";
