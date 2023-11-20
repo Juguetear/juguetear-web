@@ -63,6 +63,11 @@ export const collaboratePageQuery = groq`
   heroSection {
     ...,
     image ${sanityImageProjection},
+    
+  },
+  description[] {
+    ...,
+    images[] ${sanityImageProjection},
   }
 }`;
 
