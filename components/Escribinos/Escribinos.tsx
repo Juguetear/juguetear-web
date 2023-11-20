@@ -1,7 +1,7 @@
+import { Button } from "components/Button/Button";
 import Input from "components/Input/Input";
 import TextArea from "components/TextArea/TextArea";
-import { Button } from "components/Button/Button";
-import React from "react";
+import { ContactForm } from "./ContactForm";
 
 export const Escribinos = () => {
   return (
@@ -11,8 +11,7 @@ export const Escribinos = () => {
         <p className="mb-8 text-center">
           Los campos que contengan * son obligatorios
         </p>
-
-        <form action="" className="container max-w-2xl" method="POST">
+        <ContactForm>
           <Input
             helperText="Nombre"
             id="name"
@@ -29,13 +28,18 @@ export const Escribinos = () => {
             type="email"
             required
           />
-          <TextArea helperText="Mensaje:" label="Mensaje:" required />
+          <TextArea
+            helperText="Mensaje:"
+            label="Mensaje:"
+            name="body"
+            required
+          />
           <div className="flex justify-center md:justify-end">
             <Button appearance="button" type="submit">
               Enviar
             </Button>
           </div>
-        </form>
+        </ContactForm>
       </div>
     </section>
   );
