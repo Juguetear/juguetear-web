@@ -1,7 +1,13 @@
 import { render, screen } from "@testing-library/react";
 import * as navigation from "next/navigation";
-
 import { Navbar, NavbarItem } from "./Navbar";
+
+jest.mock("next/navigation", () => {
+  return {
+    __esModule: true,
+    ...jest.requireActual("next/navigation"),
+  };
+});
 
 const usePathname = jest.spyOn(navigation, "usePathname");
 

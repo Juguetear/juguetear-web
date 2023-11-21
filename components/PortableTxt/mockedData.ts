@@ -59,9 +59,9 @@ const em = {
   style: "normal",
   children: [
     {
-      text: "emphasis",
+      text: "inline code",
       _type: "span",
-      marks: ["em"],
+      marks: ["code"],
     },
   ],
 };
@@ -76,6 +76,7 @@ const images = {
         _ref: "image-54942b7ea04fa5820b3e9d3f03df0a602a7d67c5-420x236-png",
         _type: "reference",
       },
+      placeholder: "image-54942b7ea04fa5820b3e9d3f03df0a602a7d67c5-420x236-png",
     },
     {
       _type: "img",
@@ -84,6 +85,7 @@ const images = {
         _ref: "image-849770bef25dd174bb17c55af8f840c53a6debb0-420x236-png",
         _type: "reference",
       },
+      placeholder: "image-54942b7ea04fa5820b3e9d3f03df0a602a7d67c5-420x236-png",
     },
   ],
 };

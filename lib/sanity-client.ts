@@ -22,6 +22,7 @@ export const postClient: SanityClient = createClient({
   dataset,
   token: writeToken,
   apiVersion,
+  useCdn: true,
 });
 
 const builder = imageUrlBuilder(client);

@@ -3,6 +3,7 @@ import { FaqPage } from "types/faq-page";
 export const FAQMockData: FaqPage = {
   faqList: [
     {
+      _key: "001",
       answer: [
         {
           children: [
@@ -22,6 +23,7 @@ export const FAQMockData: FaqPage = {
       question: "¿Qué ingresos tienen, y cómo se mantienen?",
     },
     {
+      _key: "002",
       answer: [
         {
           style: "normal",
@@ -41,6 +43,7 @@ export const FAQMockData: FaqPage = {
       question: "¿Qué son los juguetes adaptados y los switches?",
     },
     {
+      _key: "003",
       answer: [
         {
           markDefs: [],
@@ -60,6 +63,7 @@ export const FAQMockData: FaqPage = {
       question: "¿Qué pasa si se me rompe un juguete o switch prestado?",
     },
     {
+      _key: "004",
       answer: [
         {
           style: "normal",
@@ -79,6 +83,7 @@ export const FAQMockData: FaqPage = {
       question: "¿Prestan los juguetes a cualquier persona?",
     },
     {
+      _key: "005",
       answer: [
         {
           _key: "c78b2c999112",
@@ -98,6 +103,7 @@ export const FAQMockData: FaqPage = {
       question: "¿Los juguetes se prestan con switch o pulsador?",
     },
     {
+      _key: "006",
       answer: [
         {
           children: [
@@ -117,6 +123,7 @@ export const FAQMockData: FaqPage = {
       question: "¿Los juguetes se prestan con pilas?",
     },
     {
+      _key: "007",
       answer: [
         {
           style: "normal",
@@ -136,6 +143,7 @@ export const FAQMockData: FaqPage = {
       question: "¿Cómo debo hacer para solicitar un juguete?",
     },
     {
+      _key: "008",
       answer: [
         {
           markDefs: [],
@@ -155,6 +163,7 @@ export const FAQMockData: FaqPage = {
       question: "¿Envían a otros lugares fuera de La Plata?",
     },
     {
+      _key: "009",
       answer: [
         {
           markDefs: [],

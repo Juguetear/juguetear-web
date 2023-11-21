@@ -6,9 +6,9 @@ describe("Portable text component", () => {
   it("Render emphasis element", () => {
     render(<PortableTxt content={em} />);
 
-    const emEl = screen.getByText("emphasis");
+    const emEl = screen.getByText("inline code");
     expect(emEl).toContainHTML(
-      `<em class="font-semibold text-blue">emphasis</em>`
+      `<code class="rounded bg-darkblue/10 px-1">inline code</code>`
     );
   });
 
@@ -30,7 +30,7 @@ describe("Portable text component", () => {
     render(<PortableTxt content={span} />);
 
     const spanEl = screen.getByText("Just a span");
-    expect(spanEl).toContainHTML(`<p class="mb-4">Just a span</p>`);
+    expect(spanEl).toContainHTML(`<p>Just a span</p>`);
   });
 
   it("Render strong element", () => {
