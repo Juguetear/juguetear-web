@@ -24,7 +24,6 @@ const Carousel = ({ children, isFullWidth }: CarouselData) => {
     },
   };
 
-  // TODO: #373 Agregar margenes entre las slides del Carousel
   return (
     <div className="flex items-center">
       <ArrowButton />
