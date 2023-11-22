@@ -8,6 +8,7 @@ import Carousel from "./Carousel";
  *
  * See "transformIgnorePatterns" on "jest.config.js" for more information.
  */
+jest.mock("swiper/css", jest.fn());
 jest.mock("swiper/css/navigation", jest.fn());
 
 describe("Carousel", () => {
