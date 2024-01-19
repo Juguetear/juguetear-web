@@ -19,7 +19,7 @@ describe("Accordion", () => {
       name: "¿Hay que pagar para usar los juguetes?",
     });
 
-    userEvent.click(accordionElement);
+    await userEvent.click(accordionElement);
 
     expect(
       await screen.findByText("No, el prestamo es sin costo alguno.")

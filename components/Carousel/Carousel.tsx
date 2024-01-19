@@ -2,10 +2,11 @@
 
 import { ArrowButton } from "components/ArrowButton/ArrowButton";
 import React from "react";
-import { A11y, Keyboard, Navigation, type SwiperOptions } from "swiper";
+import { A11y, Keyboard, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import type { SwiperOptions } from "swiper/types";
 
-import "swiper/swiper.min.css";
+import "swiper/css";
 import "swiper/css/navigation";
 
 interface CarouselData {

@@ -9,7 +9,11 @@ async function Page() {
   );
 
   /* TODO Crear Accessibilidad Page */
-  return <>{/* <pre>{JSON.stringify(accessibilidadPage, null, 2)}</pre> */}</>;
+  return (
+    <>
+      <pre>{JSON.stringify(accessibilidadPage, null, 2)}</pre>{" "}
+    </>
+  );
 }
 
 export default Page;
