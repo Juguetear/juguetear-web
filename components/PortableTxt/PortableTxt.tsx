@@ -87,7 +87,7 @@ interface Props {
 }
 
 export const PortableTxt = ({ content, wrapperClassName }: Props) => (
-  <div className={`space-y-4 text-gray-dark ${wrapperClassName}`}>
+  <div className={`space-y-4 text-gray-dark ${wrapperClassName || ""}`}>
     <PortableText value={content} components={customComponents} />
   </div>
 );
