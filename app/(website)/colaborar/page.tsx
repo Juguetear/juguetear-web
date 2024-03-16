@@ -7,7 +7,12 @@ async function Page() {
   const colaborarData =
     await client.fetch<CollaboratePage>(collaboratePageQuery);
   /* TODO: Crear colaborar page */
-  return <PortableTxt content={colaborarData.description}></PortableTxt>;
+  return (
+    <PortableTxt
+      content={colaborarData.description}
+      wrapperClassName="container max-w-3xl py-16 lg:py-24"
+    ></PortableTxt>
+  );
 }
 
 export default Page;
