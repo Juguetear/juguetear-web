@@ -2,16 +2,19 @@ import React from "react";
 import { client } from "lib/sanity-client";
 import { accessibilityDeclarationPageQuery } from "lib/sanity-queries";
 import { AccessibilityDeclarationPage } from "types/accessibility-declaration-page";
+import { PortableTxt } from "components/PortableTxt/PortableTxt";
 
 async function Page() {
-  const accessibilidadPage = await client.fetch<AccessibilityDeclarationPage>(
+  const { content } = await client.fetch<AccessibilityDeclarationPage>(
     accessibilityDeclarationPageQuery
   );
 
-  /* TODO Crear Accessibilidad Page */
   return (
     <>
-      <pre>{JSON.stringify(accessibilidadPage, null, 2)}</pre>{" "}
+      <PortableTxt
+        content={content}
+        wrapperClassName="container max-w-3xl py-16 lg:py-24"
+      />
     </>
   );
 }
