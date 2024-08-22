@@ -26,7 +26,8 @@
     "react-dom": "^18.2.0",
     "sanity": "^3.20.1",
     "styled-components": "^6.1.1",
-    "swiper": "^11.0.5"
+    "swiper": "^11.0.5",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^7.5.3",
