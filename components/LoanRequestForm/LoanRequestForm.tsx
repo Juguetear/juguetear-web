@@ -1,10 +1,16 @@
+"use client";
+
 import { Button } from "components/Button/Button";
 import TextArea from "components/TextArea/TextArea";
 import Input from "components/Input/Input";
 import React from "react";
 import { Link } from "components/Link/Link";
+import { useFormState } from "react-dom";
+import { loanReqFormAction } from "./form-action";
 
 export const LoanRequestForm = () => {
+  const [errorMsg, formAction] = useFormState(loanReqFormAction, {});
+
   return (
     <section className="py-5 md:py-10">
       <div className="mx-auto max-w-3xl">
@@ -20,7 +26,7 @@ export const LoanRequestForm = () => {
           </Link>
         </p>
 
-        <form action="" className="mx-auto max-w-2xl" method="POST">
+        <form action={formAction} method="POST" className="mx-auto max-w-2xl">
           <h4 className="mb-8">
             Paso 1 de 2: <br />
             Completá los datos del formulario.
@@ -30,142 +36,152 @@ export const LoanRequestForm = () => {
             Datos del adulto responsable
           </p>
           <Input
-            helperText="Ej: Marísol Hernández"
             id="fullname"
             name="fullname"
             label="Nombre y apellido:"
             placeholder="Ej: Marísol Hernández"
             type="text"
-            required
+            error={!!errorMsg.fullname}
+            helperText={errorMsg.fullname?.at(0) || "Ej: Marísol Hernández"}
           />
           <Input
-            helperText="Ej: 35764532 (sin puntos)"
             id="dni"
             name="dni"
             label="DNI:"
             placeholder="Ej: 35764532 (sin puntos)"
             type="number"
-            required
+            error={!!errorMsg.dni}
+            helperText={errorMsg.dni?.at(0) || "Ej: 35764532 (sin puntos)"}
           />
           <div className="grid grid-cols-[1fr_1fr] grid-rows-2 gap-4 md:grid-cols-[6fr_2fr_2fr] md:grid-rows-1">
             <Input
-              helperText="Ej: Mitre"
               id="calle"
               name="calle"
               label="Calle:"
               placeholder="Ej: Mitre"
               type="text"
-              required
+              error={!!errorMsg.calle}
+              helperText={errorMsg.calle?.at(0) || "Ej: Mitre"}
             />
             <Input
-              helperText="Ej: 1200"
               id="altura"
               name="altura"
               label="Altura:"
               placeholder="Ej: 1200"
               type="number"
-              required
+              error={!!errorMsg.altura}
+              helperText={errorMsg.altura?.at(0) || "Ej: 1200"}
             />
             <div className="col-span-2 md:col-span-1">
               <Input
-                helperText="Ej: 4B"
                 id="depto"
                 name="depto"
                 label="Piso y depto:"
                 placeholder="Ej: 4B"
                 type="text"
+                error={!!errorMsg.depto}
+                helperText={errorMsg.depto?.at(0) || "Ej: 4B"}
               />
             </div>
           </div>
           <div className="grid gap-4 md:grid-cols-[6fr_4fr]">
             <Input
-              helperText="Ej: Mitre"
               id="localidad"
               name="localidad"
               label="Localidad:"
               placeholder="Ej: Mitre"
               type="text"
-              required
+              error={!!errorMsg.localidad}
+              helperText={errorMsg.localidad?.at(0) || "Ej: Mitre"}
             />
             <Input
-              helperText="Ej: 1870"
               id="postal"
               name="postal"
               label="Codigo postal:"
               placeholder="Ej: 1870"
               type="number"
-              required
+              error={!!errorMsg.postal}
+              helperText={errorMsg.postal?.at(0) || "Ej: 1870"}
             />
           </div>
           <div className="grid gap-4 md:grid-cols-[1fr_5fr_4fr]">
             <Input
-              helperText="Ej: 011"
               id="area"
               name="area"
               label="Area:"
               placeholder="Ej: 011"
               type="text"
               pattern="[0-9]{3}"
-              required
+              error={!!errorMsg.area}
+              helperText={errorMsg.area?.at(0) || "Ej: 011"}
             />
             <Input
-              helperText="Ej: 42229845"
               id="phone"
               name="phone"
               label="Teléfono de contacto:"
               placeholder="Ej: 42229845"
               type="tel"
-              required
+              error={!!errorMsg.phone}
+              helperText={errorMsg.phone?.at(0) || "Ej: 42229845"}
             />
             <Input
-              helperText="Ej: mhernandez@gmail.com"
               id="email"
               name="email"
               label="Email de contacto:"
               placeholder="Ej: mhernandez@gmail.com"
               type="email"
-              required
+              error={!!errorMsg.email}
+              helperText={errorMsg.email?.at(0) || "Ej: mhernandez@gmail.com"}
             />
           </div>
           <Input
-            helperText="Vínculo con el niño o niña:"
             id="child-link"
             name="child-link"
             label="Vínculo con el niño o niña:"
-            type="url"
-            required
+            type="text"
+            error={!!errorMsg["child-link"]}
+            helperText={
+              errorMsg["child-link"]?.at(0) || "Vínculo con el niño o niña:"
+            }
           />
           <p className="mb-8 mt-6 border-b border-blue pb-4 font-outfit font-medium text-blue md:border-none">
             Datos del niño o niña
           </p>
           <Input
-            helperText="Ej: María Fernández"
             id="child-fullname"
             name="child-fullname"
             placeholder="Ej: María Fernández"
             label="Nombre y apellido del niño o niña:"
             type="text"
-            required
+            error={!!errorMsg["child-fullname"]}
+            helperText={
+              errorMsg["child-fullname"]?.at(0) || "Ej: María Fernández"
+            }
           />
           <Input
-            helperText="Ej: 35764532 (sin puntos)"
             id="child-dni"
             name="child-dni"
             label="DNI del niño o niña:"
             placeholder="Ej: 35764532 (sin puntos)"
             type="number"
-            required
+            error={!!errorMsg["child-dni"]}
+            helperText={
+              errorMsg["child-dni"]?.at(0) || "Ej: 35764532 (sin puntos)"
+            }
           />
           <TextArea
-            helperText="¿Qué problemática motriz tiene?:"
             label="¿Qué problemática motriz tiene?"
-            required
+            error={!!errorMsg.fullname}
+            helperText={
+              errorMsg.fullname?.at(0) || "¿Qué problemática motriz tiene?:"
+            }
             rows={5}
           />
           <TextArea
-            helperText="Información relevante:"
             label="Información relevante:"
             rows={5}
+            error={!!errorMsg.fullname}
+            helperText={errorMsg.fullname?.at(0) || "Información relevante:"}
           />
 
           <div className="flex justify-center md:justify-end">
